@@ -1,0 +1,79 @@
+name: Turkish Spam Numbers Weekly Data Processing
+
+on:
+  schedule:
+    - cron: '0 13 * * 0' # Run every Sunday at 13:00 UTC
+  workflow_dispatch:
+
+jobs:
+  process_data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: Turkish
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install pandas
+        run: pip install pandas
+
+      - name: Download and Process Turkish Spam Numbers data
+        run: |
+          python <<EOF
+          import pandas as pd
+
+          # 1. 下载原始数据
+          try:
+              df = pd.read_csv('https://raw.githubusercontent.com/symbuzzer/Turkish-Spam-Numbers/main/numbers', header=None, names=['phoneNumber'], on_bad_lines='skip', dtype={'phoneNumber': str})
+          except Exception as e:
+              print(f"Error downloading or processing CSV: {e}")
+              exit(1)
+
+          # 2. 清理和验证数据
+          df['phoneNumber'] = df['phoneNumber'].astype(str).str.strip()
+          df.dropna(subset=['phoneNumber'], inplace=True)
+          df = df[df['phoneNumber'] != '']
+          
+          if df.empty:
+              print("No valid phone numbers found after cleaning. Exiting.")
+              exit(0)
+
+          # 3. 构建符合 PhoneRule 结构的列
+          df['id'] = df['phoneNumber']
+          df['name'] = df['phoneNumber']
+          df['action'] = 'block'
+          df['priority'] = 3
+          # ✅ 核心修正：使用从您的逻辑派生出的正确 labelId
+          df['labelId'] = 'spam_likely' 
+          df['isEnabled'] = 1
+          df['count'] = 0
+          df['avatar'] = ''
+          df['ruleType'] = 'phone_rule'
+          df['subscriptionId'] = 'turkish-spam-weekly'
+
+          # 4. 按照 PhoneRule.fromMap 的顺序组织并输出最终的CSV
+          final_columns = [
+              'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
+              'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
+          ]
+          df = df[final_columns]
+          
+          df.to_csv('processed_turkish_spam_numbers.csv', index=False)
+          print(f"Successfully processed and saved {len(df)} records.")
+          EOF
+
+      - name: Commit and Push CSV
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update processed Turkish Spam Numbers data"
+          file_pattern: "processed_turkish_spam_numbers.csv"
+          branch: Turkish
+          repository: .
+          token: ${{ secrets.GITHUB_TOKEN }}
