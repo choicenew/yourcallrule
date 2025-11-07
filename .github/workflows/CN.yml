@@ -1,0 +1,142 @@
+name: China VC CARD
+
+on:
+  schedule:
+    - cron: '0 0 */30 * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML and requests
+        run: pip install pyyaml requests
+
+      # 步骤一：抓取原始数据并生成中间CSV（在内存中或临时文件中）
+      # 这个步骤保持不变，因为它只是数据获取阶段
+      - name: Generate CSV
+        run: |
+          python <<EOF
+          import yaml
+          import requests
+          import os
+          import json
+          import re
+          import csv
+
+          base_url = "https://api.github.com/repos/metowolf/vCards/contents/data"
+          headers = {"Accept": "application/vnd.github+json"}
+
+          response = requests.get(base_url, headers=headers)
+          folders = json.loads(response.text)
+
+          # 创建临时目录来存放原始数据
+          os.makedirs('原始/cn', exist_ok=True)
+
+          for folder in folders:
+            if folder["type"] == "dir":
+              label = folder["name"]
+              csv_filename = f'原始/cn/{label}.csv'
+              with open(csv_filename, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+                # 写入原始数据的表头
+                writer.writerow(['phoneNumber', 'label', 'name', 'avatar'])
+
+                folder_url = folder["url"]
+                folder_response = requests.get(folder_url, headers=headers)
+                files = json.loads(folder_response.text)
+                for file in files:
+                  if file["name"].endswith(".yaml"):
+                    name, ext = os.path.splitext(file["name"])
+                    yaml_url = file["download_url"]
+                    yaml_response = requests.get(yaml_url)
+                    data = yaml.safe_load(yaml_response.text)
+
+                    if 'basic' in data and 'organization' in data['basic'] and 'cellPhone' in data['basic']:
+                      organization = data['basic']['organization']
+                      avatar = f'https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/{label}/{name}.png'
+                      
+                      if isinstance(data['basic']['cellPhone'], list):
+                        for phone in data['basic']['cellPhone']:
+                          cleaned_phone = re.sub(r'[- ]|,[\d]*$', '', str(phone))
+                          # 只写入需要的数据，减少中间文件的复杂性
+                          writer.writerow([cleaned_phone, label, organization, avatar])
+                      else:
+                        print(f"Warning: cellPhone is not a list in {file['name']}")
+                    else:
+                      print(f"Warning: Missing required fields in {file['name']}")
+          EOF
+
+      # 步骤二：处理中间数据，生成最终符合 PhoneRule 格式的CSV
+      - name: Process CSV Data into Final Format
+        run: |
+          python <<EOF
+          import csv
+          import os
+
+          label_mapping = {
+              '其他': 'other', '外卖订餐': 'takeaway', '快递物流': 'delivery', '电商购物': 'ecommerce',
+              '金融银行': 'bank', '互联网': 'internet', '出行购票': 'travel_ticketing', 
+              '应用软件': 'application_software', '影音娱乐': 'entertainment', '房产中介': 'agent', 
+              '政府机构': 'government', '本地生活': 'local_services', '汽车行业': 'automotive_industry',
+              '租车代驾': 'car_rental', '证券保险': 'insurance', '通讯服务': 'telecommunication'
+          }
+          
+          # 确保输出目录存在
+          output_dir = 'New/cn'
+          os.makedirs(output_dir, exist_ok=True)
+
+          for csv_file in os.listdir('原始/cn'):
+              if csv_file.endswith('.csv'):
+                  with open(os.path.join('原始/cn', csv_file), 'r', encoding='utf-8') as infile,\
+                       open(os.path.join(output_dir, csv_file), 'w', encoding='utf-8', newline='') as outfile:
+
+                      reader = csv.DictReader(infile)
+                      writer = csv.writer(outfile, quoting=csv.QUOTE_ALL)
+
+                      # ✅ 核心修正：写入与 PhoneRule 完全匹配的最终表头
+                      final_columns = [
+                          'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
+                          'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
+                      ]
+                      writer.writerow(final_columns)
+
+                      for row in reader:
+                          # ✅ 核心修正：按照新的表头顺序创建行数据
+                          new_row = [                              
+                              row['phoneNumber'],  # id
+                              row['name'],         # name
+                              'none',              # action
+                              0,                   # priority
+                              row['phoneNumber'],  # phoneNumber
+                              label_mapping.get(row['label'], 'other'), # labelId
+                              1,                   # isEnabled (1 for true)
+                              0,                   # count (初始为0)
+                              row['avatar'],       # avatar
+                              'phone_rule',        # ruleType
+                              'vcard-cn'           # subscriptionId
+                          ]
+                          writer.writerow(new_row)
+          EOF
+
+      # ✅ 您要求移除的步骤已经在这里被删除了
+
+      # 步骤三：只提交最终处理好的CSV文件
+      - name: Commit Final CSVs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update processed vCard CN data"
+          file_pattern: "New/cn/*.csv"
+          repository: .
+          token: ${{ secrets.GITHUB_TOKEN }}
