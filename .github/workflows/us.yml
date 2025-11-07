@@ -1,0 +1,108 @@
+name: US FCC database Daily Data Processing
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  process_data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # 这个工作流将始终在 main 分支上运行和提交
+          ref: main
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install pandas and phonenumbers
+        run: pip install pandas phonenumbers
+
+      - name: Download and Process Data
+        run: |
+          # 确保输出目录存在
+          mkdir -p US
+
+          # 直接下载数据，无需创建 original 目录
+          wget --content-disposition -O fcc_data.csv https://fccprod.servicenowservices.com/api/x_g_fmc_rmd/rmd/csv_download
+
+          python <<EOF
+          import pandas as pd
+          import re
+          import phonenumbers
+
+          try:
+              df = pd.read_csv('fcc_data.csv')
+          except Exception as e:
+              print(f"Failed to read downloaded CSV: {e}")
+              exit(1)
+
+          df = df[['business_name', 'contact_telephone_number']]
+          df.rename(columns={'business_name': 'name', 'contact_telephone_number': 'phoneNumber'}, inplace=True)
+          df.dropna(subset=['phoneNumber', 'name'], inplace=True)
+
+          # 清理数据
+          df['phoneNumber'] = df['phoneNumber'].astype(str).str.replace(r"[\.']", "", regex=True).str.strip()
+          df['name'] = df['name'].astype(str).str.replace(r'[\",./]', '', regex=True).str.strip()
+
+          # 格式化美国电话号码
+          def format_us_phone_number(number):
+              try:
+                  # 假设所有号码都是美国的
+                  parsed_number = phonenumbers.parse(number, "US")
+                  if phonenumbers.is_valid_number(parsed_number):
+                      # 输出为 E.164 格式，例如 +12025550132，这是最标准化的格式
+                      return phonenumbers.format_number(parsed_number, phonenumbers.PhoneNumberFormat.E164)
+              except phonenumbers.phonenumberutil.NumberParseException:
+                  pass
+              return None # 如果无法解析，则返回None，方便后续过滤
+
+          df['phoneNumber'] = df['phoneNumber'].apply(format_us_phone_number)
+          df.dropna(subset=['phoneNumber'], inplace=True) # 过滤掉所有无法格式化的号码
+          df.drop_duplicates(subset=['phoneNumber'], inplace=True) # 移除重复的电话号码
+
+          if df.empty:
+              print("No valid phone numbers found after processing. Exiting.")
+              exit(0)
+
+          # ✅ 核心修正：构建完全符合 PhoneRule 模型的列
+          df['id'] = df['phoneNumber']
+          # ✅ 逻辑修正：这类号码用于识别，而非拦截
+          df['action'] = 'none'
+          df['priority'] = 0
+          # ✅ labelId 逻辑正确，'telemarketing' 遵循您的ID生成规则
+          df['labelId'] = 'telemarketing'
+          df['isEnabled'] = 1
+          df['count'] = 0  # ✅ 修正为整数 0
+          df['avatar'] = ''
+          df['ruleType'] = 'phone_rule'
+          # ✅ 修正为 subscriptionId
+          df['subscriptionId'] = 'us-fcc-daily'
+
+          # ✅ 最终输出的列顺序
+          final_columns = [
+              'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
+              'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
+          ]
+          df = df[final_columns]
+          
+          # ✅ 简化流程：只生成一个最终的、正确的文件
+          df.to_csv('US/fcc_processed_data.csv', index=False)
+          print(f"Successfully processed and saved {len(df)} records to US/fcc_processed_data.csv")
+          EOF
+
+      - name: Commit Processed CSV
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update US FCC processed data"
+          # ✅ 简化提交流程：只提交一个文件
+          file_pattern: "US/fcc_processed_data.csv"
+          repository: .
+          token: ${{ secrets.GITHUB_TOKEN }}
