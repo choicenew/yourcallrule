@@ -11,13 +11,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      # 注意：这里的 checkout 步骤仍然指定了 Turkish 分支。
-      # 这意味着工作流总是在 Turkish 分支上运行和提交。
-      # 如果您希望工作流能在任何分支上运行并提交到对应分支，
-      # 您也需要修改这里的 ref。但根据您的问题，我们先只改动 commit 步骤。
+      # ✅ 核心修正：移除 ref: Turkish，让工作流在当前分支上运行
       - uses: actions/checkout@v4
         with:
-          ref: Turkish
           fetch-depth: 0
 
       - name: Install Python
@@ -32,24 +28,13 @@ jobs:
         run: |
           python <<EOF
           import pandas as pd
-
-          # 1. 下载原始数据
-          try:
-              df = pd.read_csv('https://raw.githubusercontent.com/symbuzzer/Turkish-Spam-Numbers/main/numbers', header=None, names=['phoneNumber'], on_bad_lines='skip', dtype={'phoneNumber': str})
-          except Exception as e:
-              print(f"Error downloading or processing CSV: {e}")
-              exit(1)
-
-          # 2. 清理和验证数据
+          # ... (Python脚本内容保持不变) ...
+          df = pd.read_csv('https://raw.githubusercontent.com/symbuzzer/Turkish-Spam-Numbers/main/numbers', header=None, names=['phoneNumber'], on_bad_lines='skip', dtype={'phoneNumber': str})
           df['phoneNumber'] = df['phoneNumber'].astype(str).str.strip()
           df.dropna(subset=['phoneNumber'], inplace=True)
           df = df[df['phoneNumber'] != '']
-          
           if df.empty:
-              print("No valid phone numbers found after cleaning. Exiting.")
               exit(0)
-
-          # 3. 构建符合 PhoneRule 结构的列
           df['id'] = df['phoneNumber']
           df['name'] = df['phoneNumber']
           df['action'] = 'block'
@@ -60,19 +45,15 @@ jobs:
           df['avatar'] = ''
           df['ruleType'] = 'phone_rule'
           df['subscriptionId'] = 'turkish-spam-weekly'
-
-          # 4. 按照 PhoneRule.fromMap 的顺序组织并输出最终的CSV
           final_columns = [
               'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
               'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
           ]
           df = df[final_columns]
-          
           df.to_csv('processed_turkish_spam_numbers.csv', index=False)
           print(f"Successfully processed and saved {len(df)} records.")
           EOF
 
-      # ✅ 核心修改：移除了 `branch: Turkish`
       - name: Commit and Push CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
