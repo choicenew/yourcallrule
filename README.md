@@ -1,5 +1,5 @@
 # YourCallYourRule: Your Calls, Your Rules
-[中文版本](https://github.com/choicenew/yourcallrul/READMECN.md)
+[中文版本](https://github.com/choicenew/yourcallrule/blob/main/READMECN.md)
 **YourCallYourRule** is a powerful and highly customizable Android application designed to give you complete control over your incoming calls and SMS messages. You can create personalized blocking rules based on phone numbers, keywords, and more.
 
 - **Telegram Channel:** https://t.me/yourcallyourrule
