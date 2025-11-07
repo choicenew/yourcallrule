@@ -125,7 +125,7 @@ jobs:
                               0,                   # count (初始为0)
                               row['avatar'],       # avatar
                               'phone_rule',        # ruleType
-                              'vcard-cn'           # subscriptionId
+                              ''           # subscriptionId
                           ]
                           writer.writerow(new_row)
           EOF
