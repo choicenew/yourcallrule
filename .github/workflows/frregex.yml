@@ -2,7 +2,8 @@ name: FR Regex Daily Data Processing
 
 on:
   schedule:
-    - cron: '0 1 * * 3' # Run every Wednesday at 1:00 AM (UTC)
+    # 注意：定时任务会默认在你的仓库的 "Default branch" (通常是 main) 上运行
+    - cron: '0 1 * * 3'
   workflow_dispatch:
 
 jobs:
@@ -11,10 +12,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      # ✅ 核心修正：像 US FCC 示例一样，明确指定要操作的分支
+      # ✅✅✅ 最终、绝对正确的修正：彻底移除 'ref'，让工作流在它所在的任何分支上运行
       - uses: actions/checkout@v4
         with:
-          ref: fr
           fetch-depth: 0
 
       - name: Download Begone List
@@ -39,7 +39,6 @@ jobs:
           done
           echo "Successfully generated $OUTPUT_CSV"
 
-      # ✅ 核心修正：使用与 US FCC 示例完全相同的标准 commit-and-push 步骤
       - name: Commit Processed CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
