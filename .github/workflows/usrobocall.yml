@@ -1,0 +1,132 @@
+name: US FTC Robocall Daily Data Processing
+
+on:
+  schedule:
+    # 每天 UTC 15:00 运行
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+jobs:
+  process_data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Permissions to write to the repository
+
+    steps:
+      - name: Checkout 'main' branch
+        uses: actions/checkout@v4
+        with:
+          ref: main 
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install pandas and phonenumbers
+        run: pip install pandas phonenumbers
+
+      - name: Download FTC Data
+        run: |
+          # 确保输出目录存在
+          mkdir -p US
+          
+          # 动态生成昨天的日期
+          year=$(date -d "yesterday" +%Y)
+          month=$(date -d "yesterday" +%m)
+          day=$(date -d "yesterday" +%d)
+          
+          FTC_URL="https://www.ftc.gov/sites/default/files/DNC_Complaint_Numbers_${year}-${month}-${day}.csv"
+          USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          REFERER_URL="https://www.ftc.gov/news-events/data-visualizations/do-not-call-complaint-data"
+          
+          echo "Attempting to download from: $FTC_URL"
+          wget --content-disposition \
+               --user-agent="$USER_AGENT" \
+               --referer="$REFERER_URL" \
+               -O ftc_data.csv "$FTC_URL"
+
+      - name: Process FTC Data into Final Format
+        run: |
+          python <<EOF
+          import pandas as pd
+          import re
+          import phonenumbers
+          import os
+
+          input_file = 'ftc_data.csv'
+          
+          # 健壮性检查：确保文件存在且不为空
+          if not os.path.exists(input_file) or os.path.getsize(input_file) == 0:
+              print(f"The file {input_file} is empty or was not downloaded. Exiting successfully.")
+              # 正常退出，这样工作流不会因为某一天没有数据而失败
+              exit(0)
+
+          try:
+              df = pd.read_csv(input_file, encoding='utf-8', on_bad_lines='skip')
+          except Exception as e:
+              print(f"Error reading CSV: {e}. Exiting.")
+              exit(0)
+
+          if 'Company_Phone_Number' not in df.columns:
+              print("Error: 'Company_Phone_Number' column not found in the CSV. Exiting.")
+              exit(0)
+
+          # 数据清洗和格式化
+          df.rename(columns={'Company_Phone_Number': 'phoneNumber'}, inplace=True)
+          df.dropna(subset=['phoneNumber'], inplace=True)
+          df['phoneNumber'] = df['phoneNumber'].astype(str).str.replace(r"\.0$", "", regex=True).str.strip()
+
+          def format_us_phone_number(number):
+              try:
+                  parsed_number = phonenumbers.parse(str(number), "US")
+                  if phonenumbers.is_valid_number(parsed_number):
+                      return phonenumbers.format_number(parsed_number, phonenumbers.PhoneNumberFormat.E164)
+              except phonenumbers.phonenumberutil.NumberParseException:
+                  pass
+              return None
+
+          df['phoneNumber'] = df['phoneNumber'].apply(format_us_phone_number)
+          df.dropna(subset=['phoneNumber'], inplace=True)
+          df.drop_duplicates(subset=['phoneNumber'], inplace=True)
+
+          if df.empty:
+              print("No valid phone numbers found after processing. Exiting.")
+              exit(0)
+
+          # ✅ 核心修正：构建完全符合 PhoneRule 模型的列
+          df['id'] = df['phoneNumber']
+          # 为骚扰电话提供一个默认的名称
+          df['name'] = 'FTC Robocall Complaint'
+          # ✅ 业务逻辑正确：这些是骚扰电话，应该被拦截
+          df['action'] = 'block'
+          df['priority'] = 3
+          df['labelId'] = 'robocall' # ✅ 'robocall' 标签符合您的ID规则
+          df['isEnabled'] = 1
+          df['count'] = 0  # ✅ 修正为整数 0
+          df['avatar'] = ''
+          df['ruleType'] = 'phone_rule'
+          # ✅ 修正为 subscriptionId
+          df['subscriptionId'] = 'us-ftc-robocall-daily'
+
+          # ✅ 最终输出的列顺序
+          final_columns = [
+              'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
+              'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
+          ]
+          df = df[final_columns]
+          
+          # ✅ 简化流程：只生成一个最终的、正确的文件
+          df.to_csv('US/ftc_robocalls.csv', index=False)
+          print(f"Successfully processed and saved {len(df)} records to US/ftc_robocalls.csv")
+          EOF
+
+      - name: Commit Processed Robocall CSV
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update US FTC robocall processed data"
+          # ✅ 简化提交流程：只提交一个文件
+          file_pattern: "US/ftc_robocalls.csv"
+          repository: .
+          token: ${{ secrets.GITHUB_TOKEN }}
