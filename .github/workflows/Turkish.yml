@@ -11,6 +11,10 @@ jobs:
     permissions:
       contents: write
     steps:
+      # 注意：这里的 checkout 步骤仍然指定了 Turkish 分支。
+      # 这意味着工作流总是在 Turkish 分支上运行和提交。
+      # 如果您希望工作流能在任何分支上运行并提交到对应分支，
+      # 您也需要修改这里的 ref。但根据您的问题，我们先只改动 commit 步骤。
       - uses: actions/checkout@v4
         with:
           ref: Turkish
@@ -50,7 +54,6 @@ jobs:
           df['name'] = df['phoneNumber']
           df['action'] = 'block'
           df['priority'] = 3
-          # ✅ 核心修正：使用从您的逻辑派生出的正确 labelId
           df['labelId'] = 'spam_likely' 
           df['isEnabled'] = 1
           df['count'] = 0
@@ -69,11 +72,11 @@ jobs:
           print(f"Successfully processed and saved {len(df)} records.")
           EOF
 
+      # ✅ 核心修改：移除了 `branch: Turkish`
       - name: Commit and Push CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update processed Turkish Spam Numbers data"
           file_pattern: "processed_turkish_spam_numbers.csv"
-          branch: Turkish
           repository: .
           token: ${{ secrets.GITHUB_TOKEN }}
