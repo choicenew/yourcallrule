@@ -84,7 +84,7 @@ jobs:
           df['avatar'] = ''
           df['ruleType'] = 'phone_rule'
           # ✅ 修正为 subscriptionId
-          df['subscriptionId'] = 'us-fcc-daily'
+          df['subscriptionId'] = ''
 
           # ✅ 最终输出的列顺序
           final_columns = [
