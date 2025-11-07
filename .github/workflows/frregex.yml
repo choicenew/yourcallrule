@@ -1,0 +1,70 @@
+name: FR Regex Daily Data Processing
+
+on:
+  schedule:
+    - cron: '0 1 * * 3' # Run every Wednesday at 1:00 AM (UTC)
+  workflow_dispatch:
+
+jobs:
+  process_data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fr # This workflow will checkout and run on the 'fr' branch
+          fetch-depth: 0
+
+      - name: Download Begone List
+        run: wget https://raw.githubusercontent.com/oulixalt/BegoneListeFR/refs/heads/Liste-compl%C3%A8te/Begone-FR.xml -O begone.xml
+
+      # ✅ 核心修改：重构此步骤以直接生成符合 RegexRuleModel 的 CSV 文件
+      - name: Parse XML and generate CSV
+        run: |
+          # Install necessary tools
+          sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+          # Define the output CSV filename
+          OUTPUT_CSV="processed_fr_regex.csv"
+
+          # 1. Write the header row for the CSV file
+          echo "id,name,priority,action,pattern,isEnabled,subscriptionId,ruleType" > $OUTPUT_CSV
+
+          # 2. Extract numbers from XML and process them in a loop
+          xmllint --xpath "//dict/key[text()='number']/following-sibling::string[1]/text()" begone.xml | \
+          while read number; do
+            # 3. Generate all required fields for each number
+            # Create a regex pattern: remove '+', replace '#' with '.*', prepend '33', append '$'
+            pattern=$(echo "$number" | sed 's/+//g; s/#/.*/g; s/^/33/; s/$/$/')
+            
+            # Use the pattern as the unique ID
+            id="$pattern"
+            
+            # Generate a descriptive name
+            name="Block numbers matching ${pattern%?}" # Removes the trailing '$' for a cleaner name
+
+            # Set default values based on the RegexRuleModel
+            priority=3
+            action="block"
+            isEnabled=1
+            subscriptionId="begone-fr-regex" # A descriptive subscription ID
+            ruleType="regex"
+
+            # 4. Append the new row to the CSV file, ensuring proper quoting
+            echo "\"$id\",\"$name\",$priority,\"$action\",\"$pattern\",$isEnabled,\"$subscriptionId\",\"$ruleType\"" >> $OUTPUT_CSV
+          done
+          
+          echo "Successfully generated $OUTPUT_CSV"
+
+      # ✅ 核心修改：更新 commit 步骤
+      - name: Commit and Push CSV
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update processed FR regex data"
+          # Point to the new CSV file
+          file_pattern: "processed_fr_regex.csv"
+          # Remove the hardcoded branch to commit to the current branch ('fr' in this case)
+          repository: .
+          # Use the standard, auto-provided GitHub token
+          token: ${{ secrets.GITHUB_TOKEN }}
