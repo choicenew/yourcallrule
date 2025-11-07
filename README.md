@@ -7,7 +7,7 @@
 - **Google Play (Beta):** https://play.google.com/apps/testing/com.yours.yourcallyourrule
 - **Google Play (Stable):** https://play.google.com/store/apps/details?id=com.yours.yourcallyourrule
 
-> **Note**: Due to Google Play's policies, the version available on the Play Store does not include the SMS filtering feature. If you require this functionality, please download the appropriate version from this repository's [Releases](https://github.com/choicenew/yourcallrule/releases) page. Please be aware that you cannot have both versions installed simultaneously.
+> **Note**: You can also download the appropriate version from this repository's [Releases](https://github.com/choicenew/yourcallrule/releases) page. 
 
 ## Core Features
 
