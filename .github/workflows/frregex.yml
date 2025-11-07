@@ -11,9 +11,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      # ✅ 核心修正：移除 ref: fr，让工作流在当前分支上运行
+      # ✅ 核心修正：像 US FCC 示例一样，明确指定要操作的分支
       - uses: actions/checkout@v4
         with:
+          ref: fr
           fetch-depth: 0
 
       - name: Download Begone List
@@ -21,7 +22,6 @@ jobs:
 
       - name: Parse XML and generate CSV
         run: |
-          # ... (Shell脚本内容保持不变) ...
           sudo apt-get update && sudo apt-get install -y libxml2-utils
           OUTPUT_CSV="processed_fr_regex.csv"
           echo "id,name,priority,action,pattern,isEnabled,subscriptionId,ruleType" > $OUTPUT_CSV
@@ -39,7 +39,8 @@ jobs:
           done
           echo "Successfully generated $OUTPUT_CSV"
 
-      - name: Commit and Push CSV
+      # ✅ 核心修正：使用与 US FCC 示例完全相同的标准 commit-and-push 步骤
+      - name: Commit Processed CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update processed FR regex data"
