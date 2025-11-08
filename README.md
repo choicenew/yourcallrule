@@ -44,7 +44,7 @@ The AI can typically understand the request and generate the necessary plugin co
 
 We welcome and encourage community contributions to the project.
 
-*   **Submit Plugins**: If you create a new, useful plugin, please share it with the community by submitting a Pull Request.
+*   **Submit/Update/Fix Plugins**: If you create/fix/update a plugin, please share it with the community by submitting a Pull Request.
 *   **Report Issues**: Use the [Issues](https://github.com/choicenew/yourcallrule/issues) tab to report bugs or suggest new features.
 *   **Internationalization (i18n)**: The app's interface translations are primarily done by AI and may contain inaccuracies. We welcome contributions to improve them.
     *   **Translation Workflow**: The project uses an `l10n.yaml` file with Firebase Studio for translating ARB files. You can set this up in any new Flutter project by placing the `tool/translate.dart` file in the appropriate directory and configuring the API.
