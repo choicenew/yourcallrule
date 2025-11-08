@@ -3,7 +3,7 @@ name: US FTC Robocall Daily Data Processing
 on:
   schedule:
     # 每天 UTC 15:00 运行
-    - cron: '0 15 * * *'
+    - cron: '0 5 * * *'
   workflow_dispatch:
 
 jobs:
