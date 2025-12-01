@@ -1,4 +1,6 @@
 "id","name","action","priority","phoneNumber","labelId","isEnabled","count","avatar","ruleType","subscriptionId"
+"4008129999","BMW","none","0","4008129999","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/BMW.png","phone_rule",""
+"4008006666","BMW","none","0","4008006666","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/BMW.png","phone_rule",""
 "95388","中国石化","none","0","95388","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/中国石化.png","phone_rule",""
 "95504","中国石油","none","0","95504","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/中国石油.png","phone_rule",""
 "956100","中国石油","none","0","956100","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/中国石油.png","phone_rule",""
@@ -10,3 +12,4 @@
 "4009190707","特斯拉","none","0","4009190707","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/特斯拉.png","phone_rule",""
 "4009100707","特斯拉","none","0","4009100707","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/特斯拉.png","phone_rule",""
 "4006860900","理想汽车","none","0","4006860900","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/理想汽车.png","phone_rule",""
+"4009996699","蔚来","none","0","4009996699","automotive_industry","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/汽车行业/蔚来.png","phone_rule",""
