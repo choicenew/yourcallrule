@@ -19,7 +19,7 @@
     const PLUGIN_CONFIG = {
         id: 'tellowsPlugin', // Unique Plugin ID
         name: 'Tellows API Lookup', // Readable Plugin Name
-        version: '1.2.0', // Plugin Version
+        version: '1.3.0', // Plugin Version
         description: 'Queries Tellows API using Native RequestChannel (XML).', // Plugin Description
         // Settings Definition
         settings: [
@@ -117,6 +117,9 @@
         sendToFlutter('TestPageChannel', { type: 'pluginLoaded', pluginId: PLUGIN_CONFIG.id, version: PLUGIN_CONFIG.version });
     }
 
+    // --- SECTION 4.1: Internal State (Request Cache) ---
+    const requestCache = {};
+
     // --- SECTION 4: Native Request Logic (Core Feature) ---
     
     // Encapsulate RequestChannel call
@@ -146,6 +149,9 @@
     function initiateQuery(phoneNumber, requestId) {
         log(`Initiating query for '${phoneNumber}' (requestId: ${requestId})`);
         
+        // Cache the phone number for retrieval in handleResponse
+        requestCache[requestId] = phoneNumber;
+
         // 1. Get Config (Injected by App)
         const config = window.plugin[PLUGIN_CONFIG.id].config || {};
         const apiKey = config.api_key || 'koE5hjkOwbHnmcADqZuqqq2';
@@ -196,6 +202,10 @@
         const statusCode = response.status;
         const responseText = response.responseText; // Raw text
 
+        // Retrieve original phone number from cache
+        const originalPhoneNumber = requestCache[requestId] || '';
+        delete requestCache[requestId]; // Clean up
+
         if (statusCode !== 200) {
             logError(`HTTP Error: ${statusCode}`);
             sendPluginResult({ requestId, success: false, error: `HTTP Error ${statusCode}` });
@@ -223,6 +233,9 @@
             // num element from XML if available
             const numNode = xmlDoc.getElementsByTagName("num")[0];
             const returnedNum = numNode ? numNode.textContent : "";
+            
+            // Use returnedNum if available, otherwise fallback to originalPhoneNumber
+            const finalPhoneNumber = returnedNum || originalPhoneNumber;
 
             // 3. Intelligent Action Logic
             const isSpam = score >= 7; // score 1-9
@@ -250,7 +263,7 @@
                 success: true,
                 source: PLUGIN_CONFIG.name,
                 name: callerName || (isSpam ? "Spam Caller" : "Unknown"),
-                phoneNumber: returnedNum || '',
+                phoneNumber: finalPhoneNumber,
                 sourceLabel: sourceLabel,
                 predefinedLabel: predefinedLabel,
                 action: action,
