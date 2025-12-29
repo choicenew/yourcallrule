@@ -19,7 +19,7 @@
     const PLUGIN_CONFIG = {
         id: 'tellowsPlugin', // Unique Plugin ID
         name: 'Tellows API Lookup', // Readable Plugin Name
-        version: '1.3.0', // Plugin Version
+        version: '1.4.0', // Plugin Version
         description: 'Queries Tellows API using Native RequestChannel (XML).', // Plugin Description
         // Settings Definition
         settings: [
@@ -201,6 +201,7 @@
         const requestId = response.phoneRequestId;
         const statusCode = response.status;
         const responseText = response.responseText; // Raw text
+        log('Raw Response Text: ' + responseText); // Debug: Print original JSON/XML
 
         // Retrieve original phone number from cache
         const originalPhoneNumber = requestCache[requestId] || '';
@@ -276,6 +277,7 @@
 
         } catch (e) {
             logError('Parsing Error', e);
+            logError('Original Response for debugging: ', responseText);
             sendPluginResult({ requestId, success: false, error: 'XML Parse Failed: ' + e.message });
         }
     }
