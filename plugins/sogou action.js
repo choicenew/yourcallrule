@@ -3,7 +3,7 @@
     const PLUGIN_CONFIG = {
         id: 'sogouPhoneNumberPlugin',
         name: 'Sogou Phone Lookup (iframe Proxy)',
-        version: '1.0.1', 
+        version: '1.0.2', 
         description: 'Queries Sogou for phone number information using an iframe proxy. Extracts source label.'
     };
   
@@ -164,6 +164,11 @@
                                         result.predefinedLabel = manualMapping[key];
                                         break;
                                     }
+                                }
+
+                                // --- Fallback Name Assignment ---
+                                if (result.sourceLabel && !result.predefinedLabel) {
+                                    result.name = result.sourceLabel;
                                 }
 
                                 return result; // Return after the first successful extraction
