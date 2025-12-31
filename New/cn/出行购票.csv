@@ -1,4 +1,5 @@
 "id","name","action","priority","phoneNumber","labelId","isEnabled","count","avatar","ruleType","subscriptionId"
+"4008903588","万豪旅享家","none","0","4008903588","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/万豪旅享家.png","phone_rule",""
 "021962319","上海交通卡","none","0","021962319","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/上海交通卡.png","phone_rule",""
 "02164370000","上海地铁","none","0","02164370000","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/上海地铁.png","phone_rule",""
 "95530","中国东方航空","none","0","95530","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/中国东方航空.png","phone_rule",""
@@ -24,5 +25,7 @@
 "4008187333","美国航空","none","0","4008187333","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/美国航空.png","phone_rule",""
 "4001202364","达美航空","none","0","4001202364","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/达美航空.png","phone_rule",""
 "4008209999","锦江酒店","none","0","4008209999","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/锦江酒店.png","phone_rule",""
+"4006350787","飞常准","none","0","4006350787","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/飞常准.png","phone_rule",""
+"055162641662","飞常准","none","0","055162641662","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/飞常准.png","phone_rule",""
 "9510208","飞猪","none","0","9510208","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/飞猪.png","phone_rule",""
 "4008821111","龙腾出行","none","0","4008821111","travel_ticketing","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/出行购票/龙腾出行.png","phone_rule",""
