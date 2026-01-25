@@ -5001,7 +5001,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +15228525578,QOLARIS LIMITED,none,0,+15228525578,telemarketing,1,0,,phone_rule,
 +12127965500,American Network Inc,none,0,+12127965500,telemarketing,1,0,,phone_rule,
 +19723941618,Voip Talk LLC,none,0,+19723941618,telemarketing,1,0,,phone_rule,
-+447441341914,Talk America VoIP,none,0,+447441341914,telemarketing,1,0,,phone_rule,
 +821025526964,Efonia Co Ltd,none,0,+821025526964,telemarketing,1,0,,phone_rule,
 +442038077410,Sipgate Services Limited,none,0,+442038077410,telemarketing,1,0,,phone_rule,
 +918881002222,DULTR TECHNOLOGIES PVT LTD,none,0,+918881002222,telemarketing,1,0,,phone_rule,
@@ -7628,3 +7627,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +13024681831,Leap of Faith Security LLC,none,0,+13024681831,telemarketing,1,0,,phone_rule,
 +17278423000,Advanced Telecom Inc,none,0,+17278423000,telemarketing,1,0,,phone_rule,
 +18132440589,Hyperion Information Technology LLC,none,0,+18132440589,telemarketing,1,0,,phone_rule,
++14062600552,TALK AMERICA VOIP LLC,none,0,+14062600552,telemarketing,1,0,,phone_rule,
