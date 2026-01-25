@@ -1,6 +1,8 @@
 id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subscriptionId
 +902127053327,+902127053327,block,3,+902127053327,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902127065148,+902127065148,block,3,+902127065148,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++902129220071,+902129220071,block,3,+902129220071,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++902129220075,+902129220075,block,3,+902129220075,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129220284,+902129220284,block,3,+902129220284,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129220343,+902129220343,block,3,+902129220343,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129220355,+902129220355,block,3,+902129220355,spam_likely,1,0,,phone_rule,turkish-spam-weekly
@@ -16,6 +18,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +902129224057,+902129224057,block,3,+902129224057,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129224072,+902129224072,block,3,+902129224072,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129224160,+902129224160,block,3,+902129224160,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++902129224178,+902129224178,block,3,+902129224178,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129224230,+902129224230,block,3,+902129224230,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129224238,+902129224238,block,3,+902129224238,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129224305,+902129224305,block,3,+902129224305,spam_likely,1,0,,phone_rule,turkish-spam-weekly
