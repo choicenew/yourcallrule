@@ -57,6 +57,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +908504306124,+908504306124,block,3,+908504306124,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908504306712,+908504306712,block,3,+908504306712,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908504306728,+908504306728,block,3,+908504306728,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++908504306839,+908504306839,block,3,+908504306839,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908504430216,+908504430216,block,3,+908504430216,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908504431286,+908504431286,block,3,+908504431286,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908504432902,+908504432902,block,3,+908504432902,spam_likely,1,0,,phone_rule,turkish-spam-weekly
@@ -129,6 +130,8 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +908505120675,+908505120675,block,3,+908505120675,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908505120676,+908505120676,block,3,+908505120676,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908505120724,+908505120724,block,3,+908505120724,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++908505120791,+908505120791,block,3,+908505120791,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++908505120795,+908505120795,block,3,+908505120795,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908505600625,+908505600625,block,3,+908505600625,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908505602051,+908505602051,block,3,+908505602051,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908505602440,+908505602440,block,3,+908505602440,spam_likely,1,0,,phone_rule,turkish-spam-weekly
@@ -136,6 +139,8 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +908505602715,+908505602715,block,3,+908505602715,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908505602719,+908505602719,block,3,+908505602719,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908505602816,+908505602816,block,3,+908505602816,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++908507710561,+908507710561,block,3,+908507710561,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++908507710571,+908507710571,block,3,+908507710571,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908509010328,+908509010328,block,3,+908509010328,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908509010352,+908509010352,block,3,+908509010352,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +908509010417,+908509010417,block,3,+908509010417,spam_likely,1,0,,phone_rule,turkish-spam-weekly
