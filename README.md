@@ -9,6 +9,7 @@
 
 > **Note**: You can also download the appropriate version from this repository's [Releases](https://github.com/choicenew/yourcallrule/releases) page. 
 
+> **NEW Plugin Repo**: The new plugins are now supported by a new developer. You can also download version from this repository's [New Developer]([https://github.com/choicenew/yourcallrule/releases](https://github.com/ngodeel/yourcallrule)) page.
 ## Core Features
 
 *   **Blacklist & Whitelist Management**: Easily create lists of allowed and blocked numbers.
