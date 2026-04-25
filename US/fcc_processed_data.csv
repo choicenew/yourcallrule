@@ -7462,6 +7462,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +15253238790,Nexora BPO,none,0,+15253238790,telemarketing,1,0,,phone_rule,
 +15156739087,Telaux,none,0,+15156739087,telemarketing,1,0,,phone_rule,
 +529982417194,VOICE TELECOMUNICATIONS DE MEXICO,none,0,+529982417194,telemarketing,1,0,,phone_rule,
++14099088140,Renvyo,none,0,+14099088140,telemarketing,1,0,,phone_rule,
 +13182382600,A&G Computer Services LLC,none,0,+13182382600,telemarketing,1,0,,phone_rule,
 +14105362068,Cabling Solutions Inc,none,0,+14105362068,telemarketing,1,0,,phone_rule,
 +17023829403,BH Ventures Holdings LLC,none,0,+17023829403,telemarketing,1,0,,phone_rule,
@@ -8738,3 +8739,5 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +17709875469,Electronic Communications Systems Incorporated,none,0,+17709875469,telemarketing,1,0,,phone_rule,
 +15612134525,SELLERY CRM LLC,none,0,+15612134525,telemarketing,1,0,,phone_rule,
 +18282098647,VoIP Asheville Inc,none,0,+18282098647,telemarketing,1,0,,phone_rule,
++19097909338,HCC Technology Inc,none,0,+19097909338,telemarketing,1,0,,phone_rule,
++19193918472,RevelAi Inc,none,0,+19193918472,telemarketing,1,0,,phone_rule,
