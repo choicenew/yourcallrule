@@ -1,4 +1,5 @@
 "id","name","action","priority","phoneNumber","labelId","isEnabled","count","avatar","ruleType","subscriptionId"
+"+18774484824","GitHub","none","0","+18774484824","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/GitHub.png","phone_rule",""
 "4000605576","Teambition","none","0","4000605576","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/Teambition.png","phone_rule",""
 "4006775005","WPS","none","0","4006775005","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/WPS.png","phone_rule",""
 "089865337739","ToDesk","none","0","089865337739","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/todesk.png","phone_rule",""
@@ -14,3 +15,4 @@
 "4001116555","钉钉","none","0","4001116555","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/钉钉.png","phone_rule",""
 "4000682666","飞书","none","0","4000682666","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/飞书.png","phone_rule",""
 "4008100080","高德地图","none","0","4008100080","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/高德地图.png","phone_rule",""
+"4008802252","高德地图","none","0","4008802252","application_software","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/应用软件/高德地图.png","phone_rule",""
