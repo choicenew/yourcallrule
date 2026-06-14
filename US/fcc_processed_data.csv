@@ -8685,7 +8685,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +19194430132,Axis Transit Systems LLC,none,0,+19194430132,telemarketing,1,0,,phone_rule,
 +17138533944,Hugo Communications LLC,none,0,+17138533944,telemarketing,1,0,,phone_rule,
 +14808017074,Bentarix Technologies LLC,none,0,+14808017074,telemarketing,1,0,,phone_rule,
-+17028431364,Cenvoria Networks LLC,none,0,+17028431364,telemarketing,1,0,,phone_rule,
 +12314205416,Northern Computer Services,none,0,+12314205416,telemarketing,1,0,,phone_rule,
 +18564240206,TITAN GLOBAL SOLUTION LLC,none,0,+18564240206,telemarketing,1,0,,phone_rule,
 +17209153946,VOTICS LLC,none,0,+17209153946,telemarketing,1,0,,phone_rule,
@@ -8970,3 +8969,5 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +14437131909,VORTEXTALK LLC,none,0,+14437131909,telemarketing,1,0,,phone_rule,
 +18189834949,Digitech Solutions Inc,none,0,+18189834949,telemarketing,1,0,,phone_rule,
 +15054963275,Softwave Telecom LLC,none,0,+15054963275,telemarketing,1,0,,phone_rule,
++17028431364,CENVORIA NETWORKS LLC,none,0,+17028431364,telemarketing,1,0,,phone_rule,
++17657370086,Adoptiv Inc,none,0,+17657370086,telemarketing,1,0,,phone_rule,
