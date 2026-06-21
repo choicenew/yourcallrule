@@ -28,6 +28,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +902129221321,+902129221321,block,3,+902129221321,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129221425,+902129221425,block,3,+902129221425,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129221427,+902129221427,block,3,+902129221427,spam_likely,1,0,,phone_rule,turkish-spam-weekly
++902129221468,+902129221468,block,3,+902129221468,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129221485,+902129221485,block,3,+902129221485,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129221658,+902129221658,block,3,+902129221658,spam_likely,1,0,,phone_rule,turkish-spam-weekly
 +902129221764,+902129221764,block,3,+902129221764,spam_likely,1,0,,phone_rule,turkish-spam-weekly
