@@ -32,7 +32,7 @@
 "{'number':'+86(10)65883001','label':'彩铃服务'}","中国移动","none","0","{'number':'+86(10)65883001','label':'彩铃服务'}","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国移动.png","phone_rule",""
 "10010","中国联通","none","0","10010","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国联通.png","phone_rule",""
 "10011","中国联通","none","0","10011","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国联通.png","phone_rule",""
-"10016","中国联通","none","0","10016","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国联通.png","phone_rule",""
+"{'number':10016,'label':'营销专线'}","中国联通","none","0","{'number':10016,'label':'营销专线'}","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国联通.png","phone_rule",""
 "10018","中国联通","none","0","10018","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国联通.png","phone_rule",""
 "{'number':101906,'label':'沃助理'}","中国联通","none","0","{'number':101906,'label':'沃助理'}","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国联通.png","phone_rule",""
 "{'number':10655152,'label':'出境服务'}","中国联通","none","0","{'number':10655152,'label':'出境服务'}","telecommunication","1","0","https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/通讯服务/中国联通.png","phone_rule",""
