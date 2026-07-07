@@ -6814,7 +6814,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +14062470887,Telsis LLC,none,0,+14062470887,telemarketing,1,0,,phone_rule,
 +14129271111,TEQ Guys Inc,none,0,+14129271111,telemarketing,1,0,,phone_rule,
 +972508223296,Alma Technologies LTD,none,0,+972508223296,telemarketing,1,0,,phone_rule,
-+19137038218,AMERATECH LLC,none,0,+19137038218,telemarketing,1,0,,phone_rule,
 +14062244149,Beparagon LLC,none,0,+14062244149,telemarketing,1,0,,phone_rule,
 +17208150007,VOIPLANET LLC,none,0,+17208150007,telemarketing,1,0,,phone_rule,
 +923002985339,Votexh,none,0,+923002985339,telemarketing,1,0,,phone_rule,
@@ -9058,3 +9057,5 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +13347849383,Stream Line Tel,none,0,+13347849383,telemarketing,1,0,,phone_rule,
 +12174129840,Signal House LLC,none,0,+12174129840,telemarketing,1,0,,phone_rule,
 +18587640612,All Connected Consulting,none,0,+18587640612,telemarketing,1,0,,phone_rule,
++15594263539,A Plus Business Systems Inc,none,0,+15594263539,telemarketing,1,0,,phone_rule,
++13103079994,Milo Intelligence LLC,none,0,+13103079994,telemarketing,1,0,,phone_rule,
