@@ -7168,6 +7168,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +12394494444,Softrim LLC,none,0,+12394494444,telemarketing,1,0,,phone_rule,
 +12397765373,Amtel South,none,0,+12397765373,telemarketing,1,0,,phone_rule,
 +17045606713,Kunz Leigh & Associates Inc,none,0,+17045606713,telemarketing,1,0,,phone_rule,
++16155996000,Our Tech Partners LLC,none,0,+16155996000,telemarketing,1,0,,phone_rule,
 +19049223093,AD Merchants,none,0,+19049223093,telemarketing,1,0,,phone_rule,
 +37444000330,Sirius Networks LLC,none,0,+37444000330,telemarketing,1,0,,phone_rule,
 +14078082362,Voytel LLC,none,0,+14078082362,telemarketing,1,0,,phone_rule,
@@ -9092,3 +9093,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +14158940893,Decide communications LLC,none,0,+14158940893,telemarketing,1,0,,phone_rule,
 +14698889450,Dial Universal Inc,none,0,+14698889450,telemarketing,1,0,,phone_rule,
 +15097150572,LaCelle 3 Media LLC,none,0,+15097150572,telemarketing,1,0,,phone_rule,
++18017831441,Cinch Solutions Inc,none,0,+18017831441,telemarketing,1,0,,phone_rule,
