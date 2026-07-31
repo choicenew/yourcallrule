@@ -3628,6 +3628,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +19374390064,Insta-Info Inc,none,0,+19374390064,telemarketing,1,0,,phone_rule,
 +14792344066,Velocity Broadband Internet Inc,none,0,+14792344066,telemarketing,1,0,,phone_rule,
 +18339664835,Zonitel Solutions LLC,none,0,+18339664835,telemarketing,1,0,,phone_rule,
++18662753715,Network Phone Solutions,none,0,+18662753715,telemarketing,1,0,,phone_rule,
 +18297639977,aiatek,none,0,+18297639977,telemarketing,1,0,,phone_rule,
 +17724461114,The Edge Group LLC,none,0,+17724461114,telemarketing,1,0,,phone_rule,
 +18154519649,JumpFly Inc,none,0,+18154519649,telemarketing,1,0,,phone_rule,
@@ -9128,3 +9129,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +13044835736,Grace Communications LC,none,0,+13044835736,telemarketing,1,0,,phone_rule,
 +18013109878,Code Savant LLC,none,0,+18013109878,telemarketing,1,0,,phone_rule,
 +16786893589,Cyberfy LLC,none,0,+16786893589,telemarketing,1,0,,phone_rule,
++13057254597,New Era Communications LLC,none,0,+13057254597,telemarketing,1,0,,phone_rule,
