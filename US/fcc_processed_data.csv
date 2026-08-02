@@ -6445,6 +6445,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +61476575640,voipsecure,none,0,+61476575640,telemarketing,1,0,,phone_rule,
 +18646163181,Prominent Technologies LLC,none,0,+18646163181,telemarketing,1,0,,phone_rule,
 +442080403521,Hainlos,none,0,+442080403521,telemarketing,1,0,,phone_rule,
++8809601501500,Mir Telecom Ltd,none,0,+8809601501500,telemarketing,1,0,,phone_rule,
 +12402639959,VOXY TELE COMMUNICATIONS,none,0,+12402639959,telemarketing,1,0,,phone_rule,
 +13606805503,Little Red Farm LLC,none,0,+13606805503,telemarketing,1,0,,phone_rule,
 +443338880000,ICC Networks Limited,none,0,+443338880000,telemarketing,1,0,,phone_rule,
@@ -9133,3 +9134,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +19729994393,ReNu Communication LLC,none,0,+19729994393,telemarketing,1,0,,phone_rule,
 +13342725088,Oak Cyber LLC,none,0,+13342725088,telemarketing,1,0,,phone_rule,
 +14063066611,SHAMMA TECH SERVICES LLC,none,0,+14063066611,telemarketing,1,0,,phone_rule,
++18669497464,RingOne Communications,none,0,+18669497464,telemarketing,1,0,,phone_rule,
