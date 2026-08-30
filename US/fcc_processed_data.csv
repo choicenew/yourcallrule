@@ -8351,7 +8351,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +16464308046,Event Radio Rentals Inc,none,0,+16464308046,telemarketing,1,0,,phone_rule,
 +15126325066,E3 IT LLC,none,0,+15126325066,telemarketing,1,0,,phone_rule,
 +18777997137,Trusted Innovations Corp,none,0,+18777997137,telemarketing,1,0,,phone_rule,
-+18332063888,Advanced Network Communications LLC,none,0,+18332063888,telemarketing,1,0,,phone_rule,
 +19803250770,Business Telephone Systems Inc,none,0,+19803250770,telemarketing,1,0,,phone_rule,
 +16362485686,Brightlane Voice,none,0,+16362485686,telemarketing,1,0,,phone_rule,
 +16164227500,VorTech Services Inc,none,0,+16164227500,telemarketing,1,0,,phone_rule,
@@ -9207,3 +9206,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +85290744665,Tiger Cloud CoLtd,none,0,+85290744665,telemarketing,1,0,,phone_rule,
 +19166988906,JIM CORE REALTY LLC,none,0,+19166988906,telemarketing,1,0,,phone_rule,
 +12173815836,Womack Communications LLC,none,0,+12173815836,telemarketing,1,0,,phone_rule,
++14062534356,Advanced Network Communications LLC,none,0,+14062534356,telemarketing,1,0,,phone_rule,
