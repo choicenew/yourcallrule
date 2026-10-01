@@ -1,0 +1,44 @@
+name: Auto Update CallShield Subscriptions
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. 检出目标仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 2. 克隆 upstream 开源库 (CallShield 数据源)
+        run: |
+          git clone --depth 1 https://github.com/SysAdminDoc/CallShield.git CallShield
+
+      - name: 3. 配置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 4. 执行 CallShield 独立的转换脚本生成规则
+        run: |
+          python callshield/scripts/convert_callshield.py
+
+      - name: 5. 检查是否有数据更新并提交 Push 回仓库 (Choicenew 账号)
+        run: |
+          git config --global user.name 'choicenew'
+          git config --global user.email 'choicenew@users.noreply.github.com'
+          
+          git add callshield/
+          
+          if git diff --staged --quiet; then
+            echo "没有检测到 CallShield 规则变动，跳过 Commit。"
+          else
+            git commit -m "chore(callshield): 自动同步上游 CallShield 最新分国家黑名单规则 [skip ci]"
+            git push
+            echo "CallShield 规则数据更新成功并提交进仓库！"
+          fi

@@ -1,0 +1,56 @@
+# l10n.yaml (最终正确配置)
+# l10n.yaml (Final Correct Configuration)
+
+# 告诉新工具，你的语言文件 (.arb) 存放在哪里。
+# Tell the new tool where your language files (.arb) are stored.
+# 请确保这个路径在你的项目中是真实存在的。
+# Please ensure this path actually exists in your project.
+arb-dir: lib/l10n
+
+# 告诉新工具，哪个是你的“模板”语言文件，通常是英文。
+# Tell the new tool which is your "template" language file, usually English.
+template-arb-file: app_en.arb
+
+# 告诉新工具，生成的 Dart 文件应该叫什么名字。
+# Tell the new tool what the generated Dart file should be named.
+# 我们让它叫 app_localizations.dart，和旧文件完全一样。
+# We're naming it app_localizations.dart, exactly the same as the old file.
+output-localization-file: app_localizations.dart
+
+# 告诉新工具，生成的 Dart 类的名字应该叫什么。
+# Tell the new tool what the generated Dart class should be named.
+# 我们让它叫 AppLocalizations，这样 AppLocalizations.of(context) 就能继续工作。
+# We're naming it AppLocalizations, so that AppLocalizations.of(context) will continue to work.
+output-class: AppLocalizations
+
+# 告诉新工具，生成的 Dart 文件应该放在哪个目录下。
+# Tell the new tool in which directory the generated Dart file should be placed.
+# 我们让它放在 lib/generated/，和旧文件存放的位置完全一样。
+# We're placing it in lib/generated/, exactly the same location as the old file.
+output-dir: lib/generated
+
+# ======================================================================
+# 这是您发现的最关键的一行！
+# This is the most critical line you discovered!
+# synthetic-package: false
+# 它的意思是：“不要把生成的文件藏在Dart的内部构建目录里，
+# Its meaning is: "Do not hide the generated files in Dart's internal build directory,
+# 而是把它实实在在地创建在我指定的 output-dir (lib/generated) 文件夹下。”
+# but create it physically in the output-dir (lib/generated) folder that I specified."
+# 这样，您项目中的 import 'generated/app_localizations.dart'; 就能找到它了。
+# This way, the import 'generated/app_localizations.dart'; in your project will be able to find it.
+# ======================================================================
+synthetic-package: false
+
+# 确保生成的 getter 不是可空的，与旧版本行为保持一致。
+# Ensure that the generated getters are not nullable, to maintain consistency with the old version's behavior.
+nullable-getter: false
+
+# arb_translate configuration
+# dart run tool/translate.dart run -t de,fr 时：
+# When running `dart run tool/translate.dart run -t de,fr`:
+translation-provider:
+  name: google
+  api-key: "" # 您的 OpenRouter 密钥 / Your OpenRouter key
+  model: "gemini-robotics-er-1.5-preview" #choose your model
+  base-url: "https://openrouter.ai/api/v1"

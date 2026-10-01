@@ -1,0 +1,187 @@
+name: Sync China vCard Data (CN)
+
+on:
+  schedule:
+    - cron: '0 0 */30 * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML and requests
+        run: pip install pyyaml requests
+
+      - name: Fetch and Clean vCard Data
+        run: |
+          python <<EOF
+          import yaml
+          import requests
+          import os
+          import json
+          import re
+          import csv
+          import ast
+
+          base_url = "https://api.github.com/repos/metowolf/vCards/contents/data"
+          headers = {"Accept": "application/vnd.github+json"}
+
+          response = requests.get(base_url, headers=headers)
+          folders = json.loads(response.text)
+
+          os.makedirs('原始/cn', exist_ok=True)
+
+          def parse_phone_entry(phone_raw, base_org_name):
+              phone_number = ""
+              sub_label = ""
+
+              if isinstance(phone_raw, dict):
+                  phone_number = str(phone_raw.get('number', ''))
+                  sub_label = str(phone_raw.get('label', ''))
+              else:
+                  raw_str = str(phone_raw).strip()
+                  if ('number' in raw_str and 'label' in raw_str) or raw_str.startswith('{'):
+                      try:
+                          parsed = None
+                          try:
+                              parsed = json.loads(raw_str.replace("'", '"'))
+                          except Exception:
+                              parsed = ast.literal_eval(raw_str)
+                          
+                          if isinstance(parsed, dict):
+                              phone_number = str(parsed.get('number', ''))
+                              sub_label = str(parsed.get('label', ''))
+                      except Exception:
+                          num_m = re.search(r"['\"]number['\"]\s*:\s*['\"]([^'\"]+)['\"]", raw_str)
+                          lbl_m = re.search(r"['\"]label['\"]\s*:\s*['\"]([^'\"]+)['\"]", raw_str)
+                          if num_m:
+                              phone_number = num_m.group(1)
+                          if lbl_m:
+                              sub_label = lbl_m.group(1)
+
+                  if not phone_number:
+                      phone_number = raw_str
+
+              cleaned_phone = re.sub(r'[- ]|,[\d]*$', '', phone_number).strip()
+              clean_org = re.sub(r'-.*$', '', base_org_name).strip() if base_org_name else ""
+
+              if sub_label and sub_label.strip():
+                  final_name = f"{clean_org}-{sub_label.strip()}"
+              else:
+                  final_name = base_org_name
+
+              return cleaned_phone, final_name
+
+          for folder in folders:
+              if folder["type"] == "dir":
+                  label = folder["name"]
+                  csv_filename = f'原始/cn/{label}.csv'
+                  with open(csv_filename, 'w', encoding='utf-8', newline='') as f:
+                      writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+                      writer.writerow(['phoneNumber', 'label', 'name', 'avatar'])
+
+                      folder_url = folder["url"]
+                      folder_response = requests.get(folder_url, headers=headers)
+                      files = json.loads(folder_response.text)
+                      for file in files:
+                          if file["name"].endswith(".yaml"):
+                              name, ext = os.path.splitext(file["name"])
+                              yaml_url = file["download_url"]
+                              yaml_response = requests.get(yaml_url)
+                              data = yaml.safe_load(yaml_response.text)
+
+                              if 'basic' in data and 'organization' in data['basic'] and 'cellPhone' in data['basic']:
+                                  organization = data['basic']['organization']
+                                  avatar = f'https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/{label}/{name}.png'
+                                  
+                                  cell_phones = data['basic']['cellPhone']
+                                  if not isinstance(cell_phones, list):
+                                      cell_phones = [cell_phones]
+
+                                  for phone_item in cell_phones:
+                                      clean_num, final_name = parse_phone_entry(phone_item, organization)
+                                      if clean_num:
+                                          writer.writerow([clean_num, label, final_name, avatar])
+          EOF
+
+      - name: Process CSV Data into CN Directory
+        run: |
+          python <<EOF
+          import csv
+          import os
+
+          # 完全对齐 predefined_labels.dart 标准表
+          label_mapping = {
+              '其他': 'other',
+              '外卖订餐': 'takeaway',
+              '快递物流': 'delivery',
+              '电商购物': 'ecommerce',
+              '金融银行': 'bank',
+              '互联网': 'internet',
+              '出行购票': 'travelticketing', 
+              '应用软件': 'applicationsoftware',
+              '影音娱乐': 'entertainment',
+              '房产中介': 'agent', 
+              '政府机构': 'government',
+              '本地生活': 'localservices',
+              '汽车行业': 'automotiveindustry',
+              '租车代驾': 'carrental',
+              '证券保险': 'insurance',
+              '通讯服务': 'telecommunication'
+          }
+          
+          output_dir = 'CN'
+          os.makedirs(output_dir, exist_ok=True)
+
+          for csv_file in os.listdir('原始/cn'):
+              if csv_file.endswith('.csv'):
+                  with open(os.path.join('原始/cn', csv_file), 'r', encoding='utf-8') as infile,\
+                       open(os.path.join(output_dir, csv_file), 'w', encoding='utf-8', newline='') as outfile:
+
+                      reader = csv.DictReader(infile)
+                      writer = csv.writer(outfile, quoting=csv.QUOTE_ALL)
+
+                      final_columns = [
+                          'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
+                          'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
+                      ]
+                      writer.writerow(final_columns)
+
+                      for row in reader:
+                          new_row = [                              
+                              row['phoneNumber'],                        # id
+                              row['name'],                               # name
+                              'none',                                    # action (识别规则为 none)
+                              0,                                         # priority (仅识别规则为 0)
+                              row['phoneNumber'],                        # phoneNumber
+                              label_mapping.get(row['label'], 'other'),  # labelId (标准 predefinedLabels key)
+                              1,                                         # isEnabled
+                              0,                                         # count
+                              row['avatar'],                             # avatar
+                              'phone_rule',                              # ruleType
+                              ''                                         # subscriptionId
+                          ]
+                          writer.writerow(new_row)
+          EOF
+
+      - name: Commit Final CSVs (Choicenew Account Only)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(cn): 自动同步并更新中国地区官方号码 (CN/*.csv)"
+          file_pattern: "CN/*.csv"
+          repository: .
+          commit_author: choicenew <choicenew@users.noreply.github.com>
+          commit_user_name: choicenew
+          commit_user_email: choicenew@users.noreply.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}

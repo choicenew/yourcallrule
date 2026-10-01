@@ -1,0 +1,67 @@
+name: Sync Turkish Spam Numbers (TR)
+
+on:
+  schedule:
+    - cron: '0 13 * * 0'
+  workflow_dispatch:
+
+jobs:
+  process_data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install pandas
+        run: pip install pandas
+
+      - name: Download and Process Turkish Spam Numbers into TR Folder
+        run: |
+          python <<EOF
+          import pandas as pd
+          import os
+
+          os.makedirs('TR', exist_ok=True)
+          df = pd.read_csv('https://raw.githubusercontent.com/symbuzzer/Turkish-Spam-Numbers/main/numbers', header=None, names=['phoneNumber'], on_bad_lines='skip', dtype={'phoneNumber': str})
+          df['phoneNumber'] = df['phoneNumber'].astype(str).str.strip()
+          df.dropna(subset=['phoneNumber'], inplace=True)
+          df = df[df['phoneNumber'] != '']
+          if df.empty:
+              exit(0)
+          df['id'] = df['phoneNumber']
+          df['name'] = df['phoneNumber']
+          df['action'] = 'block'
+          df['priority'] = 3
+          df['labelId'] = 'spam_likely' 
+          df['isEnabled'] = 1
+          df['count'] = 0
+          df['avatar'] = ''
+          df['ruleType'] = 'phone_rule'
+          df['subscriptionId'] = 'turkish-spam-weekly'
+          final_columns = [
+              'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
+              'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
+          ]
+          df = df[final_columns]
+          df.to_csv('TR/processed_turkish_spam_numbers.csv', index=False)
+          print(f"Successfully processed and saved {len(df)} records to TR/processed_turkish_spam_numbers.csv")
+          EOF
+
+      - name: Commit and Push CSV (Choicenew Account Only)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(tr): 自动更新土耳其地区骚扰号码库 (TR/processed_turkish_spam_numbers.csv)"
+          file_pattern: "TR/*.csv"
+          repository: .
+          commit_author: choicenew <choicenew@users.noreply.github.com>
+          commit_user_name: choicenew
+          commit_user_email: choicenew@users.noreply.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}

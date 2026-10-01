@@ -1,0 +1,95 @@
+name: Sync US FCC Data
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  process_data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install pandas and phonenumbers
+        run: pip install pandas phonenumbers
+
+      - name: Download and Process Data
+        run: |
+          mkdir -p US
+          wget --content-disposition -O fcc_data.csv https://fccprod.servicenowservices.com/api/x_g_fmc_rmd/rmd/csv_download
+
+          python <<EOF
+          import pandas as pd
+          import re
+          import phonenumbers
+
+          try:
+              df = pd.read_csv('fcc_data.csv')
+          except Exception as e:
+              print(f"Failed to read downloaded CSV: {e}")
+              exit(1)
+
+          df = df[['business_name', 'contact_telephone_number']]
+          df.rename(columns={'business_name': 'name', 'contact_telephone_number': 'phoneNumber'}, inplace=True)
+          df.dropna(subset=['phoneNumber', 'name'], inplace=True)
+
+          df['phoneNumber'] = df['phoneNumber'].astype(str).str.replace(r"[\.']", "", regex=True).str.strip()
+          df['name'] = df['name'].astype(str).str.replace(r'[\",./]', '', regex=True).str.strip()
+
+          def format_us_phone_number(number):
+              try:
+                  parsed_number = phonenumbers.parse(number, "US")
+                  if phonenumbers.is_valid_number(parsed_number):
+                      return phonenumbers.format_number(parsed_number, phonenumbers.PhoneNumberFormat.E164)
+              except phonenumbers.phonenumberutil.NumberParseException:
+                  pass
+              return None
+
+          df['phoneNumber'] = df['phoneNumber'].apply(format_us_phone_number)
+          df.dropna(subset=['phoneNumber'], inplace=True)
+          df.drop_duplicates(subset=['phoneNumber'], inplace=True)
+
+          if df.empty:
+              print("No valid phone numbers found after processing. Exiting.")
+              exit(0)
+
+          df['id'] = df['phoneNumber']
+          df['action'] = 'none'
+          df['priority'] = 0
+          df['labelId'] = 'telemarketing'
+          df['isEnabled'] = 1
+          df['count'] = 0
+          df['avatar'] = ''
+          df['ruleType'] = 'phone_rule'
+          df['subscriptionId'] = ''
+
+          final_columns = [
+              'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
+              'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
+          ]
+          df = df[final_columns]
+          
+          df.to_csv('US/fcc_processed_data.csv', index=False)
+          print(f"Successfully processed and saved {len(df)} records to US/fcc_processed_data.csv")
+          EOF
+
+      - name: Commit Processed CSV (Choicenew Account Only)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(us): 自动更新美国 FCC 官方数据 (US/fcc_processed_data.csv)"
+          file_pattern: "US/fcc_processed_data.csv"
+          repository: .
+          commit_author: choicenew <choicenew@users.noreply.github.com>
+          commit_user_name: choicenew
+          commit_user_email: choicenew@users.noreply.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}

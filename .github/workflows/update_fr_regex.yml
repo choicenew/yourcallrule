@@ -1,0 +1,50 @@
+name: Sync France Regex Rules (FR)
+
+on:
+  schedule:
+    - cron: '0 1 * * 3'
+  workflow_dispatch:
+
+jobs:
+  process_data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download Begone List
+        run: wget https://raw.githubusercontent.com/oulixalt/BegoneListeFR/refs/heads/Liste-compl%C3%A8te/Begone-FR.xml -O begone.xml
+
+      - name: Parse XML and generate CSV into FR Folder
+        run: |
+          sudo apt-get update && sudo apt-get install -y libxml2-utils
+          mkdir -p FR
+          OUTPUT_CSV="FR/processed_fr_regex.csv"
+          echo "id,name,priority,action,pattern,isEnabled,subscriptionId,ruleType" > $OUTPUT_CSV
+          xmllint --xpath "//dict/key[text()='number']/following-sibling::string[1]/text()" begone.xml | \
+          while read number; do
+            pattern=$(echo "$number" | sed 's/+//g; s/#/.*/g; s/^/33/; s/$/$/')
+            id="$pattern"
+            name="Block numbers matching ${pattern%?}"
+            priority=3
+            action="block"
+            isEnabled=1
+            subscriptionId="begone-fr-regex"
+            ruleType="regex"
+            echo "\"$id\",\"$name\",$priority,\"$action\",\"$pattern\",$isEnabled,\"$subscriptionId\",\"$ruleType\"" >> $OUTPUT_CSV
+          done
+          echo "Successfully generated $OUTPUT_CSV"
+
+      - name: Commit Processed CSV (Choicenew Account Only)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(fr): 自动更新法国地区 Block 号段规则 (FR/processed_fr_regex.csv)"
+          file_pattern: "FR/*.csv"
+          repository: .
+          commit_author: choicenew <choicenew@users.noreply.github.com>
+          commit_user_name: choicenew
+          commit_user_email: choicenew@users.noreply.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}
