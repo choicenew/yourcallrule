@@ -1,6 +1,9 @@
 name: Sync US FTC Robocall Data
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
@@ -15,6 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Install Python
@@ -33,7 +37,6 @@ jobs:
           REFERER_URL="https://www.ftc.gov/news-events/data-visualizations/do-not-call-complaint-data"
           
           DOWNLOAD_SUCCESS=0
-          # 尝试美西时间近 5 天内的日期，直到找到已发布的 CSV 文件
           for i in 1 2 3 4 5; do
             TARGET_DATE=$(TZ="America/Los_Angeles" date -d "$i days ago" +%Y-%m-%d)
             FTC_URL="https://www.ftc.gov/sites/default/files/DNC_Complaint_Numbers_${TARGET_DATE}.csv"
