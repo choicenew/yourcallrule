@@ -1,0 +1,5690 @@
+[
+  {
+    "id": "1a8b0d667aa7528fccb3a5202b695577",
+    "name": "Saracroche: Telyo",
+    "ruleType": "regex",
+    "pattern": "^\\+33159110.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "660c2ebf52a8ab6a35cf882d681412f4",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33159156.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6a51cc9aa2941e2f33c8a8358faabe8a",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33159157.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cef168619960d979eba7644a2ebe00df",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33159158.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c5482eb6aaaf9fbddd97a2deb4b5da4d",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+3315939.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1997c7e2b4d44161af368f41fd2b271c",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33159490.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fdae38336044b1e9e6bf9867128c7892",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33159491.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "61e5739b8a27f97e649941df5586dd74",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33159581.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "67ee9ce85f7bc1b850732ea8a4333843",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33162.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8234fb7c2c255508fdb90a2c394d411c",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33163.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0c21a36f63c22275411d759dff0ed62a",
+    "name": "Saracroche: FlashCall",
+    "ruleType": "regex",
+    "pattern": "^\\+33172359.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "21015ed4509f6462c2494282a6c9031d",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33174879.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ccff133b23212a967b50146f180b38b7",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33177665.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "efce289e4f275be27b010a7c480cca72",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33177844.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7c7748bfb5b856acbeee83469302ddc3",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3318371.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7588c5871fd170794908ddd50bd435ba",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184642.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4bcaabc919b015c359cf86642b486a4b",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184643.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f7a62cbc62951d9026e70fdbff7f74fb",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184644.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "449003c6f3ab8eb7e2f40c130603fbf5",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184645.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3accc4d0cd45d96433bf1468243f72ce",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184646.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8983bb9e54ee8b4d9b2e41bc077b01d5",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184647.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9cb27a8325bccf45f24d941ba7dac38f",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184648.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4ff531c426242348b2adb0abf389c678",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33184649.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7c677f8065f5205931efd82f6aea6f55",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3318505.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "de9deaec9df205253ce3fac209c7a21b",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+3318622.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b8c74deaea502382a070e8c47318fe5c",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3318627.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "da899941b6c60dce11e059904fb09546",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3318656.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b20664aad6e8d778440ce716217c494b",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33186706.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1df504e873907af6e2485f223fb0772a",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+3318746.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f1e403f0135ea63d8d16978d3ba32de1",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3318764.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f1c92ea4089b89195e9b2801d20ceb6d",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3318768.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4da50a8675884dbe021e34b5b9f92bc3",
+    "name": "Saracroche: Vast new telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3318778.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "daea9fab37ec8474bf5f96a47a8b7d6d",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33187943.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3e1bf35bd374987a57fb4393efc0073f",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33187944.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "91133c343c94fce8cd240ee65f04a95a",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33187945.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e5977367e655857831f6c424cf8c2b81",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33187946.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4893e0d826d5388dacfd55bf796418c9",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3318831.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6cf8b003c41acf693a201dd94f192cd2",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188440.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "96c8aecbf0e3dd4d15f60d5f742afd10",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188441.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "31b2a447a12b4f85ba8593fb40786842",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188442.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "50048181b3ad4ca4a220402ad40e3d87",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188443.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2bfebacaa5b538a75b08616e3b005427",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188444.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fc6a79ef4279133a3e717bb9ebaf6996",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188445.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "33cbcf593612f4f053ffc7e7742acdea",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188446.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8625f029c139d7c1341ccbd478696a41",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188447.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e0e44cbaa4f87be5a95f176dabe54419",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188448.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3484f023241cf3605db5c5fe02390c91",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33188449.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6b9757f93037c307292c4360089f71c3",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3318875.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5dbff3ff47f2c1db2f29b2a42852083e",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3318885.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d4918b1b4a855d71724eaeb1ef701b74",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3318900.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "027b4544398c2cae6279089af2455f7b",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3318904.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "12f081d11eb4265f1d17770b5f40471d",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3318905.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "de5d83f21fe342ba525f0c1887d696c3",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3318906.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "05b8e0fcfbdb694d6837d2b775450e61",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3318907.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "91a1998241162962b0b59412955f484c",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33189366.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cfb423b799fe7b4cc749be967bb2be56",
+    "name": "Saracroche: Sonixis",
+    "ruleType": "regex",
+    "pattern": "^\\+33189369.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b669ba3c16f8f7f9c29b338265a7ed1d",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33189375.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "afd39ddc46535a91e5ae1d5db44d371e",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33189376.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6cc910a444695f608c31a315ba714759",
+    "name": "Saracroche: Lineconnects",
+    "ruleType": "regex",
+    "pattern": "^\\+33189379.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2ab6d08cd7dbf331373cc7b0fc562597",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33189470.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4cae8cbdb22de15e5727b2619470f631",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33189471.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a4919b40fe7628d6b6ccf209f97929b3",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33189472.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a888803c280797d8ef46bbd8c38a3c1e",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33189473.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "64c922aec4ea6a90a2fc9def25bb2c3c",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33189474.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "afc652d2c35f7840fe6c75ba04323c5d",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33189477.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c09314a1e0535807b70f690f965f5b07",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33189479.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "abd156e00b4b41786d29240280c6d88f",
+    "name": "Saracroche: Go Mybiz France",
+    "ruleType": "regex",
+    "pattern": "^\\+3318949.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "88cf589a73816ab3d76a15131f0a6fe8",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+3318956.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "568c3f2b9489884b6614212f0c2bd4cc",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3318960.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e569505dc5b636d38d8bd0bffc78d53a",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3318961.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7e48871698995063fcdfc6f0ec8b9f4e",
+    "name": "Saracroche: Eone trade",
+    "ruleType": "regex",
+    "pattern": "^\\+3318963.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "81a3abcab9c42badb42a21ec6d09f533",
+    "name": "Saracroche: Cyd-solutions",
+    "ruleType": "regex",
+    "pattern": "^\\+3318969.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "daec4fb1a54709d7963daaaa8046e734",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3318978.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "87d385b22198a55df3b4793aeb14f8b0",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3318986.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c9b0074cb586678d6fa0198a0ff802ac",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+3318992.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2112ce8b12c6f28a3724590ac7cb6f54",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33189931.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aab92d1e88eb3d6fda25d49250e885f9",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33189932.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a92e9a4c8af882b050b282a5cadeb805",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33189933.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2ee34a3a9cdd38b5fe11a564617f3797",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+3321465.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ba50061018310e4f29a8420a10049c75",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3321901.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4bf463d6c7847766fea4130a799eb40e",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3321917.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7340e61c6a93a41dadb3505aba636775",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33219271.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "220d2dd76415cde6c81c5ba76ad71e9e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33219385.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0e5ca82034832c6dd58eb450b7fe937b",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33219386.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3a7da64369495e151ee9282ffdd6a710",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33219387.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0550707de48e107092bf5ff95f9c1ca5",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33219388.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "126db447bfa4d356b03fe734cfca34ee",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33219389.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "611c5b7e45f3474fb50afa658c26ebd8",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3322164.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5bbcd8d6bc9a0a5008e63c42a526b5d4",
+    "name": "Saracroche: Sonixis",
+    "ruleType": "regex",
+    "pattern": "^\\+33221824.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0c645bd2780f61b3a409ff40d2291451",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33221829.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "933d7c2169dbcde1c83ac6afa1829d8d",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33221847.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a68c56782f96bf0cca05bfc3167022e7",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33221848.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5bc320458a49534fbe0add2c05af2d08",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33221849.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "78ebe12c31f1e6ca9bf9a31e806701ff",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33221870.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cc0c1972c057cb95bec01f0f484f5171",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33221871.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cbb45760c74b6d17afefd3eddba3575e",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3322196.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "76c7bdbcc6fa060b1b6bb936c280ec95",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33222913.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1aa109d407822516594999d2ea683962",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3323488.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "73345065a7015157580208d507311eee",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33236571.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cead98200458d669f68cce0dc3fd6917",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33236586.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9d5138dd3f3067e94c980beb257e85b2",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3325504.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1932f86d19262e38a387a5f0afac840c",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33255371.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae68b2b6743400149d57aae6d075a4a8",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33255372.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9d90a56b5cb4208e9cd3d78de82f16cc",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33255373.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f0a74cb536ad3f684b082caca38526c0",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33255374.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7ec95a220bb1d673e1ef1bf4bf0c054f",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3325542.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c1f3f7035b8754874a916f4a33c4b1d8",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3325545.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "73d0715e63819fd3eb9094c24cfa7424",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3325551.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ea4181a9b857413e07734a32443384be",
+    "name": "Saracroche: FlashCall",
+    "ruleType": "regex",
+    "pattern": "^\\+33256352.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e7555bed9ff79fb158668da3e377fe84",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3325753.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b3f9f84fed522e7c7cad365ca2ef487d",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3325835.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "821627f4b677f84c7bc1b63dc924d1a3",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3325839.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cd810d58f194958913320b4fcbce1deb",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33258480.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c22d5cc644b4042c4b365d6dde187e9a",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33258481.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "db7c069e08bda67cbec458c788acf2c7",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33258482.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "510e37bd1b77d47f5bff074cf622bf54",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33258483.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "203262da210f130a14a00241084e69d3",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33258484.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cbc67c9268cf2b0bfe1c605914630a5c",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33258485.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cb973e9de4cb3b2866515f9c428bbfe0",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33258488.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "dbfd4292aaa0ce4011b5e5da7f8f539c",
+    "name": "Saracroche: Go Mybiz France",
+    "ruleType": "regex",
+    "pattern": "^\\+3325849.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6b78e6a0f3f975767684c00e16aa4c21",
+    "name": "Saracroche: Cyd-solutions",
+    "ruleType": "regex",
+    "pattern": "^\\+3325856.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "185f200163942ced63c23ef39801f8ba",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33258580.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "20943f150d0e9461ea8085b0debf3969",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33258581.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f3723ac184efc9644d71c1b5d7b6b7ae",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33258582.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3b06ac558e9a9b366af40fd29452e60d",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33258583.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fec651c0712ac39c3c59206672aada9e",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33258584.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "58b9828464ff3598249e9874cbaacbdd",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33258585.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "874894d1642522a8b25a26e36e1244ee",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33258589.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e7247b13e98d4c72ef57977baa25894d",
+    "name": "Saracroche: Telyo",
+    "ruleType": "regex",
+    "pattern": "^\\+33258610.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "251c6aefc706855b3d5fcfe836bb657e",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3325908.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "795de127b1c0d94312114863638261d0",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+3325933.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "188cef5adbd9618cc4c23928f67e043b",
+    "name": "Saracroche: Eone trade",
+    "ruleType": "regex",
+    "pattern": "^\\+3325937.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2b63055bf961dd19451b692c73e1cd6f",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259590.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d01ad6fc5b82de70775ad0618424dc1a",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259591.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ab6b3a5358a1dd00280cd44add7ecbd9",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259592.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "69ed9c2aacfe5aafc5658a5028d3e0c0",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259593.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a31c216cb5e667ce0ac5a3f584051802",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259594.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d9702ba14ba66e0d50823180a957aedb",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259595.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c0a58acc709f0fe084da120a0760b3f3",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259596.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "25e2ba8124834ec71883dd840d372ad2",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259597.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f5c57fb8a8993c35a8ee608e499325af",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259598.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a99b2c6718a421a79f54501afb9aef01",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33259599.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a7dbda8ad5a745a6b6415edf8a3aecdd",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33259671.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b6d3f71fbc3685cbec1ef399a660a540",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33263020.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0a7b87e859457d859220d7d81db15384",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33263030.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2736d16569c20e317bc7da613a0c85d1",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33263070.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "246e05d6e696dacafa18e0ca5f2b292b",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33263071.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7dabdcdec170c7e7d8e6cd95bbca2a9a",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263080.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "73a9c3f3a251399f34bdfa4ab03567ef",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263082.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f0765431cf0fa7186fadf98cafedc543",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263083.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "982c9fe8e83fc4d16638107b2083987c",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263085.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fb6d4691718d870b3072683825b587dd",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263086.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a88dd6caa517c33bce9d036f627ee3d0",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263087.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c02687deff0d5861c6fa49d38a432faf",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263088.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "81b9f75891fcb78fc25d6161afd4dfe0",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33263089.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "dcb3b1fa385b5d9e727746cb157d43ef",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+332688.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "af6344d2b83c091de2cede86bc29900a",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+332689.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "67c677b22d1e3a1d62d5cd15cc240cb4",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33269000.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a739dd754c5923708075fa845517c14d",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33269026.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2e553251b80d5d44efa970740f70f0a6",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3326967.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e8293cc8b3b5bd77e89598fb6a2ac4bf",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33270.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "59b29223a0cb3abbeff70c1ad63732a0",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33271.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7a9714451ef5676c853008be829d1826",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33276201.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "28bf39ffe946fa5073a5194035c4d43c",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3327940.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "16101a00eda6765524fe225154e12669",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3327946.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d5384fb48224fd9c8a337231e412cb52",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33279740.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0ff03db8609e4224fefff00a9defa468",
+    "name": "Saracroche: Lineconnects",
+    "ruleType": "regex",
+    "pattern": "^\\+33279769.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "71ceb76c4fbabebd58b4e87a5d63245c",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3327979.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ed8d6971f32fb5a5ed9e0865f0d43417",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3327983.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e916285f8b45d7cb0cf8a625618c3cba",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339072.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "33976c35350df58d6d489678dee8afe9",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339073.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "baff6764774b7fd068c9e55388253bc0",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339074.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c446483f3fdafac26b8d923eefddd48b",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339075.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "57a49f0b77ad48709849518cdba5c43e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339076.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9f0613bc8ae01cbfaca8125cf7db35bc",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339077.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "943f4c1a3cddc51b260ddf27d59d6823",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339078.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "12c9264063d97d532594349c54a4f04d",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33339079.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "70abfb9849d15dca24fd5e56b0787c26",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3333950.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "03f034300ed7d647f77fc4f4975700c4",
+    "name": "Saracroche: Lineconnects",
+    "ruleType": "regex",
+    "pattern": "^\\+33339582.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b159d570c616e84eeff6976cc6b5b3a4",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33339667.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d8cb6984c5cb0e74609ffc7234cfd7bb",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33339668.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c674e5cf4d2c3275601eb4661f419b13",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33339669.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4253abbbbbb3c7c9f047e6edc887f894",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3334529.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a34c75dcaedafa107f3f9575b9542afd",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33345898.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3ff138c86084f4844b516bdefe3e0224",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3335349.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "17ef91ad27336402c10a7b95ff723c7a",
+    "name": "Saracroche: Sonixis",
+    "ruleType": "regex",
+    "pattern": "^\\+33353653.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "30d0c5d8745f8e4c282767a94b6a9f44",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33353655.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "755e558eefae504fa29e2ecf8d2271ed",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33353658.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "51555301905ea10adcd2871459eee257",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33353659.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cf28c84a7bfbdd8d15de2398068f4e5d",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33353708.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3c7e14ba1648fbcd85c83bd6fbde0e7a",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33353709.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bb60c0b93c606c2c99bf4ca9c1d96545",
+    "name": "Saracroche: Telyo",
+    "ruleType": "regex",
+    "pattern": "^\\+33353730.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8cd447204b734cbf916e00c81455f7fe",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33353791.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4aa107e8d1108a25ccfde110e6c9d920",
+    "name": "Saracroche: FlashCall",
+    "ruleType": "regex",
+    "pattern": "^\\+33355621.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae881254c72c1060f95a685ec07c14f4",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3335633.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae4be6307b4ca54e1571380c974a1cc8",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33356990.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e3aea9c3fbd2689201def726bde42b98",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33356999.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b5728833e8031920b058b488cddb22d1",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3336747.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1f42422817327c653ed83d296fb08c89",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3336748.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b22863a793aa2f5e846c14dc82397ef0",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3336768.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c8407c7b0a3f65aad73ae2c3b9224d72",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33369069.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "56e319035f7fa3054870022d825529d2",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3337227.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2b846f6c4a8369669c02d52f1512986c",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3337287.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a68966606bdcc276f31c67853af80717",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33373356.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4ae428fd9c8e3dfc167c4962793c1483",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33373357.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6e9b2367bce9ea909a0fe4dd9aa37726",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33373358.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f50b5118f38d9048d1636ee541d39f95",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33373359.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8f941746eaf10546ae2d0e7bb3b255c9",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3337408.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e3c2d4cba8a2e2103d1cfb29c8359d8e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33374531.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1e928d9c399f0803bf3bb4a662f339d3",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33374532.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6e92ec3688ea7b3cf36cfec89a3ce39e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33374533.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "08c4bcec2943ba611b963979929008dd",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33374534.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "95cdf802cc8ab64de1317c95e02479ef",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3337466.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f8073f6939ba29696b84625f25a4fd4d",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3337577.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "65d50b79eabc4cf6cbbbb75eafa2d19f",
+    "name": "Saracroche: Go Mybiz France",
+    "ruleType": "regex",
+    "pattern": "^\\+3337584.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9992a0d2dfe02666e37691fe4e184531",
+    "name": "Saracroche: Cyd-solutions",
+    "ruleType": "regex",
+    "pattern": "^\\+3337592.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1bd03cb3e7a8af4ef279d9ca03d967c1",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3337601.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f239f59ad7fdfab3f9ac47316fbb1726",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3337609.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7e9468530e19918c8483f7402df5546b",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3337612.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "86dcde38bf6fcc00091af556f384ad7d",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3337629.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e231700e5cc05a860199024685289349",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33376440.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae6bff5318d8ac27281692e9b3c9b917",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33376441.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c854dba2a83854d85afb320619af6149",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33376449.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0c0bcd464062e49c91eb896921bd5e5e",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376470.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "38b0f15e5190787b2073f5bd31962341",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376471.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "152fe0b1ca8d86bf6f4996b120445976",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376472.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bb5889e96cef5fad0b0eb98b3c356356",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376473.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3210233013e00c7bfe9275c2e8f0b679",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376474.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6a1cc53d3679718d69263132d7eec12c",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376475.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "51256638a48d5bc7d42c0a12220bc7fc",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376476.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "352ced29063685384be2cd2532aaf97c",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376477.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a0b6c0674f7f3735f8634113db6d7d56",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376478.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4a74cab9c3155d82ee13e683bf8aaa7c",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33376479.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a22561f2cc01371cb70f765bc8a7a7e5",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33377.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "71aa31f896172974b222e26a6a2cc2ae",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33378.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ab36e1a9277abd51c659d70797bd2c0c",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3337933.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "61d4c948d68bd9527b6ec5e58acc7dac",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3337949.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "eca87c3a8d809edbbd47fb1a71a27903",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33379580.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c5a9ddf1e43d36283653a15d8d823481",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33379581.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "51e229d2cf18a09a8e28404d5c9b68d4",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33379582.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6a3ff3866ff254d5bc9c17dd194d725f",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33379583.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3ad6e7c0a51a148f1f149b5758f71ad4",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33379584.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8a0dfc2ff4521e99c65d299d29d233af",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33379588.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2ac3da488bbaf512285099457caced01",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33379589.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f416f9eb8b93aca173f90fe5992d62de",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3339204.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b5b5e1acbc5fc0f5e4e7251d03366216",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33392140.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2cde7acf5c681c74b641b3f9d5ec427a",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33392142.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0a65f3fb4eac835917b10e831812b3c7",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33392146.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "16943e4af71e7a5d5a09eb2fc0cdf237",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33392148.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "feb2e2a258d3f0720ce41f2b011f6caa",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33392149.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "24a88e5e402e7affbad56306ee9ce7af",
+    "name": "Saracroche: Eone trade",
+    "ruleType": "regex",
+    "pattern": "^\\+3339217.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "121134b72eaada79b7fc143a38917acb",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33411348.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "846f2db405aaca539a029ffbc4123e31",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33411349.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "18cca887d21e7198e42887257a624ec3",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411761.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "826462fd2e07ef67801879ca5885ce5d",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411762.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "481c8c8e2545bd78007b4f8501f0d96e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411763.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6d989cb3dfa2fc3907677640c43e1af5",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411764.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "91b40b5d34d809a13e4b968c8693288e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411765.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1068363a28c23b4fa9d772d19f1bcae7",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411766.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4f1dba00b69306cc2a0f8a03198f4b5b",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411767.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c67f5fb1f2fdbbb39ad08633a8d05c8c",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411768.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ffd7ea0acf6e2d259ba0d2314242de9d",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33411769.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9a3d3d7c8de31b2e6c24edf1d66023b8",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33412067.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e59653793a35f757fef712be1b4f5478",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33412068.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b5ab2a660571d961e17e324b2a0bb53a",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33412069.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "412aa0ca8d1a20115529739c7640a13e",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3341207.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "03079d649018fbb9a565846c0f5fe134",
+    "name": "Saracroche: Sonixis",
+    "ruleType": "regex",
+    "pattern": "^\\+33412134.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0672f68695eb8437f0579196d23a18bb",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33412139.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0657d5ea5f9fb2e68210039ef422a7fd",
+    "name": "Saracroche: Eone trade",
+    "ruleType": "regex",
+    "pattern": "^\\+3341214.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8b1eea553349ce19d35980b8f62113ff",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3341226.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3f6f2e81b4032a7106cc593206fa70e3",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412370.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a9a75c3a66f246f1e979acf97ea85576",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412371.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d3908694cfa62e93cabbaf3581441113",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412372.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e53b323db40acbee631a97317ab53b55",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412373.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "58a3b19a30754cf2b8d9243bdb8232b5",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412374.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "23f95f4018a318cc9a8366a00bb39fb8",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412377.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "11dfbbcc7693f21e8953a412731b2bc0",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412378.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "96fe75eb4e7888bf05e5858b283abd19",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33412379.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "189f50279773509f62396d7c9759058a",
+    "name": "Saracroche: Telyo",
+    "ruleType": "regex",
+    "pattern": "^\\+33412410.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a54f961df69f91e88add02d58b90670c",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+3341246.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5d0e3fbfd178689412935e81a26e4e76",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33412470.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c599d3a9c2126068a72e20c953d78e68",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33412471.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "63a8c0d1aa16b3e65f66ecb434258a75",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33412472.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d306684a49d562a80a60b939a86ec526",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33412473.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aa143052f1a79295f3e721b793f27d99",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33412474.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d6f78a7dd44969217dffae89e3074d5a",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33412475.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "67b2ebb1619f4439dfbdbd97c84ab83d",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33412476.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fe426bbb99dbdd72d928cee95a211c77",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33420220.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f2cfea14e86b2bfb3345697b2a449f1d",
+    "name": "Saracroche: Lineconnects",
+    "ruleType": "regex",
+    "pattern": "^\\+33420230.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f9b55c827787676d18360cb5ec35d906",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33420261.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f71e86347ae6f5f6d70153eb7a808986",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33420264.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "30d5266465439671f0c94f2a6ab6e292",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33420267.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c3a24bd3a397b327ad87652f06990d72",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33422453.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f33ffafe675f140ffe333144add60eb1",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3342285.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ed14993b6fd1cc6b90152cda2ab79c1f",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3342300.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "45b05eaf107a29a5a6366b63fbfe581e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33423035.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0739701bdd22a82e6b33d7689beda41b",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33423036.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4e08e053dca7167c690d4852afe17539",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33423037.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8f953a382d05304c0a786485859285ad",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33423038.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "75befefd6a16a974dd51d2503774fe97",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3342310.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0497991f00ac6961250584734ced5cef",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33423411.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "663c439c6ab9acf949fb8e33a034c8c6",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33423412.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a91f6ed4755c177ee8bcae421b18f0d7",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33423413.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4924ee5007d8c740988b453b389a8ca3",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33423414.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "21f198b4dc00599434fb5d6c5c9dd472",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33423415.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "af4605731bcd06b535e8f83fd62ebd5e",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33423418.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "078bd597a303face823c5d55faa77132",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33423419.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "46e510a69d2e67d64cf0af7025422b26",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33424.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a13aad972342c08db30d78c73f67a343",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33425.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cfe4c9742f2f49a31f866fe994c2e61a",
+    "name": "Saracroche: FlashCall",
+    "ruleType": "regex",
+    "pattern": "^\\+33426889.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a0b1df9477adb48f65061767fdf91fa2",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3342887.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0e35183a7d02af52004e300dccdaf833",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3344902.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9665816a677b09c786c5a79038f51ce9",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3344912.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9a19d7eead537958e00cfc60caa34665",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3344914.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7f1d2a253cb3c42f1e89e1e6683c2517",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33449310.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8868a75a1818f52fe2d3611cbd07c7ce",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33449311.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5e2649679d309707776140487ec7bff3",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33449312.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4dd6df9eb1b572528e07be7802112c5c",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33449313.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e5c222f27d6011de3c6ff3190148529f",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33449315.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d501e24c1a4a7a166cafa052b29dae18",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33449317.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "951d54fc6f81b3839f9dbd93d7f10a50",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33449450.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "54ff8df2e7be73a505447527d61c5e7e",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33449459.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cd3fb929cf43f1f1f40d555eccdc401e",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3345109.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "16837d78639a39a13e180ae1f3d5e2bd",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3345112.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fcea966940ac1c7b0a85762e26942c10",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3345125.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2a62ca4a418d50fbebfc8139a06bfb71",
+    "name": "Saracroche: Go Mybiz France",
+    "ruleType": "regex",
+    "pattern": "^\\+3345129.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ca88af0d49856b34189cb9e5f552364f",
+    "name": "Saracroche: Cyd-solutions",
+    "ruleType": "regex",
+    "pattern": "^\\+3345156.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "77301cd41da687c5e23b71af14496b23",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33451610.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0d36ce8406a29f8e1b39f277749841a2",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33451619.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "964a05f3a47155d36e84960d30cb7371",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451630.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7653f01583849b6ff75f0d5d1fb142af",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451631.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "dd306bb8db01b2ce2540914c69d1675a",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451632.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e66609be5603a2dee8fb8afeaace6a16",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451633.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "079ffdb407ffa50099bd8dd153e46ea1",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451634.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "91a8a0bf7f45a1e23490f06798d1801f",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451635.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "838cf20092cf35cd18d3eb32e20b0967",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451636.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae2d0b314215a862e9fed503dba9e80a",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451637.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "126b7a00e54fa040f2f3957f400a045b",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451638.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f1e6a9a4d51e27ad2fd7042beec85cb1",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33451639.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aca06c1f6d956aa70245675c7a78bbbf",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+33458430.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f0d3f7e55993d45f45ded26e75328deb",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+33458439.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5258c379e3d67e4b7fea270a55bfebb2",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3345855.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b2dd989175ad3c281aedd9234990661c",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3346563.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "44f87757c8123f72a86a5189a5dd5557",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3346565.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "581e0ff8c2d49b4985e55647ec16ed7b",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33481063.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1d63261d4510cf785ce167907bd2d911",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3348481.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7f99972ee974eb7877e324540ef24593",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3348488.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "17212b68e9ba4b35d8c84ad56d6cd894",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3348783.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d6b51015c3fd9826220fef9e13aeafdb",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3348793.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aa82aa540b5b5c468ca5782f32d034ff",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33508510.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "346ddf5d38570889fc604295451db4a4",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33516472.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2c1b631c5b55d49d27fd8adac8cb8fd5",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33516475.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d9f3d7fc79f6eea5fdc6a93df3f92eb0",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+33516476.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "dbfaf6b2389b72b76b8cbf953c8ce3e6",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3351807.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a056c8b3e1680c89dffa2dba7e5e98e8",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33519089.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "abc7860f603bce6a5727730872ca31e8",
+    "name": "Saracroche: Lineconnects",
+    "ruleType": "regex",
+    "pattern": "^\\+33519093.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8662a52de7065a5526b4433971cc5a3a",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33523620.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4ad7509982d4a60394d440c2d0440049",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33523651.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "78f228a3377fb3ec686eda05be201c9f",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33525284.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b2863042ceefd01d6e62aa01146d2247",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33525313.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4a31352d822d6cd9cdb48c41254cf910",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33525314.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3f645ac50c071a5edde145a79f47a3ee",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33525315.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d6deb2b814e82b2f9efa10f04c752881",
+    "name": "Saracroche: Sonixis",
+    "ruleType": "regex",
+    "pattern": "^\\+33525342.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d73c1c3540cdf8e134a74ef4dbd50734",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33525347.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e8d12c16364aef29a872ce877bc2ad28",
+    "name": "Saracroche: FlashCall",
+    "ruleType": "regex",
+    "pattern": "^\\+33525348.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4f8044aff1cb6ee21bba230478cac6ac",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33525349.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2dd93c4ef6d1e21be29765bddacbd570",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33525360.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ee14a146a0a33f7158c46400a04b2b7f",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33525361.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f036658904769dd24578e441e42ca5e3",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33525364.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9bff737d7e31da9e8a5e9379cefff138",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33525366.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "89c165e705d45ab7918877b19fb739b4",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33525367.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e788b98faa77092db3c125cfbaa0c05e",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33525369.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2751ff3d416215b5be0bfcd4161d1bc6",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525455.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4989da90a8dfc752c48a54d181fe3ef0",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525456.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "eea67aeafee55b60e239c0e435dbbb9f",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525457.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4dab8e3ff3a3b0c1f1bf124c7553672d",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525458.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "093e19731821627ac19a0d9c47367983",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525459.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ef4c9621237d8398d021b44d1d4c7cba",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33525460.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8ea15572136af7554c97db9e35fb08a5",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33525461.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "898a7488a78526127225f57dc6aa70c2",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33525463.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bbaaed5888c994665ea04db6b094e2eb",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3352547.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b46bf6590b91d336e8cadbaa90893eba",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525535.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d80cb38f8d670d6bebc63bede9109f78",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525536.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "80f773601547758eb7977e959b8ee71e",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525537.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d0b1506f500fb189a013f5a4d8107d9d",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525538.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8d4c925b06af0a0764404acab723d652",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525539.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3a4587a9cb3d4861f85a356e7348c6cc",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525540.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "231c34e7acd68a867155d292db6ec1c1",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525541.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "be8d3084fe4c3cf866f60139ef2fc9ae",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525542.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b93ec9ec762cdae54cb515a3370c9f43",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525543.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f31fb9d7cfc4e61b7f92a714243c84a4",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525544.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0e8f05a8191a943d4c1ac2d1cfdfcb6c",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33525545.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b8ef6399dc3ee6990128f89d8dbc1e85",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33525610.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bed37507938db602c5bfa07bd0bcf6cd",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33525611.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5c16c547c8c8516ebc3ffd9efa846172",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33525612.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5be816670efd169177d8d8b94f566091",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33525615.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a55864b4bd25d4a21aa25b863d5c539b",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+33525619.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "45bd72b23a1254029a66b284462622bb",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3353200.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "833ffed9828777df0f5c9a44fa1041c0",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3353257.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1f4f21bb26d4ad4cd68e272df546be0b",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3353275.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "33dfc6ed76395e69c48014e22c788395",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3353292.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "17e9c57f92fbda29601bbd2a47f78cda",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3353294.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bbb9e2ad0de6049496ea30dcd1ae7bd1",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33532994.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bcc49af7a9ca80c8321fe65caf85f7a5",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33532995.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8eda971a709490235ae9eb46d7cb063a",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33532996.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6bbde768e94299aac876bcaf6e9155b5",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33532997.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "06e161cbe426962ab7060b831179dc97",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3353379.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "345af5aa8f88e92ab32ac971c936ae20",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3353666.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7e23de61655e82142699245c45af20ec",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3353669.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b1121c31e06d54f7aadb5286f1fe04ee",
+    "name": "Saracroche: Go Mybiz France",
+    "ruleType": "regex",
+    "pattern": "^\\+3353690.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6d8a4e5f03a4f63a1d087084ce13b248",
+    "name": "Saracroche: Eone trade",
+    "ruleType": "regex",
+    "pattern": "^\\+3353696.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "986c4d79a0453a27278c53f38a5c4daa",
+    "name": "Saracroche: Cyd-solutions",
+    "ruleType": "regex",
+    "pattern": "^\\+3353712.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "03c3703151cb4f24321c77d1ff7340c8",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537160.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5beb6716404f7300b8597eaa0eff558d",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537161.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3a337451bb938ac8acd4946c7c024b8b",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537162.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1ef5ca9711d2cd646e54112c0210f4cc",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537163.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5066cec0c0ea30c12cc0c56875d4135d",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537164.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a14d4a2c43a6670d89a281d5caaf6d26",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537165.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "14a736798a3c84ead50a8ae6aad0b6a1",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537166.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e3bee42a70ebadd28a8026eaecf410b7",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537167.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1606d7ee331e17812be9591a400460bd",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537168.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a538b795878c4e033a26494ad6489b63",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33537169.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "93bae6eebe359814546b213091ce9a96",
+    "name": "Saracroche: Telyo",
+    "ruleType": "regex",
+    "pattern": "^\\+33537200.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b8ec8ff04b1b1f8c0c35d2eef6e1fb4c",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3354814.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "16e913a1ce362966b5d85a82cc403f47",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3355464.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "82d7adafe115faff265c7931a32553b0",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3355465.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "929eb76d1b2b667f9f31541a5a1bc99f",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3355472.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e92aa5cbd3f7700a09630af23ccb5bbf",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3355493.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d89e22a2c44d85bbac30849805bf0cdc",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33568.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fa3ebf4c37b0e267df4533a5ca0ff893",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33569.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ad42ae343a738f43722b9a8e71cd1e5f",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33590160.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "844a90d3ea61860db4e42921bc817913",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33590162.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f27dab292ced38206029209289e24891",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33590169.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "960835449c167540a636cbe6cbec8d86",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33590170.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "55022e7154c49b89ffce60916af36883",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33590171.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c1f719092743c7560ea3fa35fc679fca",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33590172.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bc0827f21d16251f4f9f46bf5fa00b43",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33590173.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fe1987cb6f00fd224194bcc98ff9a5b5",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33590178.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "332320cb3deb9e4dbcfc1b70b68c7ccb",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33590340.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1d10ca71b3c520f045f08216512ceab5",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33590344.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3f6931d8ad2a1a72cf6bdc41e7f049b8",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33590345.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "53a6b868659870c80d46dd92d32fc2a0",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33590349.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1c74004ef5bc64b0e10315a3c58a3dfd",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33590350.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e7a8e017e0e913565ed9ac815a43b14f",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3359441.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f6be4e13b144166a6e072b887c9e7ff1",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33594420.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5cd9d27f5c4650194518c378603d4f8d",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33594950.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6bbf37511020f889c94f33957773b60c",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33594952.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4d4907aa1fc42c1d72ea37a2c1a54ffd",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33594959.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3cae2926b4b4fe89ba22db5ccdaa334b",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594960.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "26a531625926ab0fb5e1083af7f9e434",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594962.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "622e1aacf33ee24fc34abc8cd5b46a7a",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594963.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "84eeaf1b2a68888fc232239fa34fb8cc",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594964.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "326a3ae25ed8fed6212bd8ed740e8eb5",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594965.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "042aedf741f0dff2104ab11b4529e5cc",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594966.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ef0947f09d60a5baf49faa84d588afbc",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594967.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f51770d5a943c24ca9f1b804578222de",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33594969.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4c8acc2271b19cdb048f6c6374ee586d",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596310.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2cccff294b945911f7fd4a4ecc069aa2",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596311.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "966fbe003b71647c66168a24ac7ce0d2",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596312.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "20f6d235cb61db60c2ca91253dc10398",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596313.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "383f711161a9d5fc922b7dbe7347f997",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596314.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f9d4236bdbedd52608b009b16b7acf82",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596315.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b1c2278f34da7e39d43da513496f2e4d",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596316.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "036ea36d4870a875bb3d1618f8bc0e3c",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596317.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2d7738a533063c213a47d037286fc5b7",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33596319.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c390a82dd82b8d31462c1e221c7f3c96",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33596450.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "944674196e3ecd5a9c53b1d8edcb1cfd",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33596990.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c5ec11ae42c493d7e4fc329ba634ab48",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+335987.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0a53a2c2f59b207b0c54f0294888c4c5",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+335988.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1ecaa45fb8de64cb02cc8b6f80eb2aa6",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+335989.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b0d0bd3f62fe47e9dad546c10480cf1b",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3360168.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0c0aebf4a7d402ed1bb9b30de6313b18",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+336028.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b2dae67c7eedc8053266b3529a921a42",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+3360290.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f291306364bbc7c13c693ff32cff8f27",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+3360291.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "191722d3cd43a2af97e34e84c9266c55",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+3360292.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cbe4be2bf19fa92b66dc12715b48a47a",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+3360293.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b967ee58bbe4ed1c43f34ca80e912f1d",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+3360294.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4069b8c16d2d59e1e927d073142dd48a",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+3360295.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "817e7be6ec522a7a42cb3db28b826253",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+3360296.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae53192a1f352f838b72270313b0d204",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33641651.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "684d452fe8d13b663fbcb1dc3413697a",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3374301.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5db1140a1a0661dbbaa043f9ec8468f5",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3374308.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ef208fc471a91d220c57ee8ad3ac9bae",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3374310.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "073a9cc28118dda6d0d70a3ac628a15f",
+    "name": "Saracroche: Did logic pte Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33743120.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7c1733d125b8bc904ed594157042fc7c",
+    "name": "Saracroche: Did logic pte Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33743124.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "618e40d7b6ba0dc6f4c923627fbc7d19",
+    "name": "Saracroche: Vast new telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3374313.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3bb5a386d492f947acc8b085f656f077",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3374315.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7ecf34eb4bd127fc30f100bac33951cb",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3374316.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8bb539152a95e68fc713fa77c0652136",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+33743458.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a3287867c6b6058ee36cd366f9d51b82",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33743469.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "09b7e94ddb257ddabf682d0108a81245",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33743482.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b6eadcc06d3d8cd0d2ebaa90b8ce6d11",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33743493.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1ccdb68c4a52c05d8b7b0b31eba66f2a",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33743494.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "20c39f9824fecb4cb4c157babebfe134",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3374397.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "de6a9a9624ce4db07191fb3798c6f626",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3374398.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "25d90917f962abedfb66f3bc64edfebb",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33743990.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "db99ded316287da27182930a8d5379b7",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33743991.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f7424a39abf12529d2c1f2e39875a353",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+3374403.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0d58fadad559d93d2c908eb7dc1a56ba",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3374406.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "db8770068d8a2502fc27917e5fb6aa20",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33745802.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2ae37167aafa0e2ece40d34e8cfdc564",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+337482.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b0405b376aea8c617ff42690abf54a04",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+337483.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "11a631cb19388634c34846e4d4626fa1",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+337484.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6e67d2f223a0689375731acc663d0e2f",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+337485.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1bf1ffe3a97e6ff1a87b33359d2618cc",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+337486.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f957e69841c1346fde211c6a7fa17ae5",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375071.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2db0a32a6f388541902256a0a8308a37",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375072.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7b12cc16db43f9c7147afbe5a2aa44c3",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375569.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d391c980e2f6026df15b709bc9e4b995",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375613.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e811b4b27a47fbffdaa6971c6452a44c",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+3375617.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae04cdae2a96be2ff06bca8fcd1a01cb",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33756461.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "755884ad05c6304e57083d9ad33d4ab2",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33756462.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3ed0fce47559cdca00fcfaf1b079e374",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33756463.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f3a56b3e4f649cf6e2ebcfd680bf4e5d",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375707.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "847b10f506b4deb1e07058da0b082cb6",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33757130.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "acaf59187aff9dfa4e03748150313e89",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33757131.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0123e08d53eedcf254d6eae11a18a3ec",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33757132.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ec0ce07401e56471805103b14ff11e8c",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375717.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ee78a842b1364e80bc99febec3a3786b",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3375786.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3e6e71427dd0d13566272944bfd9c558",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375990.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "358bb97961af02fbadcd80e4f48decd5",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375991.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c7cd7bf39a029c33145e921cf8c33141",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3375992.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a04d457ac35e4ccdd345cf07a24578b3",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33771920.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "53df37b3ca4362ae3744609d3e7e0d5a",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+33773.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1cf44c3903b9f1678df04b79ab1338b2",
+    "name": "Saracroche: Syma",
+    "ruleType": "regex",
+    "pattern": "^\\+33774.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1a577a90830887494b5937d82d05264e",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3377566.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "45a19486060f5921421c13e9fb704c1e",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3377567.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5ff6440f3bea74060cea6b18ce7d9883",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3377568.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9ca757a295c3e9ccb90210636d369e7d",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3377569.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8a308c4c329b1db4d6bffa0d03e642c7",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3380107.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bea76df6372b43b12f7a5561a42d34c4",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3380121.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ec88649acc06ac1a987b452714bc1c82",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+3380129.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "636f70c61dee5a1f4443d096cb54b53b",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+33801870.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9cae1ac9f51cc31647e56abc90430ada",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3380300.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "95892d7e69ea1b66ddec9ad7d57f9679",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33803870.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ddc132a1fce898306c5d90649fd09a2b",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33803871.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "664d3ef233f3285a08dbd4485f285d56",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3380603.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "404dfc53bd56e06d453d17bdaa901459",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3380614.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0192a2549cad1e624595cb6b55f71194",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3381221.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2874fb0f3afc976a9146c4f05bdeb93f",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3382628.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cf6ccd7635d7d7f24768dd12e148111a",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3389009.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b1f010bff4727b583d5cbdb5ebf16aed",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+3389017.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "697a076b413196b2bcd86981a891b984",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3389079.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "11dba31a6b163acbac447b5abe76a4fd",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3389298.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cb10c3f0bfab0d73833b5e463b50574e",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+33895081.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "91d703d70a8b276c290688981ded9a98",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33895689.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a877aeb972ec1b47355947c01f443b0d",
+    "name": "Saracroche: Get & go telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33939080.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ac1741df795f728ec5cf12b24807a3f7",
+    "name": "Saracroche: Vast new telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33939090.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "65aa6d5c345d96457b3d82e5dc641412",
+    "name": "Saracroche: Telyo",
+    "ruleType": "regex",
+    "pattern": "^\\+33939190.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8b3b5df1540be2a5a336421a9c8f17da",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+33939375.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bbd834f87435166b1b3d7980762136b3",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+33939379.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f4954921f4e99fda53ebe42c0a82885b",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+339475.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5faea3fe3604891c233b3609c200a35d",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+339476.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a50660fbbe5837975a6924229e1f4e8a",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+339477.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "38ded504957c5f4d867e7c72275f2ae9",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+339478.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2f00eabba38d95833b770a6c1de7ca62",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+339479.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "13c47fb1da2f49a981505a6be3f55cbe",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33948.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "07af287219333fd23e17cc7a9536760e",
+    "name": "Saracroche: Préfixe démarchage ARCEP",
+    "ruleType": "regex",
+    "pattern": "^\\+33949.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7d0e0854ef7f5a34d71eb973f3a2ee9b",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3397010.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3510258a6edbf28e757010a7f21eda57",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+3397016.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "72c93184511e9c597e2eaab3ebff6ec8",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3397031.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "44786901484df6eb7412c561b9d96919",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3397062.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "096706642cfe7c9b5da1d74c4061bd00",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+3397102.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3f9359d3a2b026cd1851fe5bf56ddd64",
+    "name": "Saracroche: Destiny global infra services",
+    "ruleType": "regex",
+    "pattern": "^\\+33972037.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8342c20ca7638c4ff3a293d927e6b7bc",
+    "name": "Saracroche: Plug and tel",
+    "ruleType": "regex",
+    "pattern": "^\\+3397274.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "636f6d390552bbc1c6020dd97348defe",
+    "name": "Saracroche: Ubicentrex",
+    "ruleType": "regex",
+    "pattern": "^\\+3397276.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "27c51f5a20a92bd293ade67ba9959999",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3397277.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "70dff1eca673ed40cab6c47fd1797111",
+    "name": "Saracroche: Go Mybiz France",
+    "ruleType": "regex",
+    "pattern": "^\\+3397342.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7a530865ebe4c4ffca0c8ed673f2bf7c",
+    "name": "Saracroche: Eone trade",
+    "ruleType": "regex",
+    "pattern": "^\\+3397347.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5b1a673d06f43f73d6fc1a3cd6bbcdd7",
+    "name": "Saracroche: Lineconnects",
+    "ruleType": "regex",
+    "pattern": "^\\+33973703.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b0a761e347a6305ce8e3540267b28f51",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3397396.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3aac024fdebbbb1a290b3db43cea7836",
+    "name": "Saracroche: Cyd-solutions",
+    "ruleType": "regex",
+    "pattern": "^\\+3397397.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "98c8a45df93e49999b5cac281351e1a1",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+33974010.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "30261dfd534a481bb6e3f1f0cd69d03c",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974015.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9da5983822739b8f13d98b392bb18195",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3397405.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "34a9c0bc552a6e1d8b452421a2f0b1ce",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974071.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "40987772059748fae2be0d2ebfe06525",
+    "name": "Saracroche: Sonixis",
+    "ruleType": "regex",
+    "pattern": "^\\+33974073.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5005add74cda6debe52842919323ed97",
+    "name": "Saracroche: Infinivox",
+    "ruleType": "regex",
+    "pattern": "^\\+33974079.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b2779ea4439b679f4f2f886c63cd3077",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3397431.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ee2c5e62f0fcd9ef2cce7d39e4c78e79",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3397433.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "92f1f35ec5d3e9283d5930d556338238",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33974348.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "af2f7965837b4ce08f2bed459bf6a788",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33974377.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a31a2980c942de0408201a06deaeb98e",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+33974378.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ac0ce18eb8a4b51167e8ee3cb3207c1e",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3397439.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cc4feb44cc814ed11ebea6c4cde41ae2",
+    "name": "Saracroche: AVM Informatique",
+    "ruleType": "regex",
+    "pattern": "^\\+3397457.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d7c4f6ca99ea80f7fa3c440fe0b55ad6",
+    "name": "Saracroche: Voxnode",
+    "ruleType": "regex",
+    "pattern": "^\\+3397467.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c72dd63fa3b36ee456e1d2e3ba511b64",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974720.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f22d1320f3e0bb5e7c856b9a086661dd",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974721.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "272f19ddff8c5307cd1116da0327265b",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974722.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aefb04a9a75a225bfc4a68271b8bb5f9",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974723.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b6d104fc1a7a40657074f411d3ef99ee",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974724.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1c21d45949ae88e820d6fda4cae1abbd",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974725.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0bbf9ef38201fa58783374ee40085d8e",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974726.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e741f2dd1e7c0e24944d28382b601993",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974727.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2d52a70713552f7de0f738483e7a2c67",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974728.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ec07150518df8bc5ecde366799cb14c9",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33974729.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cd8764605549cea4e13e7bfc84049b5a",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974960.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "351d079e857d9b459e391b4b29980985",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974961.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1f989d3fc4b6646e1e54a5f36566f7f7",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974962.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "dfde905a656f83e1c4584d03d1122f33",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974963.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bafdc818b53f01ac2e131b0d724563cb",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974964.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ebb0c7a13079d1b7af5e3a1d7fe97082",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974965.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cefde51f68602ba6d39b52f4c3ae33ce",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974966.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7a79861987870ca08f7c93de0ff90a60",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974967.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3c9d775a031235b5331ca7ff19da2ebc",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974968.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ebe105e91722825fd020b831f8738ee0",
+    "name": "Saracroche: Spartel services",
+    "ruleType": "regex",
+    "pattern": "^\\+33974969.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a86bf5a8e91285f3e01173ac3fb5f76a",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+3397809.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aa06410db0090bd6f88cd7365f6ce02c",
+    "name": "Saracroche: Iagility",
+    "ruleType": "regex",
+    "pattern": "^\\+33978260.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "83c63b4a46948f1b5acedde1c476ac1e",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+3397834.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "601ca33692dfd905f1854498b0ab2386",
+    "name": "Saracroche: Nexera",
+    "ruleType": "regex",
+    "pattern": "^\\+3397844.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5ef4efa94e4e56fbfd9015471b5860be",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3397882.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cfba913027f49efa59ae88f9ac0417a8",
+    "name": "Saracroche: Oxilog France",
+    "ruleType": "regex",
+    "pattern": "^\\+3397883.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "3e4717f9a5dc4426698e6bce70085fb4",
+    "name": "Saracroche: FlashCall",
+    "ruleType": "regex",
+    "pattern": "^\\+33978853.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5028bdb74923d2f7875a36a2984f0d89",
+    "name": "Saracroche: Telecom.object",
+    "ruleType": "regex",
+    "pattern": "^\\+3397998.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5b0c36695ea11c84a0d9772f1b13b769",
+    "name": "Saracroche: Kav El International",
+    "ruleType": "regex",
+    "pattern": "^\\+3398540.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1ff07fd6c95b58a704bcd8c9924f11ff",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33987282.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "38946d1646dffa430836a70764a2ac15",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33987283.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2898a2be45f73dc4a6b4699fdef1f87a",
+    "name": "Saracroche: DVS Connect",
+    "ruleType": "regex",
+    "pattern": "^\\+33987284.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "218274b809572256518652931d682242",
+    "name": "Saracroche: Qwalikom",
+    "ruleType": "regex",
+    "pattern": "^\\+3398729.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b484d5189101f949673effac79640363",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987690.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "daa3c08a650f9a14845af74a3eb4768e",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987691.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7229e594ebc3839e767b8dd5077eff40",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987692.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "acc4944da2c30e27c8efbf9633c38873",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987693.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0101b363293ecd23e0085fd607b109d5",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987694.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "769f1d9aae1b1c4bbcba16dee2041564",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987695.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ae6b540393975e118409df10b17a6fdd",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987696.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ff60ded230bda1212521dd4efba51a00",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987697.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "b15730a0e60245c07739a0c58f5ce909",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987698.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "26637f5706d2ceb059ca09bb04481599",
+    "name": "Saracroche: Menytel France",
+    "ruleType": "regex",
+    "pattern": "^\\+33987699.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "979a3f17e031d8e4c1b0f2d6588b79e6",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33988260.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9ddf7839d1f187ff63fe3acb7f0d095d",
+    "name": "Saracroche: Cloud telecom",
+    "ruleType": "regex",
+    "pattern": "^\\+33988261.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "721ce768000304cb9ec092c573e80347",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+3398829.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  }
+]

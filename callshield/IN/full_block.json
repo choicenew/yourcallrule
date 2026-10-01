@@ -1,0 +1,13 @@
+[
+  {
+    "id": "908620845b1493537c2ff1cb6288f412",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+917003869903",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 4
+  }
+]
