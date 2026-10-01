@@ -85,13 +85,12 @@ jobs:
           print(f"Successfully processed and saved {len(df)} records to US/fcc_processed_data.csv")
           EOF
 
-      - name: Commit Processed CSV (Choicenew Account Only)
+      - name: Commit Processed CSV (GitHub Actions Bot)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(us): 自动更新美国 FCC 官方数据 (US/fcc_processed_data.csv)"
           file_pattern: "US/fcc_processed_data.csv"
           repository: .
-          commit_author: choicenew <choicenew@users.noreply.github.com>
-          commit_user_name: choicenew
-          commit_user_email: choicenew@users.noreply.github.com
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           token: ${{ secrets.GITHUB_TOKEN }}

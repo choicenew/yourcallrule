@@ -15,7 +15,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Install Python
@@ -26,23 +25,32 @@ jobs:
       - name: Install pandas and phonenumbers
         run: pip install pandas phonenumbers
 
-      - name: Download FTC Data
+      - name: Download FTC Data (US Pacific Time Zone & Auto Retries)
         run: |
           mkdir -p US
           
-          year=$(date -d "yesterday" +%Y)
-          month=$(date -d "yesterday" +%m)
-          day=$(date -d "yesterday" +%d)
-          
-          FTC_URL="https://www.ftc.gov/sites/default/files/DNC_Complaint_Numbers_${year}-${month}-${day}.csv"
           USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
           REFERER_URL="https://www.ftc.gov/news-events/data-visualizations/do-not-call-complaint-data"
           
-          echo "Attempting to download from: $FTC_URL"
-          wget --content-disposition \
-               --user-agent="$USER_AGENT" \
-               --referer="$REFERER_URL" \
-               -O ftc_data.csv "$FTC_URL"
+          DOWNLOAD_SUCCESS=0
+          # 尝试美西时间近 5 天内的日期，直到找到已发布的 CSV 文件
+          for i in 1 2 3 4 5; do
+            TARGET_DATE=$(TZ="America/Los_Angeles" date -d "$i days ago" +%Y-%m-%d)
+            FTC_URL="https://www.ftc.gov/sites/default/files/DNC_Complaint_Numbers_${TARGET_DATE}.csv"
+            echo "Attempting to download FTC data for US Pacific Date: $TARGET_DATE"
+            if wget --user-agent="$USER_AGENT" --referer="$REFERER_URL" -O ftc_data.csv "$FTC_URL"; then
+              if [ -s ftc_data.csv ]; then
+                echo "Successfully downloaded FTC data for $TARGET_DATE"
+                DOWNLOAD_SUCCESS=1
+                break
+              fi
+            fi
+          done
+
+          if [ $DOWNLOAD_SUCCESS -eq 0 ]; then
+            echo "No recent FTC CSV found in the last 5 days. Creating empty file to exit gracefully."
+            echo "" > ftc_data.csv
+          fi
 
       - name: Process FTC Data
         run: |
@@ -55,17 +63,17 @@ jobs:
           input_file = 'ftc_data.csv'
           
           if not os.path.exists(input_file) or os.path.getsize(input_file) == 0:
-              print(f"The file {input_file} is empty or was not downloaded. Exiting successfully.")
+              print(f"The file {input_file} is empty. Exiting gracefully.")
               exit(0)
 
           try:
               df = pd.read_csv(input_file, encoding='utf-8', on_bad_lines='skip')
           except Exception as e:
-              print(f"Error reading CSV: {e}. Exiting.")
+              print(f"Error reading CSV: {e}. Exiting gracefully.")
               exit(0)
 
           if 'Company_Phone_Number' not in df.columns:
-              print("Error: 'Company_Phone_Number' column not found in the CSV. Exiting.")
+              print("Error: 'Company_Phone_Number' column not found in the CSV. Exiting gracefully.")
               exit(0)
 
           df.rename(columns={'Company_Phone_Number': 'phoneNumber'}, inplace=True)
@@ -86,11 +94,11 @@ jobs:
           df.drop_duplicates(subset=['phoneNumber'], inplace=True)
 
           if df.empty:
-              print("No valid phone numbers found after processing. Exiting.")
+              print("No valid phone numbers found after processing. Exiting gracefully.")
               exit(0)
 
           df['id'] = df['phoneNumber']
-          df['name'] = 'FTC Robocall Complaint'
+          df['name'] = 'Robocall'
           df['action'] = 'block'
           df['priority'] = 3
           df['labelId'] = 'robocall'
@@ -110,13 +118,12 @@ jobs:
           print(f"Successfully processed and saved {len(df)} records to US/ftc_robocalls.csv")
           EOF
 
-      - name: Commit Processed Robocall CSV (Choicenew Account Only)
+      - name: Commit Processed Robocall CSV (GitHub Actions Bot)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(us): 自动更新美国 FTC Robocall 黑名单 (US/ftc_robocalls.csv)"
           file_pattern: "US/ftc_robocalls.csv"
           repository: .
-          commit_author: choicenew <choicenew@users.noreply.github.com>
-          commit_user_name: choicenew
-          commit_user_email: choicenew@users.noreply.github.com
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           token: ${{ secrets.GITHUB_TOKEN }}

@@ -56,13 +56,12 @@ jobs:
           print(f"Successfully processed and saved {len(df)} records to TR/processed_turkish_spam_numbers.csv")
           EOF
 
-      - name: Commit and Push CSV (Choicenew Account Only)
+      - name: Commit and Push CSV (GitHub Actions Bot)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(tr): 自动更新土耳其地区骚扰号码库 (TR/processed_turkish_spam_numbers.csv)"
           file_pattern: "TR/*.csv"
           repository: .
-          commit_author: choicenew <choicenew@users.noreply.github.com>
-          commit_user_name: choicenew
-          commit_user_email: choicenew@users.noreply.github.com
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           token: ${{ secrets.GITHUB_TOKEN }}

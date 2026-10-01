@@ -39,13 +39,12 @@ jobs:
           done
           echo "Successfully generated $OUTPUT_CSV"
 
-      - name: Commit Processed CSV (Choicenew Account Only)
+      - name: Commit Processed CSV (GitHub Actions Bot)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(fr): 自动更新法国地区 Block 号段规则 (FR/processed_fr_regex.csv)"
           file_pattern: "FR/*.csv"
           repository: .
-          commit_author: choicenew <choicenew@users.noreply.github.com>
-          commit_user_name: choicenew
-          commit_user_email: choicenew@users.noreply.github.com
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           token: ${{ secrets.GITHUB_TOKEN }}

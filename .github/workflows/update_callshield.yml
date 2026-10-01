@@ -9,7 +9,7 @@ jobs:
   build-and-update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 授予 GITHUB_TOKEN 写权限
+      contents: write
 
     steps:
       - name: 1. 检出目标仓库
@@ -31,13 +31,12 @@ jobs:
         run: |
           python callshield/scripts/convert_callshield.py
 
-      - name: 5. 自动提交并推送变动 (Choicenew 账号)
+      - name: 5. 自动提交并推送变动 (GitHub Actions Bot)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(callshield): 自动同步上游 CallShield 最新分国家黑名单规则 [skip ci]"
           file_pattern: "callshield/"
-          commit_author: choicenew <choicenew@users.noreply.github.com>
-          commit_user_name: choicenew
-          commit_user_email: choicenew@users.noreply.github.com
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           repository: .
           token: ${{ secrets.GITHUB_TOKEN }}

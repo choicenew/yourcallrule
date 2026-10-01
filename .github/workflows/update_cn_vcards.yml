@@ -165,13 +165,12 @@ jobs:
                           writer.writerow(new_row)
           EOF
 
-      - name: Commit Final CSVs (Choicenew Account Only)
+      - name: Commit Final CSVs (GitHub Actions Bot)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(cn): 自动同步并更新中国地区官方号码 (CN/*.csv)"
           file_pattern: "CN/*.csv"
           repository: .
-          commit_author: choicenew <choicenew@users.noreply.github.com>
-          commit_user_name: choicenew
-          commit_user_email: choicenew@users.noreply.github.com
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           token: ${{ secrets.GITHUB_TOKEN }}
