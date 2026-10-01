@@ -8,11 +8,14 @@ on:
 jobs:
   build-and-update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 授予 GITHUB_TOKEN 写权限
 
     steps:
       - name: 1. 检出目标仓库
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: 2. 克隆 upstream 开源库 (CallShield 数据源)
@@ -28,17 +31,13 @@ jobs:
         run: |
           python callshield/scripts/convert_callshield.py
 
-      - name: 5. 检查是否有数据更新并提交 Push 回仓库 (Choicenew 账号)
-        run: |
-          git config --global user.name 'choicenew'
-          git config --global user.email 'choicenew@users.noreply.github.com'
-          
-          git add callshield/
-          
-          if git diff --staged --quiet; then
-            echo "没有检测到 CallShield 规则变动，跳过 Commit。"
-          else
-            git commit -m "chore(callshield): 自动同步上游 CallShield 最新分国家黑名单规则 [skip ci]"
-            git push
-            echo "CallShield 规则数据更新成功并提交进仓库！"
-          fi
+      - name: 5. 自动提交并推送变动 (Choicenew 账号)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(callshield): 自动同步上游 CallShield 最新分国家黑名单规则 [skip ci]"
+          file_pattern: "callshield/"
+          commit_author: choicenew <choicenew@users.noreply.github.com>
+          commit_user_name: choicenew
+          commit_user_email: choicenew@users.noreply.github.com
+          repository: .
+          token: ${{ secrets.GITHUB_TOKEN }}

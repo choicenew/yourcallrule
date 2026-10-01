@@ -10,9 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Install Python
@@ -121,24 +123,12 @@ jobs:
           import csv
           import os
 
-          # 完全对齐 predefined_labels.dart 标准表
           label_mapping = {
-              '其他': 'other',
-              '外卖订餐': 'takeaway',
-              '快递物流': 'delivery',
-              '电商购物': 'ecommerce',
-              '金融银行': 'bank',
-              '互联网': 'internet',
-              '出行购票': 'travelticketing', 
-              '应用软件': 'applicationsoftware',
-              '影音娱乐': 'entertainment',
-              '房产中介': 'agent', 
-              '政府机构': 'government',
-              '本地生活': 'localservices',
-              '汽车行业': 'automotiveindustry',
-              '租车代驾': 'carrental',
-              '证券保险': 'insurance',
-              '通讯服务': 'telecommunication'
+              '其他': 'other', '外卖订餐': 'takeaway', '快递物流': 'delivery', '电商购物': 'ecommerce',
+              '金融银行': 'bank', '互联网': 'internet', '出行购票': 'travelticketing', 
+              '应用软件': 'applicationsoftware', '影音娱乐': 'entertainment', '房产中介': 'agent', 
+              '政府机构': 'government', '本地生活': 'localservices', '汽车行业': 'automotiveindustry',
+              '租车代驾': 'carrental', '证券保险': 'insurance', '通讯服务': 'telecommunication'
           }
           
           output_dir = 'CN'
@@ -162,10 +152,10 @@ jobs:
                           new_row = [                              
                               row['phoneNumber'],                        # id
                               row['name'],                               # name
-                              'none',                                    # action (识别规则为 none)
-                              0,                                         # priority (仅识别规则为 0)
+                              'none',                                    # action
+                              0,                                         # priority
                               row['phoneNumber'],                        # phoneNumber
-                              label_mapping.get(row['label'], 'other'),  # labelId (标准 predefinedLabels key)
+                              label_mapping.get(row['label'], 'other'),  # labelId
                               1,                                         # isEnabled
                               0,                                         # count
                               row['avatar'],                             # avatar

@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Install Python
@@ -40,7 +41,7 @@ jobs:
           df['name'] = df['phoneNumber']
           df['action'] = 'block'
           df['priority'] = 3
-          df['labelId'] = 'spam_likely' 
+          df['labelId'] = 'spamlikely' 
           df['isEnabled'] = 1
           df['count'] = 0
           df['avatar'] = ''
