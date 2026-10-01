@@ -42,10 +42,10 @@ jobs:
           done
           echo "Successfully generated $OUTPUT_CSV"
 
-      - name: Commit Processed CSV (GitHub Actions Bot)
+      - name: Commit Processed CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(fr): 自动更新法国地区 Block 号段规则 (FR/processed_fr_regex.csv)"
+          commit_message: "chore(fr): update France regex block patterns (FR/processed_fr_regex.csv)"
           file_pattern: "FR/*.csv"
           repository: .
           commit_user_name: github-actions[bot]

@@ -15,29 +15,29 @@ jobs:
       contents: write
 
     steps:
-      - name: 1. 检出目标仓库
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: 2. 克隆 upstream 开源库 (CallShield 数据源)
+      - name: Clone upstream CallShield
         run: |
           git clone --depth 1 https://github.com/SysAdminDoc/CallShield.git CallShield
 
-      - name: 3. 配置 Python 环境
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: 4. 执行 CallShield 独立的转换脚本生成规则
+      - name: Run CallShield conversion script
         run: |
           python callshield/scripts/convert_callshield.py
 
-      - name: 5. 自动提交并推送变动 (GitHub Actions Bot)
+      - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(callshield): 自动同步上游 CallShield 最新分国家黑名单规则 [skip ci]"
+          commit_message: "chore(callshield): auto update callshield blocklist subscriptions [skip ci]"
           file_pattern: "callshield/"
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com

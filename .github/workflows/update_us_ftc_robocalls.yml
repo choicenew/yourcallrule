@@ -121,10 +121,10 @@ jobs:
           print(f"Successfully processed and saved {len(df)} records to US/ftc_robocalls.csv")
           EOF
 
-      - name: Commit Processed Robocall CSV (GitHub Actions Bot)
+      - name: Commit Processed Robocall CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(us): 自动更新美国 FTC Robocall 黑名单 (US/ftc_robocalls.csv)"
+          commit_message: "chore(us): update US FTC robocall blocklist (US/ftc_robocalls.csv)"
           file_pattern: "US/ftc_robocalls.csv"
           repository: .
           commit_user_name: github-actions[bot]
