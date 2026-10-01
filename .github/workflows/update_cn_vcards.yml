@@ -1,6 +1,9 @@
 name: Sync China vCard Data (CN)
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 0 */30 * *'
   workflow_dispatch:
@@ -25,7 +28,6 @@ jobs:
       - name: Install PyYAML and requests
         run: pip install pyyaml requests
 
-      # 步骤一：抓取原始 vCard 数据并解包数字与名称
       - name: Fetch and Clean vCard Data
         run: |
           python <<EOF
@@ -46,10 +48,6 @@ jobs:
           os.makedirs('原始/cn', exist_ok=True)
 
           def parse_phone_entry(phone_raw, base_org_name):
-              """
-              解包电话字段。若电话字段为包含 number 和 label 的字典或字典字符串，
-              提取纯数字号码，并将特殊 label (如 '售前售后') 追加合并到名称后面 (如 '比亚迪-售前售后')。
-              """
               phone_number = ""
               sub_label = ""
 
@@ -122,7 +120,6 @@ jobs:
                                           writer.writerow([clean_num, label, final_name, avatar])
           EOF
 
-      # 步骤二：二次二次全量彻底清洗并处理为最终 PhoneRule 格式（输出至 CN/ 目录）
       - name: Process and Clean CSV Data into CN Directory
         run: |
           python <<EOF
@@ -205,10 +202,10 @@ jobs:
 
                           new_row = [                              
                               clean_phone,                               # id
-                              final_name,                                # name (包含合并后的特殊 label)
+                              final_name,                                # name
                               'none',                                    # action
                               0,                                         # priority
-                              clean_phone,                               # phoneNumber (纯数字号码)
+                              clean_phone,                               # phoneNumber
                               label_mapping.get(row.get('label', ''), 'other'), # labelId
                               1,                                         # isEnabled
                               0,                                         # count
@@ -219,7 +216,6 @@ jobs:
                           writer.writerow(new_row)
           EOF
 
-      # 步骤三：提交处理好的 CSV 文件到 CN/ 目录
       - name: Commit Final CSVs to CN Folder
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
