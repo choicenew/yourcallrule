@@ -4320,6 +4320,15 @@
     "isEnabled": 1
   },
   {
+    "id": "6c43f827f9076f87cd15d3d42eff6c62",
+    "name": "Saracroche: Flex network",
+    "ruleType": "regex",
+    "pattern": "^\\+33649901.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "684d452fe8d13b663fbcb1dc3413697a",
     "name": "Saracroche: Nexera",
     "ruleType": "regex",
