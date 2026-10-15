@@ -1,0 +1,28 @@
+[
+  {
+    "id": "0d8ea33951e0a7a106861bb233ae8d71",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+255738262077",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "tz-spam-blocklist"
+  },
+  {
+    "id": "d74287fe5522a0193e949d71d52b2e6c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+255625338474",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "tz-spam-blocklist"
+  }
+]

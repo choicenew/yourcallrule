@@ -1,0 +1,54 @@
+[
+  {
+    "id": "24a5b690d3686be3e7d99c4cb3a03e70",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+593993133171",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ec-spam-blocklist"
+  },
+  {
+    "id": "a4ae2c159e2b9d354eb9437a2b64fd79",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+593996098149",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ec-spam-blocklist"
+  },
+  {
+    "id": "db46f0e69956ddcee860d3d570455bf5",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+593996046081",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ec-spam-blocklist"
+  },
+  {
+    "id": "4d80c8332810010b833d6f9854d88dff",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+593984974656",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ec-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "21c6eec6f765e638926b3528eb5ff810",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+441624624624",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "im-spam-blocklist"
+  }
+]

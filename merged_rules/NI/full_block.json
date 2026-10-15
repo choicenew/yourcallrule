@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2fcf12ae1d74e4d06d7ba0e06ac6e46c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50557218888",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ni-spam-blocklist"
+  },
+  {
+    "id": "709700c1c27a58073e219db938b1ac71",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50577783525",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ni-spam-blocklist"
+  },
+  {
+    "id": "077e0dd2afb92b458df3d5698ac2644e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50588552851",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ni-spam-blocklist"
+  },
+  {
+    "id": "985b43e5435548251d6cbbaa4838cc15",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50522490036",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ni-spam-blocklist"
+  }
+]

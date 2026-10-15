@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ccb04c4277981c34bd868f5aba282458",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+96898908420",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "om-spam-blocklist"
+  }
+]

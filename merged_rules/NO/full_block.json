@@ -1,0 +1,41 @@
+[
+  {
+    "id": "4b0d3090dcfb10e6ea35f4a9aed1eeaa",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4797759021",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "no-spam-blocklist"
+  },
+  {
+    "id": "188d16e58bd716be69792f557f754cee",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4790785872",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "no-spam-blocklist"
+  },
+  {
+    "id": "de1fd0c7c588f5020c67cbb73ab78d7e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4747900083",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "no-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "69da40940fad62b673a267e2c031e0c8",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+93700801202",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "af-spam-blocklist"
+  }
+]

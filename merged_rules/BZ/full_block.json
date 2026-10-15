@@ -1,0 +1,28 @@
+[
+  {
+    "id": "7fc393adf4c820c8c64752d48f7bcf94",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5012232868",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bz-spam-blocklist"
+  },
+  {
+    "id": "4f844da0b5372484257be46768ad8bed",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5016295706",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bz-spam-blocklist"
+  }
+]

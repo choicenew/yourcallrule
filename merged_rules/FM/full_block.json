@@ -1,0 +1,15 @@
+[
+  {
+    "id": "362d0b3bd48306123663a7dc15d5fb47",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+6913202740",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "fm-spam-blocklist"
+  }
+]

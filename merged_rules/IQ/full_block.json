@@ -1,0 +1,15 @@
+[
+  {
+    "id": "5c601512aa5aa89d4b5ea79a93b980fb",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+9647715577770",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "iq-spam-blocklist"
+  }
+]

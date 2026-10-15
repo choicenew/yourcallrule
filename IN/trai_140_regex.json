@@ -1,0 +1,11 @@
+[
+  {
+    "id": "regulatory_in_trai_140",
+    "name": "India TRAI Promotional/Telemarketing Series (140)",
+    "pattern": "^\\+?91140\\d{7}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  }
+]

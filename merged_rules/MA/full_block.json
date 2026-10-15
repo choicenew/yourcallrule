@@ -1,0 +1,15 @@
+[
+  {
+    "id": "300c19bf590db95ce5ae3b5347fad8fe",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+212605364943",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ma-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "a0f8f65ec53444b5de499b3eea649f72",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+23277928001",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sl-spam-blocklist"
+  }
+]

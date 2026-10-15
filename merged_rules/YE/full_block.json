@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1e12f625300ff0e8cece8cdf5a461806",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+9677522000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ye-spam-blocklist"
+  }
+]

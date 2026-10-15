@@ -1,0 +1,28 @@
+[
+  {
+    "id": "f5e7b7695967738d687c4aa5db7f2eb8",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+38761389731",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ba-spam-blocklist"
+  },
+  {
+    "id": "5ef94621651e3e5f96c3c266ee26803d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+38766940950",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ba-spam-blocklist"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "657c7dea37fc6254588165b3f7e98a53",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+244922300447",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ao-spam-blocklist"
+  },
+  {
+    "id": "6823543c5dda0ed5f47143ceb3f37513",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+244950000102",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ao-spam-blocklist"
+  }
+]

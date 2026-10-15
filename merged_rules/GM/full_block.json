@@ -1,0 +1,15 @@
+[
+  {
+    "id": "e7bbb05dbbd8d893d8d53cec4615da76",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+2207750065",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gm-spam-blocklist"
+  }
+]

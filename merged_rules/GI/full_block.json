@@ -1,0 +1,15 @@
+[
+  {
+    "id": "023010458cdb190f9ca0705a3e9d0038",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35057002000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gi-spam-blocklist"
+  }
+]

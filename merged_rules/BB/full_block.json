@@ -1,0 +1,15 @@
+[
+  {
+    "id": "94a8fa5c0ee746dd1711cd37b208e2a6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12464364204",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bb-spam-blocklist"
+  }
+]

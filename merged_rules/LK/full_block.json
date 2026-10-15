@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1db07b1d0d605a6ac4cacfbc7d68432b",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+94112473393",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lk-spam-blocklist"
+  },
+  {
+    "id": "13196505f717fb71a439a552712777c5",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+94775896363",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lk-spam-blocklist"
+  }
+]

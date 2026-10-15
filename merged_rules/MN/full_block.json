@@ -1,0 +1,15 @@
+[
+  {
+    "id": "8d6640ccefbce52387e628d1dd3289da",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+97670102211",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mn-spam-blocklist"
+  }
+]

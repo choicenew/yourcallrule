@@ -1,0 +1,28 @@
+[
+  {
+    "id": "d60c3b7863b766f0ade1b58045858c18",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+966920000744",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sa-spam-blocklist"
+  },
+  {
+    "id": "96cc54cd4c1035538d14ffd387b6bcf2",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+966541900412",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sa-spam-blocklist"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "c9f6a4d3a0368986d7d6eb7b145ba4ec",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13455265303",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ky-spam-blocklist"
+  },
+  {
+    "id": "2afa710d9aca8d91debd6d73ed905b9c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13455470384",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ky-spam-blocklist"
+  }
+]

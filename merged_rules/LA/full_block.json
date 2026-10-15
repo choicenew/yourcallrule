@@ -1,0 +1,41 @@
+[
+  {
+    "id": "7cf328353c26a9da2992ac173d793082",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8562055166395",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "la-spam-blocklist"
+  },
+  {
+    "id": "7730c0d4023d89716a996742ec7003af",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8562022210004",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "la-spam-blocklist"
+  },
+  {
+    "id": "f250939b430fd5b394a43fbf11fbc081",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+85621450424",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "la-spam-blocklist"
+  }
+]

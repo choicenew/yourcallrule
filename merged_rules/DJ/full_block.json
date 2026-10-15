@@ -1,0 +1,15 @@
+[
+  {
+    "id": "e448cfcc63192b0de561171f95611e6e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+25321340217",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dj-spam-blocklist"
+  }
+]

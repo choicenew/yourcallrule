@@ -1,0 +1,41 @@
+[
+  {
+    "id": "efd55a0a6f20e694894bab839ab39819",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35620341508",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mt-spam-blocklist"
+  },
+  {
+    "id": "447d9e3c04c5701a2d2b9cea091f7a22",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35679974842",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mt-spam-blocklist"
+  },
+  {
+    "id": "d2a4959633f5bccefad0408b305a0a5b",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35677761414",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mt-spam-blocklist"
+  }
+]

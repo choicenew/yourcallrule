@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cde6edd572354aefe3c9bb3024f18081",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+23052517726",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mu-spam-blocklist"
+  },
+  {
+    "id": "24d63b2482064a58c95f46e71ab69120",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+23052574208",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mu-spam-blocklist"
+  }
+]

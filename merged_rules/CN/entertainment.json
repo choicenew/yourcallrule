@@ -1,0 +1,93 @@
+[
+  {
+    "id": "7612c07f5d505d31b61676449e933a95",
+    "name": "优酷",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4008100580",
+    "labelId": "entertainment",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/影音娱乐/优酷.png",
+    "subscriptionId": "cn-yellowpage-entertainment"
+  },
+  {
+    "id": "9d280b5f0bb3b2a71ba2e032dba2b0b0",
+    "name": "喜马拉雅",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4008385616",
+    "labelId": "entertainment",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/影音娱乐/喜马拉雅.png",
+    "subscriptionId": "cn-yellowpage-entertainment"
+  },
+  {
+    "id": "0176b2b2944dee1790c0bca83b9d3549",
+    "name": "小宇宙-即刻",
+    "ruleType": "phone_rule",
+    "phoneNumber": "057488382026",
+    "labelId": "entertainment",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/影音娱乐/小宇宙.png",
+    "subscriptionId": "cn-yellowpage-entertainment"
+  },
+  {
+    "id": "9d7626bc602b3154491a1327ebb2c16f",
+    "name": "抖音",
+    "ruleType": "phone_rule",
+    "phoneNumber": "95152",
+    "labelId": "entertainment",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/影音娱乐/抖音.png",
+    "subscriptionId": "cn-yellowpage-entertainment"
+  },
+  {
+    "id": "1acb6f939ec11f8e14d406a005606d49",
+    "name": "爱奇艺",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4009237171",
+    "labelId": "entertainment",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/影音娱乐/爱奇艺.png",
+    "subscriptionId": "cn-yellowpage-entertainment"
+  },
+  {
+    "id": "2cad4d40e67c0b9e637046acf81b6a81",
+    "name": "网易云音乐",
+    "ruleType": "phone_rule",
+    "phoneNumber": "057189853546",
+    "labelId": "entertainment",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/影音娱乐/网易云音乐.png",
+    "subscriptionId": "cn-yellowpage-entertainment"
+  },
+  {
+    "id": "fa9799c2fab016edb15a6bc9dba3c3d5",
+    "name": "芒果TV",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4009770707",
+    "labelId": "entertainment",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/影音娱乐/芒果TV.png",
+    "subscriptionId": "cn-yellowpage-entertainment"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "8c52e298175e9b8d050beb096246644f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+37799666471",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mc-spam-blocklist"
+  }
+]

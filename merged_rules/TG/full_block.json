@@ -1,0 +1,15 @@
+[
+  {
+    "id": "e2b9f0687c924a233c81fd203d55345e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+22890721817",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "tg-spam-blocklist"
+  }
+]

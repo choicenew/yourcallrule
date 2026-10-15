@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1e5bc6ed2614e88cf8e8a16449fa8497",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+14735201000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gd-spam-blocklist"
+  }
+]

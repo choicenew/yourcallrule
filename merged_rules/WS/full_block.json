@@ -1,0 +1,15 @@
+[
+  {
+    "id": "4fb732ea345ae435fec24eb300ebc4c6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+6857500186",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ws-spam-blocklist"
+  }
+]

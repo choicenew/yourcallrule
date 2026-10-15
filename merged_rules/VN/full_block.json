@@ -1,0 +1,54 @@
+[
+  {
+    "id": "c55a79cab5b5496617da12db26cbbb0f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+84912572099",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vn-spam-blocklist"
+  },
+  {
+    "id": "0da59f725f410a1512ffdefb152c211e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+84931687979",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vn-spam-blocklist"
+  },
+  {
+    "id": "7ad62fc01e9901b5918112665cdef6a2",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+84563379463",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vn-spam-blocklist"
+  },
+  {
+    "id": "0c4fb4fabd8fbf0ddfd6378c54453792",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+84888539213",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vn-spam-blocklist"
+  }
+]

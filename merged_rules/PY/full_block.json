@@ -1,0 +1,41 @@
+[
+  {
+    "id": "0dcb291026b151a26b152f8e7536a95d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+59521444184",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "69691f365ee7f24e76a44ac687a4103f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595985141674",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "99097a492faab92a0cdb1113431bfb7d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595971265449",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  }
+]

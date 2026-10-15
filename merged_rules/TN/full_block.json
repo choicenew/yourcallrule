@@ -1,0 +1,15 @@
+[
+  {
+    "id": "37bb410ea62e2b6da531de019669d302",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+21698220254",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "tn-spam-blocklist"
+  }
+]

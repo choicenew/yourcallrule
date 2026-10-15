@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ad17de030c68a11bf73245d6d9447f4a",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5352680021",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cu-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "88db3586ff2d6e9d5e248ecf196f20a7",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+233266000759",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gh-spam-blocklist"
+  }
+]

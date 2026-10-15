@@ -1,0 +1,15 @@
+[
+  {
+    "id": "00e7d1d4e29111002de2aab4c0ebc76f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+77012030800",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "kz-spam-blocklist"
+  }
+]

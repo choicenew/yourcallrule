@@ -1,0 +1,15 @@
+[
+  {
+    "id": "861131b0796d5299a425d0ee2ccad2e9",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+38975416800",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mk-spam-blocklist"
+  }
+]

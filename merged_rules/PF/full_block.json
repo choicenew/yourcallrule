@@ -1,0 +1,28 @@
+[
+  {
+    "id": "e4ac6734db624020f4141aae3eacf408",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+68940487051",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pf-spam-blocklist"
+  },
+  {
+    "id": "164d24e79cfde3a612387eb477b84e3f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+68989199292",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pf-spam-blocklist"
+  }
+]

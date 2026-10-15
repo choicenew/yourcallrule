@@ -1,0 +1,28 @@
+[
+  {
+    "id": "175eb311166ff4027770545d97c478c6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+97339455654",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bh-spam-blocklist"
+  },
+  {
+    "id": "ff87a87b06d2d049b3b44fe628655548",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+97336070214",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bh-spam-blocklist"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "3eea975167572de773538cd506feb401",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+97444400143",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "qa-spam-blocklist"
+  },
+  {
+    "id": "c8018243f8ed0fe2263e1255a91976a1",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+97477775703",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "qa-spam-blocklist"
+  }
+]

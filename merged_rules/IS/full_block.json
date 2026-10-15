@@ -1,0 +1,15 @@
+[
+  {
+    "id": "24b9805a557a972eb2fd86b3ec1def8d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+3548926215",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "is-spam-blocklist"
+  }
+]

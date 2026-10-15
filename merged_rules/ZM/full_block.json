@@ -1,0 +1,15 @@
+[
+  {
+    "id": "d9b123827ae951ef23c7d020c5941139",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+260978981269",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "zm-spam-blocklist"
+  }
+]

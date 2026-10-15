@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1edebb24f595d63aa8f77703feafc1f6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16713000222",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gu-spam-blocklist"
+  },
+  {
+    "id": "dfe47e06aefb2596f87c59eae5dd26d7",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16714881035",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gu-spam-blocklist"
+  },
+  {
+    "id": "713ca9f81e7c78dde9d37b5fafca6d6c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16717770646",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gu-spam-blocklist"
+  },
+  {
+    "id": "1cf26d5e7c066264ed7ca3f16b67133a",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16716882355",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gu-spam-blocklist"
+  }
+]

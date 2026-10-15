@@ -1,0 +1,41 @@
+[
+  {
+    "id": "581d5828e76b63d3a3854c46c255ca3a",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+381112111690",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "rs-spam-blocklist"
+  },
+  {
+    "id": "d534e778ebce0d5e910d0a0bf60ed30f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+381114419000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "rs-spam-blocklist"
+  },
+  {
+    "id": "29e12b015f000be50106cbf61d25a72f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+381605568261",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "rs-spam-blocklist"
+  }
+]

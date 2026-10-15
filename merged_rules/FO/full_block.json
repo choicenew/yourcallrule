@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ef20192e7c92cdcbeb475737a8b949b7",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+298243604",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "fo-spam-blocklist"
+  }
+]

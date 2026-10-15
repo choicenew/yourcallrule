@@ -1,0 +1,28 @@
+[
+  {
+    "id": "0887a4adb1c2853a37569cc1718a859f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+2975970038",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "aw-spam-blocklist"
+  },
+  {
+    "id": "5ca8eba398253cd8f7408de329a7ac19",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+2975933927",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "aw-spam-blocklist"
+  }
+]

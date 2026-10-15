@@ -1,0 +1,15 @@
+[
+  {
+    "id": "9c14b42c5ca407047214f1f44e711580",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+85388915039",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mo-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "0d1e8405869858d60ead2c406759a691",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+590690880010",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gp-spam-blocklist"
+  }
+]

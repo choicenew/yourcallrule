@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fffaccc130ac81624b4885d260949005",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50376014992",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sv-spam-blocklist"
+  },
+  {
+    "id": "08e1f79ed6a55004d2334f3bbf0ce433",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50377466601",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sv-spam-blocklist"
+  },
+  {
+    "id": "4574f5140ca1b1a3e1dc458657e0bf57",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50378574167",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sv-spam-blocklist"
+  }
+]

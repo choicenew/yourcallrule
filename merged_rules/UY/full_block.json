@@ -1,0 +1,28 @@
+[
+  {
+    "id": "0d95fa1531b23d943d0f2cafb4df83f0",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+59899603534",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "uy-spam-blocklist"
+  },
+  {
+    "id": "66684da64c5ebabce8b6175ae17c74f1",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+59894562811",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "uy-spam-blocklist"
+  }
+]

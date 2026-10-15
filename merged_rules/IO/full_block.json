@@ -1,0 +1,15 @@
+[
+  {
+    "id": "da1218134813ad82847d5961be019b7f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+2463709000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "io-spam-blocklist"
+  }
+]

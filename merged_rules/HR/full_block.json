@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1280443ae850b9a726b9d5047bd96493",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+385958823659",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "hr-spam-blocklist"
+  }
+]

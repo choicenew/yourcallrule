@@ -1,0 +1,15 @@
+[
+  {
+    "id": "dc5edc5813f093c033669ce5983435b1",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+96524644444",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "kw-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "5620cf340c1cfb9b290f040b7a325b5d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+6732384406",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bn-spam-blocklist"
+  }
+]

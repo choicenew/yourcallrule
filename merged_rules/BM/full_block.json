@@ -1,0 +1,41 @@
+[
+  {
+    "id": "353a3606d019ea6ecfac209ce22c121d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+14415001906",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bm-spam-blocklist"
+  },
+  {
+    "id": "4a0c48fd252dd322fe9d8c068f37c8d5",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+14419002022",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bm-spam-blocklist"
+  },
+  {
+    "id": "c91a28fc0f4d2c5ddfcf03918a43ce45",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+14415335981",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bm-spam-blocklist"
+  }
+]

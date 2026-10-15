@@ -1,0 +1,28 @@
+[
+  {
+    "id": "9d523cf17490cbcb24205ae1f8801a64",
+    "name": "万豪旅享家",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4008903588",
+    "labelId": "other",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/酒店住宿/万豪旅享家.png",
+    "subscriptionId": "cn-yellowpage-hotel"
+  },
+  {
+    "id": "5ed3d314f5d84f7538f7c6e605ef780b",
+    "name": "锦江酒店",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4008209999",
+    "labelId": "other",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/酒店住宿/锦江酒店.png",
+    "subscriptionId": "cn-yellowpage-hotel"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "cf4ca113fab255d0f3a6fc995c6266a5",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+994122000145",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "az-spam-blocklist"
+  }
+]

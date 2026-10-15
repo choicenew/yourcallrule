@@ -1,0 +1,54 @@
+[
+  {
+    "id": "0ff90d1f30d69f45417f9511d21bd05b",
+    "name": "自如",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4001001111",
+    "labelId": "agent",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/房产中介/自如.png",
+    "subscriptionId": "cn-yellowpage-agent"
+  },
+  {
+    "id": "16954258e63f720f1b8ddb3a079aaa43",
+    "name": "贝壳",
+    "ruleType": "phone_rule",
+    "phoneNumber": "10106188",
+    "labelId": "agent",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/房产中介/贝壳.png",
+    "subscriptionId": "cn-yellowpage-agent"
+  },
+  {
+    "id": "c1b443c5deb238c5075e7311362225d4",
+    "name": "酷家乐",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4008357300",
+    "labelId": "agent",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/房产中介/酷家乐.png",
+    "subscriptionId": "cn-yellowpage-agent"
+  },
+  {
+    "id": "7011e08a9409f7fac169b65cf7544207",
+    "name": "链家",
+    "ruleType": "phone_rule",
+    "phoneNumber": "10109666",
+    "labelId": "agent",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/房产中介/链家.png",
+    "subscriptionId": "cn-yellowpage-agent"
+  }
+]

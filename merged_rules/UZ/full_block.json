@@ -1,0 +1,15 @@
+[
+  {
+    "id": "588531d1baf9d79d4ffeae7a2cd06b77",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+998712443048",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "uz-spam-blocklist"
+  }
+]

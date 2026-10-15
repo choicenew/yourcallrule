@@ -1,0 +1,15 @@
+[
+  {
+    "id": "79f6bec853c3dac913300774dfaf62c4",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17672351274",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dm-spam-blocklist"
+  }
+]

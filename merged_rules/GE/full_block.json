@@ -1,0 +1,41 @@
+[
+  {
+    "id": "26d83f30deb7ff9a0adc4969f9f48914",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+995599512007",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ge-spam-blocklist"
+  },
+  {
+    "id": "3342cd926e3c7f50e0403ddfa56a6bad",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+995599246666",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ge-spam-blocklist"
+  },
+  {
+    "id": "f62110d2ca3582dc1486b1be71c5dae5",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+995501443211",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ge-spam-blocklist"
+  }
+]

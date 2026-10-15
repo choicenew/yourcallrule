@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ce2c85dfa4c289fc0e167cb0276be2bb",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+252907722018",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "so-spam-blocklist"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "28f7b858efffe13c37a9fb6d92aa104d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16847339037",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "as-spam-blocklist"
+  },
+  {
+    "id": "3aaa2e1484ffac276a1ff6b9c183f29e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16842581004",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "as-spam-blocklist"
+  }
+]

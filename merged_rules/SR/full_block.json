@@ -1,0 +1,15 @@
+[
+  {
+    "id": "a3b3a433dc7377e4d417f03b23fcbfac",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5978500027",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sr-spam-blocklist"
+  }
+]

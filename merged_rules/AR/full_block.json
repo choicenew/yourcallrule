@@ -1,0 +1,80 @@
+[
+  {
+    "id": "7c44fc80559980d2e6f8e0db83b2764c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5491154548542",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ar-spam-blocklist"
+  },
+  {
+    "id": "d4dc698fa16533f476e639fe47af3942",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+541152588200",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ar-spam-blocklist"
+  },
+  {
+    "id": "5d80e0c3f017e9701db658e326392ea4",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+541152792000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ar-spam-blocklist"
+  },
+  {
+    "id": "bbcca7ef2f1abb385c62e6c62fda0276",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+541153655500",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ar-spam-blocklist"
+  },
+  {
+    "id": "5976a05bee09a1ac2c042955b91706e7",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+542954212125",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ar-spam-blocklist"
+  },
+  {
+    "id": "46ebb1f5ef65e232815b44344ea6c8b1",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+541153539800",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ar-spam-blocklist"
+  }
+]

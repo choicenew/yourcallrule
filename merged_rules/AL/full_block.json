@@ -1,0 +1,54 @@
+[
+  {
+    "id": "6c914987e7cb05c6dce47b10603a2424",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+355672063032",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "al-spam-blocklist"
+  },
+  {
+    "id": "ff28fb03deb260357fafe3bbd34b611e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+355682020016",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "al-spam-blocklist"
+  },
+  {
+    "id": "42b9ba1a0a7628a372741534ccf29dff",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+355692099573",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "al-spam-blocklist"
+  },
+  {
+    "id": "965bcf4357217b98eefeb3ffd99e69b2",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+355696195544",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "al-spam-blocklist"
+  }
+]

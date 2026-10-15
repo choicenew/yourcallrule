@@ -1,0 +1,15 @@
+[
+  {
+    "id": "f693903ce0825b1e88195f3a47c89993",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+258823002882",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mz-spam-blocklist"
+  }
+]

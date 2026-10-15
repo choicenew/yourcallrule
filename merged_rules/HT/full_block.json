@@ -1,0 +1,28 @@
+[
+  {
+    "id": "d2115e965850c010776364c5390e9a66",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50933889999",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ht-spam-blocklist"
+  },
+  {
+    "id": "5b93470819fc2bedf7048a7269051596",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+50937017777",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ht-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "281d6ce7871e11b4322a7c39cc4a8459",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+38338600696",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "xk-spam-blocklist"
+  }
+]

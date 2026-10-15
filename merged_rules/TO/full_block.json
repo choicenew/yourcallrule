@@ -1,0 +1,15 @@
+[
+  {
+    "id": "b93a178f17e3ab8230a0a175503c62b6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+67620000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "to-spam-blocklist"
+  }
+]

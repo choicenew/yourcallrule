@@ -1,0 +1,119 @@
+[
+  {
+    "id": "regulatory_fr_arcep_33162",
+    "name": "France ARCEP Telemarketing Range (+33162)",
+    "pattern": "^\\+?33162\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33163",
+    "name": "France ARCEP Telemarketing Range (+33163)",
+    "pattern": "^\\+?33163\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33244",
+    "name": "France ARCEP Telemarketing Range (+33244)",
+    "pattern": "^\\+?33244\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33245",
+    "name": "France ARCEP Telemarketing Range (+33245)",
+    "pattern": "^\\+?33245\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33377",
+    "name": "France ARCEP Telemarketing Range (+33377)",
+    "pattern": "^\\+?33377\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33378",
+    "name": "France ARCEP Telemarketing Range (+33378)",
+    "pattern": "^\\+?33378\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33424",
+    "name": "France ARCEP Telemarketing Range (+33424)",
+    "pattern": "^\\+?33424\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33425",
+    "name": "France ARCEP Telemarketing Range (+33425)",
+    "pattern": "^\\+?33425\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33568",
+    "name": "France ARCEP Telemarketing Range (+33568)",
+    "pattern": "^\\+?33568\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33569",
+    "name": "France ARCEP Telemarketing Range (+33569)",
+    "pattern": "^\\+?33569\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33937",
+    "name": "France ARCEP Telemarketing Range (+33937)",
+    "pattern": "^\\+?33937\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33938",
+    "name": "France ARCEP Telemarketing Range (+33938)",
+    "pattern": "^\\+?33938\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  },
+  {
+    "id": "regulatory_fr_arcep_33939",
+    "name": "France ARCEP Telemarketing Range (+33939)",
+    "pattern": "^\\+?33939\\d{6}$",
+    "action": "block",
+    "isEnabled": 1,
+    "priority": 5,
+    "ruleType": "regex"
+  }
+]

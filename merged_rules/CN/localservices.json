@@ -1,0 +1,80 @@
+[
+  {
+    "id": "dffcc014070dc69b3e337daec3d7e333",
+    "name": "享库生活",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4000228636",
+    "labelId": "localservices",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/本地生活/享库生活.png",
+    "subscriptionId": "cn-yellowpage-localservices"
+  },
+  {
+    "id": "29759dc7bfbcb383a0e1f72953405e67",
+    "name": "大众点评",
+    "ruleType": "phone_rule",
+    "phoneNumber": "10100011",
+    "labelId": "localservices",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/本地生活/大众点评.png",
+    "subscriptionId": "cn-yellowpage-localservices"
+  },
+  {
+    "id": "9aa4a7f0f6a7e7e66a9b69435c30481e",
+    "name": "大众点评",
+    "ruleType": "phone_rule",
+    "phoneNumber": "02162980000",
+    "labelId": "localservices",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/本地生活/大众点评.png",
+    "subscriptionId": "cn-yellowpage-localservices"
+  },
+  {
+    "id": "cc1390616c8d0e785c43a409ba79476b",
+    "name": "大众点评",
+    "ruleType": "phone_rule",
+    "phoneNumber": "8008205527",
+    "labelId": "localservices",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/本地生活/大众点评.png",
+    "subscriptionId": "cn-yellowpage-localservices"
+  },
+  {
+    "id": "d1089ec8595dd84fadd1da74e109860e",
+    "name": "美团",
+    "ruleType": "phone_rule",
+    "phoneNumber": "10107888",
+    "labelId": "localservices",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/本地生活/美团.png",
+    "subscriptionId": "cn-yellowpage-localservices"
+  },
+  {
+    "id": "528a909dbebe6da02772de2b66dcb7b9",
+    "name": "美宜佳",
+    "ruleType": "phone_rule",
+    "phoneNumber": "4008871133",
+    "labelId": "localservices",
+    "priority": 0,
+    "action": "none",
+    "isEnabled": 1,
+    "count": 0,
+    "avatar": "https://raw.githubusercontent.com/metowolf/vCards/refs/heads/master/data/本地生活/美宜佳.png",
+    "subscriptionId": "cn-yellowpage-localservices"
+  }
+]

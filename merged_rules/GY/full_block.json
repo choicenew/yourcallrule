@@ -1,0 +1,41 @@
+[
+  {
+    "id": "b5bc3ded704973f6be50155f7b463c09",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5922279136",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gy-spam-blocklist"
+  },
+  {
+    "id": "45dcef8c2ded393cde85a2bfee780bf8",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5922279143",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gy-spam-blocklist"
+  },
+  {
+    "id": "a80f9d4bd3bc166cb6ed938a3b00866c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5922194787",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gy-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "bbbbd158537761bfc03f4a8880ef8edc",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+959423000590",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mm-spam-blocklist"
+  }
+]

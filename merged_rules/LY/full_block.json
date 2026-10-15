@@ -1,0 +1,15 @@
+[
+  {
+    "id": "b1913cc3b9cce0c221951887643c03fa",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+218913601149",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ly-spam-blocklist"
+  }
+]

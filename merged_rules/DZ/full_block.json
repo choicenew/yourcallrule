@@ -1,0 +1,28 @@
+[
+  {
+    "id": "8587369e17fbff95fc0a597d65326f36",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+213660843730",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dz-spam-blocklist"
+  },
+  {
+    "id": "a71d2bdf174145f24537f918f0cd2ca6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+213661686095",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dz-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "cfaaf46aa7f116954788daa3631ee5b6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12844420030",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vg-spam-blocklist"
+  }
+]

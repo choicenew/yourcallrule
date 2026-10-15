@@ -1,0 +1,41 @@
+[
+  {
+    "id": "c3389f44c06d6f30e2bac10fbe44cb1e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35224243031",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lu-spam-blocklist"
+  },
+  {
+    "id": "d84020c1d2b91bff18d332b8ee061699",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35220333300",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lu-spam-blocklist"
+  },
+  {
+    "id": "99db816809d2d892b8eeae142ec7bb47",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+352621604137",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lu-spam-blocklist"
+  }
+]

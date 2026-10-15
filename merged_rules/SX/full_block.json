@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1f7493444f636d489d9640a3c24886bf",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17215460200",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sx-spam-blocklist"
+  }
+]

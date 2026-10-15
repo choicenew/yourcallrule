@@ -1,0 +1,28 @@
+[
+  {
+    "id": "455984e0e55c04dffd53479a8f0b9ec5",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12685622326",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ag-spam-blocklist"
+  },
+  {
+    "id": "66333e29e957b42af643df17a79d315d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12684807161",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ag-spam-blocklist"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "f77c2222d890ed473f5581c87fd61053",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+6805879000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pw-spam-blocklist"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "3e60f87eaf4043fdde3cf8c4f2ff968e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13407170025",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vi-spam-blocklist"
+  },
+  {
+    "id": "2e9f8b9ab0f745de2b537f2b75eb4f77",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13407765480",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vi-spam-blocklist"
+  },
+  {
+    "id": "a48567363809ad78029536847eb72a15",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13407272999",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vi-spam-blocklist"
+  }
+]

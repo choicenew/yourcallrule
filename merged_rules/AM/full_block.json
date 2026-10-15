@@ -1,0 +1,54 @@
+[
+  {
+    "id": "09272434152fc01f762e4837c27748fa",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+37494435643",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "am-spam-blocklist"
+  },
+  {
+    "id": "fba3f5516788e2257a119e5fd89a4ad9",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+37493316941",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "am-spam-blocklist"
+  },
+  {
+    "id": "3591b53333ea7112b447556f05d937f1",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+37493050693",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "am-spam-blocklist"
+  },
+  {
+    "id": "f4bed472739f7aaf3dab514f67bf351f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+37444000330",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "am-spam-blocklist"
+  }
+]

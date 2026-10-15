@@ -1,0 +1,41 @@
+[
+  {
+    "id": "0797f08d0a7e74d75bd73e09a7e9ca6b",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+351966698203",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pt-spam-blocklist"
+  },
+  {
+    "id": "9dd081c960068be6a8eb39bc1a6f6f13",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+351936247930",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pt-spam-blocklist"
+  },
+  {
+    "id": "fcab99a4e47ebf558b4512f9855caf27",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+351300505100",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pt-spam-blocklist"
+  }
+]
