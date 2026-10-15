@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,49 +23,19 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
-      - name: Install pandas
+      - name: Install Dependencies
         run: pip install pandas
 
-      - name: Download and Process Turkish Spam Numbers into TR Folder
-        run: |
-          python <<EOF
-          import pandas as pd
-          import os
-
-          os.makedirs('TR', exist_ok=True)
-          df = pd.read_csv('https://raw.githubusercontent.com/symbuzzer/Turkish-Spam-Numbers/main/numbers', header=None, names=['phoneNumber'], on_bad_lines='skip', dtype={'phoneNumber': str})
-          df['phoneNumber'] = df['phoneNumber'].astype(str).str.strip()
-          df.dropna(subset=['phoneNumber'], inplace=True)
-          df = df[df['phoneNumber'] != '']
-          if df.empty:
-              exit(0)
-          df['id'] = df['phoneNumber']
-          df['name'] = df['phoneNumber']
-          df['action'] = 'block'
-          df['priority'] = 3
-          df['labelId'] = 'spamlikely' 
-          df['isEnabled'] = 1
-          df['count'] = 0
-          df['avatar'] = ''
-          df['ruleType'] = 'phone_rule'
-          df['subscriptionId'] = 'turkish-spam-weekly'
-          final_columns = [
-              'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
-              'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
-          ]
-          df = df[final_columns]
-          df.to_csv('TR/processed_turkish_spam_numbers.csv', index=False)
-          print(f"Successfully processed and saved {len(df)} records to TR/processed_turkish_spam_numbers.csv")
-          EOF
+      - name: Download and Process Turkish Spam Numbers
+        run: python scripts/fetch_turkish_spam.py
 
       - name: Commit and Push CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(tr): update Turkish spam numbers database (TR/processed_turkish_spam_numbers.csv)"
+          commit_message: "chore(tr): update Turkish spam numbers database"
           file_pattern: "TR/*.csv"
-          repository: .
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           push_options: '--force'

@@ -13,41 +13,29 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Download Begone List
-        run: wget https://raw.githubusercontent.com/oulixalt/BegoneListeFR/refs/heads/Liste-compl%C3%A8te/Begone-FR.xml -O begone.xml
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-      - name: Parse XML and generate CSV into FR Folder
-        run: |
-          sudo apt-get update && sudo apt-get install -y libxml2-utils
-          mkdir -p FR
-          OUTPUT_CSV="FR/processed_fr_regex.csv"
-          echo "id,name,priority,action,pattern,isEnabled,subscriptionId,ruleType" > $OUTPUT_CSV
-          xmllint --xpath "//dict/key[text()='number']/following-sibling::string[1]/text()" begone.xml | \
-          while read number; do
-            pattern=$(echo "$number" | sed 's/+//g; s/#/.*/g; s/^/33/; s/$/$/')
-            id="$pattern"
-            name="Block numbers matching ${pattern%?}"
-            priority=3
-            action="block"
-            isEnabled=1
-            subscriptionId="begone-fr-regex"
-            ruleType="regex"
-            echo "\"$id\",\"$name\",$priority,\"$action\",\"$pattern\",$isEnabled,\"$subscriptionId\",\"$ruleType\"" >> $OUTPUT_CSV
-          done
-          echo "Successfully generated $OUTPUT_CSV"
+      - name: Install Dependencies
+        run: pip install pandas
+
+      - name: Download BegoneFR and Generate CSV
+        run: python scripts/fetch_begone_fr.py
 
       - name: Commit Processed CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(fr): update France regex block patterns (FR/processed_fr_regex.csv)"
+          commit_message: "chore(fr): update France regex block patterns"
           file_pattern: "FR/*.csv"
-          repository: .
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           push_options: '--force'

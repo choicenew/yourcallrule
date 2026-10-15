@@ -1,0 +1,49 @@
+{
+  "config_version": "1.0.0",
+  "last_updated": "2026-10-15T21:00:00Z",
+  "update_strategy": {
+    "sync_interval_hours": 24,
+    "allow_cellular_download": false,
+    "enable_delta_update": true,
+    "max_delta_depth": 7
+  },
+  "rulesets": [
+    {
+      "source_id": "fr_arcep_operators",
+      "name": "France ARCEP Telemarketing & Operator Prefixes",
+      "country_code": "FR",
+      "version": "2026-10-15T00:01:13Z",
+      "rule_type": "regex",
+      "raw_source_url": "https://saracroche.org/api/v1/lists/french-list-arcep-operators",
+      "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/FR/full_block.json",
+      "checksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "total_rules": 250,
+      "priority": 5,
+      "is_enabled": true
+    },
+    {
+      "source_id": "callshield_global",
+      "name": "CallShield Global Blocklist",
+      "country_code": "GLOBAL",
+      "version": "2026-10-15T18:00:00Z",
+      "rule_type": "hybrid",
+      "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/GLOBAL/full_block.json",
+      "hot_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/GLOBAL/hot_block.json",
+      "checksum_sha256": "4a5c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c",
+      "total_rules": 570000,
+      "priority": 3,
+      "is_enabled": true
+    }
+  ],
+  "delta_patches": [
+    {
+      "patch_id": "delta_20261015_01",
+      "source_id": "fr_arcep_operators",
+      "base_version": "2026-10-14T00:00:00Z",
+      "target_version": "2026-10-15T00:01:13Z",
+      "added_rules_count": 12,
+      "removed_rules_count": 0,
+      "patch_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/deltas/fr_arcep_patch_20261015.json"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+name: Sync All Rules & Update Delta Setup Config
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # 最佳空闲运行时间: 07:37 UTC (非整点 :37 规避 Actions 队列拥堵)
+    # - 对应美国太平洋时间深夜 23:37 (PT) / 转换为美东时间 02:37 (ET)，确保美国 FTC/FCC 官方前一日全量 CSV 均已完全发布归档
+    # - 对应北京时间 15:37 (CST)
+    - cron: '37 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync_and_generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install pandas phonenumbers pyyaml requests
+
+      - name: Fetch China vCards (CN 19 Categories)
+        run: |
+          python scripts/fetch_cn_vcards.py
+
+      - name: Fetch US Official Data (FTC & FCC)
+        run: |
+          python scripts/fetch_us_official.py
+
+      - name: Fetch France BegoneFR & ARCEP Regex
+        run: |
+          python scripts/fetch_begone_fr.py
+
+      - name: Fetch Turkish Spam Numbers
+        run: |
+          python scripts/fetch_turkish_spam.py
+
+      - name: Generate Regulatory Regex Rules
+        run: |
+          python scripts/generate_regulatory_regex.py
+
+      - name: Generate CallShield Community Hot List
+        run: |
+          python scripts/generate_hot_list.py
+
+      - name: Merge, Deduplicate and Update Config
+        run: |
+          python scripts/merge_and_deduplicate.py
+
+      - name: Commit and Push Updated Rules & Config
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto sync all rulesets and update app_delta_setup_config.json [skip ci]"
+          file_pattern: "CN/ US/ FR/ TR/ IN/ callshield/ merged_rules/ app_delta_setup_config.json"
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          push_options: '--force'

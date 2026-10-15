@@ -15,8 +15,7 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
@@ -24,109 +23,19 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
-      - name: Install pandas and phonenumbers
+      - name: Install Dependencies
         run: pip install pandas phonenumbers
 
-      - name: Download FTC Data (US Pacific Time Zone & Auto Retries)
-        run: |
-          mkdir -p US
-          
-          USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-          REFERER_URL="https://www.ftc.gov/news-events/data-visualizations/do-not-call-complaint-data"
-          
-          DOWNLOAD_SUCCESS=0
-          for i in 1 2 3 4 5; do
-            TARGET_DATE=$(TZ="America/Los_Angeles" date -d "$i days ago" +%Y-%m-%d)
-            FTC_URL="https://www.ftc.gov/sites/default/files/DNC_Complaint_Numbers_${TARGET_DATE}.csv"
-            echo "Attempting to download FTC data for US Pacific Date: $TARGET_DATE"
-            if wget --user-agent="$USER_AGENT" --referer="$REFERER_URL" -O ftc_data.csv "$FTC_URL"; then
-              if [ -s ftc_data.csv ]; then
-                echo "Successfully downloaded FTC data for $TARGET_DATE"
-                DOWNLOAD_SUCCESS=1
-                break
-              fi
-            fi
-          done
-
-          if [ $DOWNLOAD_SUCCESS -eq 0 ]; then
-            echo "No recent FTC CSV found in the last 5 days. Creating empty file to exit gracefully."
-            echo "" > ftc_data.csv
-          fi
-
-      - name: Process FTC Data
-        run: |
-          python <<EOF
-          import pandas as pd
-          import re
-          import phonenumbers
-          import os
-
-          input_file = 'ftc_data.csv'
-          
-          if not os.path.exists(input_file) or os.path.getsize(input_file) == 0:
-              print(f"The file {input_file} is empty. Exiting gracefully.")
-              exit(0)
-
-          try:
-              df = pd.read_csv(input_file, encoding='utf-8', on_bad_lines='skip')
-          except Exception as e:
-              print(f"Error reading CSV: {e}. Exiting gracefully.")
-              exit(0)
-
-          if 'Company_Phone_Number' not in df.columns:
-              print("Error: 'Company_Phone_Number' column not found in the CSV. Exiting gracefully.")
-              exit(0)
-
-          df.rename(columns={'Company_Phone_Number': 'phoneNumber'}, inplace=True)
-          df.dropna(subset=['phoneNumber'], inplace=True)
-          df['phoneNumber'] = df['phoneNumber'].astype(str).str.replace(r"\.0$", "", regex=True).str.strip()
-
-          def format_us_phone_number(number):
-              try:
-                  parsed_number = phonenumbers.parse(str(number), "US")
-                  if phonenumbers.is_valid_number(parsed_number):
-                      return phonenumbers.format_number(parsed_number, phonenumbers.PhoneNumberFormat.E164)
-              except phonenumbers.phonenumberutil.NumberParseException:
-                  pass
-              return None
-
-          df['phoneNumber'] = df['phoneNumber'].apply(format_us_phone_number)
-          df.dropna(subset=['phoneNumber'], inplace=True)
-          df.drop_duplicates(subset=['phoneNumber'], inplace=True)
-
-          if df.empty:
-              print("No valid phone numbers found after processing. Exiting gracefully.")
-              exit(0)
-
-          df['id'] = df['phoneNumber']
-          df['name'] = 'Robocall'
-          df['action'] = 'block'
-          df['priority'] = 3
-          df['labelId'] = 'robocall'
-          df['isEnabled'] = 1
-          df['count'] = 0
-          df['avatar'] = ''
-          df['ruleType'] = 'phone_rule'
-          df['subscriptionId'] = 'us-ftc-robocall-daily'
-
-          final_columns = [
-              'id', 'name', 'action', 'priority', 'phoneNumber', 'labelId', 
-              'isEnabled', 'count', 'avatar', 'ruleType', 'subscriptionId'
-          ]
-          df = df[final_columns]
-          
-          df.to_csv('US/ftc_robocalls.csv', index=False)
-          print(f"Successfully processed and saved {len(df)} records to US/ftc_robocalls.csv")
-          EOF
+      - name: Download and Process FTC Data
+        run: python scripts/fetch_us_official.py
 
       - name: Commit Processed Robocall CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(us): update US FTC robocall blocklist (US/ftc_robocalls.csv)"
+          commit_message: "chore(us): update US FTC robocall blocklist"
           file_pattern: "US/ftc_robocalls.csv"
-          repository: .
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           push_options: '--force'

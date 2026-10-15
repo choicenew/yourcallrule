@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "sources": [
+    {
+      "source_id": "cn_yellowpages_19",
+      "name": "China Yellowpages (19 Categories)",
+      "enabled": true,
+      "type": "cn_categories_csv",
+      "path": "CN",
+      "country_mode": "CN"
+    },
+    {
+      "source_id": "us_official_csv",
+      "name": "US FTC & FCC Official CSVs",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "US",
+      "country_mode": "auto"
+    },
+    {
+      "source_id": "fr_official_csv_regex",
+      "name": "France BegoneFR & ARCEP Regex",
+      "enabled": true,
+      "type": "directory_csv_regex",
+      "path": "FR",
+      "country_mode": "FR"
+    },
+    {
+      "source_id": "tr_spam_csv",
+      "name": "Turkish Spam Numbers",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "TR",
+      "country_mode": "TR"
+    },
+    {
+      "source_id": "in_trai_regex",
+      "name": "India TRAI 140 Regex",
+      "enabled": true,
+      "type": "json_rules",
+      "path": "IN/trai_140_regex.json",
+      "country_mode": "IN"
+    },
+    {
+      "source_id": "callshield_hot",
+      "name": "CallShield 24h Community Velocity Feed",
+      "enabled": true,
+      "type": "json_rules",
+      "path": "callshield/GLOBAL/hot_block.json",
+      "country_mode": "GLOBAL",
+      "is_hot_feed": true
+    },
+    {
+      "source_id": "unpacked_blocklists",
+      "name": "ShouldIAnswer & CleverDialer Unpacked Data",
+      "enabled": true,
+      "type": "unpacked_json",
+      "path": "call-spam-blocklist",
+      "country_mode": "auto"
+    }
+  ]
+}
