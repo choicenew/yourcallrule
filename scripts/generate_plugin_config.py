@@ -2,6 +2,10 @@
 """
 自动扫描 plugins html/ 目录下的全部 JS 插件，解析提取 PLUGIN_CONFIG 元数据，
 并自动生成根目录下的 app_plugin_setup_config.json 插件订阅配置文件。
+
+风险隔离要求 (Risk Isolation):
+所有插件的 raw 下载地址 (full_download_url) 必须指向专属插件仓库 ngodeel/yourcallrule：
+https://raw.githubusercontent.com/ngodeel/yourcallrule/main/plugins%20html/{encoded_filename}
 """
 
 import hashlib
@@ -16,6 +20,9 @@ PROJECT_DIR = Path(__file__).parent.parent
 PLUGINS_DIR = PROJECT_DIR / "plugins html"
 CONFIG_FILE = PROJECT_DIR / "app_plugin_setup_config.json"
 
+# 风险隔离专属插件仓库地址 (ngodeel/yourcallrule)
+PLUGIN_REPO_RAW_BASE = "https://raw.githubusercontent.com/ngodeel/yourcallrule/main/plugins%20html"
+
 
 def compute_file_sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -26,14 +33,12 @@ def compute_file_sha256(path: Path) -> str:
 
 
 def detect_country_code(filename: str, js_content: str) -> str:
-    # 1. 尝试从 JS 代码里的 countryCode 字段抓取
     country_m = re.search(r"countryCode\s*:\s*['\"]([^'\"]+)['\"]", js_content, re.IGNORECASE)
     if country_m:
         val = country_m.group(1).strip().upper()
         if len(val) == 2:
             return val
 
-    # 2. 根据文件名及代码中的关键关键词判断国家/地区
     fn_upper = filename.upper()
     if any(k in fn_upper for k in ("_CN", " CN", "BAIDU", "BD", "SOGOU", "SOO", "CHINESE")):
         return "CN"
@@ -72,7 +77,6 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
         print(f"  错误读取文件 {filename}: {e}")
         return None
 
-    # 匹配 PLUGIN_CONFIG 结构
     id_m = re.search(r"id\s*:\s*['\"]([^'\"]+)['\"]", content)
     name_m = re.search(r"name\s*:\s*['\"]([^'\"]+)['\"]", content)
     version_m = re.search(r"version\s*:\s*['\"]([^'\"]+)['\"]", content)
@@ -84,9 +88,10 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
     description = desc_m.group(1) if desc_m else f"JS Lookup Plugin for {name}"
     country_code = detect_country_code(filename, content)
 
-    # 对文件名做安全的 URL Encode (处理文件名中的空格，如 "bd action copy.js" -> "bd%20action%20copy.js")
+    # 对文件名做安全的 URL Encode (如 "bd action copy.js" -> "bd%20action%20copy.js")
     encoded_filename = urllib.parse.quote(filename)
-    full_url = f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/plugins%20html/{encoded_filename}"
+    # 风险隔离：全量指向专有插件仓库 ngodeel/yourcallrule
+    full_url = f"{PLUGIN_REPO_RAW_BASE}/{encoded_filename}"
     sha256 = compute_file_sha256(file_path)
 
     return {
@@ -112,19 +117,17 @@ def generate_app_plugin_setup_config():
     rulesets = []
     seen_ids = set()
 
-    # 递归遍历 plugins html/ 目录下的全部 .js 文件
     for js_file in sorted(PLUGINS_DIR.glob("**/*.js")):
         if js_file.is_file():
             item = parse_js_plugin_file(js_file)
             if item:
-                # 确保 id 不重复（如果遇到副本同名 id，加后缀标识）
                 sid = item["source_id"]
                 if sid in seen_ids:
                     item["source_id"] = f"{sid}_{js_file.stem.replace(' ', '_')}"
                 seen_ids.add(item["source_id"])
 
                 rulesets.append(item)
-                print(f"  -> 已解析插件: [{item['country_code']}] {item['name']} ({item['source_id']}) v{item['version']}")
+                print(f"  -> [风险隔离] 已解析插件: [{item['country_code']}] {item['name']} ({item['source_id']}) v{item['version']}")
 
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     config_payload = {
@@ -136,7 +139,7 @@ def generate_app_plugin_setup_config():
     with open(CONFIG_FILE, "w", encoding="utf-8") as f:
         json.dump(config_payload, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ 成功生成全自动插件配置文件: {CONFIG_FILE.name} (共计 {len(rulesets)} 个 JS 插件)")
+    print(f"\n✅ 成功生成风险隔离插件配置文件: {CONFIG_FILE.name} (共计 {len(rulesets)} 个 JS 插件)")
 
 
 if __name__ == "__main__":
