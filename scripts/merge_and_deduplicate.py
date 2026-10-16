@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-配置驱动 (Configuration-Driven) 主控合并、去重与 app_delta_setup_config.json 自动生成脚本
+数据源驱动 (Source-Driven) 主控合并与 app_delta_setup_config.json 动态更新脚本
 
-支持：
-1. 双重中国区数据融合：
-   - 数据 1：CN/ 目录下 19 个独立黄页分类 CSV，保持分类独立性，导出为 CN/*.json。
-   - 数据 2：全球多源库中归属中国 (+86) 的骚扰黑名单，导出为 CN/full_block.json。
-2. 未来无损扩展 (Zero-YAML Config Driven)：
-   - 读取 scripts/source_configs.json 数据源注册文件。未来新增数据源时只需在配置文件中追加，无需修改 YAML 工作流与 Python 核心代码。
+核心机制：
+1. 语法与规则属性严格对齐 Flutter 客户端 RuleTypeKeys, RuleType 及 RulePriority 领域模型：
+   - RuleTypeKeys: 'phone_rule', 'allow_block', 'regex', 'sim_slot', 'sms_regex'
+   - RulePriority: 0 (noneAction/veryLow), 1 (silenceAction/low), 3 (blockAction/belowMedium), 5 (medium/regex/hot), 10 (high/allow)
+2. 零硬编码 description 逻辑：规则集 description 统一由数据源配置 (source_configs.json) 或数据源元数据动态提供。
+3. 中国黄页 (CN) 标注为黄页服务号码（action: "none" / priority: 0），绝不混淆为骚扰电话。
 """
 
 import csv
@@ -32,6 +32,13 @@ MERGED_OUT_DIR = PROJECT_DIR / "merged_rules"
 CONFIG_FILE = PROJECT_DIR / "app_delta_setup_config.json"
 
 MAX_RULES_PER_FILE = 25000
+
+# 对齐 Flutter Dart RulePriority 领域模型值
+DART_PRIORITY_NONE = 0       # noneAction / veryLow (0) - 黄页标注
+DART_PRIORITY_SILENCE = 1    # silenceAction / low (1) - 静音拦截
+DART_PRIORITY_BLOCK = 3      # blockAction / belowMedium (3) - 普通单号黑名单
+DART_PRIORITY_MEDIUM = 5     # medium (5) - 号段正则 & 24h 社区突发热点
+DART_PRIORITY_HIGH = 10      # high (10) - 白名单/放行规则
 
 # 严格对齐 App predefined_labels.dart 标准 labelId
 CATEGORY_TO_LABEL_ID = {
@@ -124,7 +131,7 @@ LABEL_TO_FILE_SLUG = {
 
 
 def cleanup_legacy_l10n():
-    """彻底清理无用的旧 l10n 目录与 l10n.yaml 文件"""
+    """清理无用的旧 l10n 目录与 l10n.yaml 文件"""
     l10n_dir = PROJECT_DIR / "l10n"
     l10n_yaml = PROJECT_DIR / "l10n.yaml"
     if l10n_dir.exists():
@@ -157,7 +164,6 @@ def generate_rule_id(prefix: str, value: str) -> str:
 
 
 def extract_country_code(phone_e164: str) -> str:
-    """使用 phonenumbers (libphonenumber) 动态解析全球 200+ 国家 ISO 代码"""
     if phonenumbers:
         try:
             raw = phone_e164 if phone_e164.startswith("+") else f"+{phone_e164}"
@@ -222,7 +228,7 @@ def save_chunked_merged_rules(country_code: str, rules_list: list, filename_pref
 
 
 def process_china_19_categories() -> list[dict]:
-    """【中国数据源 1】：读取 CN/ 下 19 个独立黄页分类 CSV，保持各分类完全独立导出"""
+    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为对齐 Dart 领域的黄页规则 (action: "none", priority: 0)"""
     print("\n[开始处理中国区 19 个独立黄页分类...]")
     cn_dir = PROJECT_DIR / "CN"
     generated_rulesets = []
@@ -240,7 +246,7 @@ def process_china_19_categories() -> list[dict]:
                 reader = csv.DictReader(f)
                 for row in reader:
                     phone = row.get("phoneNumber", "").strip()
-                    name = row.get("name", "").strip() or f"China Yellowpage ({category_name})"
+                    name = row.get("name", "").strip() or f"中国黄页 ({category_name})"
                     label_id = row.get("labelId", "").strip() or CATEGORY_TO_LABEL_ID.get(slug, "other")
                     avatar = row.get("avatar", "").strip()
 
@@ -251,8 +257,8 @@ def process_china_19_categories() -> list[dict]:
                             "ruleType": "phone_rule",
                             "phoneNumber": phone,
                             "labelId": label_id,
-                            "priority": 0,
-                            "action": "none",
+                            "priority": DART_PRIORITY_NONE,   # 对应 Dart RulePriority.noneAction (0)
+                            "action": "none",                  # 黄页仅标注，无阻断动作
                             "isEnabled": 1,
                             "count": 0,
                             "avatar": avatar,
@@ -264,12 +270,17 @@ def process_china_19_categories() -> list[dict]:
 
         if rules:
             result = save_chunked_merged_rules("CN", rules, filename_prefix=slug)
+            desc = f"中国地区官方机构与企业黄页服务号码 ({category_name})"
             generated_rulesets.append({
+                "id": f"cn_yellowpage_{slug}",
                 "source_id": f"cn_yellowpage_{slug}",
-                "name": f"China Yellowpage - {category_name}",
+                "name": f"中国黄页 - {category_name}",
                 "country_code": "CN",
+                "description": desc,
+                "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/cn.png",
                 "rule_type": "phone_rule",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CN/{slug}.json",
+                "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CN/{slug}.json",
                 "checksum_sha256": result["sha256"],
                 "total_rules": result["total"],
                 "priority": 1,
@@ -280,17 +291,24 @@ def process_china_19_categories() -> list[dict]:
 
 
 def process_all_other_sources() -> list[dict]:
-    """配置驱动处理所有其他源（含中国区第二份数据 CN Spam Blocklist、US, FR, TR, IN, GLOBAL 等）"""
-    print("\n[开始根据 source_configs.json 融合其他国家数据源...]")
+    """配置驱动处理所有其他数据源（严格对齐 Dart RulePriority 与 RuleType）"""
+    print("\n[开始根据 source_configs.json 动态融合其他国家数据源...]")
     by_country_phone_map = defaultdict(lambda: defaultdict(lambda: {"count": 0, "categories": []}))
     regex_by_country = defaultdict(list)
     hot_ruleset = None
 
     sources = []
+    source_descriptions = {}
+    source_names = {}
     if SOURCE_CONFIG_FILE.exists():
         try:
             with open(SOURCE_CONFIG_FILE, "r", encoding="utf-8") as f:
                 sources = json.load(f).get("sources", [])
+                for s in sources:
+                    sid = s.get("source_id")
+                    if sid:
+                        source_descriptions[sid] = s.get("description", "")
+                        source_names[sid] = s.get("name", "")
         except Exception:
             pass
 
@@ -300,6 +318,8 @@ def process_all_other_sources() -> list[dict]:
 
         stype = src.get("type")
         path = PROJECT_DIR / src.get("path", "")
+        s_desc = src.get("description", "")
+        s_name = src.get("name", "")
 
         if stype in ("directory_csv", "directory_csv_regex") and path.exists():
             for csv_file in path.glob("*.csv"):
@@ -316,7 +336,7 @@ def process_all_other_sources() -> list[dict]:
                                     "name": row.get("name", "Regulatory Regex"),
                                     "ruleType": "regex",
                                     "pattern": pattern,
-                                    "priority": 5,
+                                    "priority": DART_PRIORITY_MEDIUM, # 对应 Dart RulePriority.medium (5)
                                     "action": "block",
                                     "isEnabled": 1,
                                 })
@@ -336,11 +356,15 @@ def process_all_other_sources() -> list[dict]:
                         if numbers:
                             sha256 = compute_file_sha256(path)
                             hot_ruleset = {
+                                "id": "callshield_community_hot",
                                 "source_id": "callshield_community_hot",
-                                "name": "CallShield 24h Community Hot Feed",
+                                "name": s_name or "CallShield 24h Community Hot Feed",
                                 "country_code": "GLOBAL",
+                                "description": s_desc or "Recent 24-hour community reported trending spam velocity feed",
+                                "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/global.png",
                                 "rule_type": "phone_rule",
                                 "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/GLOBAL/hot_block.json",
+                                "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/callshield/GLOBAL/hot_block.json",
                                 "checksum_sha256": sha256,
                                 "total_rules": len(numbers),
                                 "priority": 5,
@@ -386,7 +410,7 @@ def process_all_other_sources() -> list[dict]:
                 "ruleType": "phone_rule",
                 "phoneNumber": phone,
                 "labelId": label_id,
-                "priority": 3,
+                "priority": DART_PRIORITY_BLOCK,   # 对应 Dart RulePriority.belowMedium (3)
                 "action": "block",
                 "isEnabled": 1,
                 "count": meta["count"],
@@ -400,12 +424,18 @@ def process_all_other_sources() -> list[dict]:
 
         if rules:
             res = save_chunked_merged_rules(country, rules, filename_prefix="full_block")
+            s_desc = source_descriptions.get(f"{country.lower()}_spam_csv", f"Community and official blocklist dataset for {country}")
+            s_name = source_names.get(f"{country.lower()}_spam_csv", f"{country} Spam Blocklist Ruleset")
             generated_rulesets.append({
+                "id": f"{country.lower()}_full_block",
                 "source_id": f"{country.lower()}_full_block",
-                "name": f"{country} Spam Blocklist Ruleset",
+                "name": s_name,
                 "country_code": country,
+                "description": s_desc,
+                "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
                 "rule_type": "hybrid" if country in ("FR", "IN") else "phone_rule",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
+                "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
                 "checksum_sha256": res["sha256"],
                 "total_rules": res["total"],
                 "priority": 3,
@@ -415,12 +445,18 @@ def process_all_other_sources() -> list[dict]:
     for country, regex_rules in regex_by_country.items():
         if regex_rules:
             res = save_chunked_merged_rules(country, regex_rules, filename_prefix="full_block")
+            s_desc = source_descriptions.get(f"{country.lower()}_regulatory_regex", f"Regulatory telemarketing series and regex rules for {country}")
+            s_name = source_names.get(f"{country.lower()}_regulatory_regex", f"{country} Regulatory Regex Ruleset")
             generated_rulesets.append({
+                "id": f"{country.lower()}_regulatory_regex",
                 "source_id": f"{country.lower()}_regulatory_regex",
-                "name": f"{country} Regulatory Regex Ruleset",
+                "name": s_name,
                 "country_code": country,
+                "description": s_desc,
+                "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
                 "rule_type": "regex",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
+                "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
                 "checksum_sha256": res["sha256"],
                 "total_rules": res["total"],
                 "priority": 5,
@@ -454,25 +490,24 @@ def update_app_delta_setup_config(all_rulesets: list[dict]):
 
 
 def main():
-    print("=== 开始运行配置驱动的主控规则合并与订阅配置生成脚本 ===")
+    print("=== 开始运行数据源驱动的主控规则合并与配置生成脚本 ===")
 
-    # 0. 自动清理无用的旧 l10n
     cleanup_legacy_l10n()
 
     all_rulesets = []
 
-    # 1. 中国区【数据 1】：19 个独立黄页分类处理
+    # 1. 中国区黄页服务号码（黄页标注，非骚扰拦截）
     cn_19_rulesets = process_china_19_categories()
     all_rulesets.extend(cn_19_rulesets)
 
-    # 2. 其他国家数据源合并（含中国区【数据 2】：CN 骚扰黑名单大列表 cn_full_block）
+    # 2. 其他国家数据源合并（由 source_configs.json 动态提供描述与属性）
     other_rulesets = process_all_other_sources()
     all_rulesets.extend(other_rulesets)
 
     # 3. 写入 app_delta_setup_config.json
     update_app_delta_setup_config(all_rulesets)
 
-    print("\n=== 主控规则合并与 app_delta_setup_config.json 自动生成全流程完成 ===")
+    print("\n=== 数据源驱动的主控规则合并与配置生成全流程完成 ===")
 
 
 if __name__ == "__main__":
