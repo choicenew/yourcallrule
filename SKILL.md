@@ -1,6 +1,6 @@
 ---
 name: yourcallrule-data-pipeline
-description: YourCallYourRule 规则管线维护与扩展 SKILL 指南。包含数据自抓取、分类独立导出、标签对齐、正则生成、规则集订阅索引更新与 GitHub Actions 工作流最佳实践。
+description: YourCallYourRule 规则管线维护与扩展 SKILL 指南。包含数据自抓取、分类独立导出、标签对齐、动作类型 (RuleActionType) 与优先级映射、正则生成、规则集订阅索引更新与 GitHub Actions 工作流最佳实践。
 ---
 
 # YourCallYourRule Data Pipeline & Ruleset Management Skill
@@ -53,21 +53,46 @@ description: YourCallYourRule 规则管线维护与扩展 SKILL 指南。包含�
 
 所有导出的规则文件（`merged_rules/{COUNTRY}/*.json`）必须严格匹配 Flutter App 端的领域模型：
 
-### 1. 规则动作 (`action`) 与优先级 (`priority`) 对应标准
-* **黄页/官方机构标注**：`action: "none"`, `priority: 0` (`RulePriority.noneAction`)
-* **静音拦截**：`action: "silence"`, `priority: 1` (`RulePriority.silenceAction`)
-* **普通单号黑名单**：`action: "block"`, `priority: 3` (`RulePriority.blockAction` / `belowMedium`)
-* **24h 社区热点 & 法定号段正则**：`action: "block"`, `priority: 5` (`RulePriority.medium`)
-* **白名单/放行规则**：`action: "allow"`, `priority: 10` (`RulePriority.high`)
+### 1. 规则动作类型 (`action` / `RuleActionType`) 分类标准
 
-### 2. 规则类型 (`ruleType`) 标准取值
+App 端强类型动作枚举 `RuleActionType` 定义如下：
+```dart
+enum RuleActionType {
+  allow,    // 'allow' - 允许 / 白名单放行
+  block,    // 'block' - 阻止 / 挂断拦截
+  silence,  // 'silence' - 静音 / 无声响铃
+  redirect, // 'redirect' - 重定向 (目前未实现/保留字段)
+  label,    // 'label' - 标记 / 仅标注显示
+  notify,   // 'notify' - 通知
+  log,      // 'log' - 记录 / 仅日志记录
+  custom,   // 'custom' - 自定义
+  none,     // 'none' - 无动作 / 官方黄页与服务展示
+}
+```
+
+#### 各数据源与 `RuleActionType` 动作使用规范：
+* **`'none'` / `'label'`**：官方机构与企业黄页展示（如中国 19 个黄页分类 `CN/*.json`），仅做识别标注，**绝对不能设为 `block`**。
+* **`'block'`**：官方与社区骚扰电话/诈骗号码黑名单（`US/full_block.json`, `TR/full_block.json` ...）及法定号段正则（ARCEP、TRAI 140），直接挂断阻断。
+* **`'silence'`**：低风险或特殊需静音无声处理的号段。
+* **`'allow'`**：白名单放行规则。
+* **`'redirect'`**：**（特别注意：目前系统尚未实现重定向功能，暂不用于导出的规则）**。
+
+### 2. 规则优先级 (`priority` / `RulePriority`) 对应标准
+* **黄页/官方机构标注**：`action: "none"`, `priority: 0` (`RulePriority.noneAction` = 0)
+* **静音拦截**：`action: "silence"`, `priority: 1` (`RulePriority.silenceAction` = 1)
+* **普通单号黑名单**：`action: "block"`, `priority: 3` (`RulePriority.blockAction` / `belowMedium` = 3)
+* **24h 社区热点 & 法定号段正则**：`action: "block"`, `priority: 5` (`RulePriority.medium` = 5)
+* **白名单/放行规则**：`action: "allow"`, `priority: 10` (`RulePriority.high` = 10)
+
+### 3. 规则类型 (`ruleType` / `RuleTypeKeys`) 标准取值
 * `'phone_rule'`：普通单号规则
 * `'regex'`：号码正则表达式规则
 * `'allow_block'`：允许/阻断规则
 * `'sim_slot'`：卡槽规则
 * `'sms_regex'`：短信正则规则
+* **（绝对禁止输出 `'hybrid'` 等未定义类型）**
 
-### 3. 分类 Key (`labelId`) 对齐规范
+### 4. 分类 Key (`labelId`) 对齐规范
 必须映射至 `predefined_labels.dart` 支持的标准标签：
 `bank`, `delivery`, `ecommerce`, `takeaway`, `internet`, `travelticketing`, `applicationsoftware`, `entertainment`, `agent`, `government`, `localservices`, `automotiveindustry`, `carrental`, `insurance`, `telecommunication`, `hotel`, `cloudservice`, `other`, `telemarketing`, `collection`, `robocall`, `spamlikely`, `scamslikely`, `risk`。
 
@@ -101,7 +126,7 @@ description: YourCallYourRule 规则管线维护与扩展 SKILL 指南。包含�
 {
   "id": "cn_yellowpage_bank",
   "source_id": "cn_yellowpage_bank",
-  "name": "中国黄页 - 金融银行",
+  "name": "中国 (China) 官方黄页 - 金融银行",
   "country_code": "CN",
   "description": "中国地区官方机构与企业黄页服务号码 (金融银行)",
   "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/cn.png",
