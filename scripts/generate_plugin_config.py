@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 """
-自动扫描 plugins html/ 目录下的全部 JS 插件，解析提取 PLUGIN_CONFIG 元数据，
-并自动生成根目录下的 app_plugin_setup_config.json 插件订阅配置文件。
+全自动 JS 插件订阅配置生成脚本 (generate_plugin_config.py)
 
-风险隔离要求 (Risk Isolation):
-所有插件的 raw 下载地址 (full_download_url) 必须指向专属插件仓库 ngodeel/yourcallrule：
-https://raw.githubusercontent.com/ngodeel/yourcallrule/main/plugins%20html/{encoded_filename}
+功能：
+1. 克隆或拉取插件仓库 https://github.com/ngodeel/yourcallrule.git。
+2. 自动扫描 plugins html/ 目录下的全部 .js 插件文件。
+3. 解析提取 PLUGIN_CONFIG 元数据 (id, name, version, description, countryCode)。
+4. 计算文件 SHA-256 哈希值与下载 URL，生成/更新根目录 app_plugin_setup_config.json。
 """
 
 import hashlib
 import json
 import os
 import re
+import shutil
+import subprocess
 import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
@@ -20,8 +23,8 @@ PROJECT_DIR = Path(__file__).parent.parent
 PLUGINS_DIR = PROJECT_DIR / "plugins html"
 CONFIG_FILE = PROJECT_DIR / "app_plugin_setup_config.json"
 
-# 风险隔离专属插件仓库地址 (ngodeel/yourcallrule)
-PLUGIN_REPO_RAW_BASE = "https://raw.githubusercontent.com/ngodeel/yourcallrule/main/plugins%20html"
+PLUGIN_REPO_URL = "https://github.com/ngodeel/yourcallrule.git"
+PLUGIN_RAW_BASE = "https://raw.githubusercontent.com/ngodeel/yourcallrule/main/plugins%20html"
 
 
 def compute_file_sha256(path: Path) -> str:
@@ -30,6 +33,33 @@ def compute_file_sha256(path: Path) -> str:
         while chunk := f.read(8192):
             h.update(chunk)
     return h.hexdigest()
+
+
+def sync_plugin_repo():
+    """克隆或同步最新的插件仓库 (ngodeel/yourcallrule)"""
+    temp_clone_dir = PROJECT_DIR / "temp_plugin_repo"
+    if temp_clone_dir.exists():
+        shutil.rmtree(temp_clone_dir, ignore_errors=True)
+
+    print("--> 正在克隆最新的插件仓库...")
+    try:
+        subprocess.run(
+            ["git", "clone", "--depth", "1", PLUGIN_REPO_URL, str(temp_clone_dir)],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        cloned_plugins_dir = temp_clone_dir / "plugins html"
+        if cloned_plugins_dir.exists():
+            PLUGINS_DIR.mkdir(parents=True, exist_ok=True)
+            for file_path in cloned_plugins_dir.glob("*.js"):
+                shutil.copy(file_path, PLUGINS_DIR / file_path.name)
+            print(f"  成功同步插件文件到 {PLUGINS_DIR.name}/")
+    except Exception as e:
+        print(f"  克隆/更新插件仓库失败，使用本地 {PLUGINS_DIR.name}/ 目录: {e}")
+    finally:
+        if temp_clone_dir.exists():
+            shutil.rmtree(temp_clone_dir, ignore_errors=True)
 
 
 def detect_country_code(filename: str, js_content: str) -> str:
@@ -88,10 +118,8 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
     description = desc_m.group(1) if desc_m else f"JS Lookup Plugin for {name}"
     country_code = detect_country_code(filename, content)
 
-    # 对文件名做安全的 URL Encode (如 "bd action copy.js" -> "bd%20action%20copy.js")
     encoded_filename = urllib.parse.quote(filename)
-    # 风险隔离：全量指向专有插件仓库 ngodeel/yourcallrule
-    full_url = f"{PLUGIN_REPO_RAW_BASE}/{encoded_filename}"
+    full_url = f"{PLUGIN_RAW_BASE}/{encoded_filename}"
     sha256 = compute_file_sha256(file_path)
 
     return {
@@ -108,7 +136,10 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
 
 
 def generate_app_plugin_setup_config():
-    print("=== 开始自动生成 app_plugin_setup_config.json 插件订阅配置 ===")
+    print("=== 开始自动同步并生成 app_plugin_setup_config.json 插件配置 ===")
+
+    # 1. 尝试同步/克隆最新的插件仓库
+    sync_plugin_repo()
 
     if not PLUGINS_DIR.exists():
         print(f"  错误: 找不到目录 {PLUGINS_DIR}")
@@ -127,7 +158,7 @@ def generate_app_plugin_setup_config():
                 seen_ids.add(item["source_id"])
 
                 rulesets.append(item)
-                print(f"  -> [风险隔离] 已解析插件: [{item['country_code']}] {item['name']} ({item['source_id']}) v{item['version']}")
+                print(f"  -> 已解析插件: [{item['country_code']}] {item['name']} ({item['source_id']}) v{item['version']}")
 
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     config_payload = {
@@ -139,7 +170,7 @@ def generate_app_plugin_setup_config():
     with open(CONFIG_FILE, "w", encoding="utf-8") as f:
         json.dump(config_payload, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ 成功生成风险隔离插件配置文件: {CONFIG_FILE.name} (共计 {len(rulesets)} 个 JS 插件)")
+    print(f"\n✅ 成功生成插件配置文件: {CONFIG_FILE.name} (共计 {len(rulesets)} 个 JS 插件)")
 
 
 if __name__ == "__main__":
