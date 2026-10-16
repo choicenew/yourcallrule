@@ -6,8 +6,6 @@ on:
       - main
   schedule:
     # 最佳空闲运行时间: 07:37 UTC (非整点 :37 规避 Actions 队列拥堵)
-    # - 对应美国太平洋时间深夜 23:37 (PT) / 转换为美东时间 02:37 (ET)，确保美国 FTC/FCC 官方前一日全量 CSV 均已完全发布归档
-    # - 对应北京时间 15:37 (CST)
     - cron: '37 7 * * *'
   workflow_dispatch:
 
@@ -61,11 +59,15 @@ jobs:
         run: |
           python scripts/merge_and_deduplicate.py
 
+      - name: Generate Plugin Setup Config (JS Plugins)
+        run: |
+          python scripts/generate_plugin_config.py
+
       - name: Commit and Push Updated Rules & Config
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: auto sync all rulesets and update app_delta_setup_config.json [skip ci]"
-          file_pattern: "CN/ US/ FR/ TR/ IN/ callshield/ merged_rules/ app_delta_setup_config.json"
+          commit_message: "chore: auto sync rulesets, plugins and update setup configs [skip ci]"
+          file_pattern: "CN/ US/ FR/ TR/ IN/ callshield/ merged_rules/ app_delta_setup_config.json app_plugin_setup_config.json"
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           push_options: '--force'
