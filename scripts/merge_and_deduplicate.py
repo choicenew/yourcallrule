@@ -4,7 +4,7 @@
 
 核心机制：
 1. 语法与规则属性严格对齐 Flutter 客户端 RuleTypeKeys, RuleType 及 RulePriority 领域模型：
-   - RuleTypeKeys: 'phone_rule', 'allow_block', 'regex', 'sim_slot', 'sms_regex'
+   - RuleTypeKeys: 'phone_rule', 'allow_block', 'regex', 'sim_slot', 'sms_regex' (绝对不存在 'hybrid')
    - RulePriority: 0 (noneAction/veryLow), 1 (silenceAction/low), 3 (blockAction/belowMedium), 5 (medium/regex/hot), 10 (high/allow)
 2. 零硬编码 description 逻辑：规则集 description 统一由数据源配置 (source_configs.json) 或数据源元数据动态提供。
 3. 中国黄页 (CN) 标注为黄页服务号码（action: "none" / priority: 0），绝不混淆为骚扰电话。
@@ -228,7 +228,7 @@ def save_chunked_merged_rules(country_code: str, rules_list: list, filename_pref
 
 
 def process_china_19_categories() -> list[dict]:
-    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为对齐 Dart 领域的黄页规则 (action: "none", priority: 0)"""
+    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为对齐 Dart 领域的黄页规则 (rule_type: 'phone_rule')"""
     print("\n[开始处理中国区 19 个独立黄页分类...]")
     cn_dir = PROJECT_DIR / "CN"
     generated_rulesets = []
@@ -278,7 +278,7 @@ def process_china_19_categories() -> list[dict]:
                 "country_code": "CN",
                 "description": desc,
                 "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/cn.png",
-                "rule_type": "phone_rule",
+                "rule_type": "phone_rule", # 严格匹配 Dart RuleType.phone ('phone_rule')
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CN/{slug}.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CN/{slug}.json",
                 "checksum_sha256": result["sha256"],
@@ -291,7 +291,7 @@ def process_china_19_categories() -> list[dict]:
 
 
 def process_all_other_sources() -> list[dict]:
-    """配置驱动处理所有其他数据源（严格对齐 Dart RulePriority 与 RuleType）"""
+    """配置驱动处理所有其他数据源（绝对不存在 'hybrid'，根据内容精准为 'phone_rule' 或 'regex'）"""
     print("\n[开始根据 source_configs.json 动态融合其他国家数据源...]")
     by_country_phone_map = defaultdict(lambda: defaultdict(lambda: {"count": 0, "categories": []}))
     regex_by_country = defaultdict(list)
@@ -336,7 +336,7 @@ def process_all_other_sources() -> list[dict]:
                                     "name": row.get("name", "Regulatory Regex"),
                                     "ruleType": "regex",
                                     "pattern": pattern,
-                                    "priority": DART_PRIORITY_MEDIUM, # 对应 Dart RulePriority.medium (5)
+                                    "priority": DART_PRIORITY_MEDIUM,
                                     "action": "block",
                                     "isEnabled": 1,
                                 })
@@ -362,7 +362,7 @@ def process_all_other_sources() -> list[dict]:
                                 "country_code": "GLOBAL",
                                 "description": s_desc or "Recent 24-hour community reported trending spam velocity feed",
                                 "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/global.png",
-                                "rule_type": "phone_rule",
+                                "rule_type": "phone_rule", # 单号热点，精确为 'phone_rule'
                                 "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/GLOBAL/hot_block.json",
                                 "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/callshield/GLOBAL/hot_block.json",
                                 "checksum_sha256": sha256,
@@ -396,6 +396,7 @@ def process_all_other_sources() -> list[dict]:
     if hot_ruleset:
         generated_rulesets.append(hot_ruleset)
 
+    # 导出各个国家的单号规则集 (rule_type: 'phone_rule')
     for country, phone_dict in by_country_phone_map.items():
         rules = []
         for phone, meta in phone_dict.items():
@@ -418,10 +419,6 @@ def process_all_other_sources() -> list[dict]:
                 "subscriptionId": f"{country.lower()}-spam-blocklist"
             })
 
-        if country in regex_by_country:
-            rules.extend(regex_by_country[country])
-            del regex_by_country[country]
-
         if rules:
             res = save_chunked_merged_rules(country, rules, filename_prefix="full_block")
             s_desc = source_descriptions.get(f"{country.lower()}_spam_csv", f"Community and official blocklist dataset for {country}")
@@ -433,7 +430,7 @@ def process_all_other_sources() -> list[dict]:
                 "country_code": country,
                 "description": s_desc,
                 "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
-                "rule_type": "hybrid" if country in ("FR", "IN") else "phone_rule",
+                "rule_type": "phone_rule", # 绝不使用 'hybrid'，精准对齐 Dart 'phone_rule'
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
                 "checksum_sha256": res["sha256"],
@@ -442,6 +439,7 @@ def process_all_other_sources() -> list[dict]:
                 "is_enabled": True
             })
 
+    # 导出正则规则集 (rule_type: 'regex')
     for country, regex_rules in regex_by_country.items():
         if regex_rules:
             res = save_chunked_merged_rules(country, regex_rules, filename_prefix="full_block")
@@ -454,7 +452,7 @@ def process_all_other_sources() -> list[dict]:
                 "country_code": country,
                 "description": s_desc,
                 "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
-                "rule_type": "regex",
+                "rule_type": "regex", # 精准对齐 Dart 'regex'
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
                 "checksum_sha256": res["sha256"],
