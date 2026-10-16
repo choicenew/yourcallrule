@@ -2,12 +2,10 @@
 """
 数据源驱动 (Source-Driven) 主控合并与 app_delta_setup_config.json 动态更新脚本
 
-核心机制：
-1. 语法与规则属性严格对齐 Flutter 客户端 RuleTypeKeys, RuleType 及 RulePriority 领域模型：
-   - RuleTypeKeys: 'phone_rule', 'allow_block', 'regex', 'sim_slot', 'sms_regex' (绝对不存在 'hybrid')
-   - RulePriority: 0 (noneAction/veryLow), 1 (silenceAction/low), 3 (blockAction/belowMedium), 5 (medium/regex/hot), 10 (high/allow)
-2. 零硬编码 description 逻辑：规则集 description 统一由数据源配置 (source_configs.json) 或数据源元数据动态提供。
-3. 中国黄页 (CN) 标注为黄页服务号码（action: "none" / priority: 0），绝不混淆为骚扰电话。
+改进点：
+1. 明确中国区 19 个黄页分类属性为 action: "none" / priority: 0（绝非 block 拦截规则）。
+2. 消除国家缩写：规则集中全量采用“国家全称（如：美国 (United States)、法国 (France)、中国 (China)）”，避免缩写混淆。
+3. 语法与规则属性严格对齐 Flutter 客户端领域模型。
 """
 
 import csv
@@ -34,11 +32,29 @@ CONFIG_FILE = PROJECT_DIR / "app_delta_setup_config.json"
 MAX_RULES_PER_FILE = 25000
 
 # 对齐 Flutter Dart RulePriority 领域模型值
-DART_PRIORITY_NONE = 0       # noneAction / veryLow (0) - 黄页标注
+DART_PRIORITY_NONE = 0       # noneAction / veryLow (0) - 黄页标注 (非拦截)
 DART_PRIORITY_SILENCE = 1    # silenceAction / low (1) - 静音拦截
 DART_PRIORITY_BLOCK = 3      # blockAction / belowMedium (3) - 普通单号黑名单
 DART_PRIORITY_MEDIUM = 5     # medium (5) - 号段正则 & 24h 社区突发热点
 DART_PRIORITY_HIGH = 10      # high (10) - 白名单/放行规则
+
+# 国家代码到国家全称的清晰中文/英文全称映射表（拒绝生硬缩写）
+COUNTRY_FULL_NAMES = {
+    "CN": "中国 (China)",
+    "US": "美国 (United States)",
+    "FR": "法国 (France)",
+    "TR": "土耳其 (Turkey)",
+    "IN": "印度 (India)",
+    "DE": "德国 (Germany)",
+    "ES": "西班牙 (Spain)",
+    "IT": "意大利 (Italy)",
+    "JP": "日本 (Japan)",
+    "KR": "韩国 (South Korea)",
+    "RU": "俄罗斯 (Russia)",
+    "UK": "英国 (United Kingdom)",
+    "BR": "巴西 (Brazil)",
+    "GLOBAL": "全球 (Global)",
+}
 
 # 严格对齐 App predefined_labels.dart 标准 labelId
 CATEGORY_TO_LABEL_ID = {
@@ -228,13 +244,15 @@ def save_chunked_merged_rules(country_code: str, rules_list: list, filename_pref
 
 
 def process_china_19_categories() -> list[dict]:
-    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为对齐 Dart 领域的黄页规则 (rule_type: 'phone_rule')"""
+    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为对齐 Dart 领域的黄页规则 (action: "none", priority: 0)"""
     print("\n[开始处理中国区 19 个独立黄页分类...]")
     cn_dir = PROJECT_DIR / "CN"
     generated_rulesets = []
 
     if not cn_dir.exists():
         return generated_rulesets
+
+    full_country_name = COUNTRY_FULL_NAMES.get("CN", "中国 (China)")
 
     for csv_file in cn_dir.glob("*.csv"):
         category_name = csv_file.stem
@@ -258,7 +276,7 @@ def process_china_19_categories() -> list[dict]:
                             "phoneNumber": phone,
                             "labelId": label_id,
                             "priority": DART_PRIORITY_NONE,   # 对应 Dart RulePriority.noneAction (0)
-                            "action": "none",                  # 黄页仅标注，无阻断动作
+                            "action": "none",                  # 属性严格为 "none"，黄页服务号码非拦截规则
                             "isEnabled": 1,
                             "count": 0,
                             "avatar": avatar,
@@ -274,16 +292,16 @@ def process_china_19_categories() -> list[dict]:
             generated_rulesets.append({
                 "id": f"cn_yellowpage_{slug}",
                 "source_id": f"cn_yellowpage_{slug}",
-                "name": f"中国黄页 - {category_name}",
+                "name": f"{full_country_name} 官方黄页 - {category_name}",
                 "country_code": "CN",
                 "description": desc,
                 "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/cn.png",
-                "rule_type": "phone_rule", # 严格匹配 Dart RuleType.phone ('phone_rule')
+                "rule_type": "phone_rule",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CN/{slug}.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CN/{slug}.json",
                 "checksum_sha256": result["sha256"],
                 "total_rules": result["total"],
-                "priority": 1,
+                "priority": 0,
                 "is_enabled": True
             })
 
@@ -291,7 +309,7 @@ def process_china_19_categories() -> list[dict]:
 
 
 def process_all_other_sources() -> list[dict]:
-    """配置驱动处理所有其他数据源（绝对不存在 'hybrid'，根据内容精准为 'phone_rule' 或 'regex'）"""
+    """配置驱动处理所有其他数据源（名称清晰使用国家全称，无生硬缩写）"""
     print("\n[开始根据 source_configs.json 动态融合其他国家数据源...]")
     by_country_phone_map = defaultdict(lambda: defaultdict(lambda: {"count": 0, "categories": []}))
     regex_by_country = defaultdict(list)
@@ -358,11 +376,11 @@ def process_all_other_sources() -> list[dict]:
                             hot_ruleset = {
                                 "id": "callshield_community_hot",
                                 "source_id": "callshield_community_hot",
-                                "name": s_name or "CallShield 24h Community Hot Feed",
+                                "name": "全球 (Global) 24小时突发骚扰电话热点 Feed",
                                 "country_code": "GLOBAL",
                                 "description": s_desc or "Recent 24-hour community reported trending spam velocity feed",
                                 "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/global.png",
-                                "rule_type": "phone_rule", # 单号热点，精确为 'phone_rule'
+                                "rule_type": "phone_rule",
                                 "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/GLOBAL/hot_block.json",
                                 "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/callshield/GLOBAL/hot_block.json",
                                 "checksum_sha256": sha256,
@@ -396,7 +414,7 @@ def process_all_other_sources() -> list[dict]:
     if hot_ruleset:
         generated_rulesets.append(hot_ruleset)
 
-    # 导出各个国家的单号规则集 (rule_type: 'phone_rule')
+    # 导出各个国家的单号规则集 (规则名使用国家中文全称，清晰无歧义)
     for country, phone_dict in by_country_phone_map.items():
         rules = []
         for phone, meta in phone_dict.items():
@@ -419,10 +437,16 @@ def process_all_other_sources() -> list[dict]:
                 "subscriptionId": f"{country.lower()}-spam-blocklist"
             })
 
+        if country in regex_by_country:
+            rules.extend(regex_by_country[country])
+            del regex_by_country[country]
+
         if rules:
             res = save_chunked_merged_rules(country, rules, filename_prefix="full_block")
-            s_desc = source_descriptions.get(f"{country.lower()}_spam_csv", f"Community and official blocklist dataset for {country}")
-            s_name = source_names.get(f"{country.lower()}_spam_csv", f"{country} Spam Blocklist Ruleset")
+            full_cname = COUNTRY_FULL_NAMES.get(country, f"{country} 地区")
+            s_desc = source_descriptions.get(f"{country.lower()}_spam_csv", f"{full_cname} 官方与社区骚扰电话/诈骗号码黑名单库")
+            s_name = f"{full_cname} 高风险骚扰电话拦截规则"
+
             generated_rulesets.append({
                 "id": f"{country.lower()}_full_block",
                 "source_id": f"{country.lower()}_full_block",
@@ -430,7 +454,7 @@ def process_all_other_sources() -> list[dict]:
                 "country_code": country,
                 "description": s_desc,
                 "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
-                "rule_type": "phone_rule", # 绝不使用 'hybrid'，精准对齐 Dart 'phone_rule'
+                "rule_type": "phone_rule",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
                 "checksum_sha256": res["sha256"],
@@ -439,12 +463,14 @@ def process_all_other_sources() -> list[dict]:
                 "is_enabled": True
             })
 
-    # 导出正则规则集 (rule_type: 'regex')
+    # 导出正则规则集
     for country, regex_rules in regex_by_country.items():
         if regex_rules:
             res = save_chunked_merged_rules(country, regex_rules, filename_prefix="full_block")
-            s_desc = source_descriptions.get(f"{country.lower()}_regulatory_regex", f"Regulatory telemarketing series and regex rules for {country}")
-            s_name = source_names.get(f"{country.lower()}_regulatory_regex", f"{country} Regulatory Regex Ruleset")
+            full_cname = COUNTRY_FULL_NAMES.get(country, f"{country} 地区")
+            s_desc = source_descriptions.get(f"{country.lower()}_regulatory_regex", f"{full_cname} 法定电信营销号段正则拦截规则")
+            s_name = f"{full_cname} 电信监管号段正则规则"
+
             generated_rulesets.append({
                 "id": f"{country.lower()}_regulatory_regex",
                 "source_id": f"{country.lower()}_regulatory_regex",
@@ -452,7 +478,7 @@ def process_all_other_sources() -> list[dict]:
                 "country_code": country,
                 "description": s_desc,
                 "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
-                "rule_type": "regex", # 精准对齐 Dart 'regex'
+                "rule_type": "regex",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
                 "checksum_sha256": res["sha256"],
@@ -494,11 +520,11 @@ def main():
 
     all_rulesets = []
 
-    # 1. 中国区黄页服务号码（黄页标注，非骚扰拦截）
+    # 1. 中国区黄页服务号码（黄页标注，action: "none", priority: 0）
     cn_19_rulesets = process_china_19_categories()
     all_rulesets.extend(cn_19_rulesets)
 
-    # 2. 其他国家数据源合并（由 source_configs.json 动态提供描述与属性）
+    # 2. 其他国家数据源合并（全量采用国家中文/英文全称，清除生硬缩写）
     other_rulesets = process_all_other_sources()
     all_rulesets.extend(other_rulesets)
 
