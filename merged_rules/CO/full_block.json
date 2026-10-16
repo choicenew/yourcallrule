@@ -310,5 +310,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "co-spam-blocklist"
+  },
+  {
+    "id": "01673fb5c8ca909509a1bb6cc4984f9a",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+573116480037",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "co-spam-blocklist"
   }
 ]
