@@ -3,10 +3,10 @@
 全自动 JS 插件订阅配置生成脚本 (generate_plugin_config.py)
 
 功能：
-1. 克隆或拉取插件仓库 https://github.com/ngodeel/yourcallrule.git。
+1. 克隆或同步插件仓库 https://github.com/ngodeel/yourcallrule.git。
 2. 自动扫描 plugins html/ 目录下的全部 .js 插件文件。
-3. 解析提取 PLUGIN_CONFIG 元数据 (id, name, version, description, countryCode)。
-4. 计算文件 SHA-256 哈希值与下载 URL，生成/更新根目录 app_plugin_setup_config.json。
+3. 纯数据驱动解析：直接从 JS 文件内的 PLUGIN_CONFIG 自动提取 id, name, version, description 与 countryCode，禁用任何 Python 侧硬编码。
+4. 实时计算 SHA-256 哈希值与下载 URL，导出生成 app_plugin_setup_config.json。
 """
 
 import hashlib
@@ -36,7 +36,7 @@ def compute_file_sha256(path: Path) -> str:
 
 
 def sync_plugin_repo():
-    """克隆或同步最新的插件仓库 (ngodeel/yourcallrule)"""
+    """克隆同步最新的插件仓库 (ngodeel/yourcallrule)"""
     temp_clone_dir = PROJECT_DIR / "temp_plugin_repo"
     if temp_clone_dir.exists():
         shutil.rmtree(temp_clone_dir, ignore_errors=True)
@@ -56,46 +56,10 @@ def sync_plugin_repo():
                 shutil.copy(file_path, PLUGINS_DIR / file_path.name)
             print(f"  成功同步插件文件到 {PLUGINS_DIR.name}/")
     except Exception as e:
-        print(f"  克隆/更新插件仓库失败，使用本地 {PLUGINS_DIR.name}/ 目录: {e}")
+        print(f"  克隆/同步插件仓库提示，使用本地 {PLUGINS_DIR.name}/ 目录: {e}")
     finally:
         if temp_clone_dir.exists():
             shutil.rmtree(temp_clone_dir, ignore_errors=True)
-
-
-def detect_country_code(filename: str, js_content: str) -> str:
-    country_m = re.search(r"countryCode\s*:\s*['\"]([^'\"]+)['\"]", js_content, re.IGNORECASE)
-    if country_m:
-        val = country_m.group(1).strip().upper()
-        if len(val) == 2:
-            return val
-
-    fn_upper = filename.upper()
-    if any(k in fn_upper for k in ("_CN", " CN", "BAIDU", "BD", "SOGOU", "SOO", "CHINESE")):
-        return "CN"
-    if "US" in fn_upper or "USPHONEBOOK" in fn_upper:
-        return "US"
-    if "FR" in fn_upper or "DOISJE" in fn_upper:
-        return "FR"
-    if "DE" in fn_upper:
-        return "DE"
-    if "ES" in fn_upper or "LISTASPAM" in fn_upper:
-        return "ES"
-    if "JP" in fn_upper or "JPNUMBER" in fn_upper or "TELNAVI" in fn_upper or "MEIWAKU" in fn_upper:
-        return "JP"
-    if "RU" in fn_upper:
-        return "RU"
-    if "UK" in fn_upper or "ODEBRACTELEFON" in fn_upper:
-        return "UK"
-    if "HK" in fn_upper or "TW" in fn_upper or "MO" in fn_upper:
-        return "HK"
-    if "MY" in fn_upper or "ID" in fn_upper:
-        return "MY"
-    if "AR" in fn_upper:
-        return "AR"
-    if "AT" in fn_upper:
-        return "AT"
-
-    return "GLOBAL"
 
 
 def parse_js_plugin_file(file_path: Path) -> dict | None:
@@ -107,16 +71,18 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
         print(f"  错误读取文件 {filename}: {e}")
         return None
 
-    id_m = re.search(r"id\s*:\s*['\"]([^'\"]+)['\"]", content)
-    name_m = re.search(r"name\s*:\s*['\"]([^'\"]+)['\"]", content)
-    version_m = re.search(r"version\s*:\s*['\"]([^'\"]+)['\"]", content)
-    desc_m = re.search(r"description\s*:\s*['\"]([^'\"]+)['\"]", content)
+    # 从 JS 文件的 PLUGIN_CONFIG 中直接纯自动读取解析，绝不硬编码判断
+    id_m = re.search(r"['\"]?id['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
+    name_m = re.search(r"['\"]?name['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
+    version_m = re.search(r"['\"]?version['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
+    desc_m = re.search(r"['\"]?description['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
+    country_m = re.search(r"['\"]?country_?[cC]ode['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
 
     source_id = id_m.group(1) if id_m else filename.replace('.js', '').replace(' ', '_')
     name = name_m.group(1) if name_m else filename.replace('.js', '')
     version = version_m.group(1) if version_m else "1.0.0"
-    description = desc_m.group(1) if desc_m else f"JS Lookup Plugin for {name}"
-    country_code = detect_country_code(filename, content)
+    description = desc_m.group(1) if desc_m else name
+    country_code = country_m.group(1).strip().upper() if country_m else "GLOBAL"
 
     encoded_filename = urllib.parse.quote(filename)
     full_url = f"{PLUGIN_RAW_BASE}/{encoded_filename}"
@@ -136,9 +102,9 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
 
 
 def generate_app_plugin_setup_config():
-    print("=== 开始自动同步并生成 app_plugin_setup_config.json 插件配置 ===")
+    print("=== 开始全自动读取 JS 插件元数据并生成 app_plugin_setup_config.json ===")
 
-    # 1. 尝试同步/克隆最新的插件仓库
+    # 1. 自动同步克隆插件仓库
     sync_plugin_repo()
 
     if not PLUGINS_DIR.exists():
@@ -158,7 +124,7 @@ def generate_app_plugin_setup_config():
                 seen_ids.add(item["source_id"])
 
                 rulesets.append(item)
-                print(f"  -> 已解析插件: [{item['country_code']}] {item['name']} ({item['source_id']}) v{item['version']}")
+                print(f"  -> [自动解析] [{item['country_code']}] {item['name']} ({item['source_id']}) v{item['version']}")
 
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     config_payload = {
@@ -170,7 +136,7 @@ def generate_app_plugin_setup_config():
     with open(CONFIG_FILE, "w", encoding="utf-8") as f:
         json.dump(config_payload, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ 成功生成插件配置文件: {CONFIG_FILE.name} (共计 {len(rulesets)} 个 JS 插件)")
+    print(f"\n✅ 成功自动生成插件配置文件: {CONFIG_FILE.name} (共计 {len(rulesets)} 个 JS 插件)")
 
 
 if __name__ == "__main__":
