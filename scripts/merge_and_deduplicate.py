@@ -3,10 +3,10 @@
 数据源驱动 (Source-Driven) 主控合并与 app_delta_setup_config.json 动态更新脚本
 
 核心机制：
-1. 国际化描述 JSON 驱动 (country_i18n.json)：各国 name 与 description 完全采用对应国家的本土母语描述。
+1. 国际化全量 JSON 驱动 (country_i18n.json)：包含全球 130+ 国家和地区的母语名称、母语描述与国旗代码，以及中国 19 个独立黄页分类。
 2. 结合 libphonenumber (phonenumbers.geocoder) 动态解析未知国家全称，拒绝任何生硬写死与硬编码。
 3. 全球开源 FlagCDN 支持 (https://flagcdn.com/w80/{code}.png)：实时提供全球 240+ 国家和地区的高清国旗 Icon，零 404 错链。
-4. 中国黄页 (CN) 明确标注为黄页服务号码（action: "none" / priority: 0），绝对不混淆为骚扰电话。
+4. 中国黄页 (CN) 明确标注为黄页服务号码（action: "none" / priority: 0），绝不混淆为骚扰电话。
 5. 语法与规则属性严格对齐 Flutter 客户端领域模型 (RuleTypeKeys, RulePriority)。
 """
 
@@ -133,15 +133,16 @@ LABEL_TO_FILE_SLUG = {
 }
 
 
-def load_country_i18n() -> dict[str, dict]:
-    """读取 country_i18n.json 获取各国家的官方/母语名称与母语描述"""
+def load_country_i18n() -> tuple[dict[str, dict], dict[str, dict]]:
+    """读取 country_i18n.json 获取全球各国家及中国 19 分类的母语名称与母语描述"""
     if COUNTRY_I18N_FILE.exists():
         try:
             with open(COUNTRY_I18N_FILE, "r", encoding="utf-8") as f:
-                return json.load(f).get("countries", {})
+                payload = json.load(f)
+                return payload.get("countries", {}), payload.get("cn_categories", {})
         except Exception:
             pass
-    return {}
+    return {}, {}
 
 
 def cleanup_legacy_l10n():
@@ -210,7 +211,6 @@ def resolve_country_i18n_info(country_code: str, country_i18n_db: dict[str, dict
     code_upper = country_code.upper()
     code_lower = country_code.lower()
 
-    # 1. 优先查 country_i18n.json 拿准确母语描述
     if code_upper in country_i18n_db:
         info = country_i18n_db[code_upper]
         name = info.get("name", code_upper)
@@ -219,11 +219,9 @@ def resolve_country_i18n_info(country_code: str, country_i18n_db: dict[str, dict
         flag_url = f"https://flagcdn.com/w80/{flag_code}.png"
         return name, desc, flag_url
 
-    # 2. 未包含在 json 里的国家，使用 libphonenumber 地理解析器动态获取英文全称
     resolved_name = code_upper
     if phonenumbers and geocoder:
         try:
-            # 构造虚拟示例号码获取地理国家全称
             sample_number = phonenumbers.parse(f"+{phonenumbers.country_code_for_region(code_upper)}12345678", None)
             name_geo = geocoder.country_name_for_number(sample_number, "en")
             if name_geo:
@@ -272,8 +270,8 @@ def save_chunked_merged_rules(country_code: str, rules_list: list, filename_pref
         return {"file": country_dir / f"{filename_prefix}_part1.json", "total": total, "sha256": sha256, "country": country_code, "slug": filename_prefix}
 
 
-def process_china_19_categories() -> list[dict]:
-    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为黄页服务规则 (action: "none", priority: 0)"""
+def process_china_19_categories(cn_cat_i18n: dict[str, dict]) -> list[dict]:
+    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，结合 country_i18n.json 导出黄页规则 (action: "none", priority: 0)"""
     print("\n[开始处理中国区 19 个独立黄页分类...]")
     cn_dir = PROJECT_DIR / "CN"
     generated_rulesets = []
@@ -315,11 +313,14 @@ def process_china_19_categories() -> list[dict]:
 
         if rules:
             result = save_chunked_merged_rules("CN", rules, filename_prefix=slug)
-            desc = f"中国地区官方机构与企业黄页服务号码 ({category_name})"
+            cat_meta = cn_cat_i18n.get(slug, {})
+            title_name = cat_meta.get("name", f"中国黄页 - {category_name}")
+            desc = cat_meta.get("description", f"中国地区官方机构与企业黄页服务号码 ({category_name})")
+
             generated_rulesets.append({
                 "id": f"cn_yellowpage_{slug}",
                 "source_id": f"cn_yellowpage_{slug}",
-                "name": f"中国黄页 - {category_name}",
+                "name": title_name,
                 "country_code": "CN",
                 "description": desc,
                 "icon_url": "https://flagcdn.com/w80/cn.png",
@@ -336,7 +337,7 @@ def process_china_19_categories() -> list[dict]:
 
 
 def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
-    """配置驱动处理所有其他数据源（名称与母语描述由 country_i18n.json 驱动，Icon 使用 FlagCDN）"""
+    """配置驱动处理所有其他数据源（名称与母语描述完全由 country_i18n.json 驱动）"""
     print("\n[开始根据 source_configs.json 动态融合其他国家数据源...]")
     by_country_phone_map = defaultdict(lambda: defaultdict(lambda: {"count": 0, "categories": []}))
     regex_by_country = defaultdict(list)
@@ -535,12 +536,12 @@ def main():
     print("=== 开始运行 i18n JSON 驱动的主控规则合并与配置生成脚本 ===")
 
     cleanup_legacy_l10n()
-    country_i18n_db = load_country_i18n()
+    country_i18n_db, cn_cat_i18n = load_country_i18n()
 
     all_rulesets = []
 
     # 1. 中国区黄页服务号码（黄页标注，action: "none", priority: 0）
-    cn_19_rulesets = process_china_19_categories()
+    cn_19_rulesets = process_china_19_categories(cn_cat_i18n)
     all_rulesets.extend(cn_19_rulesets)
 
     # 2. 其他国家数据源合并（由 country_i18n.json + FlagCDN 驱动）
