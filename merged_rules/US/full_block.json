@@ -190916,5 +190916,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "4773f40723020071437847183fca823d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18322820045",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
   }
 ]
