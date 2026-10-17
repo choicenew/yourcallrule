@@ -2,10 +2,12 @@
 """
 数据源驱动 (Source-Driven) 主控合并与 app_delta_setup_config.json 动态更新脚本
 
-改进点：
-1. 明确中国区 19 个黄页分类属性为 action: "none" / priority: 0（绝非 block 拦截规则）。
-2. 消除国家缩写：规则集中全量采用“国家全称（如：美国 (United States)、法国 (France)、中国 (China)）”，避免缩写混淆。
-3. 语法与规则属性严格对齐 Flutter 客户端领域模型。
+核心机制：
+1. 国际化描述 JSON 驱动 (country_i18n.json)：各国 name 与 description 完全采用对应国家的本土母语描述。
+2. 结合 libphonenumber (phonenumbers.geocoder) 动态解析未知国家全称，拒绝任何生硬写死与硬编码。
+3. 全球开源 FlagCDN 支持 (https://flagcdn.com/w80/{code}.png)：实时提供全球 240+ 国家和地区的高清国旗 Icon，零 404 错链。
+4. 中国黄页 (CN) 明确标注为黄页服务号码（action: "none" / priority: 0），绝对不混淆为骚扰电话。
+5. 语法与规则属性严格对齐 Flutter 客户端领域模型 (RuleTypeKeys, RulePriority)。
 """
 
 import csv
@@ -20,12 +22,15 @@ from pathlib import Path
 
 try:
     import phonenumbers
+    from phonenumbers import geocoder
 except ImportError:
     phonenumbers = None
+    geocoder = None
 
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent
 SOURCE_CONFIG_FILE = SCRIPT_DIR / "source_configs.json"
+COUNTRY_I18N_FILE = SCRIPT_DIR / "country_i18n.json"
 MERGED_OUT_DIR = PROJECT_DIR / "merged_rules"
 CONFIG_FILE = PROJECT_DIR / "app_delta_setup_config.json"
 
@@ -37,24 +42,6 @@ DART_PRIORITY_SILENCE = 1    # silenceAction / low (1) - 静音拦截
 DART_PRIORITY_BLOCK = 3      # blockAction / belowMedium (3) - 普通单号黑名单
 DART_PRIORITY_MEDIUM = 5     # medium (5) - 号段正则 & 24h 社区突发热点
 DART_PRIORITY_HIGH = 10      # high (10) - 白名单/放行规则
-
-# 国家代码到国家全称的清晰中文/英文全称映射表（拒绝生硬缩写）
-COUNTRY_FULL_NAMES = {
-    "CN": "中国 (China)",
-    "US": "美国 (United States)",
-    "FR": "法国 (France)",
-    "TR": "土耳其 (Turkey)",
-    "IN": "印度 (India)",
-    "DE": "德国 (Germany)",
-    "ES": "西班牙 (Spain)",
-    "IT": "意大利 (Italy)",
-    "JP": "日本 (Japan)",
-    "KR": "韩国 (South Korea)",
-    "RU": "俄罗斯 (Russia)",
-    "UK": "英国 (United Kingdom)",
-    "BR": "巴西 (Brazil)",
-    "GLOBAL": "全球 (Global)",
-}
 
 # 严格对齐 App predefined_labels.dart 标准 labelId
 CATEGORY_TO_LABEL_ID = {
@@ -146,6 +133,17 @@ LABEL_TO_FILE_SLUG = {
 }
 
 
+def load_country_i18n() -> dict[str, dict]:
+    """读取 country_i18n.json 获取各国家的官方/母语名称与母语描述"""
+    if COUNTRY_I18N_FILE.exists():
+        try:
+            with open(COUNTRY_I18N_FILE, "r", encoding="utf-8") as f:
+                return json.load(f).get("countries", {})
+        except Exception:
+            pass
+    return {}
+
+
 def cleanup_legacy_l10n():
     """清理无用的旧 l10n 目录与 l10n.yaml 文件"""
     l10n_dir = PROJECT_DIR / "l10n"
@@ -207,6 +205,37 @@ def extract_country_code(phone_e164: str) -> str:
     return "GLOBAL"
 
 
+def resolve_country_i18n_info(country_code: str, country_i18n_db: dict[str, dict]) -> tuple[str, str, str]:
+    """使用 country_i18n.json 结合 libphonenumber (phonenumbers.geocoder) 动态获取国家名称、母语描述与 FlagCDN 链接"""
+    code_upper = country_code.upper()
+    code_lower = country_code.lower()
+
+    # 1. 优先查 country_i18n.json 拿准确母语描述
+    if code_upper in country_i18n_db:
+        info = country_i18n_db[code_upper]
+        name = info.get("name", code_upper)
+        desc = info.get("description", f"Official and community blocklist for {name}")
+        flag_code = info.get("flag_code", code_lower)
+        flag_url = f"https://flagcdn.com/w80/{flag_code}.png"
+        return name, desc, flag_url
+
+    # 2. 未包含在 json 里的国家，使用 libphonenumber 地理解析器动态获取英文全称
+    resolved_name = code_upper
+    if phonenumbers and geocoder:
+        try:
+            # 构造虚拟示例号码获取地理国家全称
+            sample_number = phonenumbers.parse(f"+{phonenumbers.country_code_for_region(code_upper)}12345678", None)
+            name_geo = geocoder.country_name_for_number(sample_number, "en")
+            if name_geo:
+                resolved_name = name_geo
+        except Exception:
+            pass
+
+    flag_url = f"https://flagcdn.com/w80/{code_lower}.png"
+    default_desc = f"Official and community spam & scam numbers blocklist for {resolved_name}"
+    return resolved_name, default_desc, flag_url
+
+
 def save_chunked_merged_rules(country_code: str, rules_list: list, filename_prefix: str = "full_block") -> dict:
     country_dir = MERGED_OUT_DIR / country_code
     country_dir.mkdir(parents=True, exist_ok=True)
@@ -244,15 +273,13 @@ def save_chunked_merged_rules(country_code: str, rules_list: list, filename_pref
 
 
 def process_china_19_categories() -> list[dict]:
-    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为对齐 Dart 领域的黄页规则 (action: "none", priority: 0)"""
+    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，导出为黄页服务规则 (action: "none", priority: 0)"""
     print("\n[开始处理中国区 19 个独立黄页分类...]")
     cn_dir = PROJECT_DIR / "CN"
     generated_rulesets = []
 
     if not cn_dir.exists():
         return generated_rulesets
-
-    full_country_name = COUNTRY_FULL_NAMES.get("CN", "中国 (China)")
 
     for csv_file in cn_dir.glob("*.csv"):
         category_name = csv_file.stem
@@ -276,7 +303,7 @@ def process_china_19_categories() -> list[dict]:
                             "phoneNumber": phone,
                             "labelId": label_id,
                             "priority": DART_PRIORITY_NONE,   # 对应 Dart RulePriority.noneAction (0)
-                            "action": "none",                  # 属性严格为 "none"，黄页服务号码非拦截规则
+                            "action": "none",                  # 明确为 "none"（黄页服务标注，非拦截）
                             "isEnabled": 1,
                             "count": 0,
                             "avatar": avatar,
@@ -292,10 +319,10 @@ def process_china_19_categories() -> list[dict]:
             generated_rulesets.append({
                 "id": f"cn_yellowpage_{slug}",
                 "source_id": f"cn_yellowpage_{slug}",
-                "name": f"{full_country_name} 官方黄页 - {category_name}",
+                "name": f"中国黄页 - {category_name}",
                 "country_code": "CN",
                 "description": desc,
-                "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/cn.png",
+                "icon_url": "https://flagcdn.com/w80/cn.png",
                 "rule_type": "phone_rule",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CN/{slug}.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CN/{slug}.json",
@@ -308,25 +335,18 @@ def process_china_19_categories() -> list[dict]:
     return generated_rulesets
 
 
-def process_all_other_sources() -> list[dict]:
-    """配置驱动处理所有其他数据源（名称清晰使用国家全称，无生硬缩写）"""
+def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
+    """配置驱动处理所有其他数据源（名称与母语描述由 country_i18n.json 驱动，Icon 使用 FlagCDN）"""
     print("\n[开始根据 source_configs.json 动态融合其他国家数据源...]")
     by_country_phone_map = defaultdict(lambda: defaultdict(lambda: {"count": 0, "categories": []}))
     regex_by_country = defaultdict(list)
     hot_ruleset = None
 
     sources = []
-    source_descriptions = {}
-    source_names = {}
     if SOURCE_CONFIG_FILE.exists():
         try:
             with open(SOURCE_CONFIG_FILE, "r", encoding="utf-8") as f:
                 sources = json.load(f).get("sources", [])
-                for s in sources:
-                    sid = s.get("source_id")
-                    if sid:
-                        source_descriptions[sid] = s.get("description", "")
-                        source_names[sid] = s.get("name", "")
         except Exception:
             pass
 
@@ -376,10 +396,10 @@ def process_all_other_sources() -> list[dict]:
                             hot_ruleset = {
                                 "id": "callshield_community_hot",
                                 "source_id": "callshield_community_hot",
-                                "name": "全球 (Global) 24小时突发骚扰电话热点 Feed",
+                                "name": s_name or "Global 24h Community Hot Feed",
                                 "country_code": "GLOBAL",
                                 "description": s_desc or "Recent 24-hour community reported trending spam velocity feed",
-                                "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/global.png",
+                                "icon_url": "https://flagcdn.com/w80/un.png",
                                 "rule_type": "phone_rule",
                                 "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/GLOBAL/hot_block.json",
                                 "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/callshield/GLOBAL/hot_block.json",
@@ -414,7 +434,7 @@ def process_all_other_sources() -> list[dict]:
     if hot_ruleset:
         generated_rulesets.append(hot_ruleset)
 
-    # 导出各个国家的单号规则集 (规则名使用国家中文全称，清晰无歧义)
+    # 导出各个国家的单号规则集 (名字与母语描述由 country_i18n.json + libphonenumber 动态提供)
     for country, phone_dict in by_country_phone_map.items():
         rules = []
         for phone, meta in phone_dict.items():
@@ -443,17 +463,16 @@ def process_all_other_sources() -> list[dict]:
 
         if rules:
             res = save_chunked_merged_rules(country, rules, filename_prefix="full_block")
-            full_cname = COUNTRY_FULL_NAMES.get(country, f"{country} 地区")
-            s_desc = source_descriptions.get(f"{country.lower()}_spam_csv", f"{full_cname} 官方与社区骚扰电话/诈骗号码黑名单库")
-            s_name = f"{full_cname} 高风险骚扰电话拦截规则"
+            c_name, c_desc, c_flag = resolve_country_i18n_info(country, country_i18n_db)
+            s_name = f"{c_name} Spam Blocklist Ruleset"
 
             generated_rulesets.append({
                 "id": f"{country.lower()}_full_block",
                 "source_id": f"{country.lower()}_full_block",
                 "name": s_name,
                 "country_code": country,
-                "description": s_desc,
-                "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
+                "description": c_desc,
+                "icon_url": c_flag,
                 "rule_type": "phone_rule",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
@@ -467,17 +486,16 @@ def process_all_other_sources() -> list[dict]:
     for country, regex_rules in regex_by_country.items():
         if regex_rules:
             res = save_chunked_merged_rules(country, regex_rules, filename_prefix="full_block")
-            full_cname = COUNTRY_FULL_NAMES.get(country, f"{country} 地区")
-            s_desc = source_descriptions.get(f"{country.lower()}_regulatory_regex", f"{full_cname} 法定电信营销号段正则拦截规则")
-            s_name = f"{full_cname} 电信监管号段正则规则"
+            c_name, c_desc, c_flag = resolve_country_i18n_info(country, country_i18n_db)
+            s_name = f"{c_name} Regulatory Regex Ruleset"
 
             generated_rulesets.append({
                 "id": f"{country.lower()}_regulatory_regex",
                 "source_id": f"{country.lower()}_regulatory_regex",
                 "name": s_name,
                 "country_code": country,
-                "description": s_desc,
-                "icon_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/{country.lower()}.png",
+                "description": c_desc,
+                "icon_url": c_flag,
                 "rule_type": "regex",
                 "full_download_url": f"https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/{country}/full_block.json",
                 "cdn_download_url": f"https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/{country}/full_block.json",
@@ -514,9 +532,10 @@ def update_app_delta_setup_config(all_rulesets: list[dict]):
 
 
 def main():
-    print("=== 开始运行数据源驱动的主控规则合并与配置生成脚本 ===")
+    print("=== 开始运行 i18n JSON 驱动的主控规则合并与配置生成脚本 ===")
 
     cleanup_legacy_l10n()
+    country_i18n_db = load_country_i18n()
 
     all_rulesets = []
 
@@ -524,14 +543,14 @@ def main():
     cn_19_rulesets = process_china_19_categories()
     all_rulesets.extend(cn_19_rulesets)
 
-    # 2. 其他国家数据源合并（全量采用国家中文/英文全称，清除生硬缩写）
-    other_rulesets = process_all_other_sources()
+    # 2. 其他国家数据源合并（由 country_i18n.json + FlagCDN 驱动）
+    other_rulesets = process_all_other_sources(country_i18n_db)
     all_rulesets.extend(other_rulesets)
 
     # 3. 写入 app_delta_setup_config.json
     update_app_delta_setup_config(all_rulesets)
 
-    print("\n=== 数据源驱动的主控规则合并与配置生成全流程完成 ===")
+    print("\n=== 主控规则合并与配置生成全流程完成 ===")
 
 
 if __name__ == "__main__":

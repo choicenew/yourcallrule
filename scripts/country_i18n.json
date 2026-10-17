@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "countries": {
+    "CN": {
+      "name": "中国 (China)",
+      "description": "中国地区高风险骚扰电话与诈骗号码黑名单库",
+      "flag_code": "cn"
+    },
+    "US": {
+      "name": "United States",
+      "description": "US FTC and FCC official complaint dataset and robocall blocklist",
+      "flag_code": "us"
+    },
+    "FR": {
+      "name": "France",
+      "description": "Liste des numéros de spam, démarchage téléphonique et arnaques pour la France",
+      "flag_code": "fr"
+    },
+    "TR": {
+      "name": "Türkiye",
+      "description": "Türkiye topluluk spam ve dolandırıcılık telefon numaraları kara listesi",
+      "flag_code": "tr"
+    },
+    "ES": {
+      "name": "España",
+      "description": "Lista negra de números de spam y llamadas no deseadas en España",
+      "flag_code": "es"
+    },
+    "DE": {
+      "name": "Deutschland",
+      "description": "Sperrliste für unerwünschte Anrufe und Spam-Nummern in Deutschland",
+      "flag_code": "de"
+    },
+    "IT": {
+      "name": "Italia",
+      "description": "Lista nera di numeri di spam e chiamate indesiderate in Italia",
+      "flag_code": "it"
+    },
+    "JP": {
+      "name": "日本",
+      "description": "日本国内の迷惑電話・詐欺電話ブロックリスト",
+      "flag_code": "jp"
+    },
+    "KR": {
+      "name": "대한민국",
+      "description": "대한민국 스팸 및 보이스피싱 전화번호 차단 목록",
+      "flag_code": "kr"
+    },
+    "RU": {
+      "name": "Россия",
+      "description": "Черный список спам-звонков и мошеннических номеров России",
+      "flag_code": "ru"
+    },
+    "IN": {
+      "name": "India",
+      "description": "India TRAI 140 commercial communication blocklist and spam numbers",
+      "flag_code": "in"
+    },
+    "SG": {
+      "name": "Singapore",
+      "description": "Official and community reported spam and scam call blocklist for Singapore",
+      "flag_code": "sg"
+    },
+    "EE": {
+      "name": "Eesti",
+      "description": "Práhi- ja kelmungkõnedest teatamise andmebaas Eestis",
+      "flag_code": "ee"
+    },
+    "PR": {
+      "name": "Puerto Rico",
+      "description": "Lista de números no deseados y llamadas de spam en Puerto Rico",
+      "flag_code": "pr"
+    },
+    "BR": {
+      "name": "Brasil",
+      "description": "Lista negra de chamadas indesejadas e números de spam no Brasil",
+      "flag_code": "br"
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "description": "UK community and official nuisance and scam call blocklist",
+      "flag_code": "gb"
+    },
+    "AU": {
+      "name": "Australia",
+      "description": "Australian scam and unwanted marketing calls blocklist",
+      "flag_code": "au"
+    },
+    "CA": {
+      "name": "Canada",
+      "description": "Canadian unwanted call complaints and telemarketing blocklist",
+      "flag_code": "ca"
+    },
+    "MX": {
+      "name": "México",
+      "description": "Lista de llamadas no deseadas y números de spam en México",
+      "flag_code": "mx"
+    },
+    "GLOBAL": {
+      "name": "Global",
+      "description": "Global aggregated cross-verified spam and scam numbers blocklist",
+      "flag_code": "un"
+    }
+  }
+}
