@@ -11,7 +11,8 @@ from pathlib import Path
 import urllib.request
 import pandas as pd
 
-PROJECT_DIR = Path(__file__).parent.parent
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_DIR = SCRIPT_DIR.parent.parent
 TR_DIR = PROJECT_DIR / "TR"
 OUT_CSV = TR_DIR / "processed_turkish_spam_numbers.csv"
 TR_SPAM_URL = "https://raw.githubusercontent.com/symbuzzer/Turkish-Spam-Numbers/main/numbers"

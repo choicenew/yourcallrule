@@ -29,7 +29,7 @@ jobs:
         run: pip install pandas
 
       - name: Download BegoneFR and Generate CSV
-        run: python scripts/fetch_begone_fr.py
+        run: python scripts/fetchers/fetch_begone_fr.py
 
       - name: Commit Processed CSV
         uses: stefanzweifel/git-auto-commit-action@v5

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Shared I/O helpers for the data pipeline."""
 
 from __future__ import annotations
@@ -77,9 +76,7 @@ def ensure_feed_not_collapsed(
     if current_count < floor:
         raise FeedCollapseError(
             f"refusing to collapse {path}: {current_count} {item_key} would replace "
-            f"{previous_count}; minimum is {floor}. Re-run with --allow-collapse "
-            "only after verifying the drop is real; an empty feed also needs its "
-            "name in --cleared."
+            f"{previous_count}; minimum is {floor}."
         )
 
 

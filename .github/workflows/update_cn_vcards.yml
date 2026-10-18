@@ -29,7 +29,7 @@ jobs:
         run: pip install pyyaml requests
 
       - name: Fetch and Clean China vCards
-        run: python scripts/fetch_cn_vcards.py
+        run: python scripts/fetchers/fetch_cn_vcards.py
 
       - name: Commit Final CSVs
         uses: stefanzweifel/git-auto-commit-action@v5

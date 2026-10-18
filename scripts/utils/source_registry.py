@@ -1,10 +1,4 @@
-"""Evidence and freshness rules for public spam-data sources.
-
-The registry is deliberately data-driven. Importers can add a source only when
-its access mode, licence, geography, redistribution terms, and freshness policy
-are explicit. Runtime callers never need to know whether a source is public or
-operator-gated; the snapshot records that distinction for review.
-"""
+"""Evidence and freshness rules for public spam-data sources."""
 
 from __future__ import annotations
 
@@ -12,7 +6,6 @@ from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 from typing import Any, Mapping
-
 
 REQUIRED_FIELDS = {
     "id",
@@ -30,8 +23,6 @@ REQUIRED_FIELDS = {
 
 
 def load_source_manifest(path: Path) -> dict[str, Any]:
-    """Load and validate the source registry before a network run starts."""
-
     with path.open(encoding="utf-8") as handle:
         manifest = json.load(handle)
     if not isinstance(manifest, dict) or not isinstance(manifest.get("sources"), list):
@@ -171,10 +162,7 @@ def _freshness_state(source: Mapping[str, Any], generated_at: datetime) -> str:
     return "stale" if age > stale_after_days * 86_400 else "fresh"
 
 
-def _false_positive_rate(
-    not_spam_votes: int,
-    spam_reports: int,
-) -> float:
+def _false_positive_rate(not_spam_votes: int, spam_reports: int) -> float:
     denominator = not_spam_votes + spam_reports
     if denominator <= 0:
         return 0.0

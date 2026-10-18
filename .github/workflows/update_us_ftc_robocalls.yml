@@ -29,7 +29,7 @@ jobs:
         run: pip install pandas phonenumbers
 
       - name: Download and Process FTC Data
-        run: python scripts/fetch_us_official.py
+        run: python scripts/fetchers/fetch_us_official.py
 
       - name: Commit Processed Robocall CSV
         uses: stefanzweifel/git-auto-commit-action@v5

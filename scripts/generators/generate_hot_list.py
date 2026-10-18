@@ -12,16 +12,19 @@ import os
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_DIR = SCRIPT_DIR.parent.parent
+UTILS_DIR = SCRIPT_DIR.parent / "utils"
+if str(UTILS_DIR) not in sys.path:
+    sys.path.insert(0, str(UTILS_DIR))
+
 from phone_normalization import validated_report_number
+from pipeline_io import atomic_write_json, report_queue_digest
 
-from pipeline_io import (
-    atomic_write_json,
-    report_queue_digest,
-)
-
-REPO_DATA_DIR = Path(__file__).parent.parent / "callshield" / "GLOBAL"
+REPO_DATA_DIR = PROJECT_DIR / "callshield" / "GLOBAL"
 DATA_DIR = Path(os.environ.get("CALLSHIELD_DATA_DIR", REPO_DATA_DIR))
-REPORTS_DIR = Path(os.environ.get("CALLSHIELD_REPORTS_DIR", Path(__file__).parent.parent / "callshield" / "community_feed"))
+REPORTS_DIR = Path(os.environ.get("CALLSHIELD_REPORTS_DIR", PROJECT_DIR / "callshield" / "community_feed"))
 HOT_LIST_FILE = DATA_DIR / "hot_block.json"
 
 HOT_LIST_SIZE = 500

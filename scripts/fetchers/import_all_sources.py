@@ -18,20 +18,26 @@ import csv
 import hashlib
 import io
 import json
+import os
 import re
 import sys
 import time
 import argparse
-import os
 from datetime import datetime, timezone
 from pathlib import Path
-from collections import Counter
+
+# Add scripts/utils to sys.path
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_DIR = SCRIPT_DIR.parent.parent
+UTILS_DIR = SCRIPT_DIR.parent / "utils"
+if str(UTILS_DIR) not in sys.path:
+    sys.path.insert(0, str(UTILS_DIR))
+
 from phone_normalization import (
     is_plausible_number,
     normalize_nanp_number,
     normalize_report_number,
 )
-
 from pipeline_io import atomic_write_json
 from source_registry import (
     attach_source_evidence,
@@ -47,9 +53,9 @@ try:
 except ImportError as exc:
     raise SystemExit("requests is required. Install with: pip install requests") from exc
 
-DATA_DIR = Path(__file__).parent.parent / "ref" / "data"
+DATA_DIR = PROJECT_DIR / "ref" / "data"
 if not DATA_DIR.exists():
-    DATA_DIR = Path(__file__).parent / "raw_data"
+    DATA_DIR = SCRIPT_DIR.parent / "raw_data"
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 SOURCE_MANIFEST_FILE = DATA_DIR / "source-manifest.json"

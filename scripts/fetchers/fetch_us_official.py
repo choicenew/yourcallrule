@@ -14,7 +14,8 @@ import urllib.request
 import pandas as pd
 import phonenumbers
 
-PROJECT_DIR = Path(__file__).parent.parent
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_DIR = SCRIPT_DIR.parent.parent
 US_DIR = PROJECT_DIR / "US"
 FTC_OUT_CSV = US_DIR / "ftc_robocalls.csv"
 FCC_OUT_CSV = US_DIR / "fcc_processed_data.csv"

@@ -5,7 +5,7 @@
 功能：
 1. 克隆或同步插件仓库 https://github.com/ngodeel/yourcallrule.git。
 2. 自动扫描 plugins html/ 目录下的全部 .js 插件文件。
-3. 纯数据驱动解析：直接从 JS 文件内的 PLUGIN_CONFIG 自动提取 id, name, version, description 与 countryCode，禁用任何 Python 侧硬编码。
+3. 纯数据驱动解析：直接从 JS 文件内的 PLUGIN_CONFIG 自动提取 id, name, version, description 与 countryCode。
 4. 实时计算 SHA-256 哈希值与下载 URL，导出生成 app_plugin_setup_config.json。
 """
 
@@ -19,7 +19,8 @@ import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 
-PROJECT_DIR = Path(__file__).parent.parent
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_DIR = SCRIPT_DIR.parent.parent
 PLUGINS_DIR = PROJECT_DIR / "plugins html"
 CONFIG_FILE = PROJECT_DIR / "app_plugin_setup_config.json"
 
@@ -36,7 +37,6 @@ def compute_file_sha256(path: Path) -> str:
 
 
 def sync_plugin_repo():
-    """克隆同步最新的插件仓库 (ngodeel/yourcallrule)"""
     temp_clone_dir = PROJECT_DIR / "temp_plugin_repo"
     if temp_clone_dir.exists():
         shutil.rmtree(temp_clone_dir, ignore_errors=True)
@@ -71,7 +71,6 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
         print(f"  错误读取文件 {filename}: {e}")
         return None
 
-    # 从 JS 文件的 PLUGIN_CONFIG 中直接纯自动读取解析，绝不硬编码判断
     id_m = re.search(r"['\"]?id['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
     name_m = re.search(r"['\"]?name['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
     version_m = re.search(r"['\"]?version['\"]?\s*:\s*['\"]([^'\"]+)['\"]", content)
@@ -104,7 +103,6 @@ def parse_js_plugin_file(file_path: Path) -> dict | None:
 def generate_app_plugin_setup_config():
     print("=== 开始全自动读取 JS 插件元数据并生成 app_plugin_setup_config.json ===")
 
-    # 1. 自动同步克隆插件仓库
     sync_plugin_repo()
 
     if not PLUGINS_DIR.exists():

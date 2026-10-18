@@ -21,18 +21,49 @@ description: YourCallYourRule 规则管线维护与扩展 SKILL 指南。包含�
    * **法国 (`FR/`) & 土耳其 (`TR/`)**：包含 BegoneFR、土耳其黑名单 CSV。
 3. **数据块 C：法定号码段正则库 (`IN/`, `FR/`)**
    * 法国 ARCEP、印度 TRAI 140 等法定电销号段，独立生成为标准正则规则 (`ruleType: 'regex'`)。
-4. **数据块 D：顶层汇总与配置更新 (`scripts/merge_and_deduplicate.py`)**
+4. **数据块 D：顶层汇总与配置更新 (`scripts/mergers/merge_and_deduplicate.py`)**
    * 配置驱动的主合并引擎。统一读取 Raw 数据，进行 E.164 规范化、`predefined_labels.dart` 标签对齐、商标中立化，导出规则至 `merged_rules/` 并自动生成 `app_delta_setup_config.json`。
 
 ---
 
-## 模块 2：新增数据源扩展指南 (Zero-YAML & Zero-Code Extension)
+## 模块 2：`scripts/` 目录分类层级与架构规范
+
+`scripts/` 目录采取职责高度解耦的五级子文件夹架构：
+
+```text
+scripts/
+├── configs/                           # 配置文件子目录 (JSON 格式)
+│   ├── country_i18n.json              # 全球 130+ 国家与中国 19 分类母语名称/描述/FlagCDN
+│   ├── phone_sources_config.json      # 单号数据源及目录配置
+│   └── regex_configs.json             # 独立正则规则配置 (ARCEP, TRAI 140 等)
+├── fetchers/                          # 数据抓取与数据源同步模块
+│   ├── fetch_begone_fr.py             # 法国 BegoneFR 抓取器
+│   ├── fetch_cn_vcards.py             # 中国 19 个分类黄页同步器
+│   ├── fetch_turkish_spam.py          # 土耳其黑名单同步器
+│   ├── fetch_us_official.py           # 美国 FTC/FCC 官方 CSV 全量下载器
+│   └── import_all_sources.py          # 原始 API/Feed 动态抓取器
+├── generators/                        # 规则生成与索引更新模块
+│   ├── generate_hot_list.py           # CallShield 24h 社区热点计算器
+│   ├── generate_plugin_config.py      # JS 插件配置自动生成器
+│   └── generate_regulatory_regex.py   # 独立正则规则生成器
+├── mergers/                           # 合并去重与归一化核心模块
+│   └── merge_and_deduplicate.py       # 顶层归一化主合并引擎
+└── utils/                             # 工具与底层解析库
+    ├── phone_normalization.py         # E.164 与 NANP 号码规范化解析器 (libphonenumber)
+    ├── pipeline_io.py                 # 文件安全写与 SHA-256 哈希计算器
+    ├── probe_live_sources.py          # 在线查号 SkipCalls 探针检测
+    └── source_registry.py             # 数据源元数据与时效注册表
+```
+
+---
+
+## 模块 3：新增数据源扩展指南 (Zero-YAML & Zero-Code Extension)
 
 本项目支持**无需修改 GitHub Workflows YAML、无需修改 Python 核心代码**的无损新增扩展：
 
 ### 扩展步骤：
 1. 将新获取的原始 CSV / JSON 文件存入对应国家的文件夹中。
-2. 打开 `scripts/source_configs.json`，在 `"sources"` 数组中追加一个数据源配置项：
+2. 打开 `scripts/configs/phone_sources_config.json`，在 `"phone_sources"` 数组中追加一个数据源配置项：
    ```json
    {
      "source_id": "your_new_source_id",
@@ -42,14 +73,15 @@ description: YourCallYourRule 规则管线维护与扩展 SKILL 指南。包含�
      "type": "directory_csv",
      "path": "数据所在的文件夹相对路径",
      "country_mode": "auto",
-     "priority": 3
+     "priority": 3,
+     "action": "block"
    }
    ```
-3. 运行 `python scripts/merge_and_deduplicate.py`，主脚本会自动扫描新数据源，完成格式化、导出，并在 `app_delta_setup_config.json` 中**自动注册新规则集及其 SHA-256 哈希校验和**。
+3. 运行 `python scripts/mergers/merge_and_deduplicate.py`，主脚本会自动扫描新数据源，完成格式化、导出，并在 `app_delta_setup_config.json` 中**自动注册新规则集及其 SHA-256 哈希校验和**。
 
 ---
 
-## 模块 3：规则属性与 Flutter 领域模型映射标准 (Domain Model Schema)
+## 模块 4：规则属性与 Flutter 领域模型映射标准 (Domain Model Schema)
 
 所有导出的规则文件（`merged_rules/{COUNTRY}/*.json`）必须严格匹配 Flutter App 端的领域模型：
 
@@ -98,7 +130,7 @@ enum RuleActionType {
 
 ---
 
-## 模块 4：中国区 (CN) 差异化规则生成逻辑
+## 模块 5：中国区 (CN) 差异化规则生成逻辑
 
 * **数据 1（中国 19 个独立黄页分类）**：
   * 读取 `CN/*.csv` 全部 19 个分类。
@@ -111,7 +143,7 @@ enum RuleActionType {
 
 ---
 
-## 模块 5：动态国家代码解析 (`libphonenumber`)
+## 模块 6：动态国家代码解析 (`libphonenumber`)
 
 * 主脚本在处理非中国区号码时，禁止硬编码有限的国家列表。
 * 统一使用 Google 官方 `phonenumbers`（libphonenumber）解析库：
@@ -119,7 +151,7 @@ enum RuleActionType {
 
 ---
 
-## 模块 6：`app_delta_setup_config.json` 自动更新标准
+## 模块 7：`app_delta_setup_config.json` 自动更新标准
 
 生成的根目录配置文件必须完全对齐 Flutter 端 `CountryData` 数据结构：
 ```json
@@ -128,21 +160,21 @@ enum RuleActionType {
   "source_id": "cn_yellowpage_bank",
   "name": "中国 (China) 官方黄页 - 金融银行",
   "country_code": "CN",
-  "description": "中国地区官方机构与企业黄页服务号码 (金融银行)",
-  "icon_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/icons/cn.png",
+  "description": "中国地区官方机构与各大银行金融服务热线号码",
+  "icon_url": "https://flagcdn.com/w80/cn.png",
   "rule_type": "phone_rule",
   "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CN/bank.json",
   "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CN/bank.json",
   "checksum_sha256": "3a8d11c...",
   "total_rules": 1250,
-  "priority": 1,
+  "priority": 0,
   "is_enabled": true
 }
 ```
 
 ---
 
-## 模块 7：GitHub Actions 工作流与调度规范
+## 模块 8：GitHub Actions 工作流与调度规范
 
 * **主工作流**：`.github/workflows/update_all_rules.yml`。
 * **最佳空闲 Cron 表达式**：`cron: '37 7 * * *'`（07:37 UTC / 北京时间 15:37 / 美国太平洋时间前一日 23:37）。

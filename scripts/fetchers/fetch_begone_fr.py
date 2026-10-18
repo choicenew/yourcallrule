@@ -13,7 +13,8 @@ from pathlib import Path
 import urllib.request
 import pandas as pd
 
-PROJECT_DIR = Path(__file__).parent.parent
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_DIR = SCRIPT_DIR.parent.parent
 FR_DIR = PROJECT_DIR / "FR"
 OUT_CSV = FR_DIR / "processed_fr_regex.csv"
 BEGONE_XML_URL = "https://raw.githubusercontent.com/oulixalt/BegoneListeFR/refs/heads/Liste-compl%C3%A8te/Begone-FR.xml"
@@ -35,7 +36,6 @@ def fetch_begone_fr():
         root = tree.getroot()
 
         rows = []
-        # 解析 dict 里面的 number 字段
         numbers = []
         for elem in root.findall(".//dict/key[text()='number']/following-sibling::string[1]"):
             if elem.text:

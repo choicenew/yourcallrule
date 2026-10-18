@@ -40,7 +40,7 @@ jobs:
 
       - name: Merge and Update Subscription Config
         run: |
-          python scripts/merge_and_deduplicate.py
+          python scripts/mergers/merge_and_deduplicate.py
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5

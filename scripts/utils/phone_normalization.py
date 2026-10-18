@@ -9,7 +9,6 @@ TRUNK_ZERO_SIGNIFICANT_COUNTRY_CODES = frozenset({"39", "225"})
 
 
 def split_country_code(digits: str) -> tuple[str, str] | None:
-    """Dynamically split E.164 digits into (country_code, national_number) using libphonenumber."""
     if not digits:
         return None
     raw = f"+{digits.lstrip('+')}"
@@ -25,7 +24,6 @@ def split_country_code(digits: str) -> tuple[str, str] | None:
 
 
 def strip_national_trunk_prefix(digits: str) -> str:
-    """Drop national trunk prefix using libphonenumber country splitting."""
     split = split_country_code(digits)
     if split is None:
         return digits

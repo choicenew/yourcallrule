@@ -2,16 +2,16 @@
 """
 正则规则专用生成脚本 (Regex Rules Generator)
 
-完全独立解耦：仅读取 scripts/regex_configs.json 正则规则专用配置文件，
-生成各国家/地区的正则规则 JSON 文件，绝不与其他单号或数据源混杂。
+完全独立解耦：仅读取 scripts/configs/regex_configs.json 正则规则专用配置文件，
+生成各国家/地区的正则规则 JSON 文件。
 """
 
 import json
 from pathlib import Path
 
-PROJECT_DIR = Path(__file__).parent.parent
 SCRIPT_DIR = Path(__file__).parent
-REGEX_CONFIG_FILE = SCRIPT_DIR / "regex_configs.json"
+PROJECT_DIR = SCRIPT_DIR.parent.parent
+REGEX_CONFIG_FILE = SCRIPT_DIR.parent / "configs" / "regex_configs.json"
 
 
 def generate_regulatory_rules():
@@ -38,7 +38,6 @@ def generate_regulatory_rules():
         country_dir.mkdir(parents=True, exist_ok=True)
         rules = []
 
-        # 1. 处理固定前缀 (prefixes)
         prefixes = item.get("prefixes", [])
         for prefix in prefixes:
             pattern = f"^\\+?{prefix}\\d{{6}}$"
@@ -52,7 +51,6 @@ def generate_regulatory_rules():
                 "ruleType": "regex"
             })
 
-        # 2. 处理标准正则表达式 (patterns)
         patterns = item.get("patterns", [])
         for idx, pattern in enumerate(patterns, 1):
             rules.append({

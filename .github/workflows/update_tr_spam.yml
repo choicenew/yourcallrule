@@ -29,7 +29,7 @@ jobs:
         run: pip install pandas
 
       - name: Download and Process Turkish Spam Numbers
-        run: python scripts/fetch_turkish_spam.py
+        run: python scripts/fetchers/fetch_turkish_spam.py
 
       - name: Commit and Push CSV
         uses: stefanzweifel/git-auto-commit-action@v5

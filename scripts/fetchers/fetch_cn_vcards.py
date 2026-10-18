@@ -13,9 +13,9 @@ import os
 import re
 import sys
 from pathlib import Path
-import urllib.request
 
-PROJECT_DIR = Path(__file__).parent.parent
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_DIR = SCRIPT_DIR.parent.parent
 CN_DIR = PROJECT_DIR / "CN"
 RAW_CN_DIR = PROJECT_DIR / "原始" / "cn"
 
@@ -89,7 +89,6 @@ def sync_cn_vcards():
 
     print("=== 开始同步中国黄页数据 (metowolf/vCards) ===")
 
-    # 遍历 CN 目录已有的 CSV 文件处理规范化
     if RAW_CN_DIR.exists():
         for csv_file in RAW_CN_DIR.glob("*.csv"):
             label_name = csv_file.stem
