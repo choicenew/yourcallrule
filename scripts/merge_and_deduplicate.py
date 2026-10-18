@@ -3,8 +3,8 @@
 数据源驱动 (Source-Driven) 主控合并与 app_delta_setup_config.json 动态更新脚本
 
 核心机制：
-1. 国际化全量 JSON 驱动 (country_i18n.json)：包含全球 130+ 国家和地区的母语名称、母语描述与国旗代码，以及中国 19 个独立黄页分类。
-2. 结合 libphonenumber (phonenumbers.geocoder) 动态解析未知国家全称，拒绝任何生硬写死与硬编码。
+1. 纯动态解析 E.164 国家/地区代码：彻底删除一切 if-startswith 硬编码降级逻辑，100% 依赖 Google libphonenumber 动态解析全球 240+ 国家 ISO 代码。
+2. 国际化全量 JSON 驱动 (country_i18n.json)：包含全球 130+ 国家和地区的母语名称、母语描述与国旗代码，以及中国 19 个独立黄页分类。
 3. 全球开源 FlagCDN 支持 (https://flagcdn.com/w80/{code}.png)：实时提供全球 240+ 国家和地区的高清国旗 Icon，零 404 错链。
 4. 中国黄页 (CN) 明确标注为黄页服务号码（action: "none" / priority: 0），绝不混淆为骚扰电话。
 5. 语法与规则属性严格对齐 Flutter 客户端领域模型 (RuleTypeKeys, RulePriority)。
@@ -179,30 +179,23 @@ def generate_rule_id(prefix: str, value: str) -> str:
 
 
 def extract_country_code(phone_e164: str) -> str:
+    """使用 Google libphonenumber 动态解析全球 240+ 国家/地区 ISO 代码，彻底移除 if-startswith 硬编码"""
+    if not phone_e164:
+        return "GLOBAL"
+
+    raw = phone_e164.strip()
+    if not raw.startswith("+"):
+        raw = f"+{raw}"
+
     if phonenumbers:
         try:
-            raw = phone_e164 if phone_e164.startswith("+") else f"+{phone_e164}"
             parsed = phonenumbers.parse(raw, None)
-            if phonenumbers.is_valid_number(parsed):
-                region = phonenumbers.region_code_for_number(parsed)
-                if region:
-                    return region.upper()
+            region = phonenumbers.region_code_for_number(parsed)
+            if region:
+                return region.upper()
         except Exception:
             pass
 
-    digits = phone_e164.strip().lstrip("+")
-    if digits.startswith("86"):
-        return "CN"
-    if digits.startswith("33"):
-        return "FR"
-    if digits.startswith("49"):
-        return "DE"
-    if digits.startswith("91"):
-        return "IN"
-    if digits.startswith("90"):
-        return "TR"
-    if digits.startswith("1"):
-        return "US"
     return "GLOBAL"
 
 
