@@ -2,8 +2,8 @@
 """
 CallShield Hot List Generator
 
-Generates hot_numbers.json — a lightweight list of top community reports
-in the last 24 hours.
+Generates hot_block.json — recent community 24-hour trending velocity feed.
+All generated metadata uses neutral, clean standard strings.
 """
 
 import argparse
@@ -31,7 +31,6 @@ HOT_WINDOW_HOURS = 24
 def generate_hot_list():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     now = datetime.now(timezone.utc)
-    cutoff = now - timedelta(hours=HOT_WINDOW_HOURS)
 
     reports_count = {}
     if REPORTS_DIR.exists():
@@ -50,7 +49,7 @@ def generate_hot_list():
         {
             "id": f"hot_{num.lstrip('+')}",
             "phoneNumber": num,
-            "name": f"24h Hot Trending ({cnt} reports)",
+            "name": f"24h Trending Spam ({cnt} reports)",
             "action": "block",
             "priority": 5,
             "ruleType": "phone_rule",

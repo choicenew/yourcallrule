@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-数据源驱动 (Source-Driven) 主控合并与 app_delta_setup_config.json 动态更新脚本
+解耦驱动 (Decoupled Architecture) 主控合并与 app_delta_setup_config.json 动态更新脚本
 
-核心机制：
-1. 纯动态解析 E.164 国家/地区代码：彻底删除一切 if-startswith 硬编码降级逻辑，100% 依赖 Google libphonenumber 动态解析全球 240+ 国家 ISO 代码。
-2. 国际化全量 JSON 驱动 (country_i18n.json)：包含全球 130+ 国家和地区的母语名称、母语描述与国旗代码，以及中国 19 个独立黄页分类。
-3. 全球开源 FlagCDN 支持 (https://flagcdn.com/w80/{code}.png)：实时提供全球 240+ 国家和地区的高清国旗 Icon，零 404 错链。
-4. 中国黄页 (CN) 明确标注为黄页服务号码（action: "none" / priority: 0），绝不混淆为骚扰电话。
-5. 语法与规则属性严格对齐 Flutter 客户端领域模型 (RuleTypeKeys, RulePriority)。
+结构解耦：
+1. 独立读取 phone_sources_config.json（单号数据源配置）
+2. 独立读取 regex_configs.json（正则规则配置）
+3. 独立读取 country_i18n.json（国家与母语描述）
+4. 中国黄页 (CN) 保持 19 个分类完全独立，明确为黄页标注（action: "none" / priority: 0）。
+5. 自动生成并覆盖更新 app_delta_setup_config.json。
 """
 
 import csv
@@ -29,7 +29,8 @@ except ImportError:
 
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent
-SOURCE_CONFIG_FILE = SCRIPT_DIR / "source_configs.json"
+PHONE_CONFIG_FILE = SCRIPT_DIR / "phone_sources_config.json"
+REGEX_CONFIG_FILE = SCRIPT_DIR / "regex_configs.json"
 COUNTRY_I18N_FILE = SCRIPT_DIR / "country_i18n.json"
 MERGED_OUT_DIR = PROJECT_DIR / "merged_rules"
 CONFIG_FILE = PROJECT_DIR / "app_delta_setup_config.json"
@@ -134,7 +135,6 @@ LABEL_TO_FILE_SLUG = {
 
 
 def load_country_i18n() -> tuple[dict[str, dict], dict[str, dict]]:
-    """读取 country_i18n.json 获取全球各国家及中国 19 分类的母语名称与母语描述"""
     if COUNTRY_I18N_FILE.exists():
         try:
             with open(COUNTRY_I18N_FILE, "r", encoding="utf-8") as f:
@@ -146,7 +146,6 @@ def load_country_i18n() -> tuple[dict[str, dict], dict[str, dict]]:
 
 
 def cleanup_legacy_l10n():
-    """清理无用的旧 l10n 目录与 l10n.yaml 文件"""
     l10n_dir = PROJECT_DIR / "l10n"
     l10n_yaml = PROJECT_DIR / "l10n.yaml"
     if l10n_dir.exists():
@@ -179,7 +178,6 @@ def generate_rule_id(prefix: str, value: str) -> str:
 
 
 def extract_country_code(phone_e164: str) -> str:
-    """使用 Google libphonenumber 动态解析全球 240+ 国家/地区 ISO 代码，彻底移除 if-startswith 硬编码"""
     if not phone_e164:
         return "GLOBAL"
 
@@ -200,7 +198,6 @@ def extract_country_code(phone_e164: str) -> str:
 
 
 def resolve_country_i18n_info(country_code: str, country_i18n_db: dict[str, dict]) -> tuple[str, str, str]:
-    """使用 country_i18n.json 结合 libphonenumber (phonenumbers.geocoder) 动态获取国家名称、母语描述与 FlagCDN 链接"""
     code_upper = country_code.upper()
     code_lower = country_code.lower()
 
@@ -264,7 +261,6 @@ def save_chunked_merged_rules(country_code: str, rules_list: list, filename_pref
 
 
 def process_china_19_categories(cn_cat_i18n: dict[str, dict]) -> list[dict]:
-    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，结合 country_i18n.json 导出黄页规则 (action: "none", priority: 0)"""
     print("\n[开始处理中国区 19 个独立黄页分类...]")
     cn_dir = PROJECT_DIR / "CN"
     generated_rulesets = []
@@ -329,22 +325,23 @@ def process_china_19_categories(cn_cat_i18n: dict[str, dict]) -> list[dict]:
     return generated_rulesets
 
 
-def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
-    """配置驱动处理所有其他数据源（名称与母语描述完全由 country_i18n.json 驱动）"""
-    print("\n[开始根据 source_configs.json 动态融合其他国家数据源...]")
+def process_decoupled_sources(country_i18n_db: dict) -> list[dict]:
+    """完全解耦处理：独立读取 phone_sources_config.json 与 regex_configs.json"""
+    print("\n[开始分别读取单号配置与正则配置进行整合...]")
     by_country_phone_map = defaultdict(lambda: defaultdict(lambda: {"count": 0, "categories": []}))
     regex_by_country = defaultdict(list)
     hot_ruleset = None
 
-    sources = []
-    if SOURCE_CONFIG_FILE.exists():
+    # 1. 独立读取单号数据源配置 phone_sources_config.json
+    phone_sources = []
+    if PHONE_CONFIG_FILE.exists():
         try:
-            with open(SOURCE_CONFIG_FILE, "r", encoding="utf-8") as f:
-                sources = json.load(f).get("sources", [])
+            with open(PHONE_CONFIG_FILE, "r", encoding="utf-8") as f:
+                phone_sources = json.load(f).get("phone_sources", [])
         except Exception:
             pass
 
-    for src in sources:
+    for src in phone_sources:
         if not src.get("enabled", True):
             continue
 
@@ -353,26 +350,14 @@ def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
         s_desc = src.get("description", "")
         s_name = src.get("name", "")
 
-        if stype in ("directory_csv", "directory_csv_regex") and path.exists():
+        if stype == "directory_csv" and path.exists():
             for csv_file in path.glob("*.csv"):
                 try:
                     with open(csv_file, "r", encoding="utf-8") as f:
                         reader = csv.DictReader(f)
                         for row in reader:
-                            pattern = row.get("pattern", "").strip()
                             phone = row.get("phoneNumber", "").strip()
-                            if pattern:
-                                target_country = src.get("country_mode", "GLOBAL")
-                                regex_by_country[target_country].append({
-                                    "id": row.get("id", generate_rule_id("regex", pattern)),
-                                    "name": row.get("name", "Regulatory Regex"),
-                                    "ruleType": "regex",
-                                    "pattern": pattern,
-                                    "priority": DART_PRIORITY_MEDIUM,
-                                    "action": "block",
-                                    "isEnabled": 1,
-                                })
-                            elif phone:
+                            if phone:
                                 target_country = extract_country_code(phone) if src.get("country_mode") == "auto" else src.get("country_mode", "GLOBAL")
                                 by_country_phone_map[target_country][phone]["count"] += 1
                                 by_country_phone_map[target_country][phone]["categories"].append(row.get("labelId", "spamlikely"))
@@ -402,10 +387,6 @@ def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
                                 "priority": 5,
                                 "is_enabled": True
                             }
-                    else:
-                        target_country = src.get("country_mode", "GLOBAL")
-                        if isinstance(data, list):
-                            regex_by_country[target_country].extend(data)
             except Exception:
                 pass
 
@@ -424,11 +405,52 @@ def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
                 except Exception:
                     pass
 
+    # 2. 独立读取正则专属配置 regex_configs.json
+    regex_sources = []
+    if REGEX_CONFIG_FILE.exists():
+        try:
+            with open(REGEX_CONFIG_FILE, "r", encoding="utf-8") as f:
+                regex_sources = json.load(f).get("regex_rulesets", [])
+        except Exception:
+            pass
+
+    for rset in regex_sources:
+        if not rset.get("enabled", True):
+            continue
+
+        target_country = rset.get("country_code", "GLOBAL").upper()
+        # 提取号段前缀
+        prefixes = rset.get("prefixes", [])
+        for prefix in prefixes:
+            pattern = f"^\\+?{prefix}\\d{{6}}$"
+            regex_by_country[target_country].append({
+                "id": f"regex_{target_country.lower()}_{prefix}",
+                "name": f"{rset.get('name', 'Regex Range')} (+{prefix})",
+                "ruleType": "regex",
+                "pattern": pattern,
+                "priority": rset.get("priority", 5),
+                "action": rset.get("action", "block"),
+                "isEnabled": 1,
+            })
+
+        # 提取正则表达式
+        patterns = rset.get("patterns", [])
+        for idx, pattern in enumerate(patterns, 1):
+            regex_by_country[target_country].append({
+                "id": f"regex_{target_country.lower()}_{idx}",
+                "name": rset.get("name", "Regulatory Regex"),
+                "ruleType": "regex",
+                "pattern": pattern,
+                "priority": rset.get("priority", 5),
+                "action": rset.get("action", "block"),
+                "isEnabled": 1,
+            })
+
     generated_rulesets = []
     if hot_ruleset:
         generated_rulesets.append(hot_ruleset)
 
-    # 导出各个国家的单号规则集 (名字与母语描述由 country_i18n.json + libphonenumber 动态提供)
+    # 3. 导出单号规则集 (rule_type: 'phone_rule')
     for country, phone_dict in by_country_phone_map.items():
         rules = []
         for phone, meta in phone_dict.items():
@@ -451,10 +473,6 @@ def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
                 "subscriptionId": f"{country.lower()}-spam-blocklist"
             })
 
-        if country in regex_by_country:
-            rules.extend(regex_by_country[country])
-            del regex_by_country[country]
-
         if rules:
             res = save_chunked_merged_rules(country, rules, filename_prefix="full_block")
             c_name, c_desc, c_flag = resolve_country_i18n_info(country, country_i18n_db)
@@ -476,7 +494,7 @@ def process_all_other_sources(country_i18n_db: dict) -> list[dict]:
                 "is_enabled": True
             })
 
-    # 导出正则规则集
+    # 4. 独立导出正则规则集 (rule_type: 'regex')
     for country, regex_rules in regex_by_country.items():
         if regex_rules:
             res = save_chunked_merged_rules(country, regex_rules, filename_prefix="full_block")
@@ -526,7 +544,7 @@ def update_app_delta_setup_config(all_rulesets: list[dict]):
 
 
 def main():
-    print("=== 开始运行 i18n JSON 驱动的主控规则合并与配置生成脚本 ===")
+    print("=== 开始运行完全解耦主控规则合并与配置生成脚本 ===")
 
     cleanup_legacy_l10n()
     country_i18n_db, cn_cat_i18n = load_country_i18n()
@@ -537,14 +555,14 @@ def main():
     cn_19_rulesets = process_china_19_categories(cn_cat_i18n)
     all_rulesets.extend(cn_19_rulesets)
 
-    # 2. 其他国家数据源合并（由 country_i18n.json + FlagCDN 驱动）
-    other_rulesets = process_all_other_sources(country_i18n_db)
+    # 2. 解耦读取 phone_sources_config.json 与 regex_configs.json 进行合并处理
+    other_rulesets = process_decoupled_sources(country_i18n_db)
     all_rulesets.extend(other_rulesets)
 
     # 3. 写入 app_delta_setup_config.json
     update_app_delta_setup_config(all_rulesets)
 
-    print("\n=== 主控规则合并与配置生成全流程完成 ===")
+    print("\n=== 解耦主控规则合并与配置生成全流程完成 ===")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "phone_sources": [
+    {
+      "source_id": "cn_yellowpages_19",
+      "name": "中国黄页服务号码",
+      "description": "中国地区官方机构、企业与公共服务黄页号码",
+      "enabled": true,
+      "type": "cn_categories_csv",
+      "path": "CN",
+      "country_mode": "CN",
+      "priority": 0,
+      "action": "none"
+    },
+    {
+      "source_id": "us_official_csv",
+      "name": "US FTC & FCC Complaint Dataset",
+      "description": "US Federal Trade Commission Do Not Call complaints and FCC Unwanted Calls dataset",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "US",
+      "country_mode": "auto",
+      "priority": 3,
+      "action": "block"
+    },
+    {
+      "source_id": "tr_spam_csv",
+      "name": "Türkiye Spam ve Dolandırıcılık Liste",
+      "description": "Türkiye topluluk spam ve dolandırıcılık telefon numaraları kara listesi",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "TR",
+      "country_mode": "TR",
+      "priority": 3,
+      "action": "block"
+    },
+    {
+      "source_id": "callshield_hot",
+      "name": "CallShield 24h Community Velocity Feed",
+      "description": "Recent 24-hour community reported trending spam velocity feed",
+      "enabled": true,
+      "type": "json_rules",
+      "path": "callshield/GLOBAL/hot_block.json",
+      "country_mode": "GLOBAL",
+      "is_hot_feed": true,
+      "priority": 5,
+      "action": "block"
+    },
+    {
+      "source_id": "unpacked_blocklists",
+      "name": "Community Unpacked Blocklists",
+      "description": "Community crowdsourced reputation and lookup metadata blocklist",
+      "enabled": true,
+      "type": "unpacked_json",
+      "path": "call-spam-blocklist",
+      "country_mode": "auto",
+      "priority": 3,
+      "action": "block"
+    }
+  ]
+}

@@ -1,76 +1,80 @@
 #!/usr/bin/env python3
 """
-法定号码段正则规则生成脚本 (Regulatory Regex Generator)
+正则规则专用生成脚本 (Regex Rules Generator)
 
-生成各国电信监管机构规定的法定营销/电销号段正则规则（如法国 ARCEP、印度 TRAI 140 等）。
-遵循 regex_ai_skills_prompt.md 标准生成包含 id, name, pattern, action, isEnabled, priority, ruleType 的 JSON 规则。
+完全独立解耦：仅读取 scripts/regex_configs.json 正则规则专用配置文件，
+生成各国家/地区的正则规则 JSON 文件，绝不与其他单号或数据源混杂。
 """
 
 import json
-import hashlib
 from pathlib import Path
 
 PROJECT_DIR = Path(__file__).parent.parent
-IN_DIR = PROJECT_DIR / "IN"
-FR_DIR = PROJECT_DIR / "FR"
+SCRIPT_DIR = Path(__file__).parent
+REGEX_CONFIG_FILE = SCRIPT_DIR / "regex_configs.json"
 
 
 def generate_regulatory_rules():
-    IN_DIR.mkdir(parents=True, exist_ok=True)
-    FR_DIR.mkdir(parents=True, exist_ok=True)
+    print("\n[开始根据 regex_configs.json 独立生成正则规则...]")
 
-    print("\n[开始生成法定号码段正则规则...]")
+    if not REGEX_CONFIG_FILE.exists():
+        print(f"  错误: 配置文件不存在: {REGEX_CONFIG_FILE}")
+        return
 
-    # 1. 印度 TRAI 140 营销号段规则
-    trai_rules = [
-        {
-            "id": "regulatory_in_trai_140",
-            "name": "India TRAI Promotional/Telemarketing Series (140)",
-            "pattern": r"^\+?91140\d{7}$",
-            "action": "block",
-            "isEnabled": 1,
-            "priority": 5,
-            "ruleType": "regex"
-        }
-    ]
-    trai_file = IN_DIR / "trai_140_regex.json"
-    with open(trai_file, "w", encoding="utf-8") as f:
-        json.dump(trai_rules, f, ensure_ascii=False, indent=2)
-    print(f"  已生成印度 TRAI 140 正则规则到 {trai_file}")
+    try:
+        with open(REGEX_CONFIG_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            rulesets = data.get("regex_rulesets", [])
+    except Exception as e:
+        print(f"  读取正则配置文件失败: {e}")
+        return
 
-    # 2. 法国 ARCEP 营销号段标准规则
-    arcep_ranges = [
-        ("33162", "France ARCEP Telemarketing Range (+33162)"),
-        ("33163", "France ARCEP Telemarketing Range (+33163)"),
-        ("33244", "France ARCEP Telemarketing Range (+33244)"),
-        ("33245", "France ARCEP Telemarketing Range (+33245)"),
-        ("33377", "France ARCEP Telemarketing Range (+33377)"),
-        ("33378", "France ARCEP Telemarketing Range (+33378)"),
-        ("33424", "France ARCEP Telemarketing Range (+33424)"),
-        ("33425", "France ARCEP Telemarketing Range (+33425)"),
-        ("33568", "France ARCEP Telemarketing Range (+33568)"),
-        ("33569", "France ARCEP Telemarketing Range (+33569)"),
-        ("33937", "France ARCEP Telemarketing Range (+33937)"),
-        ("33938", "France ARCEP Telemarketing Range (+33938)"),
-        ("33939", "France ARCEP Telemarketing Range (+33939)"),
-    ]
+    for item in rulesets:
+        if not item.get("enabled", True):
+            continue
 
-    arcep_rules = []
-    for prefix, label in arcep_ranges:
-        arcep_rules.append({
-            "id": f"regulatory_fr_arcep_{prefix}",
-            "name": label,
-            "pattern": f"^\\+?{prefix}\\d{{6}}$",
-            "action": "block",
-            "isEnabled": 1,
-            "priority": 5,
-            "ruleType": "regex"
-        })
+        country_code = item.get("country_code", "GLOBAL").upper()
+        country_dir = PROJECT_DIR / country_code
+        country_dir.mkdir(parents=True, exist_ok=True)
+        rules = []
 
-    arcep_file = FR_DIR / "arcep_regex.json"
-    with open(arcep_file, "w", encoding="utf-8") as f:
-        json.dump(arcep_rules, f, ensure_ascii=False, indent=2)
-    print(f"  已生成法国 ARCEP {len(arcep_rules)} 条正则规则到 {arcep_file}")
+        # 1. 处理固定前缀 (prefixes)
+        prefixes = item.get("prefixes", [])
+        for prefix in prefixes:
+            pattern = f"^\\+?{prefix}\\d{{6}}$"
+            rules.append({
+                "id": f"regex_{country_code.lower()}_{prefix}",
+                "name": f"{item.get('name', 'Regex Range')} (+{prefix})",
+                "pattern": pattern,
+                "action": item.get("action", "block"),
+                "isEnabled": 1,
+                "priority": item.get("priority", 5),
+                "ruleType": "regex"
+            })
+
+        # 2. 处理标准正则表达式 (patterns)
+        patterns = item.get("patterns", [])
+        for idx, pattern in enumerate(patterns, 1):
+            rules.append({
+                "id": f"regex_{country_code.lower()}_{idx}",
+                "name": item.get("name", "Regulatory Regex"),
+                "pattern": pattern,
+                "action": item.get("action", "block"),
+                "isEnabled": 1,
+                "priority": item.get("priority", 5),
+                "ruleType": "regex"
+            })
+
+        if rules:
+            out_file = country_dir / f"{country_code.lower()}_regulatory_regex.json"
+            if country_code == "IN":
+                out_file = country_dir / "trai_140_regex.json"
+            elif country_code == "FR":
+                out_file = country_dir / "arcep_regex.json"
+
+            with open(out_file, "w", encoding="utf-8") as f:
+                json.dump(rules, f, ensure_ascii=False, indent=2)
+            print(f"  已生成 [{country_code}] 独立正则规则 ({len(rules)} 条) -> {out_file.relative_to(PROJECT_DIR)}")
 
 
 if __name__ == "__main__":
