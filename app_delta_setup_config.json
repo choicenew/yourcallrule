@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.0",
-  "last_updated": "2026-10-18T00:06:04Z",
+  "last_updated": "2026-10-18T00:16:10Z",
   "update_strategy": {
     "sync_interval_hours": 24,
     "allow_cellular_download": false,
@@ -708,8 +708,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/IN/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/IN/full_block.json",
-      "checksum_sha256": "e867fb448f4c86f1be20f87360a17b50e6369a1c837d4d4106ce5085ee5a64be",
-      "total_rules": 118,
+      "checksum_sha256": "5f96748948f8333643fb9adf0eb5af35365fe67d2976537104d835f452442dfe",
+      "total_rules": 117,
       "priority": 3,
       "is_enabled": true
     },
@@ -828,8 +828,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/FR/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/FR/full_block.json",
-      "checksum_sha256": "2b4a027c33886a0be25075bf2cfb20d7c9108a1b9f1286c9a3ac4e4bc1fd2d91",
-      "total_rules": 38,
+      "checksum_sha256": "9641c042c85f1ff8473d270bdc612878cb21b12511782773d0f35eab92ce76ba",
+      "total_rules": 20,
       "priority": 3,
       "is_enabled": true
     },
@@ -2526,6 +2526,36 @@
       "checksum_sha256": "382c04e6b315dbd41333c1cf4d39ed23df4839929c78fe4bf0527d079d26dff1",
       "total_rules": 1,
       "priority": 3,
+      "is_enabled": true
+    },
+    {
+      "id": "fr_regulatory_regex",
+      "source_id": "fr_regulatory_regex",
+      "name": "France Regulatory Regex Ruleset",
+      "country_code": "FR",
+      "description": "Liste des numéros de spam, démarchage téléphonique et arnaques pour la France",
+      "icon_url": "https://flagcdn.com/w80/fr.png",
+      "rule_type": "regex",
+      "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/FR/full_block.json",
+      "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/FR/full_block.json",
+      "checksum_sha256": "e0ddf0d3e3bd19e7afb0b67f155d934cc1360943fc2021d776d7251568f3df3d",
+      "total_rules": 13,
+      "priority": 5,
+      "is_enabled": true
+    },
+    {
+      "id": "in_regulatory_regex",
+      "source_id": "in_regulatory_regex",
+      "name": "India Regulatory Regex Ruleset",
+      "country_code": "IN",
+      "description": "India TRAI 140 commercial communication blocklist and spam numbers",
+      "icon_url": "https://flagcdn.com/w80/in.png",
+      "rule_type": "regex",
+      "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/IN/full_block.json",
+      "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/IN/full_block.json",
+      "checksum_sha256": "ac2811938d4a13660d97b0ee0c3aecfac169136ccf273039912e85488c25aeea",
+      "total_rules": 1,
+      "priority": 5,
       "is_enabled": true
     }
   ],
