@@ -3,9 +3,9 @@
 解耦驱动 (Decoupled Architecture) 主控合并与 app_delta_setup_config.json 动态更新脚本
 
 结构解耦：
-1. 独立读取 phone_sources_config.json（单号数据源配置）
-2. 独立读取 regex_configs.json（正则规则配置）
-3. 独立读取 country_i18n.json（国家与母语描述）
+1. 独立读取 configs/phone_sources_config.json（单号数据源配置）
+2. 独立读取 configs/regex_configs.json（正则规则配置）
+3. 独立读取 configs/country_i18n.json（国家与母语描述）
 4. 中国黄页 (CN) 保持 19 个分类完全独立，明确为黄页标注（action: "none" / priority: 0）。
 5. 自动生成并覆盖更新 app_delta_setup_config.json。
 """
@@ -29,9 +29,11 @@ except ImportError:
 
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent
-PHONE_CONFIG_FILE = SCRIPT_DIR / "phone_sources_config.json"
-REGEX_CONFIG_FILE = SCRIPT_DIR / "regex_configs.json"
-COUNTRY_I18N_FILE = SCRIPT_DIR / "country_i18n.json"
+
+PHONE_CONFIG_FILE = SCRIPT_DIR / "configs" / "phone_sources_config.json"
+REGEX_CONFIG_FILE = SCRIPT_DIR / "configs" / "regex_configs.json"
+COUNTRY_I18N_FILE = SCRIPT_DIR / "configs" / "country_i18n.json"
+
 MERGED_OUT_DIR = PROJECT_DIR / "merged_rules"
 CONFIG_FILE = PROJECT_DIR / "app_delta_setup_config.json"
 
@@ -135,17 +137,24 @@ LABEL_TO_FILE_SLUG = {
 
 
 def load_country_i18n() -> tuple[dict[str, dict], dict[str, dict]]:
-    if COUNTRY_I18N_FILE.exists():
-        try:
-            with open(COUNTRY_I18N_FILE, "r", encoding="utf-8") as f:
-                payload = json.load(f)
-                return payload.get("countries", {}), payload.get("cn_categories", {})
-        except Exception:
-            pass
+    """读取 country_i18n.json 获取全球各国家及中国 19 分类的母语名称与母语描述"""
+    paths = [
+        SCRIPT_DIR / "configs" / "country_i18n.json",
+        SCRIPT_DIR / "country_i18n.json",
+    ]
+    for p in paths:
+        if p.exists():
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    payload = json.load(f)
+                    return payload.get("countries", {}), payload.get("cn_categories", {})
+            except Exception:
+                pass
     return {}, {}
 
 
 def cleanup_legacy_l10n():
+    """清理无用的旧 l10n 目录与 l10n.yaml 文件"""
     l10n_dir = PROJECT_DIR / "l10n"
     l10n_yaml = PROJECT_DIR / "l10n.yaml"
     if l10n_dir.exists():
@@ -178,6 +187,7 @@ def generate_rule_id(prefix: str, value: str) -> str:
 
 
 def extract_country_code(phone_e164: str) -> str:
+    """使用 Google libphonenumber 动态解析全球 240+ 国家/地区 ISO 代码"""
     if not phone_e164:
         return "GLOBAL"
 
@@ -198,6 +208,7 @@ def extract_country_code(phone_e164: str) -> str:
 
 
 def resolve_country_i18n_info(country_code: str, country_i18n_db: dict[str, dict]) -> tuple[str, str, str]:
+    """使用 country_i18n.json 结合 libphonenumber (phonenumbers.geocoder) 动态获取国家名称、母语描述与 FlagCDN 链接"""
     code_upper = country_code.upper()
     code_lower = country_code.lower()
 
@@ -261,6 +272,7 @@ def save_chunked_merged_rules(country_code: str, rules_list: list, filename_pref
 
 
 def process_china_19_categories(cn_cat_i18n: dict[str, dict]) -> list[dict]:
+    """【中国数据源】：读取 CN/ 下 19 个独立黄页分类 CSV，结合 country_i18n.json 导出黄页规则 (action: "none", priority: 0)"""
     print("\n[开始处理中国区 19 个独立黄页分类...]")
     cn_dir = PROJECT_DIR / "CN"
     generated_rulesets = []
@@ -334,9 +346,13 @@ def process_decoupled_sources(country_i18n_db: dict) -> list[dict]:
 
     # 1. 独立读取单号数据源配置 phone_sources_config.json
     phone_sources = []
-    if PHONE_CONFIG_FILE.exists():
+    phone_cfg_path = SCRIPT_DIR / "configs" / "phone_sources_config.json"
+    if not phone_cfg_path.exists():
+        phone_cfg_path = SCRIPT_DIR / "phone_sources_config.json"
+
+    if phone_cfg_path.exists():
         try:
-            with open(PHONE_CONFIG_FILE, "r", encoding="utf-8") as f:
+            with open(phone_cfg_path, "r", encoding="utf-8") as f:
                 phone_sources = json.load(f).get("phone_sources", [])
         except Exception:
             pass
@@ -407,9 +423,13 @@ def process_decoupled_sources(country_i18n_db: dict) -> list[dict]:
 
     # 2. 独立读取正则专属配置 regex_configs.json
     regex_sources = []
-    if REGEX_CONFIG_FILE.exists():
+    regex_cfg_path = SCRIPT_DIR / "configs" / "regex_configs.json"
+    if not regex_cfg_path.exists():
+        regex_cfg_path = SCRIPT_DIR / "regex_configs.json"
+
+    if regex_cfg_path.exists():
         try:
-            with open(REGEX_CONFIG_FILE, "r", encoding="utf-8") as f:
+            with open(regex_cfg_path, "r", encoding="utf-8") as f:
                 regex_sources = json.load(f).get("regex_rulesets", [])
         except Exception:
             pass
@@ -419,7 +439,6 @@ def process_decoupled_sources(country_i18n_db: dict) -> list[dict]:
             continue
 
         target_country = rset.get("country_code", "GLOBAL").upper()
-        # 提取号段前缀
         prefixes = rset.get("prefixes", [])
         for prefix in prefixes:
             pattern = f"^\\+?{prefix}\\d{{6}}$"
@@ -433,7 +452,6 @@ def process_decoupled_sources(country_i18n_db: dict) -> list[dict]:
                 "isEnabled": 1,
             })
 
-        # 提取正则表达式
         patterns = rset.get("patterns", [])
         for idx, pattern in enumerate(patterns, 1):
             regex_by_country[target_country].append({

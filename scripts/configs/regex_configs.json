@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "regex_rulesets": [
+    {
+      "source_id": "fr_arcep_regex",
+      "country_code": "FR",
+      "name": "France ARCEP Telemarketing Series",
+      "description": "Plan de numérotation ARCEP pour la France",
+      "enabled": true,
+      "prefixes": [
+        "33162", "33163", "33244", "33245", "33377", "33378",
+        "33424", "33425", "33568", "33569", "33937", "33938", "33939"
+      ],
+      "priority": 5,
+      "action": "block"
+    },
+    {
+      "source_id": "in_trai_140_regex",
+      "country_code": "IN",
+      "name": "India TRAI 140 Commercial Series",
+      "description": "Telecom Regulatory Authority of India (TRAI) 140 commercial series",
+      "enabled": true,
+      "patterns": [
+        "^\\+?91140\\d{7}$"
+      ],
+      "priority": 5,
+      "action": "block"
+    }
+  ]
+}
