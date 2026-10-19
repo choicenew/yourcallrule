@@ -362,5 +362,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "au-spam-blocklist"
+  },
+  {
+    "id": "c367dca27d2b136a59feedd9a238231f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+61283205000",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "au-spam-blocklist"
   }
 ]
