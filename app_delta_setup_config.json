@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.0",
-  "last_updated": "2026-10-20T12:57:55Z",
+  "last_updated": "2026-10-20T16:27:28Z",
   "update_strategy": {
     "sync_interval_hours": 24,
     "allow_cellular_download": false,
