@@ -190981,5 +190981,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "5859e5ed45b13996a918801a5eb7f657",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18776521644",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
   }
 ]
