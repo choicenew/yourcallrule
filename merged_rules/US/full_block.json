@@ -190151,10 +190151,10 @@
     "subscriptionId": "us-spam-blocklist"
   },
   {
-    "id": "268265b043a02e3a81129e4a17c01386",
+    "id": "6293a1143107fa6b333f5ebcd9b354c3",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
-    "phoneNumber": "+15415218719",
+    "phoneNumber": "+19713697726",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",
