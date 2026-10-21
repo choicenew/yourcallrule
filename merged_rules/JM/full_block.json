@@ -1,18 +1,5 @@
 [
   {
-    "id": "5e5af7393bda26be09cb77e9b658acc2",
-    "name": "Robocall",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+18763464332",
-    "labelId": "robocall",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 1,
-    "avatar": "",
-    "subscriptionId": "jm-spam-blocklist"
-  },
-  {
     "id": "8cfe23faa58be4784c3d33d3759309c4",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
@@ -44,6 +31,19 @@
     "ruleType": "phone_rule",
     "phoneNumber": "+18762470790",
     "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "jm-spam-blocklist"
+  },
+  {
+    "id": "5e5af7393bda26be09cb77e9b658acc2",
+    "name": "Robocall",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18763464332",
+    "labelId": "robocall",
     "priority": 3,
     "action": "block",
     "isEnabled": 1,
