@@ -4387,7 +4387,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +252907722018,Golis Telecom Somalia,none,0,+252907722018,telemarketing,1,0,,phone_rule,
 +13075541800,Vyshetel LLC,none,0,+13075541800,telemarketing,1,0,,phone_rule,
 +12108604242,Linq Telecom LLC,none,0,+12108604242,telemarketing,1,0,,phone_rule,
-+13307371023,All in One Computer Services LLC,none,0,+13307371023,telemarketing,1,0,,phone_rule,
 +18456679777,Grand Telecom,none,0,+18456679777,telemarketing,1,0,,phone_rule,
 +18159048700,Sonic Spectrum Inc,none,0,+18159048700,telemarketing,1,0,,phone_rule,
 +16025181581,Proud American Leaders Counsel,none,0,+16025181581,telemarketing,1,0,,phone_rule,
@@ -9359,3 +9358,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +17024813199,DN Ventures LLC,none,0,+17024813199,telemarketing,1,0,,phone_rule,
 +18066024040,Nexdial Inc,none,0,+18066024040,telemarketing,1,0,,phone_rule,
 +18089770378,Nohl Inc,none,0,+18089770378,telemarketing,1,0,,phone_rule,
++13152632182,Messenger Communications Inc,none,0,+13152632182,telemarketing,1,0,,phone_rule,
