@@ -20,7 +20,6 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-# Add scripts/utils to sys.path
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent.parent
 UTILS_DIR = SCRIPT_DIR.parent / "utils"
@@ -375,23 +374,35 @@ def process_decoupled_sources(country_i18n_db: dict) -> list[dict]:
                     data = json.load(f)
                     if src.get("is_hot_feed"):
                         numbers = data.get("numbers", [])
-                        if numbers:
-                            sha256 = compute_file_sha256(path)
-                            hot_ruleset = {
-                                "id": "callshield_community_hot",
-                                "source_id": "callshield_community_hot",
-                                "name": s_name or "Global 24h Community Hot Feed",
-                                "country_code": "GLOBAL",
-                                "description": s_desc or "Recent 24-hour community reported trending spam velocity feed",
-                                "icon_url": "https://flagcdn.com/w80/un.png",
-                                "rule_type": "phone_rule",
-                                "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/callshield/GLOBAL/hot_block.json",
-                                "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/callshield/GLOBAL/hot_block.json",
-                                "checksum_sha256": sha256,
-                                "total_rules": len(numbers),
-                                "priority": 5,
-                                "is_enabled": True
-                            }
+                        # 同步保存至 merged_rules/GLOBAL/hot_block.json
+                        merged_global_dir = MERGED_OUT_DIR / "GLOBAL"
+                        merged_global_dir.mkdir(parents=True, exist_ok=True)
+                        merged_hot_file = merged_global_dir / "hot_block.json"
+
+                        if isinstance(data, list):
+                            hot_entries = data
+                        else:
+                            hot_entries = numbers
+
+                        with open(merged_hot_file, "w", encoding="utf-8") as hf:
+                            json.dump(hot_entries, hf, ensure_ascii=False, indent=2)
+
+                        sha256 = compute_file_sha256(merged_hot_file)
+                        hot_ruleset = {
+                            "id": "callshield_community_hot",
+                            "source_id": "callshield_community_hot",
+                            "name": s_name or "Global 24h Community Velocity Feed",
+                            "country_code": "GLOBAL",
+                            "description": s_desc or "Recent 24-hour community reported trending spam velocity feed",
+                            "icon_url": "https://flagcdn.com/w80/un.png",
+                            "rule_type": "phone_rule",
+                            "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/GLOBAL/hot_block.json",
+                            "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/GLOBAL/hot_block.json",
+                            "checksum_sha256": sha256,
+                            "total_rules": len(hot_entries),
+                            "priority": 5,
+                            "is_enabled": True
+                        }
             except Exception:
                 pass
 

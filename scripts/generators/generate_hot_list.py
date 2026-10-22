@@ -3,7 +3,7 @@
 CallShield Hot List Generator
 
 Generates hot_block.json — recent community 24-hour trending velocity feed.
-All generated metadata uses neutral, clean standard strings.
+Exports to callshield/GLOBAL/hot_block.json and merged_rules/GLOBAL/hot_block.json.
 """
 
 import argparse
@@ -23,9 +23,13 @@ from phone_normalization import validated_report_number
 from pipeline_io import atomic_write_json, report_queue_digest
 
 REPO_DATA_DIR = PROJECT_DIR / "callshield" / "GLOBAL"
+MERGED_GLOBAL_DIR = PROJECT_DIR / "merged_rules" / "GLOBAL"
+
 DATA_DIR = Path(os.environ.get("CALLSHIELD_DATA_DIR", REPO_DATA_DIR))
 REPORTS_DIR = Path(os.environ.get("CALLSHIELD_REPORTS_DIR", PROJECT_DIR / "callshield" / "community_feed"))
+
 HOT_LIST_FILE = DATA_DIR / "hot_block.json"
+MERGED_HOT_LIST_FILE = MERGED_GLOBAL_DIR / "hot_block.json"
 
 HOT_LIST_SIZE = 500
 HOT_WINDOW_HOURS = 24
@@ -33,6 +37,7 @@ HOT_WINDOW_HOURS = 24
 
 def generate_hot_list():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    MERGED_GLOBAL_DIR.mkdir(parents=True, exist_ok=True)
     now = datetime.now(timezone.utc)
 
     reports_count = {}
@@ -72,7 +77,8 @@ def generate_hot_list():
     }
 
     atomic_write_json(HOT_LIST_FILE, payload)
-    print(f"Generated hot list with {len(hot_entries)} entries at {HOT_LIST_FILE}")
+    atomic_write_json(MERGED_HOT_LIST_FILE, hot_entries)
+    print(f"Generated hot list with {len(hot_entries)} entries at {HOT_LIST_FILE} and {MERGED_HOT_LIST_FILE}")
 
 
 if __name__ == "__main__":
