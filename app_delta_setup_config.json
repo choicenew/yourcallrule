@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.0",
-  "last_updated": "2026-10-24T03:34:58Z",
+  "last_updated": "2026-10-24T10:25:13Z",
   "update_strategy": {
     "sync_interval_hours": 24,
     "allow_cellular_download": false,
@@ -303,8 +303,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/US/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/US/full_block.json",
-      "checksum_sha256": "7130f7f9a48b6f6f09875a3b25b34184937c14883275af0f03628e3249ce5c80",
-      "total_rules": 14698,
+      "checksum_sha256": "25fd39c69579e20bed6f3a738dafbd12e50bfa9ec73329a8073f7fd5b39a06c9",
+      "total_rules": 14703,
       "priority": 3,
       "is_enabled": true
     },
