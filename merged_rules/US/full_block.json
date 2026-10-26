@@ -191137,5 +191137,44 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "b0b66759494af5f1d4677d9a909d845e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16266588964",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "7b9089c259d52ead82ebbb1e7628d607",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13203296780",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "f67be632a3f64780e86cebad8691edf9",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17655188093",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
   }
 ]
