@@ -557,5 +557,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "pk-spam-blocklist"
+  },
+  {
+    "id": "d88535d57eca7ded1efebaf7afc89f0d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+923272721324",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pk-spam-blocklist"
   }
 ]
