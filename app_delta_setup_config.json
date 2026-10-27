@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.0",
-  "last_updated": "2026-10-27T13:33:32Z",
+  "last_updated": "2026-10-27T17:35:37Z",
   "update_strategy": {
     "sync_interval_hours": 24,
     "allow_cellular_download": false,
@@ -291,21 +291,6 @@
       "checksum_sha256": "cb7a6b81fb2b25a67e5a34f7f191d706fc8c0e8de59906a76ab25e91585b4230",
       "total_rules": 58,
       "priority": 0,
-      "is_enabled": true
-    },
-    {
-      "id": "callshield_community_hot",
-      "source_id": "callshield_community_hot",
-      "name": "CallShield 24h Community Velocity Feed",
-      "country_code": "GLOBAL",
-      "description": "Recent 24-hour community reported trending spam velocity feed",
-      "icon_url": "https://flagcdn.com/w80/un.png",
-      "rule_type": "phone_rule",
-      "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/GLOBAL/hot_block.json",
-      "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/GLOBAL/hot_block.json",
-      "checksum_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "total_rules": 0,
-      "priority": 5,
       "is_enabled": true
     },
     {
