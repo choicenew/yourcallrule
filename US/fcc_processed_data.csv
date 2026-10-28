@@ -5157,6 +5157,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +12312598111,Your IT Process,none,0,+12312598111,telemarketing,1,0,,phone_rule,
 +16194521666,DTS Technology Group,none,0,+16194521666,telemarketing,1,0,,phone_rule,
 +12073294382,Business Communications of Maine,none,0,+12073294382,telemarketing,1,0,,phone_rule,
++15615013200,TransTel VOIP LLC,none,0,+15615013200,telemarketing,1,0,,phone_rule,
 +15088242260,Braver Technology Solutions LLC,none,0,+15088242260,telemarketing,1,0,,phone_rule,
 +12103664811,Uprite Services,none,0,+12103664811,telemarketing,1,0,,phone_rule,
 +12156543133,Kornerstones Inc,none,0,+12156543133,telemarketing,1,0,,phone_rule,
@@ -9364,3 +9365,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +13032767090,Junxionet LLC,none,0,+13032767090,telemarketing,1,0,,phone_rule,
 +14049278709,PLAZMATEL LLC,none,0,+14049278709,telemarketing,1,0,,phone_rule,
 +12144003130,We Pro Inc,none,0,+12144003130,telemarketing,1,0,,phone_rule,
++13177985973,LessTimeai LLC,none,0,+13177985973,telemarketing,1,0,,phone_rule,

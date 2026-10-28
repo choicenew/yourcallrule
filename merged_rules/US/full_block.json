@@ -144677,6 +144677,19 @@
     "subscriptionId": "us-spam-blocklist"
   },
   {
+    "id": "cf26cc5215222ef7508ff9858ace1d1d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+15615013200",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
     "id": "908c5a1efe2d90cfd147c2779e6a6115",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
@@ -191130,6 +191143,19 @@
     "name": "Telemarketing",
     "ruleType": "phone_rule",
     "phoneNumber": "+12144003130",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "3082bfc21d903260cb51205e61c36799",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13177985973",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",
