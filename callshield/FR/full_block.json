@@ -1,5 +1,14 @@
 [
   {
+    "id": "75f464db788d16bae566ae83fdc7ed70",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+33151031.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "1a8b0d667aa7528fccb3a5202b695577",
     "name": "Saracroche: Telyo",
     "ruleType": "regex",
@@ -90,6 +99,15 @@
     "isEnabled": 1
   },
   {
+    "id": "4716191076a8438662682c8c2777e39f",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3317061.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "0c21a36f63c22275411d759dff0ed62a",
     "name": "Saracroche: FlashCall",
     "ruleType": "regex",
@@ -108,10 +126,10 @@
     "isEnabled": 1
   },
   {
-    "id": "ccff133b23212a967b50146f180b38b7",
-    "name": "Saracroche: Nexera",
+    "id": "5539995813522c682a094294f53c4ec8",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+33177665.*",
+    "pattern": "^\\+33176605.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -121,6 +139,114 @@
     "name": "Saracroche: DVS Connect",
     "ruleType": "regex",
     "pattern": "^\\+33177844.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f45811895bb0f6e3e1f788e809f23efe",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3317997.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "8caed5b5a373094f5172702a28b08394",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318080.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5805b2780cf95943ac4c8e098a95a8df",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+331810.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2405dbc5b3891fc0149785957f84db70",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+331811.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "56028621e993eff368ab076a31e0cbdb",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318120.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "406299e1b05921f0fd632e21a800c7ae",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318177.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "28763402bd83a5cff60d0c88f0b2ebf8",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318178.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "af665bb0f159f8afb05cf9f010b08e6b",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318181.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "1fc900bf8d850ab52721d3259a9969a5",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318191.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "ee7cc3cb2fb701e87e0d8812548d67b3",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318192.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "62acfc83ccae5fc4f348d5390ba0b05c",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318194.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "47371bddf4a5e532682d651a48e96e92",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3318195.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -216,24 +342,6 @@
     "isEnabled": 1
   },
   {
-    "id": "de9deaec9df205253ce3fac209c7a21b",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+3318622.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "b8c74deaea502382a070e8c47318fe5c",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+3318627.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "da899941b6c60dce11e059904fb09546",
     "name": "Saracroche: Manifone",
     "ruleType": "regex",
@@ -252,19 +360,19 @@
     "isEnabled": 1
   },
   {
-    "id": "1df504e873907af6e2485f223fb0772a",
-    "name": "Saracroche: Flex network",
+    "id": "f1e403f0135ea63d8d16978d3ba32de1",
+    "name": "Saracroche: Manifone",
     "ruleType": "regex",
-    "pattern": "^\\+3318746.*",
+    "pattern": "^\\+3318764.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "f1e403f0135ea63d8d16978d3ba32de1",
-    "name": "Saracroche: Manifone",
+    "id": "b705edc718c4f194c10d9c27b6eb8153",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3318764.*",
+    "pattern": "^\\+3318767.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -423,15 +531,6 @@
     "isEnabled": 1
   },
   {
-    "id": "6b9757f93037c307292c4360089f71c3",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3318875.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "5dbff3ff47f2c1db2f29b2a42852083e",
     "name": "Saracroche: Iovox Ltd",
     "ruleType": "regex",
@@ -495,6 +594,15 @@
     "isEnabled": 1
   },
   {
+    "id": "ef23cae2dab912e5059a857eecdfe65b",
+    "name": "Saracroche: DidXL B.V.",
+    "ruleType": "regex",
+    "pattern": "^\\+33189368.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "cfb423b799fe7b4cc749be967bb2be56",
     "name": "Saracroche: Sonixis",
     "ruleType": "regex",
@@ -508,15 +616,6 @@
     "name": "Saracroche: Infinivox",
     "ruleType": "regex",
     "pattern": "^\\+33189375.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "afd39ddc46535a91e5ae1d5db44d371e",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33189376.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -729,15 +828,6 @@
     "isEnabled": 1
   },
   {
-    "id": "7340e61c6a93a41dadb3505aba636775",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33219271.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "220d2dd76415cde6c81c5ba76ad71e9e",
     "name": "Saracroche: Iagility",
     "ruleType": "regex",
@@ -778,6 +868,15 @@
     "name": "Saracroche: Iagility",
     "ruleType": "regex",
     "pattern": "^\\+33219389.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "da24817bb396f5e3fcdffe20dd6650d2",
+    "name": "Saracroche: Mobile-First",
+    "ruleType": "regex",
+    "pattern": "^\\+33221004.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -873,6 +972,15 @@
     "isEnabled": 1
   },
   {
+    "id": "0274e5f47fb09d879a11d8233f4a879f",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3323079.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "1aa109d407822516594999d2ea683962",
     "name": "Saracroche: AVM Informatique",
     "ruleType": "regex",
@@ -891,10 +999,19 @@
     "isEnabled": 1
   },
   {
-    "id": "cead98200458d669f68cce0dc3fd6917",
-    "name": "Saracroche: Nexera",
+    "id": "12d94bc2ef94b85ac009afa1d293d460",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33236586.*",
+    "pattern": "^\\+3324602.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "618bae014cb784b9f782198a507ae848",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3325344.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -963,10 +1080,19 @@
     "isEnabled": 1
   },
   {
-    "id": "73d0715e63819fd3eb9094c24cfa7424",
-    "name": "Saracroche: Telecom.object",
+    "id": "8e0a67aab8aee9b7b0395f4675f7f5b1",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3325551.*",
+    "pattern": "^\\+33256350.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "64b38a57e02b33682c19b6c3cdc53ff1",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33256351.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -976,6 +1102,69 @@
     "name": "Saracroche: FlashCall",
     "ruleType": "regex",
     "pattern": "^\\+33256352.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7c495ee712e3bab24cc72daa995be7f0",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33256353.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "487e5f4285331463c3c28720c11a900e",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33256355.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "40db561eef9227576b54bdc446318565",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33256356.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "09a0dd985f88881e519e37cd126176b4",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33256357.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c5ebdabfcf77f166d89cf93cac582500",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33256358.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "4b561ca876f3c7383f942a9941559e0d",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33256359.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a7b2aaa55ec39355a0127791388d704e",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3325719.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1458,19 +1647,10 @@
     "isEnabled": 1
   },
   {
-    "id": "7a9714451ef5676c853008be829d1826",
-    "name": "Saracroche: Flex network",
+    "id": "b7bb0e3b02cec27e5cb0c47bfd2d06bd",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33276201.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "28bf39ffe946fa5073a5194035c4d43c",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3327940.*",
+    "pattern": "^\\+3327867.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1503,19 +1683,28 @@
     "isEnabled": 1
   },
   {
-    "id": "71ceb76c4fbabebd58b4e87a5d63245c",
-    "name": "Saracroche: Telecom.object",
+    "id": "ed8d6971f32fb5a5ed9e0865f0d43417",
+    "name": "Saracroche: Manifone",
     "ruleType": "regex",
-    "pattern": "^\\+3327979.*",
+    "pattern": "^\\+3327983.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "ed8d6971f32fb5a5ed9e0865f0d43417",
+    "id": "d2edbccec09ee579b0de973062b43758",
     "name": "Saracroche: Manifone",
     "ruleType": "regex",
-    "pattern": "^\\+3327983.*",
+    "pattern": "^\\+33281031.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0f5054735817bb5cccc815bc7fd4285d",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3328530.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1593,15 +1782,6 @@
     "isEnabled": 1
   },
   {
-    "id": "70abfb9849d15dca24fd5e56b0787c26",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+3333950.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "03f034300ed7d647f77fc4f4975700c4",
     "name": "Saracroche: Lineconnects",
     "ruleType": "regex",
@@ -1638,19 +1818,28 @@
     "isEnabled": 1
   },
   {
-    "id": "4253abbbbbb3c7c9f047e6edc887f894",
-    "name": "Saracroche: Telecom.object",
+    "id": "1a2cafbf19c86108d914a2ee92d79fff",
+    "name": "Saracroche: Manifone",
     "ruleType": "regex",
-    "pattern": "^\\+3334529.*",
+    "pattern": "^\\+33341031.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "a34c75dcaedafa107f3f9575b9542afd",
-    "name": "Saracroche: Nexera",
+    "id": "8d88de2cc1750103eaf45ed3c84c8a9a",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33345898.*",
+    "pattern": "^\\+3335244.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5f8de9ba4f98e036b5f29e55d46d4a8e",
+    "name": "Saracroche: Mobile-First",
+    "ruleType": "regex",
+    "pattern": "^\\+33352794.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1692,15 +1881,6 @@
     "isEnabled": 1
   },
   {
-    "id": "51555301905ea10adcd2871459eee257",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33353659.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "cf28c84a7bfbdd8d15de2398068f4e5d",
     "name": "Saracroche: Qwalikom",
     "ruleType": "regex",
@@ -1732,6 +1912,60 @@
     "name": "Saracroche: Destiny global infra services",
     "ruleType": "regex",
     "pattern": "^\\+33353791.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7c565b7b431af88d53dbfcf08f5ec969",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33354760.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6dc6762e8a7765cce4dd128c2f42df5c",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33354761.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "eec6111826fc99f7032a11c5600e406b",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33354762.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9ed23f09eb0390789074120b5de288da",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33354763.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "792664325049a5aea6ad1b91613b01e1",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33354765.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "c26d9c02840a567cb53720c3dfac52d9",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33354766.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1773,6 +2007,33 @@
     "isEnabled": 1
   },
   {
+    "id": "caa5f1199c0628427c49e48934376990",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3336108.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "2544c92666931ef17d11334bc6d80e6a",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3336559.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "092bb058140e8d474ac1145b99916307",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3336706.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "b5728833e8031920b058b488cddb22d1",
     "name": "Saracroche: Ubicentrex",
     "ruleType": "regex",
@@ -1791,19 +2052,73 @@
     "isEnabled": 1
   },
   {
-    "id": "b22863a793aa2f5e846c14dc82397ef0",
-    "name": "Saracroche: Telecom.object",
+    "id": "e3a4b503f7d2ebe48bc298b3575df468",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3336768.*",
+    "pattern": "^\\+33368680.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "c8407c7b0a3f65aad73ae2c3b9224d72",
-    "name": "Saracroche: Flex network",
+    "id": "6a35d24192ac12f93e40b01cbe8ff142",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33369069.*",
+    "pattern": "^\\+33368684.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9aa48d43811bf589ca280bea1e5a23cf",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33368685.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d83bcbfbed818ab2ac41fc2a0b7dbf12",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33368686.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "07dfa156b014d0d7d73b7fe945659e9a",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33368687.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e11d841edc6d050ea387be29a4d416f6",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33368688.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "84c55b8680ab18d1d906fa79c536b486",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33368689.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "5e49b8bd0e1c8bd65677daeff2e3c798",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3337087.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1818,10 +2133,28 @@
     "isEnabled": 1
   },
   {
-    "id": "2b846f6c4a8369669c02d52f1512986c",
-    "name": "Saracroche: Telecom.object",
+    "id": "b91fca5d064abe1f635426b13d02cae2",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3337287.*",
+    "pattern": "^\\+3337257.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "74362bd792171c2599498772bd6fa5ab",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3337312.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0f98606df9f63d092c54d8f2df88e964",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3337325.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1858,6 +2191,15 @@
     "name": "Saracroche: Iagility",
     "ruleType": "regex",
     "pattern": "^\\+33373359.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0d11c327b04bcd6c0a30567089bb6e98",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3337389.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -1939,24 +2281,6 @@
     "name": "Saracroche: Cyd-solutions",
     "ruleType": "regex",
     "pattern": "^\\+3337592.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "1bd03cb3e7a8af4ef279d9ca03d967c1",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+3337601.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "f239f59ad7fdfab3f9ac47316fbb1726",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3337609.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -2277,6 +2601,24 @@
     "isEnabled": 1
   },
   {
+    "id": "fc7176823a968e5ac434cf3e25f99634",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3341162.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "68bebe25b2733517a4ca1ea69c5461f4",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3341163.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "18cca887d21e7198e42887257a624ec3",
     "name": "Saracroche: Iagility",
     "ruleType": "regex",
@@ -2583,6 +2925,33 @@
     "isEnabled": 1
   },
   {
+    "id": "77388ef5b1e2348fcf9c7d89426014ce",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3341380.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "00e1485af2bffb595194549a5668aeb4",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3341381.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e9eadd5bd71f730dfe468b4a15abadc8",
+    "name": "Saracroche: Mobile-First",
+    "ruleType": "regex",
+    "pattern": "^\\+33415829.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "fe426bbb99dbdd72d928cee95a211c77",
     "name": "Saracroche: Cloud telecom",
     "ruleType": "regex",
@@ -2605,24 +2974,6 @@
     "name": "Saracroche: Destiny global infra services",
     "ruleType": "regex",
     "pattern": "^\\+33420261.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "f71e86347ae6f5f6d70153eb7a808986",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33420264.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "30d5266465439671f0c94f2a6ab6e292",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33420267.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -2781,6 +3132,87 @@
     "isEnabled": 1
   },
   {
+    "id": "835bfd2a4d12639f96a9faeb2f5d48b6",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426460.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "95ad3b52c65fe9c9cc681bd24b5b1f33",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426461.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "93f7292451a544189d3315bb98510b91",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426462.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "373435f8bafadc308ecf9cf7352d8b76",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426463.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "06c5767fe01c45facb82bf1f1c8eacd4",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426464.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "849d02a7e71de7f57e91d53e486318b0",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426465.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "78b98a15d51556ae59d63bd1d3e66c13",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426466.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "035b716ac337956e83b06995a60a05fa",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426467.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6527c282ff8b14ad5420dade7862743a",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33426468.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "cfe4c9742f2f49a31f866fe994c2e61a",
     "name": "Saracroche: FlashCall",
     "ruleType": "regex",
@@ -2790,10 +3222,19 @@
     "isEnabled": 1
   },
   {
-    "id": "a0b1df9477adb48f65061767fdf91fa2",
-    "name": "Saracroche: Telecom.object",
+    "id": "1b73bea073c32f08467ff2522b118216",
+    "name": "Saracroche: Manifone",
     "ruleType": "regex",
-    "pattern": "^\\+3342887.*",
+    "pattern": "^\\+33441031.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d810f2548b4e008bca7c3b36229c07ae",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3344384.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -3051,33 +3492,6 @@
     "isEnabled": 1
   },
   {
-    "id": "aca06c1f6d956aa70245675c7a78bbbf",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+33458430.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "f0d3f7e55993d45f45ded26e75328deb",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+33458439.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "5258c379e3d67e4b7fea270a55bfebb2",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+3345855.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "b2dd989175ad3c281aedd9234990661c",
     "name": "Saracroche: Manifone",
     "ruleType": "regex",
@@ -3087,19 +3501,73 @@
     "isEnabled": 1
   },
   {
-    "id": "44f87757c8123f72a86a5189a5dd5557",
-    "name": "Saracroche: Telecom.object",
+    "id": "b1ea55f639d32a0435fd038fac1f53cf",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3346565.*",
+    "pattern": "^\\+3348092.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "581e0ff8c2d49b4985e55647ec16ed7b",
-    "name": "Saracroche: Flex network",
+    "id": "2a5ed86aadf2b32b9487518788bd0f98",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33481063.*",
+    "pattern": "^\\+3348093.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6de42fcdb8c1aae54e0ab76eeecd90cf",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3348375.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d22a30c718f11ba002e956497d35856a",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3348382.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6ad70b10458235bcab2c901ede70ad76",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3348427.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cdee9a29db006124dffac5c1506de2a4",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3348428.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "cd61912d3d4b583bfd6a02c3c9dc3bd4",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3348429.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "6b4ecfa46f15ccca7b4fafd216856c2c",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3348430.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -3123,10 +3591,10 @@
     "isEnabled": 1
   },
   {
-    "id": "17212b68e9ba4b35d8c84ad56d6cd894",
-    "name": "Saracroche: Nexera",
+    "id": "66c7f9a65c8f4d66f87a3a320d9764a5",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3348783.*",
+    "pattern": "^\\+3348687.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -3141,19 +3609,91 @@
     "isEnabled": 1
   },
   {
-    "id": "aa82aa540b5b5c468ca5782f32d034ff",
-    "name": "Saracroche: Iovox Ltd",
+    "id": "ae7208be71221ff274483b90e73a3449",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33508510.*",
+    "pattern": "^\\+33489610.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "346ddf5d38570889fc604295451db4a4",
-    "name": "Saracroche: Nexera",
+    "id": "e336d900af98e224d9faf180d258be9e",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33516472.*",
+    "pattern": "^\\+33489611.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aa2f6434dc7a878f138f5acff2a9c7f9",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33489612.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "0add1e1f22155e7e833ad32214941878",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33489613.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d44f7b0c7973aaeb977c7ec8166458bb",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33489614.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a7e8683d66d15de4edd8468f89f1c82e",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33489615.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fff73eb89523abd061240b0adb54c241",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33489617.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9b3ffbc040569fb3aedfa0ffcb56472c",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33489618.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "045a69ac91a5a464bb463eedd97c4699",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33489619.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "aa82aa540b5b5c468ca5782f32d034ff",
+    "name": "Saracroche: Iovox Ltd",
+    "ruleType": "regex",
+    "pattern": "^\\+33508510.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -3177,10 +3717,28 @@
     "isEnabled": 1
   },
   {
+    "id": "16d45de7976e05ecd3289bbbda77ed26",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3351793.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "dbfaf6b2389b72b76b8cbf953c8ce3e6",
     "name": "Saracroche: Manifone",
     "ruleType": "regex",
     "pattern": "^\\+3351807.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e4675db6a8b5d7f12c545b58f6814a2b",
+    "name": "Saracroche: Mobile-First",
+    "ruleType": "regex",
+    "pattern": "^\\+33519086.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -3217,15 +3775,6 @@
     "name": "Saracroche: Destiny global infra services",
     "ruleType": "regex",
     "pattern": "^\\+33523651.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "78f228a3377fb3ec686eda05be201c9f",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33525284.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -3280,15 +3829,6 @@
     "name": "Saracroche: FlashCall",
     "ruleType": "regex",
     "pattern": "^\\+33525348.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "4f8044aff1cb6ee21bba230478cac6ac",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33525349.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -3663,6 +4203,15 @@
     "isEnabled": 1
   },
   {
+    "id": "6eb8fad6ec3ef9a2e7030410ad091b2e",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3353532.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "345af5aa8f88e92ab32ac971c936ae20",
     "name": "Saracroche: Oxilog France",
     "ruleType": "regex",
@@ -3807,6 +4356,24 @@
     "isEnabled": 1
   },
   {
+    "id": "649de14e4438e41abee30aa3016b2809",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+33541031.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "fbfe3f3ff286584e30f95d16ec678a4c",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3354748.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "b8ec8ff04b1b1f8c0c35d2eef6e1fb4c",
     "name": "Saracroche: Iovox Ltd",
     "ruleType": "regex",
@@ -3834,24 +4401,6 @@
     "isEnabled": 1
   },
   {
-    "id": "929eb76d1b2b667f9f31541a5a1bc99f",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+3355472.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "e92aa5cbd3f7700a09630af23ccb5bbf",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3355493.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "d89e22a2c44d85bbac30849805bf0cdc",
     "name": "Saracroche: Préfixe démarchage ARCEP",
     "ruleType": "regex",
@@ -3865,6 +4414,24 @@
     "name": "Saracroche: Préfixe démarchage ARCEP",
     "ruleType": "regex",
     "pattern": "^\\+33569.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7c56b6a04569038f45919a255d7de002",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3357966.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "17a2792681d5fc6a929c4f66909263a7",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3358118.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -4230,127 +4797,55 @@
     "isEnabled": 1
   },
   {
-    "id": "b0d0bd3f62fe47e9dad546c10480cf1b",
-    "name": "Saracroche: Nexera",
+    "id": "af462cf83bce9d095c0bb2fee7ecf6a7",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+3360168.*",
+    "pattern": "^\\+33743114.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "0c0aebf4a7d402ed1bb9b30de6313b18",
-    "name": "Saracroche: Syma",
+    "id": "a2e8b86f19d4f43dd60a8f71e6916633",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+336028.*",
+    "pattern": "^\\+33743115.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "b2dae67c7eedc8053266b3529a921a42",
-    "name": "Saracroche: Syma",
+    "id": "a6b633ba9ca5e89060d6af4aa418bcec",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+3360290.*",
+    "pattern": "^\\+33743116.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "f291306364bbc7c13c693ff32cff8f27",
-    "name": "Saracroche: Syma",
+    "id": "0b3993d31a303b5e022e17946842d8b4",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+3360291.*",
+    "pattern": "^\\+33743117.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "191722d3cd43a2af97e34e84c9266c55",
-    "name": "Saracroche: Syma",
+    "id": "5b24905d41d05d38848f0335f683c5a1",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+3360292.*",
+    "pattern": "^\\+33743118.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "cbe4be2bf19fa92b66dc12715b48a47a",
-    "name": "Saracroche: Syma",
+    "id": "576fb40752f294369f52db9d509f27fd",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+3360293.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "b967ee58bbe4ed1c43f34ca80e912f1d",
-    "name": "Saracroche: Syma",
-    "ruleType": "regex",
-    "pattern": "^\\+3360294.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "4069b8c16d2d59e1e927d073142dd48a",
-    "name": "Saracroche: Syma",
-    "ruleType": "regex",
-    "pattern": "^\\+3360295.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "817e7be6ec522a7a42cb3db28b826253",
-    "name": "Saracroche: Syma",
-    "ruleType": "regex",
-    "pattern": "^\\+3360296.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "ae53192a1f352f838b72270313b0d204",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33641651.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "6c43f827f9076f87cd15d3d42eff6c62",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+33649901.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "684d452fe8d13b663fbcb1dc3413697a",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3374301.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "5db1140a1a0661dbbaa043f9ec8468f5",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3374308.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "ef208fc471a91d220c57ee8ad3ac9bae",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3374310.*",
+    "pattern": "^\\+33743119.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -4383,24 +4878,6 @@
     "isEnabled": 1
   },
   {
-    "id": "3bb5a386d492f947acc8b085f656f077",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3374315.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "7ecf34eb4bd127fc30f100bac33951cb",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3374316.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "8bb539152a95e68fc713fa77c0652136",
     "name": "Saracroche: AVM Informatique",
     "ruleType": "regex",
@@ -4410,73 +4887,10 @@
     "isEnabled": 1
   },
   {
-    "id": "a3287867c6b6058ee36cd366f9d51b82",
-    "name": "Saracroche: Flex network",
+    "id": "ab059f15cdfdbe589a597e0b77f8ac1b",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+33743469.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "09b7e94ddb257ddabf682d0108a81245",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33743482.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "b6eadcc06d3d8cd0d2ebaa90b8ce6d11",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33743493.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "1ccdb68c4a52c05d8b7b0b31eba66f2a",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33743494.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "20c39f9824fecb4cb4c157babebfe134",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3374397.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "de6a9a9624ce4db07191fb3798c6f626",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3374398.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "25d90917f962abedfb66f3bc64edfebb",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33743990.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "db99ded316287da27182930a8d5379b7",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33743991.*",
+    "pattern": "^\\+33743470.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -4500,136 +4914,64 @@
     "isEnabled": 1
   },
   {
-    "id": "db8770068d8a2502fc27917e5fb6aa20",
-    "name": "Saracroche: Nexera",
+    "id": "93eee295b31d0df25a22baa360d2a904",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+33745802.*",
+    "pattern": "^\\+33745804.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "2ae37167aafa0e2ece40d34e8cfdc564",
-    "name": "Saracroche: Syma",
+    "id": "4969585949c110697a527a5a836d177d",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+337482.*",
+    "pattern": "^\\+33745805.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "b0405b376aea8c617ff42690abf54a04",
-    "name": "Saracroche: Syma",
+    "id": "6a5285f62312405c348af0fd55f3a8b9",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+337483.*",
+    "pattern": "^\\+33745806.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "11a631cb19388634c34846e4d4626fa1",
-    "name": "Saracroche: Syma",
+    "id": "44be448b7426d2a43286eb9652c696af",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+337484.*",
+    "pattern": "^\\+33745807.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "6e67d2f223a0689375731acc663d0e2f",
-    "name": "Saracroche: Syma",
+    "id": "8379ab08c33a534885dca9941cb5b41f",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+337485.*",
+    "pattern": "^\\+33745808.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "1bf1ffe3a97e6ff1a87b33359d2618cc",
-    "name": "Saracroche: Syma",
+    "id": "d37969fbd6657177b79e7c0c40aa1df1",
+    "name": "Saracroche: Mobile-First",
     "ruleType": "regex",
-    "pattern": "^\\+337486.*",
+    "pattern": "^\\+33745809.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
   },
   {
-    "id": "f957e69841c1346fde211c6a7fa17ae5",
-    "name": "Saracroche: Nexera",
+    "id": "8522eac91b81cd1b3227489fdb4918a2",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3375071.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "2db0a32a6f388541902256a0a8308a37",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375072.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "7b12cc16db43f9c7147afbe5a2aa44c3",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375569.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "d391c980e2f6026df15b709bc9e4b995",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375613.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "e811b4b27a47fbffdaa6971c6452a44c",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+3375617.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "ae04cdae2a96be2ff06bca8fcd1a01cb",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33756461.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "755884ad05c6304e57083d9ad33d4ab2",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33756462.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "3ed0fce47559cdca00fcfaf1b079e374",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33756463.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "f3a56b3e4f649cf6e2ebcfd680bf4e5d",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375707.*",
+    "pattern": "^\\+3374887.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -4662,109 +5004,10 @@
     "isEnabled": 1
   },
   {
-    "id": "ec0ce07401e56471805103b14ff11e8c",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375717.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "ee78a842b1364e80bc99febec3a3786b",
     "name": "Saracroche: Plug and tel",
     "ruleType": "regex",
     "pattern": "^\\+3375786.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "3e6e71427dd0d13566272944bfd9c558",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375990.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "358bb97961af02fbadcd80e4f48decd5",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375991.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "c7cd7bf39a029c33145e921cf8c33141",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3375992.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "a04d457ac35e4ccdd345cf07a24578b3",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33771920.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "53df37b3ca4362ae3744609d3e7e0d5a",
-    "name": "Saracroche: Syma",
-    "ruleType": "regex",
-    "pattern": "^\\+33773.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "1cf44c3903b9f1678df04b79ab1338b2",
-    "name": "Saracroche: Syma",
-    "ruleType": "regex",
-    "pattern": "^\\+33774.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "1a577a90830887494b5937d82d05264e",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3377566.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "45a19486060f5921421c13e9fb704c1e",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3377567.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "5ff6440f3bea74060cea6b18ce7d9883",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3377568.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "9ca757a295c3e9ccb90210636d369e7d",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3377569.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -4833,6 +5076,33 @@
     "isEnabled": 1
   },
   {
+    "id": "36d09028d90aac1a10ae36601d00a4d6",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33805960.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f717d7ed498f25af53e5271632913442",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33805963.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "9d25dc10351e4f1122ffd5ebcd2aac05",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33805965.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "664d3ef233f3285a08dbd4485f285d56",
     "name": "Saracroche: Manifone",
     "ruleType": "regex",
@@ -4851,6 +5121,60 @@
     "isEnabled": 1
   },
   {
+    "id": "e24dba92597b532f4cbe5a3a89f10770",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33811850.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "f27b8aa0f20577f59d88ff3ebbf8b5f8",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33811851.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "783d4ff8d2a873099e5f311edece1886",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33811853.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "a818b9471a8348f6b38c50e6273bea51",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33811854.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "bcb27a94016bec4a7d506fb937183c62",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33811856.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "e25b23e9e81d48c196a1535116d82b8a",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+33811859.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "0192a2549cad1e624595cb6b55f71194",
     "name": "Saracroche: AVM Informatique",
     "ruleType": "regex",
@@ -4864,6 +5188,15 @@
     "name": "Saracroche: AVM Informatique",
     "ruleType": "regex",
     "pattern": "^\\+3382628.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "d3912f84e8dc5f0fe1e85820ddc3399a",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3382697.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -4968,6 +5301,15 @@
     "isEnabled": 1
   },
   {
+    "id": "38b17f91844c8c8244a667e02b23923b",
+    "name": "Saracroche: Manifone",
+    "ruleType": "regex",
+    "pattern": "^\\+33941031.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
     "id": "f4954921f4e99fda53ebe42c0a82885b",
     "name": "Saracroche: Préfixe démarchage ARCEP",
     "ruleType": "regex",
@@ -5040,28 +5382,28 @@
     "isEnabled": 1
   },
   {
-    "id": "3510258a6edbf28e757010a7f21eda57",
-    "name": "Saracroche: Flex network",
-    "ruleType": "regex",
-    "pattern": "^\\+3397016.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "72c93184511e9c597e2eaab3ebff6ec8",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3397031.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "44786901484df6eb7412c561b9d96919",
     "name": "Saracroche: AVM Informatique",
     "ruleType": "regex",
     "pattern": "^\\+3397062.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "7a145de65c9133b899c8dd96269f8a43",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3397069.*",
+    "priority": 5,
+    "action": "block",
+    "isEnabled": 1
+  },
+  {
+    "id": "121fdc5ad3f7768d79e32dd82305b638",
+    "name": "Saracroche: Foliateam operateur",
+    "ruleType": "regex",
+    "pattern": "^\\+3397077.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -5098,15 +5440,6 @@
     "name": "Saracroche: Ubicentrex",
     "ruleType": "regex",
     "pattern": "^\\+3397276.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "27c51f5a20a92bd293ade67ba9959999",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3397277.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -5157,28 +5490,10 @@
     "isEnabled": 1
   },
   {
-    "id": "98c8a45df93e49999b5cac281351e1a1",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+33974010.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
     "id": "30261dfd534a481bb6e3f1f0cd69d03c",
     "name": "Saracroche: DVS Connect",
     "ruleType": "regex",
     "pattern": "^\\+33974015.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "9da5983822739b8f13d98b392bb18195",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3397405.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -5463,10 +5778,10 @@
     "isEnabled": 1
   },
   {
-    "id": "a86bf5a8e91285f3e01173ac3fb5f76a",
-    "name": "Saracroche: Flex network",
+    "id": "4eb36658d11aed3ef6f1319a5edd2439",
+    "name": "Saracroche: Foliateam operateur",
     "ruleType": "regex",
-    "pattern": "^\\+3397809.*",
+    "pattern": "^\\+3397517.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -5485,15 +5800,6 @@
     "name": "Saracroche: Iovox Ltd",
     "ruleType": "regex",
     "pattern": "^\\+3397834.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "601ca33692dfd905f1854498b0ab2386",
-    "name": "Saracroche: Nexera",
-    "ruleType": "regex",
-    "pattern": "^\\+3397844.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1
@@ -5521,15 +5827,6 @@
     "name": "Saracroche: FlashCall",
     "ruleType": "regex",
     "pattern": "^\\+33978853.*",
-    "priority": 5,
-    "action": "block",
-    "isEnabled": 1
-  },
-  {
-    "id": "5028bdb74923d2f7875a36a2984f0d89",
-    "name": "Saracroche: Telecom.object",
-    "ruleType": "regex",
-    "pattern": "^\\+3397998.*",
     "priority": 5,
     "action": "block",
     "isEnabled": 1

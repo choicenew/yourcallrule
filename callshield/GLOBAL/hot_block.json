@@ -1,7 +1,13 @@
-{
-  "generated": "2026-10-29T14:39:08.448638+00:00",
-  "input_report_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "count": 0,
-  "cleared": true,
-  "numbers": []
-}
+[
+  {
+    "id": "3069943260d716ffd63dc10db738ace5",
+    "name": "Trending community report",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8615017944158",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 4
+  }
+]

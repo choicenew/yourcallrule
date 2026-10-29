@@ -1,0 +1,24 @@
+[
+  {
+    "id": "3069943260d716ffd63dc10db738ace5",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8615017944158",
+    "labelId": "scamslikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 13
+  },
+  {
+    "id": "fb60abf9b321669cd1998c65aafcf748",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8618638657795",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 11
+  }
+]

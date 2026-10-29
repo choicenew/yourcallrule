@@ -1,0 +1,13 @@
+[
+  {
+    "id": "3069943260d716ffd63dc10db738ace5",
+    "name": "Trending community report",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8615017944158",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 4
+  }
+]
