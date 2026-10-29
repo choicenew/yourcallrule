@@ -98241,10 +98241,10 @@
     "subscriptionId": "us-spam-blocklist"
   },
   {
-    "id": "ad0ff6fc9bf59aa541ece795af6bbe6c",
+    "id": "c7b4d6302a1f16e567d660f9363716ad",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
-    "phoneNumber": "+19312052797",
+    "phoneNumber": "+18182782163",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",
