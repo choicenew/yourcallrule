@@ -101907,6 +101907,45 @@
     "subscriptionId": "us-spam-blocklist"
   },
   {
+    "id": "47da4c81f28844dcd1bf555562150f1c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12396569297",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "b3c34400a53896bcf5155bff3352bd06",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16784967609",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "d8eb8be26e241a22657f860efbac6b2d",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+19144317672",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
     "id": "22d2ae2d12ee01e0803e969eed86ff72",
     "name": "Robocall",
     "ruleType": "phone_rule",

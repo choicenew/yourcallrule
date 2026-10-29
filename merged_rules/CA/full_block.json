@@ -3380,6 +3380,19 @@
     "subscriptionId": "ca-spam-blocklist"
   },
   {
+    "id": "fba7e7ff95a5db2d2845b08229461a98",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16479470897",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ca-spam-blocklist"
+  },
+  {
     "id": "da58a908b50d589dfe0505c1aadcb025",
     "name": "Robocall",
     "ruleType": "phone_rule",
