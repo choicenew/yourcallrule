@@ -100321,10 +100321,10 @@
     "subscriptionId": "us-spam-blocklist"
   },
   {
-    "id": "1bccad9b2ce621ed1324d8ded311b35a",
+    "id": "da4eba3ce15997280dff0f85ee47e668",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
-    "phoneNumber": "+17276300558",
+    "phoneNumber": "+17273621259",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",
