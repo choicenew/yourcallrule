@@ -3393,6 +3393,19 @@
     "subscriptionId": "ca-spam-blocklist"
   },
   {
+    "id": "29cf023868d32a08cc68ca80431b11bf",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16472475019",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ca-spam-blocklist"
+  },
+  {
     "id": "da58a908b50d589dfe0505c1aadcb025",
     "name": "Robocall",
     "ruleType": "phone_rule",
