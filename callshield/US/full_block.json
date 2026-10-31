@@ -8,7 +8,7 @@
     "priority": 3,
     "action": "block",
     "isEnabled": 1,
-    "count": 1265
+    "count": 1266
   },
   {
     "id": "021a08cfe85edc76c652e5d0c20c2976",
@@ -565404,6 +565404,39 @@
     "name": "Community reported",
     "ruleType": "phone_rule",
     "phoneNumber": "+18776811325",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1
+  },
+  {
+    "id": "17bc50dfcd0038bc9d2a37d5ca6a8377",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17372590495",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1
+  },
+  {
+    "id": "1efa7c526796149989d672aa081598fe",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18777560205",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1
+  },
+  {
+    "id": "4c932e41454eb61f959e215e4d44facb",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18886635407",
     "labelId": "spamlikely",
     "priority": 3,
     "action": "block",

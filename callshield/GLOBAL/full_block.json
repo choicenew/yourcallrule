@@ -8,7 +8,7 @@
     "priority": 3,
     "action": "block",
     "isEnabled": 1,
-    "count": 1265
+    "count": 1266
   },
   {
     "id": "021a08cfe85edc76c652e5d0c20c2976",
@@ -565411,6 +565411,39 @@
     "count": 1
   },
   {
+    "id": "17bc50dfcd0038bc9d2a37d5ca6a8377",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17372590495",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1
+  },
+  {
+    "id": "1efa7c526796149989d672aa081598fe",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18777560205",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1
+  },
+  {
+    "id": "4c932e41454eb61f959e215e4d44facb",
+    "name": "Community reported",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18886635407",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1
+  },
+  {
     "id": "2006883c9eeae92a49c3e87a908f2214",
     "name": "Antigua and Barbuda - premium rate scam",
     "ruleType": "regex",
@@ -565641,6 +565674,17 @@
     "name": "Community reported; Reviewed by the maintainer",
     "ruleType": "phone_rule",
     "phoneNumber": "+498943780834",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1
+  },
+  {
+    "id": "0290cf91c460817216daa28915ff3211",
+    "name": "Community reported; Reviewed by the maintainer",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+393762768421",
     "labelId": "spamlikely",
     "priority": 3,
     "action": "block",
