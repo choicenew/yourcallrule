@@ -65,19 +65,6 @@
     "subscriptionId": "ca-spam-blocklist"
   },
   {
-    "id": "8ef23ea35f7baf9ab81e9a564b7cfa57",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+16133044626",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 1,
-    "avatar": "",
-    "subscriptionId": "ca-spam-blocklist"
-  },
-  {
     "id": "3106095378a716b3ef147ff779e85d7a",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
@@ -3397,6 +3384,19 @@
     "name": "Telemarketing",
     "ruleType": "phone_rule",
     "phoneNumber": "+16472475019",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ca-spam-blocklist"
+  },
+  {
+    "id": "491d39f59fb62942d6cf9ef3eefa578e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+14375234300",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",

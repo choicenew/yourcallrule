@@ -6422,6 +6422,19 @@
     "subscriptionId": "us-spam-blocklist"
   },
   {
+    "id": "f3fa4b83fa2d7f7ec755a23f063280e4",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+15183035552",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
     "id": "b759e1166f0160b2ae6e30525486df8c",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
@@ -22945,10 +22958,10 @@
     "subscriptionId": "us-spam-blocklist"
   },
   {
-    "id": "feaabe51201a84ab2307469b084a785f",
+    "id": "b3cee95deef5a21696ffb06bc8e7fd5a",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
-    "phoneNumber": "+12126756565",
+    "phoneNumber": "+19178658583",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",
@@ -101976,6 +101989,45 @@
     "name": "Telemarketing",
     "ruleType": "phone_rule",
     "phoneNumber": "+18886080902",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "acb9bf503e56771380b66153e62c4a86",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18136497749",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "089112846e714ddbbf1fe2fb87bd3c4e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17756368378",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "us-spam-blocklist"
+  },
+  {
+    "id": "719f2f78375718a133db998bf97bcfbe",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17753130490",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",
