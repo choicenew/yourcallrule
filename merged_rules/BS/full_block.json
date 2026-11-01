@@ -1,5 +1,18 @@
 [
   {
+    "id": "93a04b81650de037234166aa0f5c4cea",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12426996884",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bs-spam-blocklist"
+  },
+  {
     "id": "8683f56b5bd950bc0f82afbdad0a13c0",
     "name": "Spam Call",
     "ruleType": "phone_rule",
