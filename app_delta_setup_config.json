@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.0",
-  "last_updated": "2026-11-01T11:12:00Z",
+  "last_updated": "2026-11-01T11:39:58Z",
   "update_strategy": {
     "sync_interval_hours": 24,
     "allow_cellular_download": false,
@@ -294,6 +294,21 @@
       "is_enabled": true
     },
     {
+      "id": "callshield_community_hot",
+      "source_id": "callshield_community_hot",
+      "name": "CallShield 24h Community Velocity Feed",
+      "country_code": "GLOBAL",
+      "description": "Recent 24-hour community reported trending spam velocity feed",
+      "icon_url": "https://flagcdn.com/w80/un.png",
+      "rule_type": "phone_rule",
+      "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/GLOBAL/hot_block.json",
+      "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/GLOBAL/hot_block.json",
+      "checksum_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "total_rules": 0,
+      "priority": 5,
+      "is_enabled": true
+    },
+    {
       "id": "us_full_block",
       "source_id": "us_full_block",
       "name": "United States Spam Blocklist Ruleset",
@@ -303,8 +318,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/US/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/US/full_block.json",
-      "checksum_sha256": "b37c5b1bf97251213e82c3fbeb36c2b4dc86c8aca5a6f8c38072a1c748cce815",
-      "total_rules": 86801,
+      "checksum_sha256": "4bf703b01e554c39b893d6059cc26c71c0fd3ebc1d72b1a87ccd84dfb6003cf4",
+      "total_rules": 86666,
       "priority": 3,
       "is_enabled": true
     },
@@ -318,8 +333,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CA/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CA/full_block.json",
-      "checksum_sha256": "165dc9ca930f4cd4f2a0e8da8f37836ea5b7d70ebca9203612614be146463c95",
-      "total_rules": 1991,
+      "checksum_sha256": "55299d48c8743acb6e44822684307c9e7821e0e6b4025556c5357753b2fd41bc",
+      "total_rules": 1975,
       "priority": 3,
       "is_enabled": true
     },
@@ -333,8 +348,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/PR/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/PR/full_block.json",
-      "checksum_sha256": "aa11ce7e1978c4720e79e48632ec4e41a558f94cb7b537101bc073432ea7852b",
-      "total_rules": 61,
+      "checksum_sha256": "02c493f176c6f089dc61668d2b47c5b7934e14c61a68a975d52a76a4543176eb",
+      "total_rules": 60,
       "priority": 3,
       "is_enabled": true
     },
