@@ -39,6 +39,10 @@ jobs:
         run: |
           python scripts/fetchers/fetch_us_official.py
 
+      - name: Fetch US ToastedSpam Blocklist
+        run: |
+          python scripts/fetchers/fetch_toastedspam.py
+
       - name: Fetch France BegoneFR & ARCEP Regex
         run: |
           python scripts/fetchers/fetch_begone_fr.py
@@ -46,6 +50,26 @@ jobs:
       - name: Fetch Turkish Spam Numbers
         run: |
           python scripts/fetchers/fetch_turkish_spam.py
+
+      - name: Fetch OpenCallShield (Colombia)
+        run: |
+          python scripts/fetchers/fetch_opencallshield.py
+
+      - name: Fetch SpamChile (Chile)
+        run: |
+          python scripts/fetchers/fetch_spamchile.py
+
+      - name: Fetch Lista Hũ (Paraguay)
+        run: |
+          python scripts/fetchers/fetch_listahu.py
+
+      - name: Fetch PhoneBlock.net (Europe)
+        run: |
+          python scripts/fetchers/fetch_phoneblock.py
+
+      - name: Fetch CallShield Approved Global List
+        run: |
+          python scripts/fetchers/fetch_callshield_approved.py
 
       - name: Generate Regulatory Regex Rules
         run: |
@@ -67,7 +91,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto sync rulesets, plugins and update setup configs [skip ci]"
-          file_pattern: "CN/ US/ FR/ TR/ IN/ callshield/ merged_rules/ app_delta_setup_config.json app_plugin_setup_config.json"
+          file_pattern: "CN/ US/ FR/ TR/ IN/ CO/ CL/ PY/ EU/ callshield/ merged_rules/ app_delta_setup_config.json app_plugin_setup_config.json"
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           push_options: '--force'

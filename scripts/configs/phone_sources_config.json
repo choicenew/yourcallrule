@@ -35,6 +35,50 @@
       "action": "block"
     },
     {
+      "source_id": "co_opencallshield",
+      "name": "OpenCallShield Colombia & South America Blocklist",
+      "description": "Community reported spam and scam numbers blocklist for Colombia and South America",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "CO",
+      "country_mode": "auto",
+      "priority": 3,
+      "action": "block"
+    },
+    {
+      "source_id": "cl_spamchile",
+      "name": "SpamChile Chile Community Blocklist",
+      "description": "Lista negra de llamadas no deseadas y fraudes en Chile",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "CL",
+      "country_mode": "CL",
+      "priority": 3,
+      "action": "block"
+    },
+    {
+      "source_id": "py_listahu",
+      "name": "Lista Hũ Paraguay Blocklist",
+      "description": "Base de datos de denuncias y numeros no deseados en Paraguay",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "PY",
+      "country_mode": "PY",
+      "priority": 3,
+      "action": "block"
+    },
+    {
+      "source_id": "eu_phoneblock",
+      "name": "PhoneBlock.net Europe Blocklist",
+      "description": "Community crowdsourced phone blocklist for Germany, Austria, Switzerland and Europe",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "EU",
+      "country_mode": "auto",
+      "priority": 3,
+      "action": "block"
+    },
+    {
       "source_id": "callshield_hot",
       "name": "CallShield 24h Community Velocity Feed",
       "description": "Recent 24-hour community reported trending spam velocity feed",
@@ -44,6 +88,17 @@
       "country_mode": "GLOBAL",
       "is_hot_feed": true,
       "priority": 5,
+      "action": "block"
+    },
+    {
+      "source_id": "callshield_approved_json",
+      "name": "CallShield Approved Global Blocklist",
+      "description": "Verified aggregated global community spam and scam blocklist",
+      "enabled": true,
+      "type": "unpacked_json",
+      "path": "callshield/GLOBAL",
+      "country_mode": "auto",
+      "priority": 3,
       "action": "block"
     },
     {
