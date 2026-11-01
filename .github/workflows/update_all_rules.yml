@@ -80,6 +80,10 @@ jobs:
           python scripts/fetchers/fetch_listahu.py
 
       - name: Fetch PhoneBlock.net (Europe API & Dump)
+        env:
+          PHONEBLOCK_USERNAME: ${{ secrets.PHONEBLOCK_USERNAME }}
+          PHONEBLOCK_PASSWORD: ${{ secrets.PHONEBLOCK_PASSWORD }}
+          PHONEBLOCK_API_KEY: ${{ secrets.PHONEBLOCK_API_KEY }}
         run: |
           python scripts/fetchers/fetch_phoneblock.py
 
