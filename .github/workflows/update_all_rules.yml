@@ -115,7 +115,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto sync rulesets, plugins and update setup configs [skip ci]"
-          file_pattern: "CN/ US/ FR/ TR/ IN/ CO/ CL/ PY/ EU/ callshield/ merged_rules/ app_delta_setup_config.json app_plugin_setup_config.json"
+          file_pattern: "CN/ US/ FR/ TR/ IN/ CO/ CL/ PY/ EU/ callshield/ raw_data/ merged_rules/ app_delta_setup_config.json app_plugin_setup_config.json"
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           push_options: '--force'

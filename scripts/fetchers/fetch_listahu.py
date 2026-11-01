@@ -2,8 +2,8 @@
 """
 Lista Hũ 巴拉圭官方与社区防诈 API 全量同步脚本
 
-通过 Lista Hũ 开放 API 接口进行多页全量轮询，
-提取所有巴拉圭黑名单，导出保存至 PY/processed_listahu.csv
+包含原始数据留存备份功能：从网络拉取到的原始 API/Dump 响应字节，
+无损留存备份保存至 raw_data/PY/listahu_raw_response.json。
 """
 
 import json
@@ -18,6 +18,7 @@ import phonenumbers
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent.parent
 PY_DIR = PROJECT_DIR / "PY"
+RAW_PY_DIR = PROJECT_DIR / "raw_data" / "PY"
 OUT_CSV = PY_DIR / "processed_listahu.csv"
 
 LISTAHU_API_BASE = "https://listahu.org/api/v1/lista/"
@@ -42,6 +43,7 @@ def format_py_phone(number):
 def fetch_listahu():
     print("\n[开始调用 Lista Hũ 巴拉圭 API 全量轮询数据...]")
     PY_DIR.mkdir(parents=True, exist_ok=True)
+    RAW_PY_DIR.mkdir(parents=True, exist_ok=True)
 
     existing_df = pd.DataFrame()
     if OUT_CSV.exists():
@@ -51,6 +53,7 @@ def fetch_listahu():
             pass
 
     new_rows = []
+    raw_pages = []
     page = 1
     max_pages = 20
 
@@ -61,13 +64,10 @@ def fetch_listahu():
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
+                raw_bytes = resp.read()
 
-            entries = []
-            if isinstance(data, list):
-                entries = data
-            elif isinstance(data, dict):
-                entries = data.get("results", data.get("data", data.get("lista", [])))
+            raw_pages.append(json.loads(raw_bytes.decode("utf-8")))
+            entries = raw_pages[-1] if isinstance(raw_pages[-1], list) else raw_pages[-1].get("results", raw_pages[-1].get("data", raw_pages[-1].get("lista", [])))
 
             if not entries:
                 print("  Lista Hũ API 无更多页，结束轮询")
@@ -102,6 +102,12 @@ def fetch_listahu():
         except Exception as e:
             print(f"  请求 Lista Hũ 巴拉圭 API 提示: {e}")
             break
+
+    if raw_pages:
+        raw_dump_file = RAW_PY_DIR / "listahu_raw_response.json"
+        with open(raw_dump_file, "w", encoding="utf-8") as rf:
+            json.dump(raw_pages, rf, ensure_ascii=False, indent=2)
+        print(f"  已保存原始未加工数据备份 -> {raw_dump_file.relative_to(PROJECT_DIR)}")
 
     new_df = pd.DataFrame(new_rows)
     if not existing_df.empty and not new_df.empty:
