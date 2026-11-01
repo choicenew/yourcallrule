@@ -26,19 +26,6 @@
     "subscriptionId": "pr-spam-blocklist"
   },
   {
-    "id": "7ddb711d9cfcbe196645d478226f5331",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+19395603767",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "pr-spam-blocklist"
-  },
-  {
     "id": "098775dce34b082d46e24f6fd3004172",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
