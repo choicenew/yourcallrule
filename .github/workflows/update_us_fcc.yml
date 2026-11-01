@@ -1,11 +1,6 @@
-name: Sync US FCC Data
+name: Sync US FCC Data (Manual Only)
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 3 * * *'
   workflow_dispatch:
 
 jobs:

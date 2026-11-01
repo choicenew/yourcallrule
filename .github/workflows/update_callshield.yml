@@ -1,11 +1,6 @@
-name: Auto Update CallShield Subscriptions
+name: Auto Update CallShield Subscriptions (Manual Only)
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -34,10 +29,6 @@ jobs:
         run: |
           pip install phonenumbers requests pyyaml
 
-      - name: Run CallShield conversion script
-        run: |
-          python callshield/scripts/convert_callshield.py
-
       - name: Merge and Update Subscription Config
         run: |
           python scripts/mergers/merge_and_deduplicate.py
@@ -45,7 +36,7 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(callshield): auto update callshield blocklist subscriptions and app_delta_setup_config.json [skip ci]"
+          commit_message: "chore(callshield): auto update callshield blocklist subscriptions [skip ci]"
           file_pattern: "callshield/ merged_rules/ app_delta_setup_config.json"
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com

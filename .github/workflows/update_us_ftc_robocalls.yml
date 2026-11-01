@@ -1,11 +1,6 @@
-name: Sync US FTC Robocall Data
+name: Sync US FTC Robocall Data (Manual Only)
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 5 * * *'
   workflow_dispatch:
 
 jobs:

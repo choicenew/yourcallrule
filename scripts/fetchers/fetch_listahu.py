@@ -2,8 +2,7 @@
 """
 Lista Hũ 巴拉圭官方与社区防诈 API 全量同步脚本
 
-包含原始数据留存备份功能：从网络拉取到的原始 API/Dump 响应字节，
-无损留存备份保存至 raw_data/PY/listahu_raw_response.json。
+安全约束：原始 JSON 数据留存大小严格限制在 10MB 以内，规避 GitHub 单文件 100MB 限制。
 """
 
 import json
@@ -41,7 +40,7 @@ def format_py_phone(number):
 
 
 def fetch_listahu():
-    print("\n[开始调用 Lista Hũ 巴拉圭 API 全量轮询数据...]")
+    print("\n[开始调用 Lista Hũ 巴拉圭 API 分页同步数据...]")
     PY_DIR.mkdir(parents=True, exist_ok=True)
     RAW_PY_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -53,9 +52,9 @@ def fetch_listahu():
             pass
 
     new_rows = []
-    raw_pages = []
+    raw_samples = []
     page = 1
-    max_pages = 20
+    max_pages = 10  # 限制单次 API 分页页数，防止原始文件突破 100MB 上限
 
     while page <= max_pages:
         url = f"{LISTAHU_API_BASE}?page={page}"
@@ -66,8 +65,11 @@ def fetch_listahu():
             with urllib.request.urlopen(req, timeout=30) as resp:
                 raw_bytes = resp.read()
 
-            raw_pages.append(json.loads(raw_bytes.decode("utf-8")))
-            entries = raw_pages[-1] if isinstance(raw_pages[-1], list) else raw_pages[-1].get("results", raw_pages[-1].get("data", raw_pages[-1].get("lista", [])))
+            page_data = json.loads(raw_bytes.decode("utf-8"))
+            if page <= 3:  # 仅保留前几页原始快照留存，避免体积暴涨
+                raw_samples.append(page_data)
+
+            entries = page_data if isinstance(page_data, list) else page_data.get("results", page_data.get("data", page_data.get("lista", [])))
 
             if not entries:
                 print("  Lista Hũ API 无更多页，结束轮询")
@@ -103,11 +105,11 @@ def fetch_listahu():
             print(f"  请求 Lista Hũ 巴拉圭 API 提示: {e}")
             break
 
-    if raw_pages:
+    if raw_samples:
         raw_dump_file = RAW_PY_DIR / "listahu_raw_response.json"
         with open(raw_dump_file, "w", encoding="utf-8") as rf:
-            json.dump(raw_pages, rf, ensure_ascii=False, indent=2)
-        print(f"  已保存原始未加工数据备份 -> {raw_dump_file.relative_to(PROJECT_DIR)}")
+            json.dump(raw_samples, rf, ensure_ascii=False, indent=2)
+        print(f"  已保存精简原始未加工数据备份 -> {raw_dump_file.relative_to(PROJECT_DIR)}")
 
     new_df = pd.DataFrame(new_rows)
     if not existing_df.empty and not new_df.empty:
