@@ -115,5 +115,31 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "cz-spam-blocklist"
+  },
+  {
+    "id": "7c02803112af718be1dc028a7ea384f8",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+420234280629",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cz-spam-blocklist"
+  },
+  {
+    "id": "d3193a3386d94aaebb8fee97d5741466",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+420255719018",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cz-spam-blocklist"
   }
 ]

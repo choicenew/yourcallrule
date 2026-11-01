@@ -492,5 +492,70 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "es-spam-blocklist"
+  },
+  {
+    "id": "15718adfbaaa4618682edf3a409bc949",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+34955945230",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "es-spam-blocklist"
+  },
+  {
+    "id": "327d8ae2df3341366d84409b042df450",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+34954230625",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "es-spam-blocklist"
+  },
+  {
+    "id": "bf95481479a91628d1adf55797da7d23",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+34987225083",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "es-spam-blocklist"
+  },
+  {
+    "id": "86fedce8c1e729c582d7b7297386ed46",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+34971266386",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "es-spam-blocklist"
+  },
+  {
+    "id": "68ce1198202e261ca1c97bd4ba4224c4",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+34971554341",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "es-spam-blocklist"
   }
 ]

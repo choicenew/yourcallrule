@@ -37,5 +37,31 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "lu-spam-blocklist"
+  },
+  {
+    "id": "2839bc3a325caf6f61d4b0f26fc225ca",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35227943409",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lu-spam-blocklist"
+  },
+  {
+    "id": "5604b4db4049f74fa973ff4da3809b46",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+3522792864244",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lu-spam-blocklist"
   }
 ]

@@ -24,5 +24,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "dz-spam-blocklist"
+  },
+  {
+    "id": "74e5b7afb7148794f8f5fb0bf48c2eaa",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+213665626377",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dz-spam-blocklist"
   }
 ]

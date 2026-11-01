@@ -1,0 +1,15 @@
+[
+  {
+    "id": "de6e1c988b1054e7f136b7c1d78a7b53",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+38682230408",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "si-spam-blocklist"
+  }
+]

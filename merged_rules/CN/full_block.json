@@ -117,6 +117,19 @@
     "subscriptionId": "cn-spam-blocklist"
   },
   {
+    "id": "fbbf014c4ffba3232c395a644894c9f5",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+862196110",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cn-spam-blocklist"
+  },
+  {
     "id": "2b6b4d4c5ca6b07f950d19ebbf045c95",
     "name": "Spam Call",
     "ruleType": "phone_rule",

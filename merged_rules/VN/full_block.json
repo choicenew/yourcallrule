@@ -50,5 +50,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "vn-spam-blocklist"
+  },
+  {
+    "id": "8311623f49ca0c5acdd3d5e1902d8cab",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+84563774816",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vn-spam-blocklist"
   }
 ]

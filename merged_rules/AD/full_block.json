@@ -11,5 +11,44 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "ad-spam-blocklist"
+  },
+  {
+    "id": "4044e2e3385a7f007d5d77a26c7b4c33",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+376821274",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ad-spam-blocklist"
+  },
+  {
+    "id": "13e6f62ef7c668ba8fac74ecb857390f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+376821268",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ad-spam-blocklist"
+  },
+  {
+    "id": "0de05798baec2dcb541318a00c223d52",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+376868589",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ad-spam-blocklist"
   }
 ]

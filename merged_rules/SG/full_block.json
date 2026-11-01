@@ -232,5 +232,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "sg-spam-blocklist"
+  },
+  {
+    "id": "4463bd091cfe801ff44e0e064d853cee",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+6563407110",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "sg-spam-blocklist"
   }
 ]

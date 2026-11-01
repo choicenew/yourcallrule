@@ -89,5 +89,57 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "bg-spam-blocklist"
+  },
+  {
+    "id": "a1ec8e3cda858f15f0e6b5d97333c0f1",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35952703159",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bg-spam-blocklist"
+  },
+  {
+    "id": "e3e89ab046083de3dab8e48f440f1f34",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35952703153",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bg-spam-blocklist"
+  },
+  {
+    "id": "a7a20f5f05936c6f4e347c3006bd69b1",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35952703150",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bg-spam-blocklist"
+  },
+  {
+    "id": "4c7eb2c5edc34f23f890a7312530d107",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35924928818",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bg-spam-blocklist"
   }
 ]

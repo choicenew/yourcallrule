@@ -128,5 +128,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "ng-spam-blocklist"
+  },
+  {
+    "id": "375380c03a1e50ee8be730a1182d03e0",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+2349061340437",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ng-spam-blocklist"
   }
 ]

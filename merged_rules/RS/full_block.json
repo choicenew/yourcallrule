@@ -37,5 +37,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "rs-spam-blocklist"
+  },
+  {
+    "id": "3f954b22656b15302708ef86dd2e33d9",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+381640769731",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "rs-spam-blocklist"
   }
 ]

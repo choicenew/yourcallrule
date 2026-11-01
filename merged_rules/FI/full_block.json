@@ -76,5 +76,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "fi-spam-blocklist"
+  },
+  {
+    "id": "bd1abc709a97626a7c0b7da64973fd58",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+358942456814",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "fi-spam-blocklist"
   }
 ]

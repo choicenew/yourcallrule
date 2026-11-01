@@ -1,0 +1,15 @@
+[
+  {
+    "id": "c49427d91233172178984d1e89e691a4",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+22455079052",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gn-spam-blocklist"
+  }
+]

@@ -63,5 +63,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "pl-spam-blocklist"
+  },
+  {
+    "id": "881522876e29c09af1732872a03f6fe4",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+48323235004",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pl-spam-blocklist"
   }
 ]

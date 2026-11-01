@@ -141,5 +141,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "za-spam-blocklist"
+  },
+  {
+    "id": "4199dda5f5b57c83f415b41effed9b98",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+27663488492",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "za-spam-blocklist"
   }
 ]

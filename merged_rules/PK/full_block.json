@@ -570,5 +570,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "pk-spam-blocklist"
+  },
+  {
+    "id": "8036ac82180dda6e20f5ef55ddedd16a",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+923113012851",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pk-spam-blocklist"
   }
 ]

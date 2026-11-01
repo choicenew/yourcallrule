@@ -11,5 +11,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "mc-spam-blocklist"
+  },
+  {
+    "id": "cb4d5f5a98e33069f43ea51fc6616b95",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+37744167699",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mc-spam-blocklist"
   }
 ]

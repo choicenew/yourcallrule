@@ -1,0 +1,15 @@
+[
+  {
+    "id": "53c3d18bd6807a2c0836cca7cfe20447",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+256760830663",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ug-spam-blocklist"
+  }
+]

@@ -91,6 +91,19 @@
     "subscriptionId": "jm-spam-blocklist"
   },
   {
+    "id": "473f7ce749541729086abb5d8f02cd78",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18765725509",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "jm-spam-blocklist"
+  },
+  {
     "id": "33d9bf4f79d7553af649987122968d0c",
     "name": "Spam Call",
     "ruleType": "phone_rule",

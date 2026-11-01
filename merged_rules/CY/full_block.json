@@ -141,5 +141,44 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "cy-spam-blocklist"
+  },
+  {
+    "id": "1245ef81111a0e6a911d1b240a224642",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35726026351",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cy-spam-blocklist"
+  },
+  {
+    "id": "2c7c36738d76f98bbda9e9cbb7a9ee5e",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35726026345",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cy-spam-blocklist"
+  },
+  {
+    "id": "3364879fa6216527026c22f7dab6f92f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35724258899",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cy-spam-blocklist"
   }
 ]

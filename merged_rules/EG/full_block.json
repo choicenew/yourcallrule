@@ -50,5 +50,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "eg-spam-blocklist"
+  },
+  {
+    "id": "4940981a308c786f476e925c69398db6",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+2070974444",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "eg-spam-blocklist"
   }
 ]

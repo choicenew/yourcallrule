@@ -37,5 +37,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "no-spam-blocklist"
+  },
+  {
+    "id": "22bd082556e8879cbc50baa092de0789",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+474143798222",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "no-spam-blocklist"
   }
 ]

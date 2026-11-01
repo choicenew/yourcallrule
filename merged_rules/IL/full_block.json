@@ -544,5 +544,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "il-spam-blocklist"
+  },
+  {
+    "id": "a808ca8d07667504e46b539fa36da915",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+97237208093",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "il-spam-blocklist"
   }
 ]

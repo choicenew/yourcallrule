@@ -128,5 +128,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "se-spam-blocklist"
+  },
+  {
+    "id": "303c38fa10e3e37c1647753eba5be5c6",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+46812400363",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "se-spam-blocklist"
   }
 ]

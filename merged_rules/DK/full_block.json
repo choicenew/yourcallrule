@@ -128,5 +128,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "dk-spam-blocklist"
+  },
+  {
+    "id": "4d4dcbf30b7f279debeab3b07b51454d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+456854210235",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dk-spam-blocklist"
+  },
+  {
+    "id": "b5cb740a4253d8d7290d55e9ba99121b",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+458987429",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dk-spam-blocklist"
   }
 ]
