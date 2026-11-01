@@ -24,6 +24,17 @@
       "action": "block"
     },
     {
+      "source_id": "us_nomorobo_carrier",
+      "name": "Nomorobo North America Carrier Honeypot Feed",
+      "description": "Carrier-authorized Nomorobo honeypot callback-scam and IRS fraud blocklist",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "US",
+      "country_mode": "auto",
+      "priority": 3,
+      "action": "block"
+    },
+    {
       "source_id": "tr_spam_csv",
       "name": "Türkiye Spam ve Dolandırıcılık Liste",
       "description": "Türkiye topluluk spam ve dolandırıcılık telefon numaraları kara listesi",

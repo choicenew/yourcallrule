@@ -47,6 +47,10 @@ jobs:
         run: |
           python scripts/fetchers/fetch_fcc_api.py
 
+      - name: Fetch US Nomorobo Carrier Feed
+        run: |
+          python scripts/fetchers/fetch_nomorobo.py
+
       - name: Fetch US ToastedSpam Blocklist
         run: |
           python scripts/fetchers/fetch_toastedspam.py
