@@ -79,6 +79,17 @@
       "action": "block"
     },
     {
+      "source_id": "fr_saracroche",
+      "name": "Saracroche France Operator Ranges",
+      "description": "Liste des numéros de spam, démarchage téléphonique et arnaques pour la France",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "FR",
+      "country_mode": "FR",
+      "priority": 5,
+      "action": "block"
+    },
+    {
       "source_id": "callshield_hot",
       "name": "CallShield 24h Community Velocity Feed",
       "description": "Recent 24-hour community reported trending spam velocity feed",

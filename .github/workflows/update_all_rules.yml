@@ -35,17 +35,29 @@ jobs:
         run: |
           python scripts/fetchers/fetch_cn_vcards.py
 
-      - name: Fetch US Official Data (FTC & FCC)
+      - name: Fetch US Official Data (FTC & FCC CSV)
         run: |
           python scripts/fetchers/fetch_us_official.py
+
+      - name: Fetch US FTC DNC API Complaints
+        run: |
+          python scripts/fetchers/fetch_ftc_api.py
+
+      - name: Fetch US FCC Unwanted Calls API
+        run: |
+          python scripts/fetchers/fetch_fcc_api.py
 
       - name: Fetch US ToastedSpam Blocklist
         run: |
           python scripts/fetchers/fetch_toastedspam.py
 
-      - name: Fetch France BegoneFR & ARCEP Regex
+      - name: Fetch France BegoneFR Regex
         run: |
           python scripts/fetchers/fetch_begone_fr.py
+
+      - name: Fetch France Saracroche ARCEP Operators API
+        run: |
+          python scripts/fetchers/fetch_saracroche.py
 
       - name: Fetch Turkish Spam Numbers
         run: |
@@ -59,17 +71,21 @@ jobs:
         run: |
           python scripts/fetchers/fetch_spamchile.py
 
-      - name: Fetch Lista Hũ (Paraguay)
+      - name: Fetch Lista Hũ (Paraguay API)
         run: |
           python scripts/fetchers/fetch_listahu.py
 
-      - name: Fetch PhoneBlock.net (Europe)
+      - name: Fetch PhoneBlock.net (Europe API)
         run: |
           python scripts/fetchers/fetch_phoneblock.py
 
       - name: Fetch CallShield Approved Global List
         run: |
           python scripts/fetchers/fetch_callshield_approved.py
+
+      - name: Fetch CallShield Shards Global List
+        run: |
+          python scripts/fetchers/fetch_callshield_shards.py
 
       - name: Generate Regulatory Regex Rules
         run: |
