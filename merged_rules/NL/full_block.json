@@ -4041,5 +4041,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "e4abb68db3f8466bbfd373b0f7186471",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+31658857369",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
   }
 ]

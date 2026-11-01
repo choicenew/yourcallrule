@@ -4674,3 +4674,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +31228794155,PhoneBlock Europe Blocked,block,3,+31228794155,spamlikely,1,1,,phone_rule,phoneblock-eu
 +491718359119,PhoneBlock Europe Blocked,block,3,+491718359119,spamlikely,1,1,,phone_rule,phoneblock-eu
 +4915888637712,PhoneBlock Europe Blocked,block,3,+4915888637712,spamlikely,1,1,,phone_rule,phoneblock-eu
++31658857369,PhoneBlock Europe Blocked,block,3,+31658857369,spamlikely,1,1,,phone_rule,phoneblock-eu
