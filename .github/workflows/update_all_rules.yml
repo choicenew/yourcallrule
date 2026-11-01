@@ -79,9 +79,21 @@ jobs:
         run: |
           python scripts/fetchers/fetch_listahu.py
 
-      - name: Fetch PhoneBlock.net (Europe API)
+      - name: Fetch PhoneBlock.net (Europe API & Dump)
         run: |
           python scripts/fetchers/fetch_phoneblock.py
+
+      - name: Fetch Malaysia Spam Numbers (MY)
+        run: |
+          python scripts/fetchers/fetch_malaysia_spam.py
+
+      - name: Fetch Hong Kong HKJunkCall (HK)
+        run: |
+          python scripts/fetchers/fetch_hk_junkcall.py
+
+      - name: Fetch Japan Meiwaku Phone (JP)
+        run: |
+          python scripts/fetchers/fetch_japan_spam.py
 
       - name: Fetch CallShield Approved Global List
         run: |
@@ -111,7 +123,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto sync rulesets, plugins and update setup configs [skip ci]"
-          file_pattern: "CN/ US/ FR/ TR/ IN/ CO/ CL/ PY/ EU/ callshield/ merged_rules/ app_delta_setup_config.json app_plugin_setup_config.json"
+          file_pattern: "CN/ US/ FR/ TR/ IN/ CO/ CL/ PY/ EU/ MY/ HK/ JP/ callshield/ merged_rules/ app_delta_setup_config.json app_plugin_setup_config.json"
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           push_options: '--force'

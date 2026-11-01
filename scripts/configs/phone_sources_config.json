@@ -101,6 +101,39 @@
       "action": "block"
     },
     {
+      "source_id": "my_malaysia_spam",
+      "name": "Malaysia MCMC & Community Blocklist",
+      "description": "Senarai hitam panggilan spam dan penipuan di Malaysia",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "MY",
+      "country_mode": "MY",
+      "priority": 3,
+      "action": "block"
+    },
+    {
+      "source_id": "hk_junkcall",
+      "name": "Hong Kong HKJunkCall Blocklist",
+      "description": "香港高風險騷擾電話與詐騙號碼黑名單",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "HK",
+      "country_mode": "HK",
+      "priority": 3,
+      "action": "block"
+    },
+    {
+      "source_id": "jp_japan_spam",
+      "name": "Japan Meiwaku Phone Blocklist",
+      "description": "日本国内の迷惑電話・詐欺電話ブロックリスト",
+      "enabled": true,
+      "type": "directory_csv",
+      "path": "JP",
+      "country_mode": "JP",
+      "priority": 3,
+      "action": "block"
+    },
+    {
       "source_id": "callshield_hot",
       "name": "CallShield 24h Community Velocity Feed",
       "description": "Recent 24-hour community reported trending spam velocity feed",
