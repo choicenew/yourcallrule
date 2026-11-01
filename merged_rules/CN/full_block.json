@@ -115,5 +115,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "cn-spam-blocklist"
+  },
+  {
+    "id": "2b6b4d4c5ca6b07f950d19ebbf045c95",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8615017944158",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cn-spam-blocklist"
+  },
+  {
+    "id": "2a1cd5ffe90c09c21f118cef977d558c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+8618638657795",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cn-spam-blocklist"
   }
 ]

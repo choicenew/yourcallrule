@@ -37,5 +37,44 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "vi-spam-blocklist"
+  },
+  {
+    "id": "ae045e2a0ecc31571f84e8ead333a87c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13402208955",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vi-spam-blocklist"
+  },
+  {
+    "id": "9825e9afce3ec1b01a6cf3e49ecbafef",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13402200889",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vi-spam-blocklist"
+  },
+  {
+    "id": "2ef25a9778f61eefcd3735d469d1359e",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13404351333",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vi-spam-blocklist"
   }
 ]

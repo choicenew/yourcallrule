@@ -63,5 +63,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "at-spam-blocklist"
+  },
+  {
+    "id": "e6bb36a4447a65f757c3dc80ef1615c7",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+436607353325",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "at-spam-blocklist"
   }
 ]

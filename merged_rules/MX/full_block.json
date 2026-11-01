@@ -466,5 +466,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "mx-spam-blocklist"
+  },
+  {
+    "id": "a2ef30138ecac5eb4e584aacb4e73b68",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+525511638689",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mx-spam-blocklist"
   }
 ]

@@ -37,5 +37,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "bm-spam-blocklist"
+  },
+  {
+    "id": "fa594f175c813960273fc176027b3c36",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+14416789888",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bm-spam-blocklist"
   }
 ]

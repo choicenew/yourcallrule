@@ -11,5 +11,57 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "vg-spam-blocklist"
+  },
+  {
+    "id": "e8a45f8f038a20bd6322dfcf345a136f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12843411936",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vg-spam-blocklist"
+  },
+  {
+    "id": "b6f4f824d77048ea2d628fb3a6fdb2d1",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12843412101",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vg-spam-blocklist"
+  },
+  {
+    "id": "af1ca84709a335875cc58b664f4452ff",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12843412053",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vg-spam-blocklist"
+  },
+  {
+    "id": "438392c0b4d95817ba5a68e76c3d02ad",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12843411744",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "vg-spam-blocklist"
   }
 ]

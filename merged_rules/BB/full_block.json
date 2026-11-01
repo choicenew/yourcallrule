@@ -11,5 +11,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "bb-spam-blocklist"
+  },
+  {
+    "id": "a88ad9f636debe6beb6aaeaae3d31f92",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12467568368",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bb-spam-blocklist"
+  },
+  {
+    "id": "be6b2f22f0ed54bdd82d26f9ff7fa8cc",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12465875045",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bb-spam-blocklist"
   }
 ]

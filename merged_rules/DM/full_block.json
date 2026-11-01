@@ -11,5 +11,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "dm-spam-blocklist"
+  },
+  {
+    "id": "5f040b53415ddec9f0c2a7175ae78629",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17672759067",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dm-spam-blocklist"
+  },
+  {
+    "id": "004ddb00c4f5b5346cc939a1b21565a4",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17678854537",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dm-spam-blocklist"
   }
 ]

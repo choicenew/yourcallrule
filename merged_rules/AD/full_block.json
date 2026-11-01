@@ -1,0 +1,15 @@
+[
+  {
+    "id": "e01b3a1e7c4bc0c3acdebafb73381c1b",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+376040378858",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ad-spam-blocklist"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "8683f56b5bd950bc0f82afbdad0a13c0",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12425845756",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bs-spam-blocklist"
+  },
+  {
+    "id": "66cfff8837a1a695412462f3a64da658",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12425771260",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bs-spam-blocklist"
+  }
+]

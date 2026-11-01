@@ -349,5 +349,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "6d7ab0e9f1ed728f2f8250f92a4ff5fe",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+498943780834",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
   }
 ]

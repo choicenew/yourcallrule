@@ -24,5 +24,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "ky-spam-blocklist"
+  },
+  {
+    "id": "5326c259dd51a1c2fee57048652ff6d5",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13459942700",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ky-spam-blocklist"
+  },
+  {
+    "id": "c7a813927eefe782dbd1682b6615902c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13456789012",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ky-spam-blocklist"
   }
 ]

@@ -11,5 +11,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "mm-spam-blocklist"
+  },
+  {
+    "id": "accc4eabc8cda6de8252d5bf6cb1cf36",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "952586362",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mm-spam-blocklist"
   }
 ]

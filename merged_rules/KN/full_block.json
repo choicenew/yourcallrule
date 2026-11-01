@@ -1,0 +1,15 @@
+[
+  {
+    "id": "a12ccc6f9ba028e89cf2ed56331951f6",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18696110110",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "kn-spam-blocklist"
+  }
+]

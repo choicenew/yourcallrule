@@ -11,5 +11,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "fo-spam-blocklist"
+  },
+  {
+    "id": "4b933555965d23458aaec39a9b455b9e",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "298611432431",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "fo-spam-blocklist"
   }
 ]

@@ -24,5 +24,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "ag-spam-blocklist"
+  },
+  {
+    "id": "a311d2f1b4995acee3f2537544b60986",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+12682620000",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ag-spam-blocklist"
   }
 ]

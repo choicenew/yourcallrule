@@ -1,0 +1,15 @@
+[
+  {
+    "id": "cf47a36a662ac3e4beb65b6b25f76f76",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+17584819943",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lc-spam-blocklist"
+  }
+]

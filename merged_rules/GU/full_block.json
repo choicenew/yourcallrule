@@ -50,5 +50,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "gu-spam-blocklist"
+  },
+  {
+    "id": "6dc331ac0fb50b5be47f15972f1297b2",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16712514588",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gu-spam-blocklist"
   }
 ]

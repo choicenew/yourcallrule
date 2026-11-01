@@ -1,0 +1,41 @@
+[
+  {
+    "id": "dd0db1340713dc297aab5e60ba47913b",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16493581276",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "tc-spam-blocklist"
+  },
+  {
+    "id": "9c6fd54050aa3fc385c40bb27c40b641",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16494392120",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "tc-spam-blocklist"
+  },
+  {
+    "id": "cdbd825f384021f713013728044c9f99",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+16497985214",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "tc-spam-blocklist"
+  }
+]

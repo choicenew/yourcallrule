@@ -115,5 +115,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "dk-spam-blocklist"
+  },
+  {
+    "id": "f59cdb83befb6dbde62d0f09d48fe56f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4531735700",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "dk-spam-blocklist"
   }
 ]

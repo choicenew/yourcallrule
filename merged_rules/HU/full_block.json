@@ -76,5 +76,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "hu-spam-blocklist"
+  },
+  {
+    "id": "79eeb86fe8ceaf1c3dc2b507fe25d40d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3683674097",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "hu-spam-blocklist"
+  },
+  {
+    "id": "c65a42049fb5d6ab6d79f177b6c0d8eb",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+3625422046",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "hu-spam-blocklist"
   }
 ]

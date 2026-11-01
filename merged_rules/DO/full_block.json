@@ -245,5 +245,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "do-spam-blocklist"
+  },
+  {
+    "id": "f1c974769a05e05f4725ccbba95999eb",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18098888558",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "do-spam-blocklist"
+  },
+  {
+    "id": "006c896e47318d0620056226ca62ce57",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+18293180052",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "do-spam-blocklist"
   }
 ]
