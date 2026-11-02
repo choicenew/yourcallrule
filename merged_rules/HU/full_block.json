@@ -104,6 +104,19 @@
     "subscriptionId": "hu-spam-blocklist"
   },
   {
+    "id": "a67875323c2b65d37542cdc1b950d5d3",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3604967533",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "hu-spam-blocklist"
+  },
+  {
     "id": "a8bd6629b98af706c7b3dc857b4a3d64",
     "name": "Spam Call",
     "ruleType": "phone_rule",

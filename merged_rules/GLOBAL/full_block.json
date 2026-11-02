@@ -5811,6 +5811,32 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "90a87d01ec58c369b1746211e7fca23c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573299293798",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
+    "id": "abdf026a69c2ecfd2fe6eba8e20620f1",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03432324517",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

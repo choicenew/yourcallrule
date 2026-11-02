@@ -893,3 +893,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 3151621148,Spam Call,block,3,3151621148,spamlikely,1,1,,phone_rule,opencallshield-co
 3509661013,Spam Call,block,3,3509661013,spamlikely,1,1,,phone_rule,opencallshield-co
 03294973326,Spam Call,block,3,03294973326,spamlikely,1,1,,phone_rule,opencallshield-co
+30107203857,Spam Call,block,3,30107203857,spamlikely,1,1,,phone_rule,opencallshield-co
+03573299293798,Spam Call,block,3,03573299293798,spamlikely,1,1,,phone_rule,opencallshield-co
+3604967533,Spam Call,block,3,3604967533,spamlikely,1,1,,phone_rule,opencallshield-co
+03432324517,Spam Call,block,3,03432324517,spamlikely,1,1,,phone_rule,opencallshield-co

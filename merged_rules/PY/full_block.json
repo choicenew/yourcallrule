@@ -193139,5 +193139,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "71b92330d4eddefc77b89de894e5e6ec",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595994977526",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "ed43c6d4253cd382d0f9c3947f93a32c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595987611542",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
   }
 ]

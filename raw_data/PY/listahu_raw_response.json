@@ -237874,6 +237874,39 @@
       "added": "2026-10-30T18:43:00.684344-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22723,
+      "numero": "595994121234",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595994121234_202611021207_IMG_2521.png",
+      "desc": "no es la primera vez que llama",
+      "check": false,
+      "added": "2026-11-02T12:07:23.972202-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22724,
+      "numero": "595994977526",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994977526_202611021308_WhatsApp_Image_2026-11-02_at_12.59.36.jpeg",
+      "desc": "Se hacen pasar por mi para extorsionar.",
+      "check": false,
+      "added": "2026-11-02T13:08:02.177538-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22725,
+      "numero": "595987611542",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987611542_202611021337_1002370631.jpg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-02T13:37:52.204698-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -475751,6 +475784,39 @@
       "added": "2026-10-30T18:43:00.684344-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22723,
+      "numero": "595994121234",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595994121234_202611021207_IMG_2521.png",
+      "desc": "no es la primera vez que llama",
+      "check": false,
+      "added": "2026-11-02T12:07:23.972202-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22724,
+      "numero": "595994977526",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994977526_202611021308_WhatsApp_Image_2026-11-02_at_12.59.36.jpeg",
+      "desc": "Se hacen pasar por mi para extorsionar.",
+      "check": false,
+      "added": "2026-11-02T13:08:02.177538-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22725,
+      "numero": "595987611542",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987611542_202611021337_1002370631.jpg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-02T13:37:52.204698-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -713626,6 +713692,39 @@
       "desc": "Dicen ser del banco familiar, quieren cambiar el pin por la fusión con banco atlas, tema cancelado en diciembre de 2025",
       "check": false,
       "added": "2026-10-30T18:43:00.684344-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22723,
+      "numero": "595994121234",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595994121234_202611021207_IMG_2521.png",
+      "desc": "no es la primera vez que llama",
+      "check": false,
+      "added": "2026-11-02T12:07:23.972202-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22724,
+      "numero": "595994977526",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994977526_202611021308_WhatsApp_Image_2026-11-02_at_12.59.36.jpeg",
+      "desc": "Se hacen pasar por mi para extorsionar.",
+      "check": false,
+      "added": "2026-11-02T13:08:02.177538-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22725,
+      "numero": "595987611542",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987611542_202611021337_1002370631.jpg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-02T13:37:52.204698-03:00",
       "votsi": 0,
       "votno": 0
     }

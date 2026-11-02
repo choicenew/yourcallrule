@@ -4054,5 +4054,44 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "48f272d9ab56c7ddf1e65fcc2140c1dc",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+31649253914",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "132c98bb4f535dcc1433815ecc4e2629",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+31626487609",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "89232d6aa9c153b0fe84bccc6e7c43e3",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+31610447979",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
   }
 ]
