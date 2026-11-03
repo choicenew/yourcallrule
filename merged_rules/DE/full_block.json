@@ -44679,5 +44679,83 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "a52692a50be53b487cf36a75eb41e992",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+493092104657",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "4291c0a086e8e724c103b83ed59a1772",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4915510217428",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "ec6b1e5e17632e4f69ebbd29fc466945",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+49402289918731",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "1bebe725fa456608e3c8db5c299cba47",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+498989679847",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "1f55bc5a0f71668a20c1cd8d067dc143",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+498003301551",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "525e408da1d53780eeb150229a56186d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4923019196826",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
   }
 ]
