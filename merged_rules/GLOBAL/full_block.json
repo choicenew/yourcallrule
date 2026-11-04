@@ -5837,6 +5837,19 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "7fe2689764758b4211b746891d92c452",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03266671353",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

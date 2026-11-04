@@ -897,6 +897,19 @@
     "subscriptionId": "gr-spam-blocklist"
   },
   {
+    "id": "f6ed08c3ac875aa20094fd2ee73a2349",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "30393041856",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gr-spam-blocklist"
+  },
+  {
     "id": "f15cabf81dd390d5fb782aa1b3266e33",
     "name": "Spam Call",
     "ruleType": "phone_rule",

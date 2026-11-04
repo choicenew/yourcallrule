@@ -3976,5 +3976,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "gb-spam-blocklist"
+  },
+  {
+    "id": "473f38b43d2fb64785826ee557141cd9",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+442086389027",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
   }
 ]

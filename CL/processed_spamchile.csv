@@ -1,4 +1,9 @@
 id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subscriptionId
+443296282,Spam Call (Chile),block,3,443296282,spamlikely,1,1,,phone_rule,spamchile-cl
++56443296282,Spam Call (Chile),block,3,+56443296282,spamlikely,1,1,,phone_rule,spamchile-cl
++56442170821,Spam Call (Chile),block,3,+56442170821,spamlikely,1,1,,phone_rule,spamchile-cl
++56443320184,Spam Call (Chile),block,3,+56443320184,spamlikely,1,1,,phone_rule,spamchile-cl
++56442623036,Spam Call (Chile),block,3,+56442623036,spamlikely,1,1,,phone_rule,spamchile-cl
 56442760172,Spam Call (Chile),block,3,56442760172,spamlikely,1,1,,phone_rule,spamchile-cl
 +56442760172,Spam Call (Chile),block,3,+56442760172,spamlikely,1,1,,phone_rule,spamchile-cl
 +56442623009,Spam Call (Chile),block,3,+56442623009,spamlikely,1,1,,phone_rule,spamchile-cl

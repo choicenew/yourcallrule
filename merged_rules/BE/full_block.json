@@ -1885,6 +1885,19 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
+    "id": "5355421676ac1c5ba3de11d8217093e0",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+32757396124",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
     "id": "c4d09acb5178d95e3fca459be47c8b9c",
     "name": "Spam Call",
     "ruleType": "phone_rule",

@@ -897,3 +897,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 03573299293798,Spam Call,block,3,03573299293798,spamlikely,1,1,,phone_rule,opencallshield-co
 3604967533,Spam Call,block,3,3604967533,spamlikely,1,1,,phone_rule,opencallshield-co
 03432324517,Spam Call,block,3,03432324517,spamlikely,1,1,,phone_rule,opencallshield-co
+3170643341,Spam Call,block,3,3170643341,spamlikely,1,1,,phone_rule,opencallshield-co
++32757396124,Spam Call,block,3,+32757396124,spamlikely,1,1,,phone_rule,opencallshield-co
+03266671353,Spam Call,block,3,03266671353,spamlikely,1,1,,phone_rule,opencallshield-co
+30393041856,Spam Call,block,3,30393041856,spamlikely,1,1,,phone_rule,opencallshield-co
