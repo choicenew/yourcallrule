@@ -91,10 +91,10 @@
     "subscriptionId": "nz-spam-blocklist"
   },
   {
-    "id": "9fc024125c1e87f8b8f810f59d7d1c36",
+    "id": "c399c6462b5c27bfb8bd3fd931aaf78e",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
-    "phoneNumber": "+6492220586",
+    "phoneNumber": "+6492220000",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",

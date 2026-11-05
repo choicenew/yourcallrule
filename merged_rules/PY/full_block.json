@@ -193230,5 +193230,57 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "5770f722a73c157bb85011683be5b9e7",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595993333976",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "cbd476c586feba071b823489141facd7",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595987572893",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "f9807993b692813e32339f98ef0c283a",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595987606897",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "4f65f6f2be2ea9838a299c83c425817d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595985758902",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
   }
 ]

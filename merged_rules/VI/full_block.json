@@ -1,5 +1,18 @@
 [
   {
+    "id": "916a881bccbb3f96fc4dfcf4429c631f",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+13407741441",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "vi-spam-blocklist"
+  },
+  {
     "id": "3e60f87eaf4043fdde3cf8c4f2ff968e",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
@@ -30,19 +43,6 @@
     "name": "Telemarketing",
     "ruleType": "phone_rule",
     "phoneNumber": "+13407272999",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "vi-spam-blocklist"
-  },
-  {
-    "id": "916a881bccbb3f96fc4dfcf4429c631f",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+13407741441",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",

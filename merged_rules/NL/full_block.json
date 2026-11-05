@@ -299,6 +299,19 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
+    "id": "42c9b1015d4467075cc7f452295f5bc3",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+31503604554",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
     "id": "1d0082b513009b936aa658aa2e615d82",
     "name": "Spam Call",
     "ruleType": "phone_rule",

@@ -14860,3 +14860,7 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +595982565204,Spam Call,block,3,+595982565204,spamlikely,1,1,,phone_rule,listahu-py
 +595976279758,Spam Call,block,3,+595976279758,spamlikely,1,1,,phone_rule,listahu-py
 +59534672322668,Spam Call,block,3,+59534672322668,spamlikely,1,1,,phone_rule,listahu-py
++595993333976,Spam Call,block,3,+595993333976,spamlikely,1,1,,phone_rule,listahu-py
++595987572893,Spam Call,block,3,+595987572893,spamlikely,1,1,,phone_rule,listahu-py
++595987606897,Spam Call,block,3,+595987606897,spamlikely,1,1,,phone_rule,listahu-py
++595985758902,Spam Call,block,3,+595985758902,spamlikely,1,1,,phone_rule,listahu-py

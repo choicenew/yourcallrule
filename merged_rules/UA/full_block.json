@@ -76,5 +76,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "ua-spam-blocklist"
+  },
+  {
+    "id": "645672729bcec220dd93b87f7a059b65",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+380731680063",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "ua-spam-blocklist"
   }
 ]
