@@ -117,6 +117,19 @@
     "subscriptionId": "hu-spam-blocklist"
   },
   {
+    "id": "d7d1c593ad2421edbf171b58ca84c1f8",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "36665062889",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "hu-spam-blocklist"
+  },
+  {
     "id": "a8bd6629b98af706c7b3dc857b4a3d64",
     "name": "Spam Call",
     "ruleType": "phone_rule",

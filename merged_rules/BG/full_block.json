@@ -141,5 +141,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "bg-spam-blocklist"
+  },
+  {
+    "id": "35a3e359829d93e512c666b8cc5dd779",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35952703138",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "bg-spam-blocklist"
   }
 ]
