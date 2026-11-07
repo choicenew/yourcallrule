@@ -104,19 +104,6 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
-    "id": "04be001cc57f290cca520cbe01ab37b8",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+31882112121",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "nl-spam-blocklist"
-  },
-  {
     "id": "6753d4db3b1d5eba7e5b335ef09df703",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
