@@ -45641,5 +45641,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "0aaedae9e948de3e1c58aa445f0e2436",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4968518649835",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "264e40d045da67f4a568d50e702ec97c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4921130194090",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
   }
 ]

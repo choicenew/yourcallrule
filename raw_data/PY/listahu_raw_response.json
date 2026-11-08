@@ -238094,6 +238094,28 @@
       "added": "2026-11-06T11:48:33.736193-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22744,
+      "numero": "595986129151",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986129151_202611072252_IMG_5594.png",
+      "desc": "Se hace pasar por una persona pidiendo dinero",
+      "check": false,
+      "added": "2026-11-07T22:52:27.908410-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22745,
+      "numero": "34666220717",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/34666220717_202611080849_IMG_1029.png",
+      "desc": "Me ha llamado diciendo que era de caixa bank poniendo la misma canción de espera y de todo diciendo que si estaba haciendo transferencia desde mi cuenta de 990 euros,  para que yo me diera mi info. Evidentemente no le he dado ningún tipo de información pero probablemente alguna señora mayor caiga en su trampa. Es un estafador, he intentado llamar de vuelta y no ha respondido el teléfono",
+      "check": false,
+      "added": "2026-11-08T08:49:20.332625-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476191,6 +476213,28 @@
       "added": "2026-11-06T11:48:33.736193-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22744,
+      "numero": "595986129151",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986129151_202611072252_IMG_5594.png",
+      "desc": "Se hace pasar por una persona pidiendo dinero",
+      "check": false,
+      "added": "2026-11-07T22:52:27.908410-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22745,
+      "numero": "34666220717",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/34666220717_202611080849_IMG_1029.png",
+      "desc": "Me ha llamado diciendo que era de caixa bank poniendo la misma canción de espera y de todo diciendo que si estaba haciendo transferencia desde mi cuenta de 990 euros,  para que yo me diera mi info. Evidentemente no le he dado ningún tipo de información pero probablemente alguna señora mayor caiga en su trampa. Es un estafador, he intentado llamar de vuelta y no ha respondido el teléfono",
+      "check": false,
+      "added": "2026-11-08T08:49:20.332625-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -714286,6 +714330,28 @@
       "desc": "me llama y me dice que tiene producto a entregar de bristol y empieza a llamar a todos los familiares",
       "check": false,
       "added": "2026-11-06T11:48:33.736193-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22744,
+      "numero": "595986129151",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986129151_202611072252_IMG_5594.png",
+      "desc": "Se hace pasar por una persona pidiendo dinero",
+      "check": false,
+      "added": "2026-11-07T22:52:27.908410-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22745,
+      "numero": "34666220717",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/34666220717_202611080849_IMG_1029.png",
+      "desc": "Me ha llamado diciendo que era de caixa bank poniendo la misma canción de espera y de todo diciendo que si estaba haciendo transferencia desde mi cuenta de 990 euros,  para que yo me diera mi info. Evidentemente no le he dado ningún tipo de información pero probablemente alguna señora mayor caiga en su trampa. Es un estafador, he intentado llamar de vuelta y no ha respondido el teléfono",
+      "check": false,
+      "added": "2026-11-08T08:49:20.332625-03:00",
       "votsi": 0,
       "votno": 0
     }
