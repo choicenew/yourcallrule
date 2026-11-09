@@ -455,6 +455,19 @@
     "subscriptionId": "pr-spam-blocklist"
   },
   {
+    "id": "afb77ffe12df55681244ec4397f46018",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+19397171946",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "pr-spam-blocklist"
+  },
+  {
     "id": "1a8e1c94cef02a5d541dbbe599e3d80c",
     "name": "Telemarketing",
     "ruleType": "phone_rule",

@@ -238116,6 +238116,17 @@
       "added": "2026-11-08T08:49:20.332625-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22746,
+      "numero": "55249999854",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/55249999854_202611091154_IMG_0194.png",
+      "desc": "Pago con Billetes falsos",
+      "check": false,
+      "added": "2026-11-09T11:54:00.531340-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476235,6 +476246,17 @@
       "added": "2026-11-08T08:49:20.332625-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22746,
+      "numero": "55249999854",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/55249999854_202611091154_IMG_0194.png",
+      "desc": "Pago con Billetes falsos",
+      "check": false,
+      "added": "2026-11-09T11:54:00.531340-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -714352,6 +714374,17 @@
       "desc": "Me ha llamado diciendo que era de caixa bank poniendo la misma canción de espera y de todo diciendo que si estaba haciendo transferencia desde mi cuenta de 990 euros,  para que yo me diera mi info. Evidentemente no le he dado ningún tipo de información pero probablemente alguna señora mayor caiga en su trampa. Es un estafador, he intentado llamar de vuelta y no ha respondido el teléfono",
       "check": false,
       "added": "2026-11-08T08:49:20.332625-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22746,
+      "numero": "55249999854",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/55249999854_202611091154_IMG_0194.png",
+      "desc": "Pago con Billetes falsos",
+      "check": false,
+      "added": "2026-11-09T11:54:00.531340-03:00",
       "votsi": 0,
       "votno": 0
     }

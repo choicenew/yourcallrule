@@ -5928,6 +5928,45 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "26f2b03b192831e5668b33ff4d3eec77",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573190037096",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
+    "id": "5ec20e9ff69f1df970ba0b7d74b805f0",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+1573173559005",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
+    "id": "9c51c999cc7f6d17972f354b22199948",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573297049294",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

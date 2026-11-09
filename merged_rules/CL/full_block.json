@@ -143,6 +143,32 @@
     "subscriptionId": "cl-spam-blocklist"
   },
   {
+    "id": "4ae066d773a475d837e06f6ee14279bb",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56443403599",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
+    "id": "e2e7b6a1a32a9a2f22a6dea898c70c12",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56443321363",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
     "id": "b4477b50f30f7538ac8e53743a2688e7",
     "name": "Spam Call",
     "ruleType": "phone_rule",

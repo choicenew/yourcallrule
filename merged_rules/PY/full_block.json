@@ -193347,5 +193347,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "82e75e4e0965ec443e243a596a42362c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+59555249999854",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
   }
 ]

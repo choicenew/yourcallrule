@@ -14869,3 +14869,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +595992285173,Spam Call,block,3,+595992285173,spamlikely,1,1,,phone_rule,listahu-py
 +595986129151,Spam Call,block,3,+595986129151,spamlikely,1,1,,phone_rule,listahu-py
 +59534666220717,Spam Call,block,3,+59534666220717,spamlikely,1,1,,phone_rule,listahu-py
++59555249999854,Spam Call,block,3,+59555249999854,spamlikely,1,1,,phone_rule,listahu-py

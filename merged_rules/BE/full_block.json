@@ -1911,6 +1911,19 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
+    "id": "9393457a8f494c6307c55de684aefe48",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3237996981",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
     "id": "c4d09acb5178d95e3fca459be47c8b9c",
     "name": "Spam Call",
     "ruleType": "phone_rule",
