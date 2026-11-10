@@ -939,3 +939,15 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 3120575430,Spam Call,block,3,3120575430,spamlikely,1,1,,phone_rule,opencallshield-co
 03573297049294,Spam Call,block,3,03573297049294,spamlikely,1,1,,phone_rule,opencallshield-co
 3150094007,Spam Call,block,3,3150094007,spamlikely,1,1,,phone_rule,opencallshield-co
+3113115275,Spam Call,block,3,3113115275,spamlikely,1,1,,phone_rule,opencallshield-co
+35571880471,Spam Call,block,3,35571880471,spamlikely,1,1,,phone_rule,opencallshield-co
+3170878221,Spam Call,block,3,3170878221,spamlikely,1,1,,phone_rule,opencallshield-co
+03573294717947,Spam Call,block,3,03573294717947,spamlikely,1,1,,phone_rule,opencallshield-co
+3009101493,Spam Call,block,3,3009101493,spamlikely,1,1,,phone_rule,opencallshield-co
+3120491978,Spam Call,block,3,3120491978,spamlikely,1,1,,phone_rule,opencallshield-co
+3009190790,Spam Call,block,3,3009190790,spamlikely,1,1,,phone_rule,opencallshield-co
+3180630363,Spam Call,block,3,3180630363,spamlikely,1,1,,phone_rule,opencallshield-co
+3102585995,Spam Call,block,3,3102585995,spamlikely,1,1,,phone_rule,opencallshield-co
+3102448651,Spam Call,block,3,3102448651,spamlikely,1,1,,phone_rule,opencallshield-co
+3102520920,Spam Call,block,3,3102520920,spamlikely,1,1,,phone_rule,opencallshield-co
+3102543384,Spam Call,block,3,3102543384,spamlikely,1,1,,phone_rule,opencallshield-co

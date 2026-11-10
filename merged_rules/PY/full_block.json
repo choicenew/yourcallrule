@@ -193360,5 +193360,44 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "f87a2a91a3e15a729089f5955c669336",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595994655163",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "5cc47aa6eb4b2b38047e9c94342ea7b4",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595981001967",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "3889c6eb27641941a7b84d8e46a7d4c6",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595985701930",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
   }
 ]

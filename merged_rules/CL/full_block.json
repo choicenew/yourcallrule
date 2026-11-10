@@ -143,6 +143,19 @@
     "subscriptionId": "cl-spam-blocklist"
   },
   {
+    "id": "f6528aa9b899362502a5dd5111975878",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56962017353",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
     "id": "4ae066d773a475d837e06f6ee14279bb",
     "name": "Spam Call",
     "ruleType": "phone_rule",

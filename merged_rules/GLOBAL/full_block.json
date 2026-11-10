@@ -5967,6 +5967,19 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "44e8fcd23ac7c08cb6bfd82f7949bccc",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573294717947",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",
