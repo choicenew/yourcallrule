@@ -1924,6 +1924,32 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
+    "id": "334d2ddc23e0e278dc6c09867910001b",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3214679979",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
+    "id": "b5653427be381fe305249cff5c32ba82",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3214679760",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
     "id": "c4d09acb5178d95e3fca459be47c8b9c",
     "name": "Spam Call",
     "ruleType": "phone_rule",

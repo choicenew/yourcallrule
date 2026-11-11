@@ -63,5 +63,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "al-spam-blocklist"
+  },
+  {
+    "id": "a0b9efbdd6634ffd161bcdd08796ff2f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "35502653867",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "al-spam-blocklist"
   }
 ]

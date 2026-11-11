@@ -3989,5 +3989,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "gb-spam-blocklist"
+  },
+  {
+    "id": "c3eb37b3b9df39b77724358757454bae",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+447923364339",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
   }
 ]

@@ -5980,6 +5980,32 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "066e130509344cb75f672e34d550de5a",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573275548270",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
+    "id": "943723877d982bc6b083f51b8d032415",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573101589417",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

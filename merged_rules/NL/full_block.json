@@ -3302,6 +3302,45 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
+    "id": "d3d0f3f4f3744f8235a7b68d0fc94ae5",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3127884969",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "f16e6e31583840f29d2970901bcd12eb",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3180072766",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "68783437f36ed987681092f746aaa05c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3151084858",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
     "id": "8ac1c35bf7e4ce5149d9cd5ada0e7837",
     "name": "Spam Call",
     "ruleType": "phone_rule",

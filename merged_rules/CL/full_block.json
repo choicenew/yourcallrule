@@ -143,6 +143,19 @@
     "subscriptionId": "cl-spam-blocklist"
   },
   {
+    "id": "5bdbea4d20b48c45cc43a451ceb54fad",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56443320151",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
     "id": "f6528aa9b899362502a5dd5111975878",
     "name": "Spam Call",
     "ruleType": "phone_rule",

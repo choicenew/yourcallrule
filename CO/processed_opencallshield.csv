@@ -951,3 +951,11 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 3102448651,Spam Call,block,3,3102448651,spamlikely,1,1,,phone_rule,opencallshield-co
 3102520920,Spam Call,block,3,3102520920,spamlikely,1,1,,phone_rule,opencallshield-co
 3102543384,Spam Call,block,3,3102543384,spamlikely,1,1,,phone_rule,opencallshield-co
+3214679979,Spam Call,block,3,3214679979,spamlikely,1,1,,phone_rule,opencallshield-co
+35502653867,Spam Call,block,3,35502653867,spamlikely,1,1,,phone_rule,opencallshield-co
+03573275548270,Spam Call,block,3,03573275548270,spamlikely,1,1,,phone_rule,opencallshield-co
+3127884969,Spam Call,block,3,3127884969,spamlikely,1,1,,phone_rule,opencallshield-co
+3180072766,Spam Call,block,3,3180072766,spamlikely,1,1,,phone_rule,opencallshield-co
+3151084858,Spam Call,block,3,3151084858,spamlikely,1,1,,phone_rule,opencallshield-co
+3214679760,Spam Call,block,3,3214679760,spamlikely,1,1,,phone_rule,opencallshield-co
+03573101589417,Spam Call,block,3,03573101589417,spamlikely,1,1,,phone_rule,opencallshield-co

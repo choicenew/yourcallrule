@@ -238171,6 +238171,50 @@
       "added": "2026-11-10T08:49:46.542360-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22751,
+      "numero": "595993052008",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595993052008_202611101447_1000031030.jpg",
+      "desc": "Se hace pasar por otra persona, pidiendo dinero y depósitos.",
+      "check": false,
+      "added": "2026-11-10T14:47:45.109219-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22752,
+      "numero": "595995609559",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595995609559_202611101531_IMG_2867.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-10T15:31:45.304021-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22753,
+      "numero": "14015612482",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/14015612482_202611101629_1000080638.jpg",
+      "desc": "Encontre llamada perdida de ese número",
+      "check": false,
+      "added": "2026-11-10T16:29:33.787523-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22754,
+      "numero": "595974993656",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595974993656_202611101640_IMG_5991.PNG",
+      "desc": "Llamada Estafa con datos del Banco Familiar.",
+      "check": false,
+      "added": "2026-11-10T16:40:50.169205-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476345,6 +476389,50 @@
       "added": "2026-11-10T08:49:46.542360-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22751,
+      "numero": "595993052008",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595993052008_202611101447_1000031030.jpg",
+      "desc": "Se hace pasar por otra persona, pidiendo dinero y depósitos.",
+      "check": false,
+      "added": "2026-11-10T14:47:45.109219-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22752,
+      "numero": "595995609559",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595995609559_202611101531_IMG_2867.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-10T15:31:45.304021-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22753,
+      "numero": "14015612482",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/14015612482_202611101629_1000080638.jpg",
+      "desc": "Encontre llamada perdida de ese número",
+      "check": false,
+      "added": "2026-11-10T16:29:33.787523-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22754,
+      "numero": "595974993656",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595974993656_202611101640_IMG_5991.PNG",
+      "desc": "Llamada Estafa con datos del Banco Familiar.",
+      "check": false,
+      "added": "2026-11-10T16:40:50.169205-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -714517,6 +714605,50 @@
       "desc": "Te llaman supuestamente para pagarte de pytyvõ",
       "check": false,
       "added": "2026-11-10T08:49:46.542360-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22751,
+      "numero": "595993052008",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595993052008_202611101447_1000031030.jpg",
+      "desc": "Se hace pasar por otra persona, pidiendo dinero y depósitos.",
+      "check": false,
+      "added": "2026-11-10T14:47:45.109219-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22752,
+      "numero": "595995609559",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595995609559_202611101531_IMG_2867.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-10T15:31:45.304021-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22753,
+      "numero": "14015612482",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/14015612482_202611101629_1000080638.jpg",
+      "desc": "Encontre llamada perdida de ese número",
+      "check": false,
+      "added": "2026-11-10T16:29:33.787523-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22754,
+      "numero": "595974993656",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595974993656_202611101640_IMG_5991.PNG",
+      "desc": "Llamada Estafa con datos del Banco Familiar.",
+      "check": false,
+      "added": "2026-11-10T16:40:50.169205-03:00",
       "votsi": 0,
       "votno": 0
     }
