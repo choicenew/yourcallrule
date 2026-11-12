@@ -238215,6 +238215,72 @@
       "added": "2026-11-10T16:40:50.169205-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22755,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111659_312915.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T16:59:24.983558-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22756,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111700_312915.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T17:00:12.031695-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22757,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111700_312915_x5PxfuH.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T17:00:55.371473-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22758,
+      "numero": "595986980085",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595986980085_202611111705_178688.jpg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-11T17:05:49.446290-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22759,
+      "numero": "595986241004",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986241004_202611111712_WhatsApp_Image_2026-11-11_at_17.05.36.jpeg",
+      "desc": "se hace pasar por la fot de otra persona y pide dinero",
+      "check": false,
+      "added": "2026-11-11T17:12:54.264062-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22760,
+      "numero": "595991780311",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595991780311_202611121239_WhatsApp_Image_2026-11-12_at_12.38.34_PM.jpeg",
+      "desc": "Están usando mi foto y mi nombre para pedir dinero y estafar.",
+      "check": false,
+      "added": "2026-11-12T12:39:09.127753-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476433,6 +476499,72 @@
       "added": "2026-11-10T16:40:50.169205-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22755,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111659_312915.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T16:59:24.983558-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22756,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111700_312915.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T17:00:12.031695-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22757,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111700_312915_x5PxfuH.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T17:00:55.371473-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22758,
+      "numero": "595986980085",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595986980085_202611111705_178688.jpg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-11T17:05:49.446290-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22759,
+      "numero": "595986241004",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986241004_202611111712_WhatsApp_Image_2026-11-11_at_17.05.36.jpeg",
+      "desc": "se hace pasar por la fot de otra persona y pide dinero",
+      "check": false,
+      "added": "2026-11-11T17:12:54.264062-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22760,
+      "numero": "595991780311",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595991780311_202611121239_WhatsApp_Image_2026-11-12_at_12.38.34_PM.jpeg",
+      "desc": "Están usando mi foto y mi nombre para pedir dinero y estafar.",
+      "check": false,
+      "added": "2026-11-12T12:39:09.127753-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -714649,6 +714781,72 @@
       "desc": "Llamada Estafa con datos del Banco Familiar.",
       "check": false,
       "added": "2026-11-10T16:40:50.169205-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22755,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111659_312915.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T16:59:24.983558-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22756,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111700_312915.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T17:00:12.031695-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22757,
+      "numero": "595992388324",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595992388324_202611111700_312915_x5PxfuH.jpg",
+      "desc": "Llaman para dar supuesta ayuda monetaria y luego solicitan giro",
+      "check": false,
+      "added": "2026-11-11T17:00:55.371473-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22758,
+      "numero": "595986980085",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595986980085_202611111705_178688.jpg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-11T17:05:49.446290-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22759,
+      "numero": "595986241004",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986241004_202611111712_WhatsApp_Image_2026-11-11_at_17.05.36.jpeg",
+      "desc": "se hace pasar por la fot de otra persona y pide dinero",
+      "check": false,
+      "added": "2026-11-11T17:12:54.264062-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22760,
+      "numero": "595991780311",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595991780311_202611121239_WhatsApp_Image_2026-11-12_at_12.38.34_PM.jpeg",
+      "desc": "Están usando mi foto y mi nombre para pedir dinero y estafar.",
+      "check": false,
+      "added": "2026-11-12T12:39:09.127753-03:00",
       "votsi": 0,
       "votno": 0
     }

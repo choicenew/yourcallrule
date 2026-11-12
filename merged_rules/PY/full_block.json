@@ -193451,5 +193451,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "ad2691b11b886f77f98947432f037e11",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595986241004",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "a903391230793c0e9d842e32ef24dc45",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595991780311",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
   }
 ]

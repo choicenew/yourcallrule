@@ -1,4 +1,5 @@
 id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subscriptionId
++56951809609,Spam Call (Chile),block,3,+56951809609,spamlikely,1,1,,phone_rule,spamchile-cl
 +56443320151,Spam Call (Chile),block,3,+56443320151,spamlikely,1,1,,phone_rule,spamchile-cl
 +56962017353,Spam Call (Chile),block,3,+56962017353,spamlikely,1,1,,phone_rule,spamchile-cl
 +56443403599,Spam Call (Chile),block,3,+56443403599,spamlikely,1,1,,phone_rule,spamchile-cl

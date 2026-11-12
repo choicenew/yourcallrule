@@ -143,6 +143,19 @@
     "subscriptionId": "cl-spam-blocklist"
   },
   {
+    "id": "4b9bf2addfa2781953f4e5465be87e4a",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56951809609",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
     "id": "5bdbea4d20b48c45cc43a451ceb54fad",
     "name": "Spam Call",
     "ruleType": "phone_rule",

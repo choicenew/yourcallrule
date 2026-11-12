@@ -1,26 +1,25 @@
 id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subscriptionId
-+12153024476,Other,block,3,+12153024476,robocall,1,1,,phone_rule,us-ftc-api
-+19165887652,"Calls pretending to be government, businesses, or family and friends",block,3,+19165887652,robocall,1,1,,phone_rule,us-ftc-api
-+15743350675,Other,block,3,+15743350675,robocall,1,1,,phone_rule,us-ftc-api
-+17073748458,Dropped call or no message,block,3,+17073748458,robocall,1,1,,phone_rule,us-ftc-api
-+14322801805,No Subject Provided,block,3,+14322801805,robocall,1,1,,phone_rule,us-ftc-api
-+13614004549,Other,block,3,+13614004549,robocall,1,1,,phone_rule,us-ftc-api
-+17609030186,Other,block,3,+17609030186,robocall,1,1,,phone_rule,us-ftc-api
-+15879692312,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+15879692312,robocall,1,1,,phone_rule,us-ftc-api
-+19375885255,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+19375885255,robocall,1,1,,phone_rule,us-ftc-api
-+14384793991,Other,block,3,+14384793991,robocall,1,1,,phone_rule,us-ftc-api
-+14702230923,"Energy, solar,  & utilities",block,3,+14702230923,robocall,1,1,,phone_rule,us-ftc-api
-+18774065469,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+18774065469,robocall,1,1,,phone_rule,us-ftc-api
-+12124335460,Other,block,3,+12124335460,robocall,1,1,,phone_rule,us-ftc-api
-+18559684090,Medical  & prescriptions,block,3,+18559684090,robocall,1,1,,phone_rule,us-ftc-api
-+18663983083,Other,block,3,+18663983083,robocall,1,1,,phone_rule,us-ftc-api
-+13368942762,Medical  & prescriptions,block,3,+13368942762,robocall,1,1,,phone_rule,us-ftc-api
-+16412288602,Other,block,3,+16412288602,robocall,1,1,,phone_rule,us-ftc-api
-+14152762176,No Subject Provided,block,3,+14152762176,robocall,1,1,,phone_rule,us-ftc-api
-+13067546754,Other,block,3,+13067546754,robocall,1,1,,phone_rule,us-ftc-api
-+15715327955,No Subject Provided,block,3,+15715327955,robocall,1,1,,phone_rule,us-ftc-api
-+18479436321,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+18479436321,robocall,1,1,,phone_rule,us-ftc-api
-+19897022910,No Subject Provided,block,3,+19897022910,robocall,1,1,,phone_rule,us-ftc-api
++15513644010,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+15513644010,robocall,1,1,,phone_rule,us-ftc-api
++15743383584,Other,block,3,+15743383584,robocall,1,1,,phone_rule,us-ftc-api
++19488006833,Other,block,3,+19488006833,robocall,1,1,,phone_rule,us-ftc-api
++19408288340,Other,block,3,+19408288340,robocall,1,1,,phone_rule,us-ftc-api
++19182045197,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+19182045197,robocall,1,1,,phone_rule,us-ftc-api
++18775569255,"Calls pretending to be government, businesses, or family and friends",block,3,+18775569255,robocall,1,1,,phone_rule,us-ftc-api
++18774971353,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+18774971353,robocall,1,1,,phone_rule,us-ftc-api
++15748882762,Other,block,3,+15748882762,robocall,1,1,,phone_rule,us-ftc-api
++16155622331,Dropped call or no message,block,3,+16155622331,robocall,1,1,,phone_rule,us-ftc-api
++19285228445,"Calls pretending to be government, businesses, or family and friends",block,3,+19285228445,robocall,1,1,,phone_rule,us-ftc-api
++13045341371,Other,block,3,+13045341371,robocall,1,1,,phone_rule,us-ftc-api
++19792135973,Dropped call or no message,block,3,+19792135973,robocall,1,1,,phone_rule,us-ftc-api
++18668873010,Other,block,3,+18668873010,robocall,1,1,,phone_rule,us-ftc-api
++12022620646,No Subject Provided,block,3,+12022620646,robocall,1,1,,phone_rule,us-ftc-api
++12067913136,Other,block,3,+12067913136,robocall,1,1,,phone_rule,us-ftc-api
++14244385998,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+14244385998,robocall,1,1,,phone_rule,us-ftc-api
++18446658746,"Reducing your debt (credit cards, mortgage, student loans)",block,3,+18446658746,robocall,1,1,,phone_rule,us-ftc-api
++15742318228,Medical  & prescriptions,block,3,+15742318228,robocall,1,1,,phone_rule,us-ftc-api
++17016029404,Work from home  & other ways to make money,block,3,+17016029404,robocall,1,1,,phone_rule,us-ftc-api
++19392013771,Other,block,3,+19392013771,robocall,1,1,,phone_rule,us-ftc-api
++18773348807,Other,block,3,+18773348807,robocall,1,1,,phone_rule,us-ftc-api
 +15705351061,Dropped call or no message,block,3,+15705351061,robocall,1,1,,phone_rule,us-ftc-api
 +16362012100,Other,block,3,+16362012100,robocall,1,1,,phone_rule,us-ftc-api
 +15033584936,"Calls pretending to be government, businesses, or family and friends",block,3,+15033584936,robocall,1,1,,phone_rule,us-ftc-api

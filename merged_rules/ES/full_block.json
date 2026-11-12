@@ -507,6 +507,19 @@
     "subscriptionId": "es-spam-blocklist"
   },
   {
+    "id": "3e2cd2f7c808861c8e65a9ecbb92b5f8",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "34032493854",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "es-spam-blocklist"
+  },
+  {
     "id": "15718adfbaaa4618682edf3a409bc949",
     "name": "Spam Call",
     "ruleType": "phone_rule",

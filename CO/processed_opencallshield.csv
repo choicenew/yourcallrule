@@ -959,3 +959,8 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 3151084858,Spam Call,block,3,3151084858,spamlikely,1,1,,phone_rule,opencallshield-co
 3214679760,Spam Call,block,3,3214679760,spamlikely,1,1,,phone_rule,opencallshield-co
 03573101589417,Spam Call,block,3,03573101589417,spamlikely,1,1,,phone_rule,opencallshield-co
+03573325704103,Spam Call,block,3,03573325704103,spamlikely,1,1,,phone_rule,opencallshield-co
+39104977131,Spam Call,block,3,39104977131,spamlikely,1,1,,phone_rule,opencallshield-co
+34032493854,Spam Call,block,3,34032493854,spamlikely,1,1,,phone_rule,opencallshield-co
+18662753866,Spam Call,block,3,18662753866,spamlikely,1,1,,phone_rule,opencallshield-co
+3009179637,Spam Call,block,3,3009179637,spamlikely,1,1,,phone_rule,opencallshield-co

@@ -1,5 +1,18 @@
 [
   {
+    "id": "a149da9be4e49634492495a8937918f4",
+    "name": "Robocall",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+19392013771",
+    "labelId": "robocall",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "pr-spam-blocklist"
+  },
+  {
     "id": "a9d32c105447e9b40dbe209ab4507c0e",
     "name": "Robocall",
     "ruleType": "phone_rule",
