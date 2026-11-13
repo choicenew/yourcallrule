@@ -65,19 +65,6 @@
     "subscriptionId": "jm-spam-blocklist"
   },
   {
-    "id": "f4c03b37e1d2b9533113e7eb0a743ee9",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+16582179457",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "jm-spam-blocklist"
-  },
-  {
     "id": "473f7ce749541729086abb5d8f02cd78",
     "name": "Spam Call",
     "ruleType": "phone_rule",

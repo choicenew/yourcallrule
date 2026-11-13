@@ -286,19 +286,6 @@
     "subscriptionId": "do-spam-blocklist"
   },
   {
-    "id": "cd8a66f017fc5eb8af0227b1b6d2f2eb",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+18497666869",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "do-spam-blocklist"
-  },
-  {
     "id": "f1c974769a05e05f4725ccbba95999eb",
     "name": "Spam Call",
     "ruleType": "phone_rule",
