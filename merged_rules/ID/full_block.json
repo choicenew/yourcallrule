@@ -65,6 +65,32 @@
     "subscriptionId": "id-spam-blocklist"
   },
   {
+    "id": "2d2a1bd0bb4e7e7c7f6a0545e1a5826d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "623707550",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "id-spam-blocklist"
+  },
+  {
+    "id": "ee297dc4f80cb5d9bfde2227acdbbd7c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "625764003",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "id-spam-blocklist"
+  },
+  {
     "id": "951dd5f2ac5a3965aa1c2f78e3591006",
     "name": "Spam Call",
     "ruleType": "phone_rule",

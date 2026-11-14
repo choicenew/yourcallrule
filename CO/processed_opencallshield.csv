@@ -964,3 +964,15 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 34032493854,Spam Call,block,3,34032493854,spamlikely,1,1,,phone_rule,opencallshield-co
 18662753866,Spam Call,block,3,18662753866,spamlikely,1,1,,phone_rule,opencallshield-co
 3009179637,Spam Call,block,3,3009179637,spamlikely,1,1,,phone_rule,opencallshield-co
+623707550,Spam Call,block,3,623707550,spamlikely,1,1,,phone_rule,opencallshield-co
+625764003,Spam Call,block,3,625764003,spamlikely,1,1,,phone_rule,opencallshield-co
+3150030018,Spam Call,block,3,3150030018,spamlikely,1,1,,phone_rule,opencallshield-co
+03573299098949,Spam Call,block,3,03573299098949,spamlikely,1,1,,phone_rule,opencallshield-co
+3232573326,Spam Call,block,3,3232573326,spamlikely,1,1,,phone_rule,opencallshield-co
+35568140450,Spam Call,block,3,35568140450,spamlikely,1,1,,phone_rule,opencallshield-co
+3009135712,Spam Call,block,3,3009135712,spamlikely,1,1,,phone_rule,opencallshield-co
+3146044891,Spam Call,block,3,3146044891,spamlikely,1,1,,phone_rule,opencallshield-co
+3132440363,Spam Call,block,3,3132440363,spamlikely,1,1,,phone_rule,opencallshield-co
+35867478240,Spam Call,block,3,35867478240,spamlikely,1,1,,phone_rule,opencallshield-co
+3009179624,Spam Call,block,3,3009179624,spamlikely,1,1,,phone_rule,opencallshield-co
+33931023546,Spam Call,block,3,33931023546,spamlikely,1,1,,phone_rule,opencallshield-co

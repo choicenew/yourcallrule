@@ -6032,6 +6032,19 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "806b3e8d41fd93fef485fd3b845c42b1",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573299098949",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

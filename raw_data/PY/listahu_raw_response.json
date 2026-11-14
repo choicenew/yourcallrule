@@ -238314,6 +238314,50 @@
       "added": "2026-11-13T10:11:23.815252-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22764,
+      "numero": "9337250866",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/9337250866_202611132000_366331.jpg",
+      "desc": "Acoso constante",
+      "check": false,
+      "added": "2026-11-13T20:00:45.099201-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22765,
+      "numero": "595986661976",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986661976_202611132230_257137.jpg",
+      "desc": "Acusaciones falsas y extorsión",
+      "check": false,
+      "added": "2026-11-13T22:30:53.554287-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22766,
+      "numero": "595976709054",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595976709054_202611140001_1001184334.jpg",
+      "desc": "Dicen ser de personal, reclaman pago de facturas vencida de interne y tv",
+      "check": false,
+      "added": "2026-11-14T00:01:46.666627-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22767,
+      "numero": "595976709054",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595976709054_202611140010_1001203793.jpg",
+      "desc": "Dicen ser de personal",
+      "check": false,
+      "added": "2026-11-14T00:10:42.785538-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476631,6 +476675,50 @@
       "added": "2026-11-13T10:11:23.815252-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22764,
+      "numero": "9337250866",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/9337250866_202611132000_366331.jpg",
+      "desc": "Acoso constante",
+      "check": false,
+      "added": "2026-11-13T20:00:45.099201-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22765,
+      "numero": "595986661976",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986661976_202611132230_257137.jpg",
+      "desc": "Acusaciones falsas y extorsión",
+      "check": false,
+      "added": "2026-11-13T22:30:53.554287-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22766,
+      "numero": "595976709054",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595976709054_202611140001_1001184334.jpg",
+      "desc": "Dicen ser de personal, reclaman pago de facturas vencida de interne y tv",
+      "check": false,
+      "added": "2026-11-14T00:01:46.666627-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22767,
+      "numero": "595976709054",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595976709054_202611140010_1001203793.jpg",
+      "desc": "Dicen ser de personal",
+      "check": false,
+      "added": "2026-11-14T00:10:42.785538-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -714946,6 +715034,50 @@
       "desc": "Me estafó este número \r\nPagué por mercadería que nunca me llegó",
       "check": false,
       "added": "2026-11-13T10:11:23.815252-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22764,
+      "numero": "9337250866",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/9337250866_202611132000_366331.jpg",
+      "desc": "Acoso constante",
+      "check": false,
+      "added": "2026-11-13T20:00:45.099201-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22765,
+      "numero": "595986661976",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595986661976_202611132230_257137.jpg",
+      "desc": "Acusaciones falsas y extorsión",
+      "check": false,
+      "added": "2026-11-13T22:30:53.554287-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22766,
+      "numero": "595976709054",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595976709054_202611140001_1001184334.jpg",
+      "desc": "Dicen ser de personal, reclaman pago de facturas vencida de interne y tv",
+      "check": false,
+      "added": "2026-11-14T00:01:46.666627-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22767,
+      "numero": "595976709054",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595976709054_202611140010_1001203793.jpg",
+      "desc": "Dicen ser de personal",
+      "check": false,
+      "added": "2026-11-14T00:10:42.785538-03:00",
       "votsi": 0,
       "votno": 0
     }

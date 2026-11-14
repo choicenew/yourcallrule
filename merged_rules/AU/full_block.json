@@ -375,5 +375,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "au-spam-blocklist"
+  },
+  {
+    "id": "27a351b455705e416b15e03b877b5c6c",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+61424649188",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "au-spam-blocklist"
   }
 ]

@@ -78,6 +78,19 @@
     "subscriptionId": "fi-spam-blocklist"
   },
   {
+    "id": "b13257e3cd28b8cede89cfe0e4c80fa0",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "35867478240",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "fi-spam-blocklist"
+  },
+  {
     "id": "bd1abc709a97626a7c0b7da64973fd58",
     "name": "Spam Call",
     "ruleType": "phone_rule",

@@ -1001,6 +1001,32 @@
     "subscriptionId": "gr-spam-blocklist"
   },
   {
+    "id": "63cb010cb91e753d98b0c1ee4771a01f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3009135712",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gr-spam-blocklist"
+  },
+  {
+    "id": "c8e3f538212d5675f4f66e9cf92b3245",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3009179624",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gr-spam-blocklist"
+  },
+  {
     "id": "f15cabf81dd390d5fb782aa1b3266e33",
     "name": "Spam Call",
     "ruleType": "phone_rule",

@@ -1950,6 +1950,19 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
+    "id": "c558425232e26241f70259202734b8d3",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3232573326",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
     "id": "c4d09acb5178d95e3fca459be47c8b9c",
     "name": "Spam Call",
     "ruleType": "phone_rule",
