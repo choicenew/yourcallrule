@@ -238358,6 +238358,28 @@
       "added": "2026-11-14T00:10:42.785538-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22768,
+      "numero": "595986980090",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980090_202611141157_IMG_3361.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-14T11:57:31.515278-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22769,
+      "numero": "595971823819",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595971823819_202611141932_1000238049.jpg",
+      "desc": "Llama pidiendo que le devuelvan un giro de dinero",
+      "check": false,
+      "added": "2026-11-14T19:32:31.922240-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476719,6 +476741,28 @@
       "added": "2026-11-14T00:10:42.785538-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22768,
+      "numero": "595986980090",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980090_202611141157_IMG_3361.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-14T11:57:31.515278-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22769,
+      "numero": "595971823819",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595971823819_202611141932_1000238049.jpg",
+      "desc": "Llama pidiendo que le devuelvan un giro de dinero",
+      "check": false,
+      "added": "2026-11-14T19:32:31.922240-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -715078,6 +715122,28 @@
       "desc": "Dicen ser de personal",
       "check": false,
       "added": "2026-11-14T00:10:42.785538-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22768,
+      "numero": "595986980090",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980090_202611141157_IMG_3361.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-14T11:57:31.515278-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22769,
+      "numero": "595971823819",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595971823819_202611141932_1000238049.jpg",
+      "desc": "Llama pidiendo que le devuelvan un giro de dinero",
+      "check": false,
+      "added": "2026-11-14T19:32:31.922240-03:00",
       "votsi": 0,
       "votno": 0
     }
