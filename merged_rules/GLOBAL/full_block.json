@@ -6045,6 +6045,19 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "f4de0efd683b3b0c85eb49f292158000",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573231849375",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

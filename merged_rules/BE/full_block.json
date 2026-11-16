@@ -169,6 +169,19 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
+    "id": "3e4698934517315ea025c041abc641e6",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+32470623424",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
     "id": "247a2695c011e3fb4900a0854b1999ea",
     "name": "Spam Call",
     "ruleType": "phone_rule",

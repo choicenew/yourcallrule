@@ -976,3 +976,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 35867478240,Spam Call,block,3,35867478240,spamlikely,1,1,,phone_rule,opencallshield-co
 3009179624,Spam Call,block,3,3009179624,spamlikely,1,1,,phone_rule,opencallshield-co
 33931023546,Spam Call,block,3,33931023546,spamlikely,1,1,,phone_rule,opencallshield-co
++31668431560,Spam Call,block,3,+31668431560,spamlikely,1,1,,phone_rule,opencallshield-co
+03573231849375,Spam Call,block,3,03573231849375,spamlikely,1,1,,phone_rule,opencallshield-co
+3009143813,Spam Call,block,3,3009143813,spamlikely,1,1,,phone_rule,opencallshield-co

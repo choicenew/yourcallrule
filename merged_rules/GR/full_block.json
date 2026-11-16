@@ -1027,6 +1027,19 @@
     "subscriptionId": "gr-spam-blocklist"
   },
   {
+    "id": "f6261821edb13ea944c5eed070b558dc",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3009143813",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gr-spam-blocklist"
+  },
+  {
     "id": "f15cabf81dd390d5fb782aa1b3266e33",
     "name": "Spam Call",
     "ruleType": "phone_rule",

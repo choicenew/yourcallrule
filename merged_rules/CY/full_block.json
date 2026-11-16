@@ -180,5 +180,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "cy-spam-blocklist"
+  },
+  {
+    "id": "0239dcfed873600c942a4fe91e5a2a7f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+35726026350",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cy-spam-blocklist"
   }
 ]

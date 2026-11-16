@@ -3380,6 +3380,19 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
+    "id": "9bb4acd1bdedfd3c291222e837419ae1",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+31668431560",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
     "id": "8ac1c35bf7e4ce5149d9cd5ada0e7837",
     "name": "Spam Call",
     "ruleType": "phone_rule",

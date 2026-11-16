@@ -14886,3 +14886,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +595986661976,Spam Call,block,3,+595986661976,spamlikely,1,1,,phone_rule,listahu-py
 +595976709054,Spam Call,block,3,+595976709054,spamlikely,1,1,,phone_rule,listahu-py
 +595971823819,Spam Call,block,3,+595971823819,spamlikely,1,1,,phone_rule,listahu-py
++595991739904,Spam Call,block,3,+595991739904,spamlikely,1,1,,phone_rule,listahu-py
