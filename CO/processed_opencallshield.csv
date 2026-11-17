@@ -979,3 +979,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +31668431560,Spam Call,block,3,+31668431560,spamlikely,1,1,,phone_rule,opencallshield-co
 03573231849375,Spam Call,block,3,03573231849375,spamlikely,1,1,,phone_rule,opencallshield-co
 3009143813,Spam Call,block,3,3009143813,spamlikely,1,1,,phone_rule,opencallshield-co
+3122181295,Spam Call,block,3,3122181295,spamlikely,1,1,,phone_rule,opencallshield-co

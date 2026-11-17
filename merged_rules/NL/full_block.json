@@ -3393,6 +3393,19 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
+    "id": "86206a0d2d5e667656f9c0950affdf05",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3122181295",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
     "id": "8ac1c35bf7e4ce5149d9cd5ada0e7837",
     "name": "Spam Call",
     "ruleType": "phone_rule",

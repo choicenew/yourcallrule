@@ -238402,6 +238402,83 @@
       "added": "2026-11-16T12:51:41.895213-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22772,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162223_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:23:07.026950-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22773,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162223_IMG_1587_Gv8gHva.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:23:49.576970-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22774,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162225_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:25:32.375564-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22775,
+      "numero": "595976766020",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595976766020_202611162227_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:27:23.039437-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22776,
+      "numero": "59899145604",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/59899145604_202611170826_1000377213.jpg",
+      "desc": "No saque fecha para ningún medico",
+      "check": false,
+      "added": "2026-11-17T08:26:06.619397-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22777,
+      "numero": "595984485600",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595984485600_202611170919_3f9a5e7b-771b-48dc-a486-a4d007543acd.jpg",
+      "desc": "No paran de llamarme todos los dias tanto de CLARO (yo tengo claro) COMO PERSONAL me tiene harta.",
+      "check": false,
+      "added": "2026-11-17T09:19:40.314423-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22778,
+      "numero": "595982412403",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595982412403_202611171116_WhatsApp_Image_2026-11-17_at_11.09.32_AM.jpeg",
+      "desc": "Vende telefonos con fallas, despues te bloquea",
+      "check": false,
+      "added": "2026-11-17T11:16:28.441296-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476807,6 +476884,83 @@
       "added": "2026-11-16T12:51:41.895213-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22772,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162223_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:23:07.026950-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22773,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162223_IMG_1587_Gv8gHva.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:23:49.576970-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22774,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162225_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:25:32.375564-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22775,
+      "numero": "595976766020",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595976766020_202611162227_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:27:23.039437-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22776,
+      "numero": "59899145604",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/59899145604_202611170826_1000377213.jpg",
+      "desc": "No saque fecha para ningún medico",
+      "check": false,
+      "added": "2026-11-17T08:26:06.619397-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22777,
+      "numero": "595984485600",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595984485600_202611170919_3f9a5e7b-771b-48dc-a486-a4d007543acd.jpg",
+      "desc": "No paran de llamarme todos los dias tanto de CLARO (yo tengo claro) COMO PERSONAL me tiene harta.",
+      "check": false,
+      "added": "2026-11-17T09:19:40.314423-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22778,
+      "numero": "595982412403",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595982412403_202611171116_WhatsApp_Image_2026-11-17_at_11.09.32_AM.jpeg",
+      "desc": "Vende telefonos con fallas, despues te bloquea",
+      "check": false,
+      "added": "2026-11-17T11:16:28.441296-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -715210,6 +715364,83 @@
       "desc": "",
       "check": false,
       "added": "2026-11-16T12:51:41.895213-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22772,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162223_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:23:07.026950-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22773,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162223_IMG_1587_Gv8gHva.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:23:49.576970-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22774,
+      "numero": "595994973676",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595994973676_202611162225_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:25:32.375564-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22775,
+      "numero": "595976766020",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595976766020_202611162227_IMG_1587.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-16T22:27:23.039437-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22776,
+      "numero": "59899145604",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/59899145604_202611170826_1000377213.jpg",
+      "desc": "No saque fecha para ningún medico",
+      "check": false,
+      "added": "2026-11-17T08:26:06.619397-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22777,
+      "numero": "595984485600",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595984485600_202611170919_3f9a5e7b-771b-48dc-a486-a4d007543acd.jpg",
+      "desc": "No paran de llamarme todos los dias tanto de CLARO (yo tengo claro) COMO PERSONAL me tiene harta.",
+      "check": false,
+      "added": "2026-11-17T09:19:40.314423-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22778,
+      "numero": "595982412403",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595982412403_202611171116_WhatsApp_Image_2026-11-17_at_11.09.32_AM.jpeg",
+      "desc": "Vende telefonos con fallas, despues te bloquea",
+      "check": false,
+      "added": "2026-11-17T11:16:28.441296-03:00",
       "votsi": 0,
       "votno": 0
     }
