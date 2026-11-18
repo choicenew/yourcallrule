@@ -206,5 +206,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "ae-spam-blocklist"
+  },
+  {
+    "id": "8667a7aa2ae887b9f2e6aa2171fe85b0",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+971569924774",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "ae-spam-blocklist"
   }
 ]

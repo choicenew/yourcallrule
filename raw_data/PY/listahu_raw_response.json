@@ -238479,6 +238479,28 @@
       "added": "2026-11-17T11:16:28.441296-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22779,
+      "numero": "595973439892",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595973439892_202611171430_WhatsApp_Image_2026-11-17_at_2.30.12_PM.jpeg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-17T14:30:30.599525-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22780,
+      "numero": "595991710329",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595991710329_202611171431_WhatsApp_Image_2026-11-17_at_2.31.22_PM.jpeg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-17T14:31:36.465335-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -476961,6 +476983,28 @@
       "added": "2026-11-17T11:16:28.441296-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22779,
+      "numero": "595973439892",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595973439892_202611171430_WhatsApp_Image_2026-11-17_at_2.30.12_PM.jpeg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-17T14:30:30.599525-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22780,
+      "numero": "595991710329",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595991710329_202611171431_WhatsApp_Image_2026-11-17_at_2.31.22_PM.jpeg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-17T14:31:36.465335-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -715441,6 +715485,28 @@
       "desc": "Vende telefonos con fallas, despues te bloquea",
       "check": false,
       "added": "2026-11-17T11:16:28.441296-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22779,
+      "numero": "595973439892",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595973439892_202611171430_WhatsApp_Image_2026-11-17_at_2.30.12_PM.jpeg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-17T14:30:30.599525-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22780,
+      "numero": "595991710329",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595991710329_202611171431_WhatsApp_Image_2026-11-17_at_2.31.22_PM.jpeg",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-17T14:31:36.465335-03:00",
       "votsi": 0,
       "votno": 0
     }

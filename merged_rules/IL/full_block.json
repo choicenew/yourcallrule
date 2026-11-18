@@ -546,6 +546,19 @@
     "subscriptionId": "il-spam-blocklist"
   },
   {
+    "id": "547ab94a2b8ea084ee900698bb0df2bb",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+97226561717",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "il-spam-blocklist"
+  },
+  {
     "id": "a808ca8d07667504e46b539fa36da915",
     "name": "Spam Call",
     "ruleType": "phone_rule",

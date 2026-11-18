@@ -273,19 +273,6 @@
     "subscriptionId": "do-spam-blocklist"
   },
   {
-    "id": "2f57f635603bddade89850e1a11f14da",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+18492176409",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "do-spam-blocklist"
-  },
-  {
     "id": "f1c974769a05e05f4725ccbba95999eb",
     "name": "Spam Call",
     "ruleType": "phone_rule",
