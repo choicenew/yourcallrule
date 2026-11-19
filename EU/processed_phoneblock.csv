@@ -5697,3 +5697,12 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +4921130194335,PhoneBlock Europe Blocked,block,3,+4921130194335,spamlikely,1,1,,phone_rule,phoneblock-eu
 +494085599737,PhoneBlock Europe Blocked,block,3,+494085599737,spamlikely,1,1,,phone_rule,phoneblock-eu
 +494085599416,PhoneBlock Europe Blocked,block,3,+494085599416,spamlikely,1,1,,phone_rule,phoneblock-eu
++4915888366072,PhoneBlock Europe Blocked,block,3,+4915888366072,spamlikely,1,1,,phone_rule,phoneblock-eu
++4915888571494,PhoneBlock Europe Blocked,block,3,+4915888571494,spamlikely,1,1,,phone_rule,phoneblock-eu
++4915510261781,PhoneBlock Europe Blocked,block,3,+4915510261781,spamlikely,1,1,,phone_rule,phoneblock-eu
++494029999267,PhoneBlock Europe Blocked,block,3,+494029999267,spamlikely,1,1,,phone_rule,phoneblock-eu
++498989679612,PhoneBlock Europe Blocked,block,3,+498989679612,spamlikely,1,1,,phone_rule,phoneblock-eu
++493033075036,PhoneBlock Europe Blocked,block,3,+493033075036,spamlikely,1,1,,phone_rule,phoneblock-eu
++4930330755622,PhoneBlock Europe Blocked,block,3,+4930330755622,spamlikely,1,1,,phone_rule,phoneblock-eu
++4968518649846,PhoneBlock Europe Blocked,block,3,+4968518649846,spamlikely,1,1,,phone_rule,phoneblock-eu
++496933299051,PhoneBlock Europe Blocked,block,3,+496933299051,spamlikely,1,1,,phone_rule,phoneblock-eu

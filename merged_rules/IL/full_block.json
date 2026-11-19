@@ -65,19 +65,6 @@
     "subscriptionId": "il-spam-blocklist"
   },
   {
-    "id": "00b60a1aba6083fb210995a6deb5ce34",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+972539822449",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "il-spam-blocklist"
-  },
-  {
     "id": "6edb34d9a8804c553a2de83d5dc3a369",
     "name": "Telemarketing",
     "ruleType": "phone_rule",

@@ -520,19 +520,6 @@
     "subscriptionId": "pr-spam-blocklist"
   },
   {
-    "id": "4e44243cc667e1f28ae9d2e7a17daa76",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+17872808124",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "pr-spam-blocklist"
-  },
-  {
     "id": "99a290b14400ed586229511f5e13f7b9",
     "name": "Spam Call",
     "ruleType": "phone_rule",

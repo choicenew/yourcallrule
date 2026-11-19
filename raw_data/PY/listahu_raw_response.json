@@ -238501,6 +238501,72 @@
       "added": "2026-11-17T14:31:36.465335-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22781,
+      "numero": "595987615463",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987615463_202611181519_Screenshot_2026-11-18_at_15.18.48.png",
+      "desc": "Entra en contacto en una venta de facebook diciendo estar interesada, te pide tu numero y luego al negociar te pasa el numero del supuesto padre, el padre luego intenta acceder a tu tigo money pidiendote el codigo que te acaba de llegar, alegando que es para hacer la transferencia del producto negociado",
+      "check": false,
+      "added": "2026-11-18T15:19:53.743901-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22782,
+      "numero": "595971804821",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595971804821_202611181520_445140.jpg",
+      "desc": "Quiero saber si es estafa",
+      "check": false,
+      "added": "2026-11-18T15:20:13.317473-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22783,
+      "numero": "595987572526",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987572526_202611181521_Screenshot_2026-11-18_at_15.20.57.png",
+      "desc": "Entra en contacto en una venta de facebook diciendo estar interesada, te pide tu numero y luego al negociar te pasa el numero del supuesto padre, el padre luego intenta acceder a tu tigo money pidiendote el codigo que te acaba de llegar, alegando que es para hacer la transferencia del producto negociado‪",
+      "check": false,
+      "added": "2026-11-18T15:21:07.995530-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22784,
+      "numero": "595976505213",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595976505213_202611181743_1000584197.jpg",
+      "desc": "Llamada con preguntas sobre bancos y uso de aplicaciones bancarias. La persona ni sabia de lo que hablaba exactamente.",
+      "check": false,
+      "added": "2026-11-18T17:43:09.328289-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22785,
+      "numero": "595971804821",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595971804821_202611182014_445140.jpg",
+      "desc": "Hacen estafa por medio de este número",
+      "check": false,
+      "added": "2026-11-18T20:14:37.987496-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22786,
+      "numero": "595987211741",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987211741_202611191008_1029418.jpg",
+      "desc": "Dice que es vendedor de celular y cuando le envie el comprobante se esfumó",
+      "check": false,
+      "added": "2026-11-19T10:08:12.772759-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -477005,6 +477071,72 @@
       "added": "2026-11-17T14:31:36.465335-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22781,
+      "numero": "595987615463",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987615463_202611181519_Screenshot_2026-11-18_at_15.18.48.png",
+      "desc": "Entra en contacto en una venta de facebook diciendo estar interesada, te pide tu numero y luego al negociar te pasa el numero del supuesto padre, el padre luego intenta acceder a tu tigo money pidiendote el codigo que te acaba de llegar, alegando que es para hacer la transferencia del producto negociado",
+      "check": false,
+      "added": "2026-11-18T15:19:53.743901-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22782,
+      "numero": "595971804821",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595971804821_202611181520_445140.jpg",
+      "desc": "Quiero saber si es estafa",
+      "check": false,
+      "added": "2026-11-18T15:20:13.317473-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22783,
+      "numero": "595987572526",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987572526_202611181521_Screenshot_2026-11-18_at_15.20.57.png",
+      "desc": "Entra en contacto en una venta de facebook diciendo estar interesada, te pide tu numero y luego al negociar te pasa el numero del supuesto padre, el padre luego intenta acceder a tu tigo money pidiendote el codigo que te acaba de llegar, alegando que es para hacer la transferencia del producto negociado‪",
+      "check": false,
+      "added": "2026-11-18T15:21:07.995530-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22784,
+      "numero": "595976505213",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595976505213_202611181743_1000584197.jpg",
+      "desc": "Llamada con preguntas sobre bancos y uso de aplicaciones bancarias. La persona ni sabia de lo que hablaba exactamente.",
+      "check": false,
+      "added": "2026-11-18T17:43:09.328289-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22785,
+      "numero": "595971804821",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595971804821_202611182014_445140.jpg",
+      "desc": "Hacen estafa por medio de este número",
+      "check": false,
+      "added": "2026-11-18T20:14:37.987496-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22786,
+      "numero": "595987211741",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987211741_202611191008_1029418.jpg",
+      "desc": "Dice que es vendedor de celular y cuando le envie el comprobante se esfumó",
+      "check": false,
+      "added": "2026-11-19T10:08:12.772759-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -715507,6 +715639,72 @@
       "desc": "",
       "check": false,
       "added": "2026-11-17T14:31:36.465335-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22781,
+      "numero": "595987615463",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987615463_202611181519_Screenshot_2026-11-18_at_15.18.48.png",
+      "desc": "Entra en contacto en una venta de facebook diciendo estar interesada, te pide tu numero y luego al negociar te pasa el numero del supuesto padre, el padre luego intenta acceder a tu tigo money pidiendote el codigo que te acaba de llegar, alegando que es para hacer la transferencia del producto negociado",
+      "check": false,
+      "added": "2026-11-18T15:19:53.743901-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22782,
+      "numero": "595971804821",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595971804821_202611181520_445140.jpg",
+      "desc": "Quiero saber si es estafa",
+      "check": false,
+      "added": "2026-11-18T15:20:13.317473-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22783,
+      "numero": "595987572526",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987572526_202611181521_Screenshot_2026-11-18_at_15.20.57.png",
+      "desc": "Entra en contacto en una venta de facebook diciendo estar interesada, te pide tu numero y luego al negociar te pasa el numero del supuesto padre, el padre luego intenta acceder a tu tigo money pidiendote el codigo que te acaba de llegar, alegando que es para hacer la transferencia del producto negociado‪",
+      "check": false,
+      "added": "2026-11-18T15:21:07.995530-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22784,
+      "numero": "595976505213",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595976505213_202611181743_1000584197.jpg",
+      "desc": "Llamada con preguntas sobre bancos y uso de aplicaciones bancarias. La persona ni sabia de lo que hablaba exactamente.",
+      "check": false,
+      "added": "2026-11-18T17:43:09.328289-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22785,
+      "numero": "595971804821",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595971804821_202611182014_445140.jpg",
+      "desc": "Hacen estafa por medio de este número",
+      "check": false,
+      "added": "2026-11-18T20:14:37.987496-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22786,
+      "numero": "595987211741",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987211741_202611191008_1029418.jpg",
+      "desc": "Dice que es vendedor de celular y cuando le envie el comprobante se esfumó",
+      "check": false,
+      "added": "2026-11-19T10:08:12.772759-03:00",
       "votsi": 0,
       "votno": 0
     }
