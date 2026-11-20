@@ -6058,6 +6058,32 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "88f8649dce96ebc352cb6e840096a752",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03273431095",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
+    "id": "0b4196180da97ea52c424868c8142dc8",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573127385606",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

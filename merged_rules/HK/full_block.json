@@ -323,5 +323,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "hk-spam-blocklist"
+  },
+  {
+    "id": "dd54b96c57107c3b2785464eec8cf9bb",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+85284008946",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "hk-spam-blocklist"
   }
 ]

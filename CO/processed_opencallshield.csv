@@ -980,3 +980,10 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 03573231849375,Spam Call,block,3,03573231849375,spamlikely,1,1,,phone_rule,opencallshield-co
 3009143813,Spam Call,block,3,3009143813,spamlikely,1,1,,phone_rule,opencallshield-co
 3122181295,Spam Call,block,3,3122181295,spamlikely,1,1,,phone_rule,opencallshield-co
+3139442751,Spam Call,block,3,3139442751,spamlikely,1,1,,phone_rule,opencallshield-co
+38325797432,Spam Call,block,3,38325797432,spamlikely,1,1,,phone_rule,opencallshield-co
+3189009987,Spam Call,block,3,3189009987,spamlikely,1,1,,phone_rule,opencallshield-co
+03273431095,Spam Call,block,3,03273431095,spamlikely,1,1,,phone_rule,opencallshield-co
+3132452764,Spam Call,block,3,3132452764,spamlikely,1,1,,phone_rule,opencallshield-co
+03573127385606,Spam Call,block,3,03573127385606,spamlikely,1,1,,phone_rule,opencallshield-co
+3127225016,Spam Call,block,3,3127225016,spamlikely,1,1,,phone_rule,opencallshield-co

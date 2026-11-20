@@ -11,5 +11,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "xk-spam-blocklist"
+  },
+  {
+    "id": "c3a5277865e9325f0a98563531ab402d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "38325797432",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "xk-spam-blocklist"
   }
 ]

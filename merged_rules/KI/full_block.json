@@ -1,0 +1,15 @@
+[
+  {
+    "id": "45b63ba5f17bf7ac1651c59836dcdd29",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+68663030001",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "ki-spam-blocklist"
+  }
+]

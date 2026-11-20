@@ -4015,5 +4015,31 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "gb-spam-blocklist"
+  },
+  {
+    "id": "eb09366a92cba1b0ef4b0292b9e2f430",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+448451542577",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
+  },
+  {
+    "id": "a44623471c6dd1601ea1dd3aa060e987",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+442039961172",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
   }
 ]

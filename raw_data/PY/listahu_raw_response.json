@@ -238567,6 +238567,28 @@
       "added": "2026-11-19T10:08:12.772759-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22788,
+      "numero": "595981397933",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595981397933_202611191428_WhatsApp_Image_2026-11-19_at_14.26.56.jpeg",
+      "desc": "Llama y me dice que mi numero le esta acosando a su hija menor de edad, automaticamente le corte porque se que es extorsión.",
+      "check": false,
+      "added": "2026-11-19T14:28:03.713660-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22789,
+      "numero": "18299024792",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/18299024792_202611191749_1000080312.jpg",
+      "desc": "Intento de extorsión después de usar una web de citas",
+      "check": false,
+      "added": "2026-11-19T17:49:45.945132-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -477137,6 +477159,28 @@
       "added": "2026-11-19T10:08:12.772759-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22788,
+      "numero": "595981397933",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595981397933_202611191428_WhatsApp_Image_2026-11-19_at_14.26.56.jpeg",
+      "desc": "Llama y me dice que mi numero le esta acosando a su hija menor de edad, automaticamente le corte porque se que es extorsión.",
+      "check": false,
+      "added": "2026-11-19T14:28:03.713660-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22789,
+      "numero": "18299024792",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/18299024792_202611191749_1000080312.jpg",
+      "desc": "Intento de extorsión después de usar una web de citas",
+      "check": false,
+      "added": "2026-11-19T17:49:45.945132-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -715705,6 +715749,28 @@
       "desc": "Dice que es vendedor de celular y cuando le envie el comprobante se esfumó",
       "check": false,
       "added": "2026-11-19T10:08:12.772759-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22788,
+      "numero": "595981397933",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/595981397933_202611191428_WhatsApp_Image_2026-11-19_at_14.26.56.jpeg",
+      "desc": "Llama y me dice que mi numero le esta acosando a su hija menor de edad, automaticamente le corte porque se que es extorsión.",
+      "check": false,
+      "added": "2026-11-19T14:28:03.713660-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22789,
+      "numero": "18299024792",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/18299024792_202611191749_1000080312.jpg",
+      "desc": "Intento de extorsión después de usar una web de citas",
+      "check": false,
+      "added": "2026-11-19T17:49:45.945132-03:00",
       "votsi": 0,
       "votno": 0
     }

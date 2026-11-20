@@ -3406,6 +3406,58 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
+    "id": "a9177b67cc30a5a7547bb3d1ab363121",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3139442751",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "618614b5b3fadd4ba3824da1bcb5d486",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3189009987",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "bbbe0f769db0021a5397729c5ba97ce3",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3132452764",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "e3adaac5d424a04b9cd049c017cb9a04",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3127225016",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
     "id": "8ac1c35bf7e4ce5149d9cd5ada0e7837",
     "name": "Spam Call",
     "ruleType": "phone_rule",
