@@ -237689,6 +237689,17 @@
       "votno": 0
     },
     {
+      "id": 22793,
+      "numero": "595993647764",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595993647764_202611210022_446207.jpg",
+      "desc": "Llaman para extorsión",
+      "check": false,
+      "added": "2026-11-21T00:22:49.557797-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
       "id": 22702,
       "numero": "595976112512",
       "tipo": "Estafa",
@@ -238587,6 +238598,50 @@
       "desc": "Intento de extorsión después de usar una web de citas",
       "check": false,
       "added": "2026-11-19T17:49:45.945132-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22790,
+      "numero": "595986980082",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980082_202611201340_1000153474.jpg",
+      "desc": "ME CONTESTO UN CHICA,SABE MI NUMERO DE CI Y MI NOMBRE COMPLETO",
+      "check": false,
+      "added": "2026-11-20T13:40:44.066559-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22791,
+      "numero": "50248800967",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50248800967_202611201532_Captura_de_pantalla_2026-11-20_121942.png",
+      "desc": "Te lo mandan con tu primer nombre y primer apellido.",
+      "check": false,
+      "added": "2026-11-20T15:32:26.168646-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22792,
+      "numero": "595971200063",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595971200063_202611201545_Captura_de_pantalla_2026-11-04_162208.png",
+      "desc": "Llaman con numero desconocido y dejar mensajes de voz sin decir nada, le llamas al numero y no entra la llamada",
+      "check": false,
+      "added": "2026-11-20T15:45:48.032058-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22794,
+      "numero": "5491159320",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/5491159320_202611211145_1000279751.png",
+      "desc": "Empezó con xenofobia, y tmb me empezó a extorsionar diciendo que me va a matar",
+      "check": false,
+      "added": "2026-11-21T11:45:04.093977-03:00",
       "votsi": 0,
       "votno": 0
     }
@@ -476281,6 +476336,17 @@
       "votno": 0
     },
     {
+      "id": 22793,
+      "numero": "595993647764",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595993647764_202611210022_446207.jpg",
+      "desc": "Llaman para extorsión",
+      "check": false,
+      "added": "2026-11-21T00:22:49.557797-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
       "id": 22702,
       "numero": "595976112512",
       "tipo": "Estafa",
@@ -477179,6 +477245,50 @@
       "desc": "Intento de extorsión después de usar una web de citas",
       "check": false,
       "added": "2026-11-19T17:49:45.945132-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22790,
+      "numero": "595986980082",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980082_202611201340_1000153474.jpg",
+      "desc": "ME CONTESTO UN CHICA,SABE MI NUMERO DE CI Y MI NOMBRE COMPLETO",
+      "check": false,
+      "added": "2026-11-20T13:40:44.066559-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22791,
+      "numero": "50248800967",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50248800967_202611201532_Captura_de_pantalla_2026-11-20_121942.png",
+      "desc": "Te lo mandan con tu primer nombre y primer apellido.",
+      "check": false,
+      "added": "2026-11-20T15:32:26.168646-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22792,
+      "numero": "595971200063",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595971200063_202611201545_Captura_de_pantalla_2026-11-04_162208.png",
+      "desc": "Llaman con numero desconocido y dejar mensajes de voz sin decir nada, le llamas al numero y no entra la llamada",
+      "check": false,
+      "added": "2026-11-20T15:45:48.032058-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22794,
+      "numero": "5491159320",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/5491159320_202611211145_1000279751.png",
+      "desc": "Empezó con xenofobia, y tmb me empezó a extorsionar diciendo que me va a matar",
+      "check": false,
+      "added": "2026-11-21T11:45:04.093977-03:00",
       "votsi": 0,
       "votno": 0
     }
@@ -714873,6 +714983,17 @@
       "votno": 0
     },
     {
+      "id": 22793,
+      "numero": "595993647764",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595993647764_202611210022_446207.jpg",
+      "desc": "Llaman para extorsión",
+      "check": false,
+      "added": "2026-11-21T00:22:49.557797-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
       "id": 22702,
       "numero": "595976112512",
       "tipo": "Estafa",
@@ -715771,6 +715892,50 @@
       "desc": "Intento de extorsión después de usar una web de citas",
       "check": false,
       "added": "2026-11-19T17:49:45.945132-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22790,
+      "numero": "595986980082",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980082_202611201340_1000153474.jpg",
+      "desc": "ME CONTESTO UN CHICA,SABE MI NUMERO DE CI Y MI NOMBRE COMPLETO",
+      "check": false,
+      "added": "2026-11-20T13:40:44.066559-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22791,
+      "numero": "50248800967",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50248800967_202611201532_Captura_de_pantalla_2026-11-20_121942.png",
+      "desc": "Te lo mandan con tu primer nombre y primer apellido.",
+      "check": false,
+      "added": "2026-11-20T15:32:26.168646-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22792,
+      "numero": "595971200063",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595971200063_202611201545_Captura_de_pantalla_2026-11-04_162208.png",
+      "desc": "Llaman con numero desconocido y dejar mensajes de voz sin decir nada, le llamas al numero y no entra la llamada",
+      "check": false,
+      "added": "2026-11-20T15:45:48.032058-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22794,
+      "numero": "5491159320",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/5491159320_202611211145_1000279751.png",
+      "desc": "Empezó con xenofobia, y tmb me empezó a extorsionar diciendo que me va a matar",
+      "check": false,
+      "added": "2026-11-21T11:45:04.093977-03:00",
       "votsi": 0,
       "votno": 0
     }

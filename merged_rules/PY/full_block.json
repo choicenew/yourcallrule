@@ -193763,5 +193763,57 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "b64176920dbd8e85d3915ef856047755",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595993647764",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "701719726b6c79e04b0fdd7ea310bd02",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+59550248800967",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "a57927b25da8a716e1879e262cefcadc",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595971200063",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "f130c812323a23588ad803888d3c9ac1",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+5955491159320",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
   }
 ]

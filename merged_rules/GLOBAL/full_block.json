@@ -6084,6 +6084,19 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "3626c8ade61e58a0565bca9c563426f4",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573509354664",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

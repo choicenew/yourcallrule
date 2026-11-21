@@ -2535,6 +2535,19 @@
     "subscriptionId": "gb-spam-blocklist"
   },
   {
+    "id": "3e0b2fa5469867831456b060e7c4a548",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+441134960106",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
+  },
+  {
     "id": "9cc8c204a362e6e8ac56ac2428d94bcb",
     "name": "Telemarketing",
     "ruleType": "phone_rule",

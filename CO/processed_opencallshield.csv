@@ -987,3 +987,10 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 3132452764,Spam Call,block,3,3132452764,spamlikely,1,1,,phone_rule,opencallshield-co
 03573127385606,Spam Call,block,3,03573127385606,spamlikely,1,1,,phone_rule,opencallshield-co
 3127225016,Spam Call,block,3,3127225016,spamlikely,1,1,,phone_rule,opencallshield-co
+3159663323,Spam Call,block,3,3159663323,spamlikely,1,1,,phone_rule,opencallshield-co
+3246902253,Spam Call,block,3,3246902253,spamlikely,1,1,,phone_rule,opencallshield-co
+03573509354664,Spam Call,block,3,03573509354664,spamlikely,1,1,,phone_rule,opencallshield-co
+33709758217,Spam Call,block,3,33709758217,spamlikely,1,1,,phone_rule,opencallshield-co
+3217948991,Spam Call,block,3,3217948991,spamlikely,1,1,,phone_rule,opencallshield-co
+3226500736,Spam Call,block,3,3226500736,spamlikely,1,1,,phone_rule,opencallshield-co
+34732442489,Spam Call,block,3,34732442489,spamlikely,1,1,,phone_rule,opencallshield-co

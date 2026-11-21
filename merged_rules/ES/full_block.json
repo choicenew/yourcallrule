@@ -520,6 +520,19 @@
     "subscriptionId": "es-spam-blocklist"
   },
   {
+    "id": "4ff7dc2719d42214fb4f95837d3e7e02",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "34732442489",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "es-spam-blocklist"
+  },
+  {
     "id": "15718adfbaaa4618682edf3a409bc949",
     "name": "Spam Call",
     "ruleType": "phone_rule",

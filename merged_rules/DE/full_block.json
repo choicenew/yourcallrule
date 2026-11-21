@@ -47929,5 +47929,57 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "0f454885f618f0d4284f3b705e87371d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4915888570436",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "66ae6354c87c4fd5a394ea136b932a87",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4954468279156",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "16d0af1c9a870a0a692db6a783e0579a",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4932211074621",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "3f6851867935378436aaf9cc5589ad3a",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4915888629902",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
   }
 ]

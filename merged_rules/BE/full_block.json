@@ -1976,6 +1976,45 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
+    "id": "839a6a884d0d043d5e184db521eb0b6f",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3246902253",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
+    "id": "312446aca2c04fc00a7fbda4a04ee770",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3217948991",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
+    "id": "4275bc99889afaf481d64b6500ece0c2",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3226500736",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
     "id": "c4d09acb5178d95e3fca459be47c8b9c",
     "name": "Spam Call",
     "ruleType": "phone_rule",
