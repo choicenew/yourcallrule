@@ -238644,6 +238644,39 @@
       "added": "2026-11-21T11:45:04.093977-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22795,
+      "numero": "6121052852",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/6121052852_202611221701_imagen_2026-11-22_130124387.png",
+      "desc": "Este número parece estar relacionado con actividades fraudulentas.",
+      "check": false,
+      "added": "2026-11-22T17:01:11.755199-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22796,
+      "numero": "1173306590",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/1173306590_202611221919_IMG-20261122-WA0028.jpg",
+      "desc": "Este numero se hizo pasar x cliente y me robo",
+      "check": false,
+      "added": "2026-11-22T19:19:55.641580-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22797,
+      "numero": "595973477474",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595973477474_202611222150_1001585418.jpg",
+      "desc": "Llamada para estafar",
+      "check": false,
+      "added": "2026-11-22T21:50:40.894128-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -477291,6 +477324,39 @@
       "added": "2026-11-21T11:45:04.093977-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22795,
+      "numero": "6121052852",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/6121052852_202611221701_imagen_2026-11-22_130124387.png",
+      "desc": "Este número parece estar relacionado con actividades fraudulentas.",
+      "check": false,
+      "added": "2026-11-22T17:01:11.755199-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22796,
+      "numero": "1173306590",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/1173306590_202611221919_IMG-20261122-WA0028.jpg",
+      "desc": "Este numero se hizo pasar x cliente y me robo",
+      "check": false,
+      "added": "2026-11-22T19:19:55.641580-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22797,
+      "numero": "595973477474",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595973477474_202611222150_1001585418.jpg",
+      "desc": "Llamada para estafar",
+      "check": false,
+      "added": "2026-11-22T21:50:40.894128-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -715936,6 +716002,39 @@
       "desc": "Empezó con xenofobia, y tmb me empezó a extorsionar diciendo que me va a matar",
       "check": false,
       "added": "2026-11-21T11:45:04.093977-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22795,
+      "numero": "6121052852",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/6121052852_202611221701_imagen_2026-11-22_130124387.png",
+      "desc": "Este número parece estar relacionado con actividades fraudulentas.",
+      "check": false,
+      "added": "2026-11-22T17:01:11.755199-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22796,
+      "numero": "1173306590",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/1173306590_202611221919_IMG-20261122-WA0028.jpg",
+      "desc": "Este numero se hizo pasar x cliente y me robo",
+      "check": false,
+      "added": "2026-11-22T19:19:55.641580-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22797,
+      "numero": "595973477474",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595973477474_202611222150_1001585418.jpg",
+      "desc": "Llamada para estafar",
+      "check": false,
+      "added": "2026-11-22T21:50:40.894128-03:00",
       "votsi": 0,
       "votno": 0
     }

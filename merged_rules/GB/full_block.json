@@ -4054,5 +4054,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "gb-spam-blocklist"
+  },
+  {
+    "id": "9f50b5168825da274a621818fd970730",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+442034517635",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
   }
 ]

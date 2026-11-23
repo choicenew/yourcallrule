@@ -994,3 +994,8 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 3217948991,Spam Call,block,3,3217948991,spamlikely,1,1,,phone_rule,opencallshield-co
 3226500736,Spam Call,block,3,3226500736,spamlikely,1,1,,phone_rule,opencallshield-co
 34732442489,Spam Call,block,3,34732442489,spamlikely,1,1,,phone_rule,opencallshield-co
+30140880977,Spam Call,block,3,30140880977,spamlikely,1,1,,phone_rule,opencallshield-co
+33721912341,Spam Call,block,3,33721912341,spamlikely,1,1,,phone_rule,opencallshield-co
+38667887530,Spam Call,block,3,38667887530,spamlikely,1,1,,phone_rule,opencallshield-co
+3246902247,Spam Call,block,3,3246902247,spamlikely,1,1,,phone_rule,opencallshield-co
+3175404375,Spam Call,block,3,3175404375,spamlikely,1,1,,phone_rule,opencallshield-co

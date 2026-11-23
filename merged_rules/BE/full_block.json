@@ -2015,6 +2015,19 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
+    "id": "b17b0f75bc16f4db6d935bb0137f19a6",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3246902247",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
     "id": "c4d09acb5178d95e3fca459be47c8b9c",
     "name": "Spam Call",
     "ruleType": "phone_rule",

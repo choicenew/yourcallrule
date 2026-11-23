@@ -143,6 +143,45 @@
     "subscriptionId": "cl-spam-blocklist"
   },
   {
+    "id": "0ddeb8def1d487e6cc85c744f7c227b3",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56443320258",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
+    "id": "bca9c638555b542b835f297c8e6b7809",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56443320262",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
+    "id": "f7a8af89f23dcb69678e14bdd3744e49",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+56442623094",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "cl-spam-blocklist"
+  },
+  {
     "id": "d6e30856fb8f14c84ef990bef19d1d25",
     "name": "Spam Call",
     "ruleType": "phone_rule",
