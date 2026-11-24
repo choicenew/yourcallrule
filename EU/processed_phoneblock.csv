@@ -5789,3 +5789,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +4974557884303,PhoneBlock Europe Blocked,block,3,+4974557884303,spamlikely,1,1,,phone_rule,phoneblock-eu
 +491721279230,PhoneBlock Europe Blocked,block,3,+491721279230,spamlikely,1,1,,phone_rule,phoneblock-eu
 +493033075200,PhoneBlock Europe Blocked,block,3,+493033075200,spamlikely,1,1,,phone_rule,phoneblock-eu
++4930330755601,PhoneBlock Europe Blocked,block,3,+4930330755601,spamlikely,1,1,,phone_rule,phoneblock-eu
++4930330755605,PhoneBlock Europe Blocked,block,3,+4930330755605,spamlikely,1,1,,phone_rule,phoneblock-eu
++494065589485,PhoneBlock Europe Blocked,block,3,+494065589485,spamlikely,1,1,,phone_rule,phoneblock-eu

@@ -65,19 +65,6 @@
     "subscriptionId": "be-spam-blocklist"
   },
   {
-    "id": "70f6930772d9a5a5521365f2f16abede",
-    "name": "Telemarketing",
-    "ruleType": "phone_rule",
-    "phoneNumber": "+3233128260",
-    "labelId": "telemarketing",
-    "priority": 3,
-    "action": "block",
-    "isEnabled": 1,
-    "count": 2,
-    "avatar": "",
-    "subscriptionId": "be-spam-blocklist"
-  },
-  {
     "id": "5de43edba296e5167ba3e2301a7f3cf8",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
@@ -2019,6 +2006,32 @@
     "name": "Spam Call",
     "ruleType": "phone_rule",
     "phoneNumber": "3246902247",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
+    "id": "74b626199319fc4995fd1434375804ad",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3214632159",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "be-spam-blocklist"
+  },
+  {
+    "id": "3636cc7f7c463bdeff2fa8ca606f4c00",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3246903936",
     "labelId": "spamlikely",
     "priority": 3,
     "action": "block",

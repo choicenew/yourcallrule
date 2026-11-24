@@ -193,5 +193,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "nz-spam-blocklist"
+  },
+  {
+    "id": "1e15f2435c56d0e4ce3c3099643bc009",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+6421880664",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "nz-spam-blocklist"
   }
 ]

@@ -238677,6 +238677,28 @@
       "added": "2026-11-22T21:50:40.894128-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22798,
+      "numero": "595986188376",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595986188376_202611231709_1000461683.jpg",
+      "desc": "Me llamaron queriendo comprar mi terreno, me llamo un tal Dr David Riveros, y me paso el nro de un tal ingeniero hector rojas, para que realice la tasación del terreno, como se puede ver en el chat la tasación solo lo quería hacer por WhatsApp y queria que envié un monto a una cuenta de tercero",
+      "check": false,
+      "added": "2026-11-23T17:09:16.430591-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22799,
+      "numero": "595987719083",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987719083_202611231750_images.jpeg",
+      "desc": "Llama y se hace pasar por fiscala",
+      "check": false,
+      "added": "2026-11-23T17:50:07.889546-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -477357,6 +477379,28 @@
       "added": "2026-11-22T21:50:40.894128-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22798,
+      "numero": "595986188376",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595986188376_202611231709_1000461683.jpg",
+      "desc": "Me llamaron queriendo comprar mi terreno, me llamo un tal Dr David Riveros, y me paso el nro de un tal ingeniero hector rojas, para que realice la tasación del terreno, como se puede ver en el chat la tasación solo lo quería hacer por WhatsApp y queria que envié un monto a una cuenta de tercero",
+      "check": false,
+      "added": "2026-11-23T17:09:16.430591-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22799,
+      "numero": "595987719083",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987719083_202611231750_images.jpeg",
+      "desc": "Llama y se hace pasar por fiscala",
+      "check": false,
+      "added": "2026-11-23T17:50:07.889546-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -716035,6 +716079,28 @@
       "desc": "Llamada para estafar",
       "check": false,
       "added": "2026-11-22T21:50:40.894128-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22798,
+      "numero": "595986188376",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595986188376_202611231709_1000461683.jpg",
+      "desc": "Me llamaron queriendo comprar mi terreno, me llamo un tal Dr David Riveros, y me paso el nro de un tal ingeniero hector rojas, para que realice la tasación del terreno, como se puede ver en el chat la tasación solo lo quería hacer por WhatsApp y queria que envié un monto a una cuenta de tercero",
+      "check": false,
+      "added": "2026-11-23T17:09:16.430591-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22799,
+      "numero": "595987719083",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595987719083_202611231750_images.jpeg",
+      "desc": "Llama y se hace pasar por fiscala",
+      "check": false,
+      "added": "2026-11-23T17:50:07.889546-03:00",
       "votsi": 0,
       "votno": 0
     }

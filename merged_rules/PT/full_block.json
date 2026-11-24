@@ -37,5 +37,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "pt-spam-blocklist"
+  },
+  {
+    "id": "bf38643b918667a459885fe96a6927f9",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "35138431099",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "pt-spam-blocklist"
   }
 ]

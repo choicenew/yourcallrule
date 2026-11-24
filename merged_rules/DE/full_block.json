@@ -48267,5 +48267,44 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "a1d6304384c54e64349ca76ed722bb63",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4930330755601",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "94b1d86464de9c726ad5c47937ef4091",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+4930330755605",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
+  },
+  {
+    "id": "fd61182f2e52dc5b20fe78303dec844d",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+494065589485",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "de-spam-blocklist"
   }
 ]

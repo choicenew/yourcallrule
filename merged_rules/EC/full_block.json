@@ -50,5 +50,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "ec-spam-blocklist"
+  },
+  {
+    "id": "77680c8ee7f5329fd4d4185f6dca904c",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "593980506875",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "ec-spam-blocklist"
   }
 ]
