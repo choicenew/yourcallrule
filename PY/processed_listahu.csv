@@ -14910,3 +14910,11 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +595973477474,Spam Call,block,3,+595973477474,spamlikely,1,1,,phone_rule,listahu-py
 +595986188376,Spam Call,block,3,+595986188376,spamlikely,1,1,,phone_rule,listahu-py
 +595987719083,Spam Call,block,3,+595987719083,spamlikely,1,1,,phone_rule,listahu-py
++595525578380721,Spam Call,block,3,+595525578380721,spamlikely,1,1,,phone_rule,listahu-py
++59550258686979,Spam Call,block,3,+59550258686979,spamlikely,1,1,,phone_rule,listahu-py
++59550640003870,Spam Call,block,3,+59550640003870,spamlikely,1,1,,phone_rule,listahu-py
++595987862590,Spam Call,block,3,+595987862590,spamlikely,1,1,,phone_rule,listahu-py
++595184944564,Spam Call,block,3,+595184944564,spamlikely,1,1,,phone_rule,listahu-py
++5955491160426107,Spam Call,block,3,+5955491160426107,spamlikely,1,1,,phone_rule,listahu-py
++595982780234,Spam Call,block,3,+595982780234,spamlikely,1,1,,phone_rule,listahu-py
++595984552684,Spam Call,block,3,+595984552684,spamlikely,1,1,,phone_rule,listahu-py

@@ -238699,6 +238699,116 @@
       "added": "2026-11-23T17:50:07.889546-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22800,
+      "numero": "525578380721",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/525578380721_202611241623_image.jpg",
+      "desc": "Quiero saber a que pretense este numero ah que empress o compañia",
+      "check": false,
+      "added": "2026-11-24T16:23:51.568400-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22801,
+      "numero": "50258686979",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50258686979_202611241726_1000088638.jpg",
+      "desc": "Amenaza de muerte",
+      "check": false,
+      "added": "2026-11-24T17:26:11.198223-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22802,
+      "numero": "50258686979",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50258686979_202611241726_1000088638_IcTwZdC.jpg",
+      "desc": "Amenaza de muerte",
+      "check": false,
+      "added": "2026-11-24T17:26:28.704208-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22803,
+      "numero": "50640003870",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/50640003870_202611241747_1000190015.jpg",
+      "desc": "Pidiendo datos personales para una inscripción de un programa que yo no hice",
+      "check": false,
+      "added": "2026-11-24T17:47:52.965985-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22804,
+      "numero": "595987862590",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595987862590_202611241809_1000418790.jpg",
+      "desc": "No conozco a esta persona de ningún lado, varios números q tienen que ver con el me andan escribiendo, llamando o agregando a grupos, no se mas que hacer y sinceramente es molesto e inquietante que de la nada me estén escribiendo",
+      "check": false,
+      "added": "2026-11-24T18:09:08.019084-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22805,
+      "numero": "184944564",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/184944564_202611242303_5164.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-24T23:03:06.560101-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22806,
+      "numero": "5491160426107",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/5491160426107_202611250936_80ad7074-1e1a-4d7a-af4f-4c9770cb2738.jpg",
+      "desc": "Se hacen pasar por un familiar y te piden plata.",
+      "check": false,
+      "added": "2026-11-25T09:36:13.363073-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22807,
+      "numero": "595986980083",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980083_202611251147_159331.jpg",
+      "desc": "Spam no contestar",
+      "check": false,
+      "added": "2026-11-25T11:47:41.942919-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22808,
+      "numero": "595982780234",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595982780234_202611251318_1000884114.jpg",
+      "desc": "Estafa vendiendo supuestamente cosas por facebook",
+      "check": false,
+      "added": "2026-11-25T13:18:48.453522-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22809,
+      "numero": "595984552684",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595984552684_202611251421_IMG_8375.png",
+      "desc": "Quieren ingresar a mi cuenta de correo",
+      "check": false,
+      "added": "2026-11-25T14:21:58.511627-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -477401,6 +477511,116 @@
       "added": "2026-11-23T17:50:07.889546-03:00",
       "votsi": 0,
       "votno": 0
+    },
+    {
+      "id": 22800,
+      "numero": "525578380721",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/525578380721_202611241623_image.jpg",
+      "desc": "Quiero saber a que pretense este numero ah que empress o compañia",
+      "check": false,
+      "added": "2026-11-24T16:23:51.568400-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22801,
+      "numero": "50258686979",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50258686979_202611241726_1000088638.jpg",
+      "desc": "Amenaza de muerte",
+      "check": false,
+      "added": "2026-11-24T17:26:11.198223-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22802,
+      "numero": "50258686979",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50258686979_202611241726_1000088638_IcTwZdC.jpg",
+      "desc": "Amenaza de muerte",
+      "check": false,
+      "added": "2026-11-24T17:26:28.704208-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22803,
+      "numero": "50640003870",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/50640003870_202611241747_1000190015.jpg",
+      "desc": "Pidiendo datos personales para una inscripción de un programa que yo no hice",
+      "check": false,
+      "added": "2026-11-24T17:47:52.965985-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22804,
+      "numero": "595987862590",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595987862590_202611241809_1000418790.jpg",
+      "desc": "No conozco a esta persona de ningún lado, varios números q tienen que ver con el me andan escribiendo, llamando o agregando a grupos, no se mas que hacer y sinceramente es molesto e inquietante que de la nada me estén escribiendo",
+      "check": false,
+      "added": "2026-11-24T18:09:08.019084-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22805,
+      "numero": "184944564",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/184944564_202611242303_5164.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-24T23:03:06.560101-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22806,
+      "numero": "5491160426107",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/5491160426107_202611250936_80ad7074-1e1a-4d7a-af4f-4c9770cb2738.jpg",
+      "desc": "Se hacen pasar por un familiar y te piden plata.",
+      "check": false,
+      "added": "2026-11-25T09:36:13.363073-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22807,
+      "numero": "595986980083",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980083_202611251147_159331.jpg",
+      "desc": "Spam no contestar",
+      "check": false,
+      "added": "2026-11-25T11:47:41.942919-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22808,
+      "numero": "595982780234",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595982780234_202611251318_1000884114.jpg",
+      "desc": "Estafa vendiendo supuestamente cosas por facebook",
+      "check": false,
+      "added": "2026-11-25T13:18:48.453522-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22809,
+      "numero": "595984552684",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595984552684_202611251421_IMG_8375.png",
+      "desc": "Quieren ingresar a mi cuenta de correo",
+      "check": false,
+      "added": "2026-11-25T14:21:58.511627-03:00",
+      "votsi": 0,
+      "votno": 0
     }
   ],
   [
@@ -716101,6 +716321,116 @@
       "desc": "Llama y se hace pasar por fiscala",
       "check": false,
       "added": "2026-11-23T17:50:07.889546-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22800,
+      "numero": "525578380721",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/525578380721_202611241623_image.jpg",
+      "desc": "Quiero saber a que pretense este numero ah que empress o compañia",
+      "check": false,
+      "added": "2026-11-24T16:23:51.568400-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22801,
+      "numero": "50258686979",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50258686979_202611241726_1000088638.jpg",
+      "desc": "Amenaza de muerte",
+      "check": false,
+      "added": "2026-11-24T17:26:11.198223-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22802,
+      "numero": "50258686979",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/50258686979_202611241726_1000088638_IcTwZdC.jpg",
+      "desc": "Amenaza de muerte",
+      "check": false,
+      "added": "2026-11-24T17:26:28.704208-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22803,
+      "numero": "50640003870",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/50640003870_202611241747_1000190015.jpg",
+      "desc": "Pidiendo datos personales para una inscripción de un programa que yo no hice",
+      "check": false,
+      "added": "2026-11-24T17:47:52.965985-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22804,
+      "numero": "595987862590",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595987862590_202611241809_1000418790.jpg",
+      "desc": "No conozco a esta persona de ningún lado, varios números q tienen que ver con el me andan escribiendo, llamando o agregando a grupos, no se mas que hacer y sinceramente es molesto e inquietante que de la nada me estén escribiendo",
+      "check": false,
+      "added": "2026-11-24T18:09:08.019084-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22805,
+      "numero": "184944564",
+      "tipo": "Extorsión",
+      "screenshot": "/media/denuncias/184944564_202611242303_5164.png",
+      "desc": "",
+      "check": false,
+      "added": "2026-11-24T23:03:06.560101-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22806,
+      "numero": "5491160426107",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/5491160426107_202611250936_80ad7074-1e1a-4d7a-af4f-4c9770cb2738.jpg",
+      "desc": "Se hacen pasar por un familiar y te piden plata.",
+      "check": false,
+      "added": "2026-11-25T09:36:13.363073-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22807,
+      "numero": "595986980083",
+      "tipo": "SPAM",
+      "screenshot": "/media/denuncias/595986980083_202611251147_159331.jpg",
+      "desc": "Spam no contestar",
+      "check": false,
+      "added": "2026-11-25T11:47:41.942919-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22808,
+      "numero": "595982780234",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595982780234_202611251318_1000884114.jpg",
+      "desc": "Estafa vendiendo supuestamente cosas por facebook",
+      "check": false,
+      "added": "2026-11-25T13:18:48.453522-03:00",
+      "votsi": 0,
+      "votno": 0
+    },
+    {
+      "id": 22809,
+      "numero": "595984552684",
+      "tipo": "Estafa",
+      "screenshot": "/media/denuncias/595984552684_202611251421_IMG_8375.png",
+      "desc": "Quieren ingresar a mi cuenta de correo",
+      "check": false,
+      "added": "2026-11-25T14:21:58.511627-03:00",
       "votsi": 0,
       "votno": 0
     }

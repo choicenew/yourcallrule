@@ -1011,3 +1011,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 14700994827,Spam Call,block,3,14700994827,spamlikely,1,1,,phone_rule,opencallshield-co
 30140328422,Spam Call,block,3,30140328422,spamlikely,1,1,,phone_rule,opencallshield-co
 593980506875,Spam Call,block,3,593980506875,spamlikely,1,1,,phone_rule,opencallshield-co
+3124184097,Spam Call,block,3,3124184097,spamlikely,1,1,,phone_rule,opencallshield-co
+3046924967,Spam Call,block,3,3046924967,spamlikely,1,1,,phone_rule,opencallshield-co
+33233993088,Spam Call,block,3,33233993088,spamlikely,1,1,,phone_rule,opencallshield-co

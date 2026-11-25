@@ -975,10 +975,10 @@
     "subscriptionId": "gb-spam-blocklist"
   },
   {
-    "id": "077cc74b4e63b11d8bb1c7f7440bc62c",
+    "id": "eade288a83b8653699ba1ecaca22ae9a",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
-    "phoneNumber": "+447795591356",
+    "phoneNumber": "+443444123000",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",

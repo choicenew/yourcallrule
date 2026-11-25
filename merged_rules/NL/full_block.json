@@ -3549,6 +3549,19 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
+    "id": "436bbd9affd70f88e916df0de0527cdd",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3124184097",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
     "id": "8ac1c35bf7e4ce5149d9cd5ada0e7837",
     "name": "Spam Call",
     "ruleType": "phone_rule",
