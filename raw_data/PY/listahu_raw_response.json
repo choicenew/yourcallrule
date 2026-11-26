@@ -238349,28 +238349,6 @@
       "votno": 0
     },
     {
-      "id": 22766,
-      "numero": "595976709054",
-      "tipo": "SPAM",
-      "screenshot": "/media/denuncias/595976709054_202611140001_1001184334.jpg",
-      "desc": "Dicen ser de personal, reclaman pago de facturas vencida de interne y tv",
-      "check": false,
-      "added": "2026-11-14T00:01:46.666627-03:00",
-      "votsi": 0,
-      "votno": 0
-    },
-    {
-      "id": 22767,
-      "numero": "595976709054",
-      "tipo": "SPAM",
-      "screenshot": "/media/denuncias/595976709054_202611140010_1001203793.jpg",
-      "desc": "Dicen ser de personal",
-      "check": false,
-      "added": "2026-11-14T00:10:42.785538-03:00",
-      "votsi": 0,
-      "votno": 0
-    },
-    {
       "id": 22768,
       "numero": "595986980090",
       "tipo": "SPAM",
@@ -477161,28 +477139,6 @@
       "votno": 0
     },
     {
-      "id": 22766,
-      "numero": "595976709054",
-      "tipo": "SPAM",
-      "screenshot": "/media/denuncias/595976709054_202611140001_1001184334.jpg",
-      "desc": "Dicen ser de personal, reclaman pago de facturas vencida de interne y tv",
-      "check": false,
-      "added": "2026-11-14T00:01:46.666627-03:00",
-      "votsi": 0,
-      "votno": 0
-    },
-    {
-      "id": 22767,
-      "numero": "595976709054",
-      "tipo": "SPAM",
-      "screenshot": "/media/denuncias/595976709054_202611140010_1001203793.jpg",
-      "desc": "Dicen ser de personal",
-      "check": false,
-      "added": "2026-11-14T00:10:42.785538-03:00",
-      "votsi": 0,
-      "votno": 0
-    },
-    {
       "id": 22768,
       "numero": "595986980090",
       "tipo": "SPAM",
@@ -715969,28 +715925,6 @@
       "desc": "Acusaciones falsas y extorsión",
       "check": false,
       "added": "2026-11-13T22:30:53.554287-03:00",
-      "votsi": 0,
-      "votno": 0
-    },
-    {
-      "id": 22766,
-      "numero": "595976709054",
-      "tipo": "SPAM",
-      "screenshot": "/media/denuncias/595976709054_202611140001_1001184334.jpg",
-      "desc": "Dicen ser de personal, reclaman pago de facturas vencida de interne y tv",
-      "check": false,
-      "added": "2026-11-14T00:01:46.666627-03:00",
-      "votsi": 0,
-      "votno": 0
-    },
-    {
-      "id": 22767,
-      "numero": "595976709054",
-      "tipo": "SPAM",
-      "screenshot": "/media/denuncias/595976709054_202611140010_1001203793.jpg",
-      "desc": "Dicen ser de personal",
-      "check": false,
-      "added": "2026-11-14T00:10:42.785538-03:00",
       "votsi": 0,
       "votno": 0
     },

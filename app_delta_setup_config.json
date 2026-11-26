@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.0",
-  "last_updated": "2026-11-25T18:14:56Z",
+  "last_updated": "2026-11-26T17:57:44Z",
   "update_strategy": {
     "sync_interval_hours": 24,
     "allow_cellular_download": false,
@@ -318,8 +318,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/US/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/US/full_block.json",
-      "checksum_sha256": "b152a73025ce1880fe0b668e85b1ea0c5aa70fefc4694430cf569cd2b1959864",
-      "total_rules": 89689,
+      "checksum_sha256": "cdcf40d6f8f4ffc3a9cf8f52f900f1345543341afe3ef59f1ae8e98607bc8d9a",
+      "total_rules": 89769,
       "priority": 3,
       "is_enabled": true
     },
@@ -333,8 +333,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CA/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CA/full_block.json",
-      "checksum_sha256": "7cef2c7f878f0d261124612828eba2558aa56edbb2b55834737115ceec12fac1",
-      "total_rules": 2180,
+      "checksum_sha256": "78c635e74feb55b5102ac301ad1393a181e45530baf3ae08713779fcc989d224",
+      "total_rules": 2154,
       "priority": 3,
       "is_enabled": true
     },
@@ -633,8 +633,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/DO/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/DO/full_block.json",
-      "checksum_sha256": "64a79b8a0e70c8fc9ef37da1b722a489f2d7be44b37b1e6a63b85b95e045258e",
-      "total_rules": 23,
+      "checksum_sha256": "d289a6ce952e700e21e7295834cb6b216e751d85fdab6651c1ccc894e5c26678",
+      "total_rules": 22,
       "priority": 3,
       "is_enabled": true
     },
@@ -768,7 +768,7 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/IL/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/IL/full_block.json",
-      "checksum_sha256": "10ea9e2ec354756f82cf00160b91579fc926475b556d3360c833e5bc536b0f2e",
+      "checksum_sha256": "f13267d6b1fa0cfc229817b657800caca4319426f4a838cabca09e7c9bef7c25",
       "total_rules": 43,
       "priority": 3,
       "is_enabled": true
@@ -1218,8 +1218,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/CY/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/CY/full_block.json",
-      "checksum_sha256": "907f0662f3028fc691f1d68fb730be7d67ced360e9eea153cb4440e4ec9f8abb",
-      "total_rules": 15,
+      "checksum_sha256": "39418acb3d577e7d6b14940d20a3fcf733773c82d24842d90815c368532b72d8",
+      "total_rules": 16,
       "priority": 3,
       "is_enabled": true
     },
@@ -1383,8 +1383,8 @@
       "rule_type": "phone_rule",
       "full_download_url": "https://raw.githubusercontent.com/choicenew/yourcallrule/main/merged_rules/DE/full_block.json",
       "cdn_download_url": "https://cdn.jsdelivr.net/gh/choicenew/yourcallrule@main/merged_rules/DE/full_block.json",
-      "checksum_sha256": "f35d3a8505724cf6f4f5f0115f75da0d1fff7b0d47bd226d013f6d80da88621a",
-      "total_rules": 3726,
+      "checksum_sha256": "88f3f2de5056138d1e1f1b7af57eed34666562c2441ae25973d4a7ca5d95ab22",
+      "total_rules": 3739,
       "priority": 3,
       "is_enabled": true
     },

@@ -286,10 +286,10 @@
     "subscriptionId": "il-spam-blocklist"
   },
   {
-    "id": "30877a9a9db64df0469d3743f2a0e58d",
+    "id": "de7e8ede5cca82b1f3a5172b4d9cb822",
     "name": "Telemarketing",
     "ruleType": "phone_rule",
-    "phoneNumber": "+972546978585",
+    "phoneNumber": "+972552930166",
     "labelId": "telemarketing",
     "priority": 3,
     "action": "block",
