@@ -33,12 +33,17 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33159581\d*$,Saracroche: Destiny global infra services,block,5,^\+?33159581\d*$,1,saracroche-fr-regex,regex
 ^\+?33172359\d*$,Saracroche: FlashCall,block,5,^\+?33172359\d*$,1,saracroche-fr-regex,regex
 ^\+?33174879\d*$,Saracroche: Menytel France,block,5,^\+?33174879\d*$,1,saracroche-fr-regex,regex
+^\+?33176621\d*$,Saracroche: Voip telecom,block,5,^\+?33176621\d*$,1,saracroche-fr-regex,regex
 ^\+?33177844\d*$,Saracroche: DVS Connect,block,5,^\+?33177844\d*$,1,saracroche-fr-regex,regex
+^\+?3317890\d*$,Saracroche: Voip telecom,block,5,^\+?3317890\d*$,1,saracroche-fr-regex,regex
+^\+?3318122\d*$,Saracroche: Voip telecom,block,5,^\+?3318122\d*$,1,saracroche-fr-regex,regex
 ^\+?33184642\d*$,Saracroche: Iagility,block,5,^\+?33184642\d*$,1,saracroche-fr-regex,regex
 ^\+?33184643\d*$,Saracroche: Iagility,block,5,^\+?33184643\d*$,1,saracroche-fr-regex,regex
 ^\+?3318505\d*$,Saracroche: Iovox Ltd,block,5,^\+?3318505\d*$,1,saracroche-fr-regex,regex
 ^\+?3318656\d*$,Saracroche: Manifone,block,5,^\+?3318656\d*$,1,saracroche-fr-regex,regex
 ^\+?33186706\d*$,Saracroche: DVS Connect,block,5,^\+?33186706\d*$,1,saracroche-fr-regex,regex
+^\+?3318722\d*$,Saracroche: Voip telecom,block,5,^\+?3318722\d*$,1,saracroche-fr-regex,regex
+^\+?3318753\d*$,Saracroche: Voip telecom,block,5,^\+?3318753\d*$,1,saracroche-fr-regex,regex
 ^\+?3318764\d*$,Saracroche: Manifone,block,5,^\+?3318764\d*$,1,saracroche-fr-regex,regex
 ^\+?3318768\d*$,Saracroche: Get & go telecom,block,5,^\+?3318768\d*$,1,saracroche-fr-regex,regex
 ^\+?3318778\d*$,Saracroche: Vast new telecom,block,5,^\+?3318778\d*$,1,saracroche-fr-regex,regex
@@ -46,6 +51,7 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33187944\d*$,Saracroche: Iagility,block,5,^\+?33187944\d*$,1,saracroche-fr-regex,regex
 ^\+?33187945\d*$,Saracroche: Iagility,block,5,^\+?33187945\d*$,1,saracroche-fr-regex,regex
 ^\+?33187946\d*$,Saracroche: Iagility,block,5,^\+?33187946\d*$,1,saracroche-fr-regex,regex
+^\+?3318821\d*$,Saracroche: Voip telecom,block,5,^\+?3318821\d*$,1,saracroche-fr-regex,regex
 ^\+?3318831\d*$,Saracroche: Ubicentrex,block,5,^\+?3318831\d*$,1,saracroche-fr-regex,regex
 ^\+?33188440\d*$,Saracroche: DVS Connect,block,5,^\+?33188440\d*$,1,saracroche-fr-regex,regex
 ^\+?33188441\d*$,Saracroche: DVS Connect,block,5,^\+?33188441\d*$,1,saracroche-fr-regex,regex
@@ -57,6 +63,16 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33188447\d*$,Saracroche: DVS Connect,block,5,^\+?33188447\d*$,1,saracroche-fr-regex,regex
 ^\+?33188448\d*$,Saracroche: DVS Connect,block,5,^\+?33188448\d*$,1,saracroche-fr-regex,regex
 ^\+?33188449\d*$,Saracroche: DVS Connect,block,5,^\+?33188449\d*$,1,saracroche-fr-regex,regex
+^\+?33188810\d*$,Saracroche: Voip telecom,block,5,^\+?33188810\d*$,1,saracroche-fr-regex,regex
+^\+?33188811\d*$,Saracroche: Voip telecom,block,5,^\+?33188811\d*$,1,saracroche-fr-regex,regex
+^\+?33188812\d*$,Saracroche: Voip telecom,block,5,^\+?33188812\d*$,1,saracroche-fr-regex,regex
+^\+?33188814\d*$,Saracroche: Voip telecom,block,5,^\+?33188814\d*$,1,saracroche-fr-regex,regex
+^\+?33188815\d*$,Saracroche: Voip telecom,block,5,^\+?33188815\d*$,1,saracroche-fr-regex,regex
+^\+?33188818\d*$,Saracroche: Voip telecom,block,5,^\+?33188818\d*$,1,saracroche-fr-regex,regex
+^\+?33188819\d*$,Saracroche: Voip telecom,block,5,^\+?33188819\d*$,1,saracroche-fr-regex,regex
+^\+?33188827\d*$,Saracroche: Voip telecom,block,5,^\+?33188827\d*$,1,saracroche-fr-regex,regex
+^\+?33188828\d*$,Saracroche: Voip telecom,block,5,^\+?33188828\d*$,1,saracroche-fr-regex,regex
+^\+?33188829\d*$,Saracroche: Voip telecom,block,5,^\+?33188829\d*$,1,saracroche-fr-regex,regex
 ^\+?3318885\d*$,Saracroche: Iovox Ltd,block,5,^\+?3318885\d*$,1,saracroche-fr-regex,regex
 ^\+?3318900\d*$,Saracroche: Oxilog France,block,5,^\+?3318900\d*$,1,saracroche-fr-regex,regex
 ^\+?3318904\d*$,Saracroche: Iovox Ltd,block,5,^\+?3318904\d*$,1,saracroche-fr-regex,regex
@@ -120,7 +136,9 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?3322190\d*$,Saracroche: Phone.GS,block,5,^\+?3322190\d*$,1,saracroche-fr-regex,regex
 ^\+?3322196\d*$,Saracroche: Plug and tel,block,5,^\+?3322196\d*$,1,saracroche-fr-regex,regex
 ^\+?33222913\d*$,Saracroche: DVS Connect,block,5,^\+?33222913\d*$,1,saracroche-fr-regex,regex
+^\+?3323032\d*$,Saracroche: Voip telecom,block,5,^\+?3323032\d*$,1,saracroche-fr-regex,regex
 ^\+?33236571\d*$,Saracroche: Menytel France,block,5,^\+?33236571\d*$,1,saracroche-fr-regex,regex
+^\+?3324917\d*$,Saracroche: Voip telecom,block,5,^\+?3324917\d*$,1,saracroche-fr-regex,regex
 ^\+?3325504\d*$,Saracroche: Get & go telecom,block,5,^\+?3325504\d*$,1,saracroche-fr-regex,regex
 ^\+?33255371\d*$,Saracroche: Iagility,block,5,^\+?33255371\d*$,1,saracroche-fr-regex,regex
 ^\+?33255372\d*$,Saracroche: Iagility,block,5,^\+?33255372\d*$,1,saracroche-fr-regex,regex
@@ -130,6 +148,10 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?3325545\d*$,Saracroche: Manifone,block,5,^\+?3325545\d*$,1,saracroche-fr-regex,regex
 ^\+?33256352\d*$,Saracroche: FlashCall,block,5,^\+?33256352\d*$,1,saracroche-fr-regex,regex
 ^\+?3325753\d*$,Saracroche: Iovox Ltd,block,5,^\+?3325753\d*$,1,saracroche-fr-regex,regex
+^\+?33258320\d*$,Saracroche: Voip telecom,block,5,^\+?33258320\d*$,1,saracroche-fr-regex,regex
+^\+?33258323\d*$,Saracroche: Voip telecom,block,5,^\+?33258323\d*$,1,saracroche-fr-regex,regex
+^\+?33258329\d*$,Saracroche: Voip telecom,block,5,^\+?33258329\d*$,1,saracroche-fr-regex,regex
+^\+?3325833\d*$,Saracroche: Voip telecom,block,5,^\+?3325833\d*$,1,saracroche-fr-regex,regex
 ^\+?3325835\d*$,Saracroche: Oxilog France,block,5,^\+?3325835\d*$,1,saracroche-fr-regex,regex
 ^\+?3325839\d*$,Saracroche: Iovox Ltd,block,5,^\+?3325839\d*$,1,saracroche-fr-regex,regex
 ^\+?33258480\d*$,Saracroche: Kav El International,block,5,^\+?33258480\d*$,1,saracroche-fr-regex,regex
@@ -166,8 +188,10 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33263030\d*$,Saracroche: Iovox Ltd,block,5,^\+?33263030\d*$,1,saracroche-fr-regex,regex
 ^\+?33263070\d*$,Saracroche: Kav El International,block,5,^\+?33263070\d*$,1,saracroche-fr-regex,regex
 ^\+?33263071\d*$,Saracroche: Kav El International,block,5,^\+?33263071\d*$,1,saracroche-fr-regex,regex
+^\+?33263159\d*$,Saracroche: Voip telecom,block,5,^\+?33263159\d*$,1,saracroche-fr-regex,regex
 ^\+?33269000\d*$,Saracroche: Iovox Ltd,block,5,^\+?33269000\d*$,1,saracroche-fr-regex,regex
 ^\+?33269026\d*$,Saracroche: Kav El International,block,5,^\+?33269026\d*$,1,saracroche-fr-regex,regex
+^\+?33269533\d*$,Saracroche: Voip telecom,block,5,^\+?33269533\d*$,1,saracroche-fr-regex,regex
 ^\+?3326967\d*$,Saracroche: Get & go telecom,block,5,^\+?3326967\d*$,1,saracroche-fr-regex,regex
 ^\+?3327946\d*$,Saracroche: Iovox Ltd,block,5,^\+?3327946\d*$,1,saracroche-fr-regex,regex
 ^\+?33279740\d*$,Saracroche: Cloud telecom,block,5,^\+?33279740\d*$,1,saracroche-fr-regex,regex
@@ -201,8 +225,10 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?3335633\d*$,Saracroche: Get & go telecom,block,5,^\+?3335633\d*$,1,saracroche-fr-regex,regex
 ^\+?33356990\d*$,Saracroche: Cloud telecom,block,5,^\+?33356990\d*$,1,saracroche-fr-regex,regex
 ^\+?33356999\d*$,Saracroche: Cloud telecom,block,5,^\+?33356999\d*$,1,saracroche-fr-regex,regex
+^\+?3336632\d*$,Saracroche: Voip telecom,block,5,^\+?3336632\d*$,1,saracroche-fr-regex,regex
 ^\+?3336747\d*$,Saracroche: Ubicentrex,block,5,^\+?3336747\d*$,1,saracroche-fr-regex,regex
 ^\+?3336748\d*$,Saracroche: Manifone,block,5,^\+?3336748\d*$,1,saracroche-fr-regex,regex
+^\+?3336891\d*$,Saracroche: Voip telecom,block,5,^\+?3336891\d*$,1,saracroche-fr-regex,regex
 ^\+?33373356\d*$,Saracroche: Iagility,block,5,^\+?33373356\d*$,1,saracroche-fr-regex,regex
 ^\+?3337408\d*$,Saracroche: Iovox Ltd,block,5,^\+?3337408\d*$,1,saracroche-fr-regex,regex
 ^\+?33374531\d*$,Saracroche: Iagility,block,5,^\+?33374531\d*$,1,saracroche-fr-regex,regex
@@ -210,6 +236,7 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33374533\d*$,Saracroche: Iagility,block,5,^\+?33374533\d*$,1,saracroche-fr-regex,regex
 ^\+?33374534\d*$,Saracroche: Iagility,block,5,^\+?33374534\d*$,1,saracroche-fr-regex,regex
 ^\+?3337466\d*$,Saracroche: Manifone,block,5,^\+?3337466\d*$,1,saracroche-fr-regex,regex
+^\+?3337576\d*$,Saracroche: Voip telecom,block,5,^\+?3337576\d*$,1,saracroche-fr-regex,regex
 ^\+?3337577\d*$,Saracroche: Oxilog France,block,5,^\+?3337577\d*$,1,saracroche-fr-regex,regex
 ^\+?3337584\d*$,Saracroche: Go Mybiz France,block,5,^\+?3337584\d*$,1,saracroche-fr-regex,regex
 ^\+?3337592\d*$,Saracroche: Cyd-solutions,block,5,^\+?3337592\d*$,1,saracroche-fr-regex,regex
@@ -304,6 +331,7 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33449317\d*$,Saracroche: Kav El International,block,5,^\+?33449317\d*$,1,saracroche-fr-regex,regex
 ^\+?33449450\d*$,Saracroche: Ubicentrex,block,5,^\+?33449450\d*$,1,saracroche-fr-regex,regex
 ^\+?33449459\d*$,Saracroche: Ubicentrex,block,5,^\+?33449459\d*$,1,saracroche-fr-regex,regex
+^\+?3345106\d*$,Saracroche: Voip telecom,block,5,^\+?3345106\d*$,1,saracroche-fr-regex,regex
 ^\+?3345109\d*$,Saracroche: Oxilog France,block,5,^\+?3345109\d*$,1,saracroche-fr-regex,regex
 ^\+?3345112\d*$,Saracroche: Iovox Ltd,block,5,^\+?3345112\d*$,1,saracroche-fr-regex,regex
 ^\+?3345125\d*$,Saracroche: Iovox Ltd,block,5,^\+?3345125\d*$,1,saracroche-fr-regex,regex
@@ -323,6 +351,11 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33451639\d*$,Saracroche: DVS Connect,block,5,^\+?33451639\d*$,1,saracroche-fr-regex,regex
 ^\+?3346563\d*$,Saracroche: Manifone,block,5,^\+?3346563\d*$,1,saracroche-fr-regex,regex
 ^\+?3348481\d*$,Saracroche: Iovox Ltd,block,5,^\+?3348481\d*$,1,saracroche-fr-regex,regex
+^\+?3348680\d*$,Saracroche: Voip telecom,block,5,^\+?3348680\d*$,1,saracroche-fr-regex,regex
+^\+?33487850\d*$,Saracroche: Voip telecom,block,5,^\+?33487850\d*$,1,saracroche-fr-regex,regex
+^\+?33487851\d*$,Saracroche: Voip telecom,block,5,^\+?33487851\d*$,1,saracroche-fr-regex,regex
+^\+?33487856\d*$,Saracroche: Voip telecom,block,5,^\+?33487856\d*$,1,saracroche-fr-regex,regex
+^\+?33487859\d*$,Saracroche: Voip telecom,block,5,^\+?33487859\d*$,1,saracroche-fr-regex,regex
 ^\+?3348793\d*$,Saracroche: Manifone,block,5,^\+?3348793\d*$,1,saracroche-fr-regex,regex
 ^\+?33508510\d*$,Saracroche: Iovox Ltd,block,5,^\+?33508510\d*$,1,saracroche-fr-regex,regex
 ^\+?33516475\d*$,Saracroche: Qwalikom,block,5,^\+?33516475\d*$,1,saracroche-fr-regex,regex
@@ -372,6 +405,7 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33532996\d*$,Saracroche: Iagility,block,5,^\+?33532996\d*$,1,saracroche-fr-regex,regex
 ^\+?33532997\d*$,Saracroche: Iagility,block,5,^\+?33532997\d*$,1,saracroche-fr-regex,regex
 ^\+?3353379\d*$,Saracroche: Iovox Ltd,block,5,^\+?3353379\d*$,1,saracroche-fr-regex,regex
+^\+?3353665\d*$,Saracroche: Voip telecom,block,5,^\+?3353665\d*$,1,saracroche-fr-regex,regex
 ^\+?3353666\d*$,Saracroche: Oxilog France,block,5,^\+?3353666\d*$,1,saracroche-fr-regex,regex
 ^\+?3353669\d*$,Saracroche: Iovox Ltd,block,5,^\+?3353669\d*$,1,saracroche-fr-regex,regex
 ^\+?3353690\d*$,Saracroche: Go Mybiz France,block,5,^\+?3353690\d*$,1,saracroche-fr-regex,regex
@@ -393,9 +427,15 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?3354814\d*$,Saracroche: Iovox Ltd,block,5,^\+?3354814\d*$,1,saracroche-fr-regex,regex
 ^\+?3355464\d*$,Saracroche: Manifone,block,5,^\+?3355464\d*$,1,saracroche-fr-regex,regex
 ^\+?3355465\d*$,Saracroche: Manifone,block,5,^\+?3355465\d*$,1,saracroche-fr-regex,regex
+^\+?33554960\d*$,Saracroche: Voip telecom,block,5,^\+?33554960\d*$,1,saracroche-fr-regex,regex
+^\+?33554961\d*$,Saracroche: Voip telecom,block,5,^\+?33554961\d*$,1,saracroche-fr-regex,regex
+^\+?33554969\d*$,Saracroche: Voip telecom,block,5,^\+?33554969\d*$,1,saracroche-fr-regex,regex
+^\+?3358284\d*$,Saracroche: Voip telecom,block,5,^\+?3358284\d*$,1,saracroche-fr-regex,regex
+^\+?3358296\d*$,Saracroche: Voip telecom,block,5,^\+?3358296\d*$,1,saracroche-fr-regex,regex
 ^\+?33590160\d*$,Saracroche: Kav El International,block,5,^\+?33590160\d*$,1,saracroche-fr-regex,regex
 ^\+?33590162\d*$,Saracroche: Kav El International,block,5,^\+?33590162\d*$,1,saracroche-fr-regex,regex
 ^\+?33590169\d*$,Saracroche: Kav El International,block,5,^\+?33590169\d*$,1,saracroche-fr-regex,regex
+^\+?33590307\d*$,Saracroche: Voip telecom,block,5,^\+?33590307\d*$,1,saracroche-fr-regex,regex
 ^\+?33590340\d*$,Saracroche: Kav El International,block,5,^\+?33590340\d*$,1,saracroche-fr-regex,regex
 ^\+?33590344\d*$,Saracroche: Kav El International,block,5,^\+?33590344\d*$,1,saracroche-fr-regex,regex
 ^\+?33590345\d*$,Saracroche: Kav El International,block,5,^\+?33590345\d*$,1,saracroche-fr-regex,regex
@@ -403,30 +443,61 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33590350\d*$,Saracroche: Iovox Ltd,block,5,^\+?33590350\d*$,1,saracroche-fr-regex,regex
 ^\+?3359441\d*$,Saracroche: Ubicentrex,block,5,^\+?3359441\d*$,1,saracroche-fr-regex,regex
 ^\+?33594420\d*$,Saracroche: Iovox Ltd,block,5,^\+?33594420\d*$,1,saracroche-fr-regex,regex
+^\+?33594922\d*$,Saracroche: Voip telecom,block,5,^\+?33594922\d*$,1,saracroche-fr-regex,regex
 ^\+?33594950\d*$,Saracroche: Kav El International,block,5,^\+?33594950\d*$,1,saracroche-fr-regex,regex
 ^\+?33594952\d*$,Saracroche: Kav El International,block,5,^\+?33594952\d*$,1,saracroche-fr-regex,regex
 ^\+?33594959\d*$,Saracroche: Kav El International,block,5,^\+?33594959\d*$,1,saracroche-fr-regex,regex
 ^\+?33596450\d*$,Saracroche: Kav El International,block,5,^\+?33596450\d*$,1,saracroche-fr-regex,regex
+^\+?33596817\d*$,Saracroche: Voip telecom,block,5,^\+?33596817\d*$,1,saracroche-fr-regex,regex
 ^\+?33596990\d*$,Saracroche: Iovox Ltd,block,5,^\+?33596990\d*$,1,saracroche-fr-regex,regex
 ^\+?33743120\d*$,Saracroche: Did logic pte Ltd,block,5,^\+?33743120\d*$,1,saracroche-fr-regex,regex
 ^\+?33743124\d*$,Saracroche: Did logic pte Ltd,block,5,^\+?33743124\d*$,1,saracroche-fr-regex,regex
 ^\+?3374313\d*$,Saracroche: Vast new telecom,block,5,^\+?3374313\d*$,1,saracroche-fr-regex,regex
+^\+?33743439\d*$,Saracroche: Voip telecom,block,5,^\+?33743439\d*$,1,saracroche-fr-regex,regex
+^\+?33743495\d*$,Saracroche: Voip telecom,block,5,^\+?33743495\d*$,1,saracroche-fr-regex,regex
 ^\+?3374403\d*$,Saracroche: Kav El International,block,5,^\+?3374403\d*$,1,saracroche-fr-regex,regex
 ^\+?3374406\d*$,Saracroche: Plug and tel,block,5,^\+?3374406\d*$,1,saracroche-fr-regex,regex
 ^\+?33755567\d*$,Saracroche: Plug and tel,block,5,^\+?33755567\d*$,1,saracroche-fr-regex,regex
 ^\+?33755568\d*$,Saracroche: Plug and tel,block,5,^\+?33755568\d*$,1,saracroche-fr-regex,regex
 ^\+?33755569\d*$,Saracroche: Plug and tel,block,5,^\+?33755569\d*$,1,saracroche-fr-regex,regex
+^\+?3375603\d*$,Saracroche: Voip telecom,block,5,^\+?3375603\d*$,1,saracroche-fr-regex,regex
+^\+?33756236\d*$,Saracroche: Voip telecom,block,5,^\+?33756236\d*$,1,saracroche-fr-regex,regex
+^\+?33756237\d*$,Saracroche: Voip telecom,block,5,^\+?33756237\d*$,1,saracroche-fr-regex,regex
+^\+?33756238\d*$,Saracroche: Voip telecom,block,5,^\+?33756238\d*$,1,saracroche-fr-regex,regex
+^\+?33756340\d*$,Saracroche: Voip telecom,block,5,^\+?33756340\d*$,1,saracroche-fr-regex,regex
+^\+?33756341\d*$,Saracroche: Voip telecom,block,5,^\+?33756341\d*$,1,saracroche-fr-regex,regex
+^\+?33756342\d*$,Saracroche: Voip telecom,block,5,^\+?33756342\d*$,1,saracroche-fr-regex,regex
+^\+?33756343\d*$,Saracroche: Voip telecom,block,5,^\+?33756343\d*$,1,saracroche-fr-regex,regex
+^\+?33756344\d*$,Saracroche: Voip telecom,block,5,^\+?33756344\d*$,1,saracroche-fr-regex,regex
+^\+?33756345\d*$,Saracroche: Voip telecom,block,5,^\+?33756345\d*$,1,saracroche-fr-regex,regex
+^\+?33756346\d*$,Saracroche: Voip telecom,block,5,^\+?33756346\d*$,1,saracroche-fr-regex,regex
+^\+?33756347\d*$,Saracroche: Voip telecom,block,5,^\+?33756347\d*$,1,saracroche-fr-regex,regex
+^\+?33756348\d*$,Saracroche: Voip telecom,block,5,^\+?33756348\d*$,1,saracroche-fr-regex,regex
+^\+?33756349\d*$,Saracroche: Voip telecom,block,5,^\+?33756349\d*$,1,saracroche-fr-regex,regex
+^\+?3375701\d*$,Saracroche: Voip telecom,block,5,^\+?3375701\d*$,1,saracroche-fr-regex,regex
 ^\+?33757130\d*$,Saracroche: Kav El International,block,5,^\+?33757130\d*$,1,saracroche-fr-regex,regex
 ^\+?33757131\d*$,Saracroche: Kav El International,block,5,^\+?33757131\d*$,1,saracroche-fr-regex,regex
 ^\+?33757132\d*$,Saracroche: Kav El International,block,5,^\+?33757132\d*$,1,saracroche-fr-regex,regex
 ^\+?3375786\d*$,Saracroche: Plug and tel,block,5,^\+?3375786\d*$,1,saracroche-fr-regex,regex
+^\+?33771921\d*$,Saracroche: Voip telecom,block,5,^\+?33771921\d*$,1,saracroche-fr-regex,regex
 ^\+?3380121\d*$,Saracroche: Get & go telecom,block,5,^\+?3380121\d*$,1,saracroche-fr-regex,regex
 ^\+?3380129\d*$,Saracroche: Get & go telecom,block,5,^\+?3380129\d*$,1,saracroche-fr-regex,regex
 ^\+?3380300\d*$,Saracroche: Manifone,block,5,^\+?3380300\d*$,1,saracroche-fr-regex,regex
 ^\+?33803870\d*$,Saracroche: Destiny global infra services,block,5,^\+?33803870\d*$,1,saracroche-fr-regex,regex
 ^\+?33803871\d*$,Saracroche: Destiny global infra services,block,5,^\+?33803871\d*$,1,saracroche-fr-regex,regex
+^\+?3380532\d*$,Saracroche: Voip telecom,block,5,^\+?3380532\d*$,1,saracroche-fr-regex,regex
 ^\+?3380603\d*$,Saracroche: Manifone,block,5,^\+?3380603\d*$,1,saracroche-fr-regex,regex
+^\+?33806240\d*$,Saracroche: Voip telecom,block,5,^\+?33806240\d*$,1,saracroche-fr-regex,regex
+^\+?33806242\d*$,Saracroche: Voip telecom,block,5,^\+?33806242\d*$,1,saracroche-fr-regex,regex
+^\+?3381139\d*$,Saracroche: Voip telecom,block,5,^\+?3381139\d*$,1,saracroche-fr-regex,regex
+^\+?3382568\d*$,Saracroche: Voip telecom,block,5,^\+?3382568\d*$,1,saracroche-fr-regex,regex
+^\+?3389076\d*$,Saracroche: Voip telecom,block,5,^\+?3389076\d*$,1,saracroche-fr-regex,regex
+^\+?3389247\d*$,Saracroche: Voip telecom,block,5,^\+?3389247\d*$,1,saracroche-fr-regex,regex
+^\+?33895681\d*$,Saracroche: Voip telecom,block,5,^\+?33895681\d*$,1,saracroche-fr-regex,regex
 ^\+?33895689\d*$,Saracroche: Get & go telecom,block,5,^\+?33895689\d*$,1,saracroche-fr-regex,regex
+^\+?33895694\d*$,Saracroche: Voip telecom,block,5,^\+?33895694\d*$,1,saracroche-fr-regex,regex
+^\+?3389963\d*$,Saracroche: Voip telecom,block,5,^\+?3389963\d*$,1,saracroche-fr-regex,regex
+^\+?3389966\d*$,Saracroche: Voip telecom,block,5,^\+?3389966\d*$,1,saracroche-fr-regex,regex
 ^\+?33939080\d*$,Saracroche: Get & go telecom,block,5,^\+?33939080\d*$,1,saracroche-fr-regex,regex
 ^\+?33939090\d*$,Saracroche: Vast new telecom,block,5,^\+?33939090\d*$,1,saracroche-fr-regex,regex
 ^\+?33939190\d*$,Saracroche: Telyo,block,5,^\+?33939190\d*$,1,saracroche-fr-regex,regex
@@ -471,12 +542,31 @@ id,name,action,priority,pattern,isEnabled,subscriptionId,ruleType
 ^\+?33974967\d*$,Saracroche: Spartel services,block,5,^\+?33974967\d*$,1,saracroche-fr-regex,regex
 ^\+?33974968\d*$,Saracroche: Spartel services,block,5,^\+?33974968\d*$,1,saracroche-fr-regex,regex
 ^\+?33974969\d*$,Saracroche: Spartel services,block,5,^\+?33974969\d*$,1,saracroche-fr-regex,regex
+^\+?3397512\d*$,Saracroche: Voip telecom,block,5,^\+?3397512\d*$,1,saracroche-fr-regex,regex
+^\+?33976001\d*$,Saracroche: Voip telecom,block,5,^\+?33976001\d*$,1,saracroche-fr-regex,regex
+^\+?33976302\d*$,Saracroche: Voip telecom,block,5,^\+?33976302\d*$,1,saracroche-fr-regex,regex
+^\+?33976492\d*$,Saracroche: Voip telecom,block,5,^\+?33976492\d*$,1,saracroche-fr-regex,regex
+^\+?33976601\d*$,Saracroche: Voip telecom,block,5,^\+?33976601\d*$,1,saracroche-fr-regex,regex
+^\+?33976931\d*$,Saracroche: Voip telecom,block,5,^\+?33976931\d*$,1,saracroche-fr-regex,regex
 ^\+?3397729\d*$,Saracroche: Phone.GS,block,5,^\+?3397729\d*$,1,saracroche-fr-regex,regex
+^\+?3397806\d*$,Saracroche: Voip telecom,block,5,^\+?3397806\d*$,1,saracroche-fr-regex,regex
 ^\+?33978260\d*$,Saracroche: Iagility,block,5,^\+?33978260\d*$,1,saracroche-fr-regex,regex
 ^\+?3397834\d*$,Saracroche: Iovox Ltd,block,5,^\+?3397834\d*$,1,saracroche-fr-regex,regex
+^\+?3397836\d*$,Saracroche: Voip telecom,block,5,^\+?3397836\d*$,1,saracroche-fr-regex,regex
+^\+?33978470\d*$,Saracroche: Voip telecom,block,5,^\+?33978470\d*$,1,saracroche-fr-regex,regex
+^\+?33978471\d*$,Saracroche: Voip telecom,block,5,^\+?33978471\d*$,1,saracroche-fr-regex,regex
+^\+?33978472\d*$,Saracroche: Voip telecom,block,5,^\+?33978472\d*$,1,saracroche-fr-regex,regex
+^\+?33978473\d*$,Saracroche: Voip telecom,block,5,^\+?33978473\d*$,1,saracroche-fr-regex,regex
+^\+?33978474\d*$,Saracroche: Voip telecom,block,5,^\+?33978474\d*$,1,saracroche-fr-regex,regex
+^\+?33978475\d*$,Saracroche: Voip telecom,block,5,^\+?33978475\d*$,1,saracroche-fr-regex,regex
+^\+?33978476\d*$,Saracroche: Voip telecom,block,5,^\+?33978476\d*$,1,saracroche-fr-regex,regex
+^\+?33978477\d*$,Saracroche: Voip telecom,block,5,^\+?33978477\d*$,1,saracroche-fr-regex,regex
+^\+?33978479\d*$,Saracroche: Voip telecom,block,5,^\+?33978479\d*$,1,saracroche-fr-regex,regex
 ^\+?3397882\d*$,Saracroche: Oxilog France,block,5,^\+?3397882\d*$,1,saracroche-fr-regex,regex
 ^\+?3397883\d*$,Saracroche: Oxilog France,block,5,^\+?3397883\d*$,1,saracroche-fr-regex,regex
 ^\+?33978853\d*$,Saracroche: FlashCall,block,5,^\+?33978853\d*$,1,saracroche-fr-regex,regex
+^\+?3397899\d*$,Saracroche: Voip telecom,block,5,^\+?3397899\d*$,1,saracroche-fr-regex,regex
+^\+?3398009\d*$,Saracroche: Voip telecom,block,5,^\+?3398009\d*$,1,saracroche-fr-regex,regex
 ^\+?3398540\d*$,Saracroche: Kav El International,block,5,^\+?3398540\d*$,1,saracroche-fr-regex,regex
 ^\+?33987282\d*$,Saracroche: DVS Connect,block,5,^\+?33987282\d*$,1,saracroche-fr-regex,regex
 ^\+?33987283\d*$,Saracroche: DVS Connect,block,5,^\+?33987283\d*$,1,saracroche-fr-regex,regex

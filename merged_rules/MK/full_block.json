@@ -11,5 +11,18 @@
     "count": 2,
     "avatar": "",
     "subscriptionId": "mk-spam-blocklist"
+  },
+  {
+    "id": "78eff5f482b9b9059d7803fc32b3a29a",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "38978077271",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "mk-spam-blocklist"
   }
 ]

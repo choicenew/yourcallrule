@@ -14918,3 +14918,4 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 +5955491160426107,Spam Call,block,3,+5955491160426107,spamlikely,1,1,,phone_rule,listahu-py
 +595982780234,Spam Call,block,3,+595982780234,spamlikely,1,1,,phone_rule,listahu-py
 +595984552684,Spam Call,block,3,+595984552684,spamlikely,1,1,,phone_rule,listahu-py
++595987699216,Spam Call,block,3,+595987699216,spamlikely,1,1,,phone_rule,listahu-py

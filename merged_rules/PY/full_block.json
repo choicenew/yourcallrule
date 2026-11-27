@@ -193984,5 +193984,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "py-spam-blocklist"
+  },
+  {
+    "id": "25c6c77fc9bd8a2b83c5cd3fb9307e76",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+595987699216",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "py-spam-blocklist"
   }
 ]

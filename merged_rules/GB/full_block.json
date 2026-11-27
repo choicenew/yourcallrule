@@ -2626,6 +2626,19 @@
     "subscriptionId": "gb-spam-blocklist"
   },
   {
+    "id": "2a2facdd4db3ff1661c04c6c5658a74e",
+    "name": "Telemarketing",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+442038665120",
+    "labelId": "telemarketing",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 2,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
+  },
+  {
     "id": "108b639dc4f1e7d0a67f664a248c916a",
     "name": "Spam Call",
     "ruleType": "phone_rule",

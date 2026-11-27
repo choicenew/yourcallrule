@@ -6123,6 +6123,19 @@
     "subscriptionId": "global-spam-blocklist"
   },
   {
+    "id": "bfa97375a913bea0cf0c9cbd26e76412",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "03573110762974",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "global-spam-blocklist"
+  },
+  {
     "id": "3065a0ee0a7cf22ad6d03d4f30bd32db",
     "name": "Spam Call",
     "ruleType": "phone_rule",

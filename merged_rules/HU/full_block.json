@@ -130,6 +130,19 @@
     "subscriptionId": "hu-spam-blocklist"
   },
   {
+    "id": "cfe6163ff0e601b1393952f5a3b22868",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "36020019188",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "hu-spam-blocklist"
+  },
+  {
     "id": "a8bd6629b98af706c7b3dc857b4a3d64",
     "name": "Spam Call",
     "ruleType": "phone_rule",

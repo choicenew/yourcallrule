@@ -219,5 +219,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "gi-spam-blocklist"
+  },
+  {
+    "id": "1c51e60b0b1a48728dc9cf7487f3de1b",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3504548347",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gi-spam-blocklist"
   }
 ]
