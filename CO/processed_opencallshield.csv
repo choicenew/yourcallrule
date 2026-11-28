@@ -1026,3 +1026,6 @@ id,name,action,priority,phoneNumber,labelId,isEnabled,count,avatar,ruleType,subs
 319168201808,Spam Call,block,3,319168201808,spamlikely,1,1,,phone_rule,opencallshield-co
 3009191621,Spam Call,block,3,3009191621,spamlikely,1,1,,phone_rule,opencallshield-co
 3009191614,Spam Call,block,3,3009191614,spamlikely,1,1,,phone_rule,opencallshield-co
+35280447764,Spam Call,block,3,35280447764,spamlikely,1,1,,phone_rule,opencallshield-co
+3128575314,Spam Call,block,3,3128575314,spamlikely,1,1,,phone_rule,opencallshield-co
+3127778965,Spam Call,block,3,3127778965,spamlikely,1,1,,phone_rule,opencallshield-co

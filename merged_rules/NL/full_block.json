@@ -3588,6 +3588,32 @@
     "subscriptionId": "nl-spam-blocklist"
   },
   {
+    "id": "1e7955fa56f00d8561821811c8597cf7",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3128575314",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
+    "id": "b2d8a5c87d3f14e602c81647ad6464f8",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "3127778965",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "nl-spam-blocklist"
+  },
+  {
     "id": "8ac1c35bf7e4ce5149d9cd5ada0e7837",
     "name": "Spam Call",
     "ruleType": "phone_rule",

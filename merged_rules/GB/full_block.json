@@ -4093,5 +4093,18 @@
     "count": 1,
     "avatar": "",
     "subscriptionId": "gb-spam-blocklist"
+  },
+  {
+    "id": "7d988ab6039867de2357841331f2a406",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "+441615647045",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "gb-spam-blocklist"
   }
 ]

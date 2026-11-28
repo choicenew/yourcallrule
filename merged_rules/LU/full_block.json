@@ -39,6 +39,19 @@
     "subscriptionId": "lu-spam-blocklist"
   },
   {
+    "id": "2ea55864537bb653f7ea1590dfe54555",
+    "name": "Spam Call",
+    "ruleType": "phone_rule",
+    "phoneNumber": "35280447764",
+    "labelId": "spamlikely",
+    "priority": 3,
+    "action": "block",
+    "isEnabled": 1,
+    "count": 1,
+    "avatar": "",
+    "subscriptionId": "lu-spam-blocklist"
+  },
+  {
     "id": "2839bc3a325caf6f61d4b0f26fc225ca",
     "name": "Spam Call",
     "ruleType": "phone_rule",
